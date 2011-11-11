@@ -9,7 +9,14 @@ class UsersController extends AppController {
 
 function beforeFilter() {
     parent::beforeFilter();
+    $this->Auth->allow('register');
+    
+  
+
 }
+
+
+
 
 public function beforeSave() {
 	
@@ -100,13 +107,13 @@ function logout(){
  *
  * @return void
  */
-	public function add() {
+	public function register() {
 		if ($this->request->is('post')) {
 			$this->request->data['User']['password'] = AuthComponent::password($this->data['User']['password']);
 			$this->User->create();
 			if ($this->User->save($this->request->data)) {
 				$this->Session->setFlash(__('The user has been saved'));
-				//$this->redirect(array('action' => 'index'));
+				$this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The user could not be saved. Please, try again.'));
 			}
