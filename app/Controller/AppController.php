@@ -13,8 +13,9 @@ class AppController extends Controller {
     public $helpers = array('Html', 'Form', 'Session');
 
     function beforeFilter() {
+        $this->Auth->allow('display');
         //Configure AuthComponent
-        $this->Auth->allow('*');
+       //   $this->Auth->allow('*');
         $this->Auth->actionPath = 'controllers';
         $this->Auth->loginAction = array('controller' => 'users', 'action' => 'login');
         $this->Auth->logoutRedirect = array('controller' => 'users', 'action' => 'login');

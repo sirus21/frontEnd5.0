@@ -8,6 +8,11 @@ App::uses('AppController', 'Controller');
 class WidgetsController extends AppController {
 
 
+function beforeFilter() {
+    parent::beforeFilter();
+    $this->Auth->allow('index', 'view');
+}
+
 /**
  * index method
  *
