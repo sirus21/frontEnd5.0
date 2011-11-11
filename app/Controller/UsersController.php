@@ -1,5 +1,5 @@
 <?php
-App::uses('AppController', 'Controller');
+App::uses('AppController', 'Controller','AuthComponent');
 /**
  * Users Controller
  *
@@ -9,6 +9,14 @@ class UsersController extends AppController {
 
 function beforeFilter() {
     parent::beforeFilter();
+}
+
+public function beforeSave() {
+	
+
+       $this->data['User']['password'] = AuthComponent::password($this->data['User']['password']);
+        return true;
+
 }
 
 function initDB() {
@@ -38,15 +46,17 @@ function initDB() {
 
 
 function login() {
-    if ($this->Session->read('Auth.User')) {
-        $this->Session->setFlash('You are logged in!');
-        $this->redirect('/', null, false);
+   
+    if ($this->request->is('post')) {
+        if ($this->Auth->login()) {
+            $this->redirect($this->Auth->redirect());
+        } else {
+            $this->Session->setFlash('Your username or password was incorrect.');
+        }
     }
-    
-    $this->Session->setFlash('Good-Bye');
+   
+  
 }
-
-
 
 
 
@@ -92,10 +102,11 @@ function logout(){
  */
 	public function add() {
 		if ($this->request->is('post')) {
+			$this->request->data['User']['password'] = AuthComponent::password($this->data['User']['password']);
 			$this->User->create();
 			if ($this->User->save($this->request->data)) {
 				$this->Session->setFlash(__('The user has been saved'));
-				$this->redirect(array('action' => 'index'));
+				//$this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The user could not be saved. Please, try again.'));
 			}
