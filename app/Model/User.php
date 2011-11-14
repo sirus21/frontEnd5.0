@@ -37,7 +37,7 @@ class User extends AppModel {
 
 	public $validate = array(
 		'username' => array(
-			'notempty' => array(
+			'username_not_empty' => array(
 				'rule' => array('notempty'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
@@ -45,7 +45,15 @@ class User extends AppModel {
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
-		),
+		
+                        'username_unique' => array(
+                         
+                           'rule' => 'isUnique',
+                            
+                        ),
+                
+                
+                ),
 		'password' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
@@ -87,11 +95,15 @@ class User extends AppModel {
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
-		),
+		
+                
+                
+                
+                ),
                 
                        'email' => array(
 			'notempty' => array(
-				'rule' => array('notempty'),
+			'rule' => array('notempty'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,

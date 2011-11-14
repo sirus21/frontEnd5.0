@@ -1429,3 +1429,18 @@
 2011-11-11 18:22:47 Error: [MissingControllerException] Controller class UserController could not be found.
 #0 C:\wamp\www\frontEnd5.0\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2011-11-11 18:53:21 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'Goodapple' for key 'username'
+#0 C:\wamp\www\frontEnd5.0\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\frontEnd5.0\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('INSERT INTO `us...', Array)
+#2 C:\wamp\www\frontEnd5.0\lib\Cake\Model\Datasource\DboSource.php(967): DboSource->execute('INSERT INTO `us...')
+#3 C:\wamp\www\frontEnd5.0\lib\Cake\Model\Model.php(1629): DboSource->create(Object(User), Array, Array)
+#4 C:\wamp\www\frontEnd5.0\app\Controller\UsersController.php(114): Model->save(Array)
+#5 [internal function]: UsersController->register()
+#6 C:\wamp\www\frontEnd5.0\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 C:\wamp\www\frontEnd5.0\lib\Cake\Routing\Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\frontEnd5.0\lib\Cake\Routing\Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\frontEnd5.0\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2011-11-14 08:18:48 Error: [MissingControllerException] Controller class UserController could not be found.
+#0 C:\wamp\www\frontEnd5.0\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
