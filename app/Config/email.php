@@ -51,7 +51,7 @@ class EmailConfig {
 
 	public $smtp = array(
 		'transport' => 'Smtp',
-		'from' => "joeappleton@callcommission.com",
+		'from' => "info@callcommission.com",
 		'host' => 'ssl://smtp.sendgrid.net',
 		'port' => 465,
 		'timeout' => 30,

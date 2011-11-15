@@ -10,13 +10,28 @@ class UsersController extends AppController {
 
 function beforeFilter() {
     parent::beforeFilter();
-    
-    $email = new CakeEmail();
+     $this->Auth->allow('register');
+
+     
+     
+     
+     
+  /* $email = new CakeEmail();
     $email->config('smtp');
-    $email->to('joeappleton@goodapple.co.uk');
+    $email->to('joeappleton18@hotmail.com');
     $email->subject('About');
     $email->send('My message');
-    $this->Auth->allow('register');
+  */
+    
+     $email = new CakeEmail();
+     $email->config('smtp');
+     $email->template('sign_up')
+    ->emailFormat('html')
+    ->to('joeappleton@goodapple.co.uk')
+    ->send();
+    
+  
+   
     
   
 
@@ -29,6 +44,7 @@ public function beforeSave() {
 	
 
        $this->data['User']['password'] = AuthComponent::password($this->data['User']['password']);
+       
         return true;
 
 }
@@ -73,15 +89,11 @@ function login() {
 }
 
 
-
-
-
-function logout(){
-	 
+function logout()
+{
+    	 
 	 $this->Session->setFlash('Good-Bye');
 	 $this->redirect($this->Auth->logout());
-	
-	
 }
 
 
@@ -110,23 +122,31 @@ function logout(){
 	}
 
 /**
- * add method
+ * register 
  *
  * @return void
  */
 	public function register() {
 		if ($this->request->is('post')) {
-			$this->request->data['User']['password'] = AuthComponent::password($this->data['User']['password']);
+			     
 			$this->User->create();
-			if ($this->User->save($this->request->data)) {
+			
+			if(!empty( $this->request->data['User']['password']))
+				       $this->request->data['User']['password'] = AuthComponent::password($this->data['User']['password']);
+		    
+		        $this->request->data['User']['activation_code'] =  "dfhjdfhjdfdfdfdfdfdhj"; 
+		    if ($this->User->save($this->request->data)) {
+			
+			
 				$this->Session->setFlash(__('The user has been saved'));
 				$this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The user could not be saved. Please, try again.'));
 			}
 		}
-		$groups = $this->User->Group->find('list');
-		$this->set(compact('groups'));
+		 
+		 //$groups = $this->User->Group->find('list');
+		//$this->set(compact('groups'));
 	}
 
 /**

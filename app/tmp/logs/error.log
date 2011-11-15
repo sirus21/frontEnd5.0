@@ -1524,3 +1524,96 @@
 #7 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
 #8 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #9 {main}
+2011-11-15 12:36:08 Error: [MissingControllerException] Controller class UserController could not be found.
+#0 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-15 17:04:38 Error: [MissingViewException] View file "/home/wwwstage/public_html/app/View/Emails/html/sign_up.ctp" is missing.
+#0 /home/wwwstage/public_html/lib/Cake/View/View.php(363): View->_getViewFileName('sign_up')
+#1 /home/wwwstage/public_html/lib/Cake/Network/Email/CakeEmail.php(1380): View->render('sign_up', 'default')
+#2 /home/wwwstage/public_html/lib/Cake/Network/Email/CakeEmail.php(954): CakeEmail->_render(Array)
+#3 /home/wwwstage/public_html/app/Controller/UsersController.php(31): CakeEmail->send()
+#4 /home/wwwstage/public_html/lib/Cake/Controller/Controller.php(605): UsersController->beforeFilter()
+#5 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(104): Controller->startupProcess()
+#6 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#7 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2011-11-15 17:05:09 Error: [MissingViewException] View file "/home/wwwstage/public_html/app/View/Emails/html/sign_up.ctp" is missing.
+#0 /home/wwwstage/public_html/lib/Cake/View/View.php(363): View->_getViewFileName('sign_up')
+#1 /home/wwwstage/public_html/lib/Cake/Network/Email/CakeEmail.php(1380): View->render('sign_up', 'default')
+#2 /home/wwwstage/public_html/lib/Cake/Network/Email/CakeEmail.php(954): CakeEmail->_render(Array)
+#3 /home/wwwstage/public_html/app/Controller/UsersController.php(31): CakeEmail->send()
+#4 /home/wwwstage/public_html/lib/Cake/Controller/Controller.php(605): UsersController->beforeFilter()
+#5 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(104): Controller->startupProcess()
+#6 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#7 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2011-11-15 17:05:24 Error: [MissingViewException] View file "/home/wwwstage/public_html/app/View/Emails/html/sign_up.ctp" is missing.
+#0 /home/wwwstage/public_html/lib/Cake/View/View.php(363): View->_getViewFileName('sign_up')
+#1 /home/wwwstage/public_html/lib/Cake/Network/Email/CakeEmail.php(1380): View->render('sign_up', 'default')
+#2 /home/wwwstage/public_html/lib/Cake/Network/Email/CakeEmail.php(954): CakeEmail->_render(Array)
+#3 /home/wwwstage/public_html/app/Controller/UsersController.php(31): CakeEmail->send()
+#4 /home/wwwstage/public_html/lib/Cake/Controller/Controller.php(605): UsersController->beforeFilter()
+#5 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(104): Controller->startupProcess()
+#6 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#7 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2011-11-15 17:05:36 Error: [MissingViewException] View file "/home/wwwstage/public_html/app/View/Emails/html/sign_up.ctp" is missing.
+#0 /home/wwwstage/public_html/lib/Cake/View/View.php(363): View->_getViewFileName('sign_up')
+#1 /home/wwwstage/public_html/lib/Cake/Network/Email/CakeEmail.php(1380): View->render('sign_up', 'default')
+#2 /home/wwwstage/public_html/lib/Cake/Network/Email/CakeEmail.php(954): CakeEmail->_render(Array)
+#3 /home/wwwstage/public_html/app/Controller/UsersController.php(31): CakeEmail->send()
+#4 /home/wwwstage/public_html/lib/Cake/Controller/Controller.php(605): UsersController->beforeFilter()
+#5 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(104): Controller->startupProcess()
+#6 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#7 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2011-11-15 17:05:43 Error: [MissingViewException] View file "/home/wwwstage/public_html/app/View/Emails/html/sign_up.ctp" is missing.
+#0 /home/wwwstage/public_html/lib/Cake/View/View.php(363): View->_getViewFileName('sign_up')
+#1 /home/wwwstage/public_html/lib/Cake/Network/Email/CakeEmail.php(1380): View->render('sign_up', 'default')
+#2 /home/wwwstage/public_html/lib/Cake/Network/Email/CakeEmail.php(954): CakeEmail->_render(Array)
+#3 /home/wwwstage/public_html/app/Controller/UsersController.php(31): CakeEmail->send()
+#4 /home/wwwstage/public_html/lib/Cake/Controller/Controller.php(605): UsersController->beforeFilter()
+#5 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(104): Controller->startupProcess()
+#6 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#7 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2011-11-15 17:05:55 Error: [MissingViewException] View file "/home/wwwstage/public_html/app/View/Emails/html/sign_up.ctp" is missing.
+#0 /home/wwwstage/public_html/lib/Cake/View/View.php(363): View->_getViewFileName('sign_up')
+#1 /home/wwwstage/public_html/lib/Cake/Network/Email/CakeEmail.php(1380): View->render('sign_up', 'default')
+#2 /home/wwwstage/public_html/lib/Cake/Network/Email/CakeEmail.php(954): CakeEmail->_render(Array)
+#3 /home/wwwstage/public_html/app/Controller/UsersController.php(31): CakeEmail->send()
+#4 /home/wwwstage/public_html/lib/Cake/Controller/Controller.php(605): UsersController->beforeFilter()
+#5 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(104): Controller->startupProcess()
+#6 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#7 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2011-11-15 17:06:20 Error: [MissingViewException] View file "/home/wwwstage/public_html/app/View/Emails/html/sign_up.ctp" is missing.
+#0 /home/wwwstage/public_html/lib/Cake/View/View.php(363): View->_getViewFileName('sign_up')
+#1 /home/wwwstage/public_html/lib/Cake/Network/Email/CakeEmail.php(1380): View->render('sign_up', 'default')
+#2 /home/wwwstage/public_html/lib/Cake/Network/Email/CakeEmail.php(954): CakeEmail->_render(Array)
+#3 /home/wwwstage/public_html/app/Controller/UsersController.php(31): CakeEmail->send()
+#4 /home/wwwstage/public_html/lib/Cake/Controller/Controller.php(605): UsersController->beforeFilter()
+#5 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(104): Controller->startupProcess()
+#6 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#7 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2011-11-15 17:06:21 Error: [MissingViewException] View file "/home/wwwstage/public_html/app/View/Emails/html/sign_up.ctp" is missing.
+#0 /home/wwwstage/public_html/lib/Cake/View/View.php(363): View->_getViewFileName('sign_up')
+#1 /home/wwwstage/public_html/lib/Cake/Network/Email/CakeEmail.php(1380): View->render('sign_up', 'default')
+#2 /home/wwwstage/public_html/lib/Cake/Network/Email/CakeEmail.php(954): CakeEmail->_render(Array)
+#3 /home/wwwstage/public_html/app/Controller/UsersController.php(31): CakeEmail->send()
+#4 /home/wwwstage/public_html/lib/Cake/Controller/Controller.php(605): UsersController->beforeFilter()
+#5 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(104): Controller->startupProcess()
+#6 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#7 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2011-11-15 17:07:58 Error: [MissingViewException] View file "/home/wwwstage/public_html/app/View/Emails/html/sign_up.ctp" is missing.
+#0 /home/wwwstage/public_html/lib/Cake/View/View.php(363): View->_getViewFileName('sign_up')
+#1 /home/wwwstage/public_html/lib/Cake/Network/Email/CakeEmail.php(1380): View->render('sign_up', 'default')
+#2 /home/wwwstage/public_html/lib/Cake/Network/Email/CakeEmail.php(954): CakeEmail->_render(Array)
+#3 /home/wwwstage/public_html/app/Controller/UsersController.php(31): CakeEmail->send()
+#4 /home/wwwstage/public_html/lib/Cake/Controller/Controller.php(605): UsersController->beforeFilter()
+#5 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(104): Controller->startupProcess()
+#6 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#7 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
