@@ -51,12 +51,12 @@ class EmailConfig {
 
 	public $smtp = array(
 		'transport' => 'Smtp',
-		'from' => array('site@localhost' => 'My Site'),
-		'host' => 'localhost',
-		'port' => 25,
+		'from' => "joeappleton@callcommission.com",
+		'host' => 'ssl://smtp.sendgrid.net',
+		'port' => 465,
 		'timeout' => 30,
-		'username' => 'user',
-		'password' => 'secret',
+		'username' => 'goodapple',
+		'password' => 'goodapple',
 		'client' => null,
 		'log' => false
 		//'charset' => 'utf-8',

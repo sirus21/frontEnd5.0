@@ -1447,3 +1447,80 @@
 2011-11-14 19:35:22 Error: [MissingControllerException] Controller class UserController could not be found.
 #0 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2011-11-15 10:51:50 Error: [SocketException] Unable to connect to SMTP server.
+#0 /home/wwwstage/public_html/lib/Cake/Network/Email/SmtpTransport.php(59): SmtpTransport->_connect()
+#1 /home/wwwstage/public_html/lib/Cake/Network/Email/CakeEmail.php(966): SmtpTransport->send(Object(CakeEmail))
+#2 /home/wwwstage/public_html/app/Controller/UsersController.php(18): CakeEmail->send('My message')
+#3 /home/wwwstage/public_html/lib/Cake/Controller/Controller.php(605): UsersController->beforeFilter()
+#4 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(104): Controller->startupProcess()
+#5 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#6 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2011-11-15 10:52:33 Error: [SocketException] Unable to connect to SMTP server.
+#0 /home/wwwstage/public_html/lib/Cake/Network/Email/SmtpTransport.php(59): SmtpTransport->_connect()
+#1 /home/wwwstage/public_html/lib/Cake/Network/Email/CakeEmail.php(966): SmtpTransport->send(Object(CakeEmail))
+#2 /home/wwwstage/public_html/app/Controller/UsersController.php(18): CakeEmail->send('My message')
+#3 /home/wwwstage/public_html/lib/Cake/Controller/Controller.php(605): UsersController->beforeFilter()
+#4 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(104): Controller->startupProcess()
+#5 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#6 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2011-11-15 10:52:36 Error: [SocketException] Unable to connect to SMTP server.
+#0 /home/wwwstage/public_html/lib/Cake/Network/Email/SmtpTransport.php(59): SmtpTransport->_connect()
+#1 /home/wwwstage/public_html/lib/Cake/Network/Email/CakeEmail.php(966): SmtpTransport->send(Object(CakeEmail))
+#2 /home/wwwstage/public_html/app/Controller/UsersController.php(18): CakeEmail->send('My message')
+#3 /home/wwwstage/public_html/lib/Cake/Controller/Controller.php(605): UsersController->beforeFilter()
+#4 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(104): Controller->startupProcess()
+#5 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#6 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2011-11-15 10:54:35 Error: [SocketException] SMTP Error: 530 5.7.0 Must issue a STARTTLS command first. en13sm28367724wbb.22
+#0 /home/wwwstage/public_html/lib/Cake/Network/Email/SmtpTransport.php(126): SmtpTransport->_smtpSend('AUTH LOGIN', '334|503')
+#1 /home/wwwstage/public_html/lib/Cake/Network/Email/SmtpTransport.php(60): SmtpTransport->_auth()
+#2 /home/wwwstage/public_html/lib/Cake/Network/Email/CakeEmail.php(966): SmtpTransport->send(Object(CakeEmail))
+#3 /home/wwwstage/public_html/app/Controller/UsersController.php(18): CakeEmail->send('My message')
+#4 /home/wwwstage/public_html/lib/Cake/Controller/Controller.php(605): UsersController->beforeFilter()
+#5 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(104): Controller->startupProcess()
+#6 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#7 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2011-11-15 10:55:12 Error: [SocketException] SMTP Error: 530 5.7.0 Must issue a STARTTLS command first. eu16sm28396690wbb.7
+#0 /home/wwwstage/public_html/lib/Cake/Network/Email/SmtpTransport.php(126): SmtpTransport->_smtpSend('AUTH LOGIN', '334|503')
+#1 /home/wwwstage/public_html/lib/Cake/Network/Email/SmtpTransport.php(60): SmtpTransport->_auth()
+#2 /home/wwwstage/public_html/lib/Cake/Network/Email/CakeEmail.php(966): SmtpTransport->send(Object(CakeEmail))
+#3 /home/wwwstage/public_html/app/Controller/UsersController.php(18): CakeEmail->send('My message')
+#4 /home/wwwstage/public_html/lib/Cake/Controller/Controller.php(605): UsersController->beforeFilter()
+#5 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(104): Controller->startupProcess()
+#6 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#7 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2011-11-15 10:55:14 Error: [SocketException] SMTP Error: 530 5.7.0 Must issue a STARTTLS command first. en7sm14087367wib.0
+#0 /home/wwwstage/public_html/lib/Cake/Network/Email/SmtpTransport.php(126): SmtpTransport->_smtpSend('AUTH LOGIN', '334|503')
+#1 /home/wwwstage/public_html/lib/Cake/Network/Email/SmtpTransport.php(60): SmtpTransport->_auth()
+#2 /home/wwwstage/public_html/lib/Cake/Network/Email/CakeEmail.php(966): SmtpTransport->send(Object(CakeEmail))
+#3 /home/wwwstage/public_html/app/Controller/UsersController.php(18): CakeEmail->send('My message')
+#4 /home/wwwstage/public_html/lib/Cake/Controller/Controller.php(605): UsersController->beforeFilter()
+#5 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(104): Controller->startupProcess()
+#6 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#7 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2011-11-15 11:00:11 Error: [SocketException] Unable to connect to SMTP server.
+#0 /home/wwwstage/public_html/lib/Cake/Network/Email/SmtpTransport.php(59): SmtpTransport->_connect()
+#1 /home/wwwstage/public_html/lib/Cake/Network/Email/CakeEmail.php(966): SmtpTransport->send(Object(CakeEmail))
+#2 /home/wwwstage/public_html/app/Controller/UsersController.php(18): CakeEmail->send('My message')
+#3 /home/wwwstage/public_html/lib/Cake/Controller/Controller.php(605): UsersController->beforeFilter()
+#4 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(104): Controller->startupProcess()
+#5 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#6 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2011-11-15 11:04:25 Error: [SocketException] Invalid email: "joeappleton@callcommission.com/"
+#0 /home/wwwstage/public_html/lib/Cake/Network/Email/CakeEmail.php(506): CakeEmail->_setEmail('_from', 'joeappleton@cal...', NULL)
+#1 /home/wwwstage/public_html/lib/Cake/Network/Email/CakeEmail.php(322): CakeEmail->_setEmailSingle('_from', 'joeappleton@cal...', NULL, 'From requires o...')
+#2 /home/wwwstage/public_html/lib/Cake/Network/Email/CakeEmail.php(1046): CakeEmail->from('joeappleton@cal...')
+#3 /home/wwwstage/public_html/lib/Cake/Network/Email/CakeEmail.php(915): CakeEmail->_applyConfig('smtp')
+#4 /home/wwwstage/public_html/app/Controller/UsersController.php(15): CakeEmail->config('smtp')
+#5 /home/wwwstage/public_html/lib/Cake/Controller/Controller.php(605): UsersController->beforeFilter()
+#6 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(104): Controller->startupProcess()
+#7 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}

@@ -1,5 +1,6 @@
 <?php
 App::uses('AppController', 'Controller','AuthComponent');
+App::uses('CakeEmail', 'Network/Email');
 /**
  * Users Controller
  *
@@ -9,6 +10,12 @@ class UsersController extends AppController {
 
 function beforeFilter() {
     parent::beforeFilter();
+    
+    $email = new CakeEmail();
+    $email->config('smtp');
+    $email->to('joeappleton@goodapple.co.uk');
+    $email->subject('About');
+    $email->send('My message');
     $this->Auth->allow('register');
     
   
