@@ -16,6 +16,26 @@ class User extends AppModel {
    // public $belongsTo = array('Group');
     public $actsAs = array('Acl' => array('type' => 'requester'));
     
+      
+      
+      /**
+	 * creates an activation hash for the current user.
+	 *
+	 *	@param Void
+	 *	@return String activation hash.
+	*/
+	
+	function getActivationHash()
+	{
+		if (!isset($this->id)) {
+			return false;
+		}
+		return substr(Security::hash(Configure::read('Security.salt') . $this->field('created') . date('Ymd')), 0, 8);
+	}
+
+      
+      
+      
       function parentNode() {
         if (!$this->id && empty($this->data)) {
             return null;

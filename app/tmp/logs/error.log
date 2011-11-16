@@ -1627,3 +1627,30 @@
 #6 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
 #7 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #8 {main}
+2011-11-16 11:11:23 Error: [MissingActionException] Action UsersController::add() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-11-16 11:25:51 Error: [MissingActionException] Action UsersController::add() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-11-16 11:58:39 Error: [MissingActionException] Action UsersController::lregister() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-11-16 12:53:16 Error: [MissingActionException] Action UsersController::activate() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-11-16 12:54:37 Error: [MissingViewException] View file "/home/wwwstage/public_html/app/View/Users/activate.ctp" is missing.
+#0 /home/wwwstage/public_html/lib/Cake/View/View.php(363): View->_getViewFileName(NULL)
+#1 /home/wwwstage/public_html/lib/Cake/Controller/Controller.php(899): View->render(NULL, NULL)
+#2 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(114): Controller->render()
+#3 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

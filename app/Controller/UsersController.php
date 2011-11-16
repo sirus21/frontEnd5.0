@@ -11,6 +11,10 @@ class UsersController extends AppController {
 function beforeFilter() {
     parent::beforeFilter();
       $this->Auth->allow('register');
+      $this->Auth->allow('activate');
+     //print_r($this->  __sendEmail(array('name'=>'test email','id'=>"7"),'sign_up',"joeappleton@goodapple.co.uk"));
+      
+      
 }
 
 /**
@@ -25,21 +29,24 @@ function beforeFilter() {
  */
  function __sendEmail($templateVars,$emailTemplate,$to){
      
-     
-     
+    
+    /* set activation code for user */  
+    
+     print_r($templateVars);
+     $templateVars['code'] = 'http://' . env('SERVER_NAME') . '/users/activate/' . $templateVars['id']. '/' . $this->User->getActivationHash();
+    
+      
      $email = new CakeEmail();
-     $email->config('smtp');
+     $email->config('gmailSmtp');
      $email->template('sign_up');
      $email->emailFormat('html'); 
      $email->to('joeappleton@goodapple.co.uk'); 
      $email->viewVars($templateVars);
-     
-     return $email->send();
+      
+      return $email->send();
     
  }
-
-
-
+ 	
 
 
 
@@ -138,14 +145,13 @@ function logout()
 			
 			if(!empty( $this->request->data['User']['password']))
 				       $this->request->data['User']['password'] = AuthComponent::password($this->data['User']['password']);
-		    
-		        $this->request->data['User']['activation_code'] =  "dfhjdfhjdfdfdfdfdfdhj";
-			$this->request->data['User']['username'] = $this->request->data['User']['email'];    
+				       $this->request->data['User']['activation_code'] =  "dfhjdfhjdfdfdfdfdfdhj";
+				       $this->request->data['User']['username'] = $this->request->data['User']['email'];    
 		    if ($this->User->save($this->request->data)) {
 			
 			        
 				$this->Session->setFlash(__('The user has been saved'));
-				$this->__sendEmail(array('name'=>$this->request->data['User']['full_name'],'code'=>$this->request->data['User']['activation_code']),'sign_up'
+				$this->__sendEmail(array('name'=>$this->request->data['User']['full_name'],'id'=>$this->User->getLastInsertID()),'sign_up'
 						                       ,'joeappleton18@goodapple.co.uk'); 
 				
 				$this->redirect(array('action' => 'index'));
@@ -204,4 +210,30 @@ function logout()
 		$this->Session->setFlash(__('User was not deleted'));
 		$this->redirect(array('action' => 'index'));
 	}
+	
+	
+	
+	/**
+ * Activates a user account from an incoming link
+ *
+ *  @param Int $user_id User.id to activate
+ *  @param String $in_hash Incoming Activation Hash from the email
+*/
+public function activate($user_id = null, $in_hash = null) {
+	$this->User->id = $user_id;
+	if ($this->User->exists() && ($in_hash == $this->User->getActivationHash()))
+	{
+		// Update the active flag in the database
+		$this->User->saveField('active', 1);
+ 
+		// Let the user know they can now log in!
+		$this->Session->setFlash('Your account has been activated, please log in below');
+		$this->redirect('login');
+	}
+ 
+	// Activation failed, render '/views/user/activate.ctp' which should tell the user.
+}
+	
+	
+	
 }
