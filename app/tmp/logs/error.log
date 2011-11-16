@@ -1654,3 +1654,15 @@
 #3 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
 #4 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2011-11-16 13:43:07 Error: [MissingControllerException] Controller class FrontEnd5.0Controller could not be found.
+#0 C:\wamp\www\frontend5.0\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-16 13:43:12 Error: [MissingControllerException] Controller class FrontEnd5.0Controller could not be found.
+#0 C:\wamp\www\frontend5.0\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-16 13:43:16 Error: [MissingControllerException] Controller class FrontEnd5.0Controller could not be found.
+#0 C:\wamp\www\frontend5.0\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-16 13:46:22 Error: [MissingControllerException] Controller class Bootstrap.phpController could not be found.
+#0 C:\wamp\www\frontend5.0\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

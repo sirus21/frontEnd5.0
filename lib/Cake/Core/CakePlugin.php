@@ -92,7 +92,10 @@ class CakePlugin {
 			self::$_plugins[$plugin] = $config;
 		}
 
+		
+		
 		if (empty(self::$_plugins[$plugin]['path'])) {
+			
 			throw new MissingPluginException(array('plugin' => $plugin));
 		}
 		if (!empty(self::$_plugins[$plugin]['bootstrap'])) {
