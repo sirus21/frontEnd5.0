@@ -145,14 +145,12 @@ function logout()
 			
 			if(!empty( $this->request->data['User']['password']))
 				       $this->request->data['User']['password'] = AuthComponent::password($this->data['User']['password']);
-				       $this->request->data['User']['activation_code'] =  "dfhjdfhjdfdfdfdfdfdhj";
 				       $this->request->data['User']['username'] = $this->request->data['User']['email'];    
 		    if ($this->User->save($this->request->data)) {
 			
 			        
 				$this->Session->setFlash(__('The user has been saved'));
-				$this->__sendEmail(array('name'=>$this->request->data['User']['full_name'],'id'=>$this->User->getLastInsertID()),'sign_up'
-						                       ,'joeappleton18@goodapple.co.uk'); 
+				//$this->__sendEmail(array('name'=>$this->request->data['User']['full_name'],'id'=>$this->User->getLastInsertID()),'sign_up' ,'joeappleton18@goodapple.co.uk'); 
 				
 				$this->redirect(array('action' => 'index'));
 			} else {

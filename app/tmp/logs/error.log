@@ -1666,3 +1666,45 @@
 2011-11-16 13:46:22 Error: [MissingControllerException] Controller class Bootstrap.phpController could not be found.
 #0 C:\wamp\www\frontend5.0\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2011-11-16 18:25:30 Error: [MissingControllerException] Controller class FrontEnd5.0Controller could not be found.
+#0 C:\wamp\www\frontend5.0\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-16 18:25:37 Error: [MissingControllerException] Controller class FrontEnd5.0Controller could not be found.
+#0 C:\wamp\www\frontend5.0\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-16 18:25:37 Error: [MissingControllerException] Controller class FrontEnd5.0Controller could not be found.
+#0 C:\wamp\www\frontend5.0\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-16 18:25:47 Error: [MissingControllerException] Controller class FrontEnd5.0Controller could not be found.
+#0 C:\wamp\www\frontend5.0\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-16 18:25:51 Error: [MissingControllerException] Controller class FrontEnd5.0Controller could not be found.
+#0 C:\wamp\www\frontend5.0\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-16 18:25:55 Error: [MissingControllerException] Controller class FrontEnd5.0Controller could not be found.
+#0 C:\wamp\www\frontend5.0\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-16 18:27:29 Error: [SocketException] Unable to find the socket transport "ssl" - did you forget to enable it when you configured PHP?
+#0 C:\wamp\www\frontend5.0\lib\Cake\Network\Email\SmtpTransport.php(94): CakeSocket->connect()
+#1 C:\wamp\www\frontend5.0\lib\Cake\Network\Email\SmtpTransport.php(59): SmtpTransport->_connect()
+#2 C:\wamp\www\frontend5.0\lib\Cake\Network\Email\CakeEmail.php(966): SmtpTransport->send(Object(CakeEmail))
+#3 C:\wamp\www\frontend5.0\app\Controller\UsersController.php(46): CakeEmail->send()
+#4 C:\wamp\www\frontend5.0\app\Controller\UsersController.php(155): UsersController->__sendEmail(Array, 'sign_up', 'joeappleton18@g...')
+#5 [internal function]: UsersController->register()
+#6 C:\wamp\www\frontend5.0\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 C:\wamp\www\frontend5.0\lib\Cake\Routing\Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\frontend5.0\lib\Cake\Routing\Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\frontend5.0\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2011-11-16 18:28:27 Error: [SocketException] Unable to find the socket transport "ssl" - did you forget to enable it when you configured PHP?
+#0 C:\wamp\www\frontend5.0\lib\Cake\Network\Email\SmtpTransport.php(94): CakeSocket->connect()
+#1 C:\wamp\www\frontend5.0\lib\Cake\Network\Email\SmtpTransport.php(59): SmtpTransport->_connect()
+#2 C:\wamp\www\frontend5.0\lib\Cake\Network\Email\CakeEmail.php(966): SmtpTransport->send(Object(CakeEmail))
+#3 C:\wamp\www\frontend5.0\app\Controller\UsersController.php(46): CakeEmail->send()
+#4 C:\wamp\www\frontend5.0\app\Controller\UsersController.php(155): UsersController->__sendEmail(Array, 'sign_up', 'joeappleton18@g...')
+#5 [internal function]: UsersController->register()
+#6 C:\wamp\www\frontend5.0\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 C:\wamp\www\frontend5.0\lib\Cake\Routing\Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\frontend5.0\lib\Cake\Routing\Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\frontend5.0\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}

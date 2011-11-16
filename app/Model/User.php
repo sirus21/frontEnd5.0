@@ -12,10 +12,19 @@ class User extends AppModel {
  *
  * @var array
  */
-    public $name = 'User';
-   // public $belongsTo = array('Group');
-    public $actsAs = array('Acl' => array('type' => 'requester'));
+      public $name = 'User';
+      // public $belongsTo = array('Group');
+      public $actsAs = array('Acl' => array('type' => 'requester'));
     
+     
+     
+     
+      public function beforeSave() {
+        $this->data['User']['password'] = AuthComponent::password($this->data['User']['password']);
+        return true;
+      }
+
+        
       
       
       /**
