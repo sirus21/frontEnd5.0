@@ -1617,3 +1617,13 @@
 #6 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
 #7 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #8 {main}
+2011-11-16 09:23:12 Error: [SocketException] php_network_getaddresses: getaddrinfo failed: Name or service not known
+#0 /home/wwwstage/public_html/lib/Cake/Network/Email/SmtpTransport.php(94): CakeSocket->connect()
+#1 /home/wwwstage/public_html/lib/Cake/Network/Email/SmtpTransport.php(59): SmtpTransport->_connect()
+#2 /home/wwwstage/public_html/lib/Cake/Network/Email/CakeEmail.php(966): SmtpTransport->send(Object(CakeEmail))
+#3 /home/wwwstage/public_html/app/Controller/UsersController.php(32): CakeEmail->send()
+#4 /home/wwwstage/public_html/lib/Cake/Controller/Controller.php(605): UsersController->beforeFilter()
+#5 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(104): Controller->startupProcess()
+#6 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#7 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}

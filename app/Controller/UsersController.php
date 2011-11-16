@@ -23,19 +23,50 @@ function beforeFilter() {
     $email->send('My message');
   */
     
+    
      $email = new CakeEmail();
      $email->config('smtp');
-     $email->template('sign_up')
-    ->emailFormat('html')
-    ->to('joeappleton@goodapple.co.uk')
-    ->send();
-    
+     $email->template('sign_up');
+     $email->emailFormat('html'); 
+     $email->to('joeappleton@goodapple.co.uk'); 
+     $email->viewVars(array('name' => 12345));
+     $email->send();
+
   
    
     
   
 
 }
+
+/**
+ * sends out a email using a template 
+ *
+ * @param  array $templateVars   varibles to be set in the template
+ * @param string $emailTemplate the email template to be used for the email
+ * @param srting $to who we are sending the email to
+ *
+ * @return bool true if the email has sent 
+ *
+ */
+ function __sendEmail($templateVars,$emailTemplate,$to){
+     
+     
+     
+     $email = new CakeEmail();
+     $email->config('smtp');
+     $email->template('sign_up');
+     $email->emailFormat('html'); 
+     $email->to('joeappleton@goodapple.co.uk'); 
+     $email->viewVars($templateVars);
+     
+     return $email->send();
+    
+ }
+
+
+
+
 
 
 
@@ -134,10 +165,11 @@ function logout()
 			if(!empty( $this->request->data['User']['password']))
 				       $this->request->data['User']['password'] = AuthComponent::password($this->data['User']['password']);
 		    
-		        $this->request->data['User']['activation_code'] =  "dfhjdfhjdfdfdfdfdfdhj"; 
+		        $this->request->data['User']['activation_code'] =  "dfhjdfhjdfdfdfdfdfdhj";
+			$this->request->data['User']['username'] = $this->request->data['User']['email'];    
 		    if ($this->User->save($this->request->data)) {
 			
-			
+			        
 				$this->Session->setFlash(__('The user has been saved'));
 				$this->redirect(array('action' => 'index'));
 			} else {

@@ -1,4 +1,4 @@
-<p><?php// $User['User']['username'] ?> ,</p>
+<p><?php echo $name ?> ,</p>
 
 <p>Thanks for registering with CallCommission! To activate your new account, please click on the following link:</p>
 
