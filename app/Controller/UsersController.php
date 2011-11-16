@@ -10,33 +10,7 @@ class UsersController extends AppController {
 
 function beforeFilter() {
     parent::beforeFilter();
-     $this->Auth->allow('register');
-
-     
-     
-     
-     
-  /* $email = new CakeEmail();
-    $email->config('smtp');
-    $email->to('joeappleton18@hotmail.com');
-    $email->subject('About');
-    $email->send('My message');
-  */
-    
-    
-     $email = new CakeEmail();
-     $email->config('smtp');
-     $email->template('sign_up');
-     $email->emailFormat('html'); 
-     $email->to('joeappleton@goodapple.co.uk'); 
-     $email->viewVars(array('name' => 12345));
-     $email->send();
-
-  
-   
-    
-  
-
+      $this->Auth->allow('register');
 }
 
 /**
@@ -171,6 +145,9 @@ function logout()
 			
 			        
 				$this->Session->setFlash(__('The user has been saved'));
+				$this->__sendEmail(array('name'=>$this->request->data['User']['full_name'],'code'=>$this->request->data['User']['activation_code']),'sign_up'
+						                       ,'joeappleton18@goodapple.co.uk'); 
+				
 				$this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The user could not be saved. Please, try again.'));
