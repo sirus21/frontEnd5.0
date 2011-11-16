@@ -145,8 +145,8 @@ function logout()
 			}
 		}
 		 
-		 //$groups = $this->User->Group->find('list');
-		//$this->set(compact('groups'));
+		 $groups = $this->User->Group->find('list');
+		 $this->set(compact('groups'));
 	}
 
 /**
