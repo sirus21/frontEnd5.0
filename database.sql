@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Nov 14, 2011 at 04:43 PM
+-- Generation Time: Nov 17, 2011 at 06:06 PM
 -- Server version: 5.1.36
 -- PHP Version: 5.3.0
 
@@ -28,14 +28,14 @@ CREATE TABLE IF NOT EXISTS `acos` (
   `lft` int(10) DEFAULT NULL,
   `rght` int(10) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=32 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=36 ;
 
 --
 -- Dumping data for table `acos`
 --
 
 INSERT INTO `acos` (`id`, `parent_id`, `model`, `foreign_key`, `alias`, `lft`, `rght`) VALUES
-(1, NULL, NULL, NULL, 'controllers', 1, 60),
+(1, NULL, NULL, NULL, 'controllers', 1, 64),
 (2, 1, NULL, NULL, 'Groups', 2, 13),
 (3, 2, NULL, NULL, 'index', 3, 4),
 (4, 2, NULL, NULL, 'view', 5, 6),
@@ -49,22 +49,24 @@ INSERT INTO `acos` (`id`, `parent_id`, `model`, `foreign_key`, `alias`, `lft`, `
 (12, 8, NULL, NULL, 'edit', 21, 22),
 (13, 8, NULL, NULL, 'delete', 23, 24),
 (14, 8, NULL, NULL, 'build_acl', 25, 26),
-(15, 1, NULL, NULL, 'Users', 28, 45),
+(15, 1, NULL, NULL, 'Users', 28, 49),
 (16, 15, NULL, NULL, 'index', 29, 30),
 (17, 15, NULL, NULL, 'view', 31, 32),
-(18, 15, NULL, NULL, 'add', 33, 34),
-(19, 15, NULL, NULL, 'edit', 35, 36),
-(20, 15, NULL, NULL, 'delete', 37, 38),
-(21, 1, NULL, NULL, 'Widgets', 46, 57),
-(22, 21, NULL, NULL, 'index', 47, 48),
-(23, 21, NULL, NULL, 'view', 49, 50),
-(24, 21, NULL, NULL, 'add', 51, 52),
-(25, 21, NULL, NULL, 'edit', 53, 54),
-(26, 21, NULL, NULL, 'delete', 55, 56),
-(31, 1, NULL, NULL, 'AclExtras', 58, 59),
-(28, 15, NULL, NULL, 'initDB', 39, 40),
-(29, 15, NULL, NULL, 'login', 41, 42),
-(30, 15, NULL, NULL, 'logout', 43, 44);
+(19, 15, NULL, NULL, 'edit', 33, 34),
+(20, 15, NULL, NULL, 'delete', 35, 36),
+(21, 1, NULL, NULL, 'Widgets', 50, 61),
+(22, 21, NULL, NULL, 'index', 51, 52),
+(23, 21, NULL, NULL, 'view', 53, 54),
+(24, 21, NULL, NULL, 'add', 55, 56),
+(25, 21, NULL, NULL, 'edit', 57, 58),
+(26, 21, NULL, NULL, 'delete', 59, 60),
+(35, 1, NULL, NULL, 'AclExtras', 62, 63),
+(28, 15, NULL, NULL, 'initDB', 37, 38),
+(29, 15, NULL, NULL, 'login', 39, 40),
+(30, 15, NULL, NULL, 'logout', 41, 42),
+(32, 15, NULL, NULL, 'beforeSave', 43, 44),
+(33, 15, NULL, NULL, 'register', 45, 46),
+(34, 15, NULL, NULL, 'activate', 47, 48);
 
 -- --------------------------------------------------------
 
@@ -81,23 +83,26 @@ CREATE TABLE IF NOT EXISTS `aros` (
   `lft` int(10) DEFAULT NULL,
   `rght` int(10) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=15 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=25 ;
 
 --
 -- Dumping data for table `aros`
 --
 
 INSERT INTO `aros` (`id`, `parent_id`, `model`, `foreign_key`, `alias`, `lft`, `rght`) VALUES
-(1, NULL, 'Group', 1, NULL, 1, 14),
-(2, NULL, 'Group', 2, NULL, 15, 18),
-(3, NULL, 'Group', 3, NULL, 19, 20),
-(11, 1, 'User', 8, NULL, 8, 9),
-(5, 1, 'User', 1, NULL, 2, 3),
-(9, 1, 'User', 6, NULL, 4, 5),
-(10, 1, 'User', 7, NULL, 6, 7),
-(12, 1, 'User', 9, NULL, 10, 11),
-(13, 1, 'User', 10, NULL, 12, 13),
-(14, 2, 'User', 11, NULL, 16, 17);
+(1, NULL, 'Group', 1, NULL, 1, 4),
+(2, NULL, 'Group', 2, NULL, 5, 24),
+(3, NULL, 'Group', 3, NULL, 25, 26),
+(19, 2, 'User', 16, NULL, 16, 17),
+(21, 2, 'User', 18, NULL, 20, 21),
+(20, 2, 'User', 17, NULL, 18, 19),
+(18, 2, 'User', 15, NULL, 14, 15),
+(17, 2, 'User', 14, NULL, 12, 13),
+(14, 2, 'User', 11, NULL, 6, 7),
+(15, 2, 'User', 12, NULL, 8, 9),
+(16, 2, 'User', 13, NULL, 10, 11),
+(22, 2, 'User', 19, NULL, 22, 23),
+(24, 1, 'User', 21, NULL, 2, 3);
 
 -- --------------------------------------------------------
 
@@ -169,14 +174,14 @@ CREATE TABLE IF NOT EXISTS `posts` (
   `created` datetime DEFAULT NULL,
   `modified` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
 -- Dumping data for table `posts`
 --
 
 INSERT INTO `posts` (`id`, `user_id`, `title`, `body`, `created`, `modified`) VALUES
-(1, 1, 'fvgfgfgfggf', 'gfgfgfgfgfgfgfgfgfgf', '2011-11-11 10:40:52', '2011-11-11 10:40:52');
+(3, 11, 'fdfdfdf', 'dfdfdf', '2011-11-17 16:31:09', '2011-11-17 16:31:09');
 
 -- --------------------------------------------------------
 
@@ -191,25 +196,31 @@ CREATE TABLE IF NOT EXISTS `users` (
   `group_id` int(11) NOT NULL DEFAULT '2',
   `created` datetime DEFAULT NULL,
   `modified` datetime DEFAULT NULL,
-  `full_name` varchar(40) NOT NULL,
+  `first_name` varchar(40) NOT NULL,
+  `last_name` varchar(30) NOT NULL,
   `contact_number` varchar(15) NOT NULL,
+  `company_name` varchar(250) NOT NULL,
   `email` varchar(250) NOT NULL,
+  `active` tinyint(4) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   UNIQUE KEY `username` (`username`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=22 ;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `username`, `password`, `group_id`, `created`, `modified`, `full_name`, `contact_number`, `email`) VALUES
-(1, 'Goodapple', 'Password1', 1, '2011-11-10 15:26:26', '2011-11-11 12:49:54', '', '', ''),
-(6, 'Punter', 'Password1', 1, '2011-11-11 13:56:58', '2011-11-11 13:56:58', '', '', ''),
-(7, 'joeappleton19', 'Password1', 1, '2011-11-11 15:47:43', '2011-11-11 15:47:43', '', '', ''),
-(8, 'joeappleton199', 'Password1', 1, '2011-11-11 15:50:17', '2011-11-11 15:50:17', '', '', ''),
-(9, 'joeappleton199lllll', 'a962ef093b6bde22867ac95befa26a7fb28dbfc1', 1, '2011-11-11 15:51:02', '2011-11-11 15:51:02', '', '', ''),
-(10, 'Smith', 'a962ef093b6bde22867ac95befa26a7fb28dbfc1', 1, '2011-11-11 15:51:23', '2011-11-11 15:51:23', '', '', ''),
-(11, 'user', 'a962ef093b6bde22867ac95befa26a7fb28dbfc1', 2, '2011-11-11 16:30:43', '2011-11-11 16:30:43', '', '', '');
+INSERT INTO `users` (`id`, `username`, `password`, `group_id`, `created`, `modified`, `first_name`, `last_name`, `contact_number`, `company_name`, `email`, `active`) VALUES
+(15, 'joeappleton@goodappldfdfdfdfdfe.co.uk', '229fa324796bfe2bf778039a4b6e6afeafac0b92', 2, '2011-11-17 10:55:38', '2011-11-17 10:55:38', 'joe appleton', '', '07986836915', '', 'joeappleton@goodappldfdfdfdfdfe.co.uk', 0),
+(14, 'joeappleton@godgdgdodapple.co.uk', 'b6e92fe2d806540b8e0fe9efe5cb20080ef55fdc', 2, '2011-11-17 09:21:32', '2011-11-17 09:21:32', 'Joe appleton', '', '07986836915', '', 'joeappleton@godgdgdodapple.co.uk', 0),
+(11, 'user', 'a962ef093b6bde22867ac95befa26a7fb28dbfc1', 2, '2011-11-11 16:30:43', '2011-11-11 16:30:43', '', '', '', '', '', 0),
+(12, 'joeappleton@goodapple.co.uk', '137d740cb1a99768dac4ee134845b5ca454fdfd5', 2, '2011-11-16 18:27:28', '2011-11-16 18:27:28', 'joe appleton', '', '0798683691', '', 'joeappleton@goodapple.co.uk', 0),
+(13, 'joeappleton@goodadfdfdfdfpple.co.uk', 'd4905561c8f8075934101e0a1ddf0d3516b20e05', 2, '2011-11-16 18:28:27', '2011-11-16 18:28:27', 'joe appleton', '', '0798683691', '', 'joeappleton@goodadfdfdfdfpple.co.uk', 0),
+(16, 'joeappelton@gooddfdfdfapple.co.uk', 'a962ef093b6bde22867ac95befa26a7fb28dbfc1', 2, '2011-11-17 11:19:54', '2011-11-17 11:19:54', 'Joe Appleton', '', '07986836915', '', 'joeappelton@gooddfdfdfapple.co.uk', 0),
+(17, 'joeappleton@good1apple.co.uk', 'a962ef093b6bde22867ac95befa26a7fb28dbfc1', 2, '2011-11-17 12:36:19', '2011-11-17 12:36:19', 'Joe Appleton', '', '07986836915', '', 'joeappleton@good1apple.co.uk', 0),
+(18, 'joeappleton18@hotmail.com', 'a962ef093b6bde22867ac95befa26a7fb28dbfc1', 2, '2011-11-17 12:41:28', '2011-11-17 12:41:28', 'joe', '', '07986836915', '', 'joeappleton18@hotmail.com', 0),
+(19, 'joegoodson@goodapple.co.uk', 'a962ef093b6bde22867ac95befa26a7fb28dbfc1', 2, '2011-11-17 13:37:02', '2011-11-17 13:37:02', 'Joe', 'Goodson', '07986836915', 'Goodapple Media Ltd', 'joegoodson@goodapple.co.uk', 0),
+(21, 'mrsmith@hotmail.com', 'a962ef093b6bde22867ac95befa26a7fb28dbfc1', 1, '2011-11-17 17:59:23', '2011-11-17 17:59:23', 'Joe', 'Appleton', '07986836915', 'goodaple', 'mrsmith@hotmail.com', 1);
 
 -- --------------------------------------------------------
 

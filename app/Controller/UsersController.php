@@ -12,6 +12,8 @@ function beforeFilter() {
     parent::beforeFilter();
       $this->Auth->allow('register');
       $this->Auth->allow('activate');
+      $this->Auth->allow('logout');
+      $this->Auth->allow('registrationMessage');
      //print_r($this->  __sendEmail(array('name'=>'test email','id'=>"7"),'sign_up',"joeappleton@goodapple.co.uk"));
       
       
@@ -88,12 +90,25 @@ function initDB() {
 
 
 function login() {
-   
+
+     // print_r($this->Auth->user('active'));   
     if ($this->request->is('post')) {
-        if ($this->Auth->login()) {
-            $this->redirect($this->Auth->redirect());
+     
+
+	
+	if ($this->Auth->login()) {
+           
+	                                        if($this->Auth->user('active') ) {
+							$this->redirect($this->Auth->redirect());
+	                                        }
+	                                        else
+							$this->Session->setFlash('Your account is not yet active, please activate it by clicking on the link in the email
+										               we sent you','flash_login');
+				
         } else {
-            $this->Session->setFlash('Your username or password was incorrect.');
+            
+	    $this->Session->setFlash('Your username or password was incorrect.');
+       
         }
     }
    
@@ -139,22 +154,23 @@ function logout()
  * @return void
  */
 	public function register() {
+		
+		
+		
 		if ($this->request->is('post')) {
 			     
 			$this->User->create();
 			
 			if(!empty( $this->request->data['User']['password']))
-				       $this->request->data['User']['password'] = AuthComponent::password($this->data['User']['password']);
-				       $this->request->data['User']['activation_code'] =  "dfhjdfhjdfdfdfdfdfdhj";
-				       $this->request->data['User']['username'] = $this->request->data['User']['email'];    
-		    if ($this->User->save($this->request->data)) {
+		        if ($this->User->save($this->request->data)) {
 			
 			        
-				$this->Session->setFlash(__('The user has been saved'));
-				$this->__sendEmail(array('name'=>$this->request->data['User']['full_name'],'id'=>$this->User->getLastInsertID()),'sign_up'
-						                       ,'joeappleton18@goodapple.co.uk'); 
+				$this->redirect(array('controller'=>'users','action'=>'registrationMessage',$this->request->data['User']['first_name'])); 
 				
-				$this->redirect(array('action' => 'index'));
+				//$this->Session->setFlash(__('Thanks for that,please check your inbox to active'));
+				//$this->__sendEmail(array('name'=>$this->request->data['User']['full_name'],'id'=>$this->User->getLastInsertID()),'sign_up' ,'joeappleton18@goodapple.co.uk'); 
+				
+				// $this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The user could not be saved. Please, try again.'));
 			}
@@ -163,6 +179,27 @@ function logout()
 		 $groups = $this->User->Group->find('list');
 		 $this->set(compact('groups'));
 	}
+
+/**
+ * Registration compleation page
+ *
+ * @param string $firstName
+ * 
+ */
+ public function registrationMessage($firstName=null){
+	
+	      if(isset($firstName)){
+                    $this ->set('name',$firstName);
+		    return true;
+	      }
+           //   else
+		
+		//$this->redirect(array('action' => 'index'));
+	      
+ }
+
+
+
 
 /**
  * edit method
@@ -211,9 +248,7 @@ function logout()
 		$this->redirect(array('action' => 'index'));
 	}
 	
-	
-	
-	/**
+/**
  * Activates a user account from an incoming link
  *
  *  @param Int $user_id User.id to activate
