@@ -19,14 +19,14 @@ class User extends AppModel {
      
      
      
+     
+     
+     
       public function beforeSave() {
         $this->data['User']['password'] = AuthComponent::password($this->data['User']['password']);
         return true;
       }
 
-        
-      
-      
       /**
 	 * creates an activation hash for the current user.
 	 *
@@ -41,9 +41,6 @@ class User extends AppModel {
 		}
 		return substr(Security::hash(Configure::read('Security.salt') . $this->field('created') . date('Ymd')), 0, 8);
 	}
-
-      
-      
       
       function parentNode() {
         if (!$this->id && empty($this->data)) {
@@ -62,9 +59,28 @@ class User extends AppModel {
     }
 
 
-
-
-	public $validate = array(
+     /**
+      * Validates that 2 passwords match
+      * @param array $data post data that is being validated 
+      * 
+      */
+    
+       function checkPasswordsMatch($data)
+       
+       {
+        
+         // check there is some value in data fo us to validate
+         // debug($this->data['User']['password'], $showHTML = true, $showFrom = true) ; 
+         if (!isset($this->data['User']['password2']))
+                                       return true;
+       
+        return $this->data['User']['password'] == $this->data['User']['password2'];
+         
+        
+        
+       }
+  
+        public $validate = array(
 		
 		'password' => array(
 			'notempty' => array(
@@ -81,7 +97,26 @@ class User extends AppModel {
                                  'message' => 'Passwords must be at least 5 characters long.'
                                  
                         ),
+                        
+                        'checkMatch' => array(
+                             'rule' => array('checkPasswordsMatch'),
+                             'message' => 'Passwords do no match'
+                       )           
+                        
                 ),
+                'password2' => array(
+			'notempty' => array(
+				'rule' => array('notempty'),
+				//'message' => 'Your custom message here',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+		)
+                        
+                ),
+                 
+                
 		'group_id' => array(
 			'numeric' => array(
 				'rule' => array('numeric'),
@@ -132,17 +167,7 @@ class User extends AppModel {
                 
                 
                 )
-	
-	
-	
-	
-            
-        
-        
-        
-        
-        
-        );
+  );
 
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
 
