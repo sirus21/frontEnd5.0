@@ -91,17 +91,20 @@ function initDB() {
 
 function login() {
 
-    print_r($this->Auth->user());   
-   
-   
+     // print_r($this->Auth->user('active'));   
     if ($this->request->is('post')) {
      
 
 	
 	if ($this->Auth->login()) {
            
-	    $this->redirect($this->Auth->redirect());
-	    
+	                                        if($this->Auth->user('active') ) {
+							$this->redirect($this->Auth->redirect());
+	                                        }
+	                                        else
+							$this->Session->setFlash('Your account is not yet active, please activate it by clicking on the link in the email
+										               we sent you','flash_login');
+				
         } else {
             
 	    $this->Session->setFlash('Your username or password was incorrect.');

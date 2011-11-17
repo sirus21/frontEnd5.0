@@ -10,6 +10,8 @@
 		echo $this->Form->input('first_name');
 		echo $this->Form->input('last_name');
 	        echo $this->Form->input('company_name');
+		echo $this->Form->input('group_id'); 
+
 		echo $this->Form->input('contact_number');
 	
 		
