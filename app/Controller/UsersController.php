@@ -144,7 +144,7 @@ function logout()
 			$this->User->create();
 			
 			if(!empty( $this->request->data['User']['password']))
-				       $this->request->data['User']['password'] = AuthComponent::password($this->data['User']['password']);
+				        // $this->request->data['User']['password'] = AuthComponent::password($this->data['User']['password']);
 				       $this->request->data['User']['username'] = $this->request->data['User']['email'];    
 		    if ($this->User->save($this->request->data)) {
 			

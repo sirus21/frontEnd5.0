@@ -65,24 +65,7 @@ class User extends AppModel {
 
 
 	public $validate = array(
-		'username' => array(
-			'username_not_empty' => array(
-				'rule' => array('notempty'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
 		
-                        'username_unique' => array(
-                         
-                           'rule' => 'isUnique',
-                            
-                        ),
-                
-                
-                ),
 		'password' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
@@ -92,7 +75,13 @@ class User extends AppModel {
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
-		),
+		        'minlength' => array(
+                                 
+                                 'rule' => array('minLength',5),
+                                 'meassage' => 'Passwords must be at least 5 characters long.'
+                                 
+                        ),
+                ),
 		'group_id' => array(
 			'numeric' => array(
 				'rule' => array('numeric'),
@@ -139,7 +128,10 @@ class User extends AppModel {
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
-		)
+		       
+                
+                
+                )
 	
 	
 	
