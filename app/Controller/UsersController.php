@@ -12,6 +12,7 @@ function beforeFilter() {
     parent::beforeFilter();
       $this->Auth->allow('register');
       $this->Auth->allow('activate');
+      $this->Auth->allow('registrationMessage');
      //print_r($this->  __sendEmail(array('name'=>'test email','id'=>"7"),'sign_up',"joeappleton@goodapple.co.uk"));
       
       
@@ -139,20 +140,21 @@ function logout()
  * @return void
  */
 	public function register() {
+		
+		$this->redirect(array('controller'=>'users','action'=>'registrationMessage',"Joe")); 
+		
 		if ($this->request->is('post')) {
 			     
 			$this->User->create();
 			
 			if(!empty( $this->request->data['User']['password']))
-				        // $this->request->data['User']['password'] = AuthComponent::password($this->data['User']['password']);
-				       $this->request->data['User']['username'] = $this->request->data['User']['email'];    
-		    if ($this->User->save($this->request->data)) {
+		        if ($this->User->save($this->request->data)) {
 			
 			        
-				$this->Session->setFlash(__('The user has been saved'));
+				$this->Session->setFlash(__('Thanks for that,please check your inbox to active'));
 				//$this->__sendEmail(array('name'=>$this->request->data['User']['full_name'],'id'=>$this->User->getLastInsertID()),'sign_up' ,'joeappleton18@goodapple.co.uk'); 
 				
-				$this->redirect(array('action' => 'index'));
+				// $this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The user could not be saved. Please, try again.'));
 			}
@@ -161,6 +163,27 @@ function logout()
 		 $groups = $this->User->Group->find('list');
 		 $this->set(compact('groups'));
 	}
+
+/**
+ * Registration compleation page
+ *
+ * @param string $firstName
+ * 
+ */
+ public function registrationMessage($firstName=null){
+	
+	      if(isset($firstName)){
+                    $this ->set('name',$firstName);
+		    return true;
+	      }
+           //   else
+		
+		//$this->redirect(array('action' => 'index'));
+	      
+ }
+
+
+
 
 /**
  * edit method
@@ -209,9 +232,7 @@ function logout()
 		$this->redirect(array('action' => 'index'));
 	}
 	
-	
-	
-	/**
+/**
  * Activates a user account from an incoming link
  *
  *  @param Int $user_id User.id to activate

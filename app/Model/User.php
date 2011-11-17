@@ -23,7 +23,10 @@ class User extends AppModel {
      
      
       public function beforeSave() {
+        
+        $this->data['User']['username'] = $this->data['User']['email'];    
         $this->data['User']['password'] = AuthComponent::password($this->data['User']['password']);
+        
         return true;
       }
 
@@ -61,7 +64,8 @@ class User extends AppModel {
 
      /**
       * Validates that 2 passwords match
-      * @param array $data post data that is being validated 
+      * @param array $data post data that is being validated
+      * @return bool true if passwords match 
       * 
       */
     
@@ -73,19 +77,42 @@ class User extends AppModel {
          // debug($this->data['User']['password'], $showHTML = true, $showFrom = true) ; 
          if (!isset($this->data['User']['password2']))
                                        return true;
-       
-        return $this->data['User']['password'] == $this->data['User']['password2'];
-         
-        
+         return $this->data['User']['password'] == $this->data['User']['password2'];
         
        }
+       
+        /**
+      * Validates that 2 emails match
+      * @param array $data post data that is being validated
+      * @return bool true if emails match 
+      * 
+      */
+        function checkEmailsMatch($data){
+                
+                if (!isset($this->data['User']['email2']))
+                                             return true;
+                return $this->data['User']['email'] ==  $this->data['User']['email2'];                             
+           
+        }
+       
+  
   
         public $validate = array(
 		
+                'username' => array(
+			'notempty' => array(
+				'rule' => array('notempty'),
+				'message' => 'This is required',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+		)
+                ),
 		'password' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
-				//'message' => 'Your custom message here',
+				'message' => 'This is required',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -93,21 +120,28 @@ class User extends AppModel {
 			),
 		        'minlength' => array(
                                  
-                                 'rule' => array('minLength',5),
+                                 'rule' => array('minLength',6),
                                  'message' => 'Passwords must be at least 5 characters long.'
                                  
                         ),
                         
+                        
                         'checkMatch' => array(
                              'rule' => array('checkPasswordsMatch'),
                              'message' => 'Passwords do no match'
-                       )           
-                        
+                       ),           
+                      
+                      'oneNumber'=> array(
+                         'rule'=> '/[0-9]+/',
+                         'message'=> 'Passwords must containe at least one number'
+                        )
+               
+               
                 ),
                 'password2' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
-				//'message' => 'Your custom message here',
+				'message' => 'This is required',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -120,7 +154,7 @@ class User extends AppModel {
 		'group_id' => array(
 			'numeric' => array(
 				'rule' => array('numeric'),
-				//'message' => 'Your custom message here',
+				'message' => 'This is required',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -128,21 +162,48 @@ class User extends AppModel {
 			),
 		),
                 
-                'full_name' => array(
+                'first_name' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
-				//'message' => 'Your custom message here',
+				'message' => 'This is required',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
+                
+                   'last_name' => array(
+			'notempty' => array(
+				'rule' => array('notempty'),
+				'message' => 'This is required',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
+		),
+                
                 
                 'contact_number' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
-				//'message' => 'Your custom message here',
+				'message' => 'This is required',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
+		
+                
+                
+                
+                ),
+                
+                    'company_name' => array(
+			'notempty' => array(
+				'rule' => array('notempty'),
+				'message' => 'This is required',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -157,16 +218,46 @@ class User extends AppModel {
                        'email' => array(
 			'notempty' => array(
 			'rule' => array('notempty'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
+				'message' => 'This is required',
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
-		       
-                
-                
-                )
+	    
+                        'checkMatch' => array(
+                             'rule' => array('checkEmailsMatch'),
+                             'message' => 'Emails do not match'
+                       ),
+                        
+                        'isEmail' =>  array(
+                             'rule' => array('email'),
+                             'message' => 'Please enter a valid email address'
+                        ),
+                        'isUnique' =>  array(
+                             'rule' => array('isUnique'),
+                             'message' => 'This email has already been used'
+                        ),
+                        
+                       
+                       
+                    
+                    
+                    
+                    
+                    ),
+                       'email2' => array(
+			'notempty' => array(
+			'rule' => array('notempty'),
+			'message' => 'This is required',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			)
+                        
+                        )
+		          
+                       
   );
 
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
