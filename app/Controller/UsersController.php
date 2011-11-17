@@ -12,6 +12,7 @@ function beforeFilter() {
     parent::beforeFilter();
       $this->Auth->allow('register');
       $this->Auth->allow('activate');
+      $this->Auth->allow('logout');
       $this->Auth->allow('registrationMessage');
      //print_r($this->  __sendEmail(array('name'=>'test email','id'=>"7"),'sign_up',"joeappleton@goodapple.co.uk"));
       
@@ -89,12 +90,22 @@ function initDB() {
 
 
 function login() {
+
+    print_r($this->Auth->user());   
+   
    
     if ($this->request->is('post')) {
-        if ($this->Auth->login()) {
-            $this->redirect($this->Auth->redirect());
+     
+
+	
+	if ($this->Auth->login()) {
+           
+	    $this->redirect($this->Auth->redirect());
+	    
         } else {
-            $this->Session->setFlash('Your username or password was incorrect.');
+            
+	    $this->Session->setFlash('Your username or password was incorrect.');
+       
         }
     }
    
