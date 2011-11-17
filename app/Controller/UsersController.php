@@ -141,7 +141,7 @@ function logout()
  */
 	public function register() {
 		
-		$this->redirect(array('controller'=>'users','action'=>'registrationMessage',"Joe")); 
+		
 		
 		if ($this->request->is('post')) {
 			     
@@ -151,7 +151,9 @@ function logout()
 		        if ($this->User->save($this->request->data)) {
 			
 			        
-				$this->Session->setFlash(__('Thanks for that,please check your inbox to active'));
+				$this->redirect(array('controller'=>'users','action'=>'registrationMessage',$this->request->data['User']['first_name'])); 
+				
+				//$this->Session->setFlash(__('Thanks for that,please check your inbox to active'));
 				//$this->__sendEmail(array('name'=>$this->request->data['User']['full_name'],'id'=>$this->User->getLastInsertID()),'sign_up' ,'joeappleton18@goodapple.co.uk'); 
 				
 				// $this->redirect(array('action' => 'index'));

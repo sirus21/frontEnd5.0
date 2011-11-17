@@ -1766,3 +1766,63 @@
 #3 C:\wamp\www\frontend5.0\lib\Cake\Routing\Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
 #4 C:\wamp\www\frontend5.0\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2011-11-17 16:01:14 Error: [MissingActionException] Action UsersController::resgister() could not be found.
+#0 C:\wamp\www\frontend5.0\lib\Cake\Routing\Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\frontend5.0\lib\Cake\Routing\Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\frontend5.0\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-11-17 16:03:45 Error: [MissingActionException] Action UsersController::add() could not be found.
+#0 C:\wamp\www\frontend5.0\lib\Cake\Routing\Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\frontend5.0\lib\Cake\Routing\Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\frontend5.0\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-11-17 16:05:24 Error: [MissingControllerException] Controller class LogoutController could not be found.
+#0 C:\wamp\www\frontend5.0\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-17 16:05:39 Error: [MissingControllerException] Controller class FrontEnd5.0Controller could not be found.
+#0 C:\wamp\www\frontend5.0\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-17 16:05:50 Error: [MissingControllerException] Controller class FrontEnd5.0Controller could not be found.
+#0 C:\wamp\www\frontend5.0\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-17 16:05:53 Error: [MissingControllerException] Controller class FrontEnd5.0Controller could not be found.
+#0 C:\wamp\www\frontend5.0\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-17 16:05:53 Error: [MissingControllerException] Controller class FrontEnd5.0Controller could not be found.
+#0 C:\wamp\www\frontend5.0\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-17 16:05:54 Error: [MissingControllerException] Controller class FrontEnd5.0Controller could not be found.
+#0 C:\wamp\www\frontend5.0\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-17 16:05:54 Error: [MissingControllerException] Controller class FrontEnd5.0Controller could not be found.
+#0 C:\wamp\www\frontend5.0\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-17 16:05:54 Error: [MissingControllerException] Controller class FrontEnd5.0Controller could not be found.
+#0 C:\wamp\www\frontend5.0\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-17 16:05:54 Error: [MissingControllerException] Controller class FrontEnd5.0Controller could not be found.
+#0 C:\wamp\www\frontend5.0\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-17 16:05:55 Error: [MissingControllerException] Controller class FrontEnd5.0Controller could not be found.
+#0 C:\wamp\www\frontend5.0\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-17 16:05:55 Error: [MissingControllerException] Controller class FrontEnd5.0Controller could not be found.
+#0 C:\wamp\www\frontend5.0\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-17 16:05:55 Error: [MissingControllerException] Controller class FrontEnd5.0Controller could not be found.
+#0 C:\wamp\www\frontend5.0\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-17 16:05:55 Error: [MissingControllerException] Controller class FrontEnd5.0Controller could not be found.
+#0 C:\wamp\www\frontend5.0\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-17 16:05:55 Error: [MissingControllerException] Controller class FrontEnd5.0Controller could not be found.
+#0 C:\wamp\www\frontend5.0\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-17 16:06:02 Error: [MissingControllerException] Controller class FrontEnd5.0Controller could not be found.
+#0 C:\wamp\www\frontend5.0\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-11-17 16:06:46 Error: [MissingActionException] Action UsersController::add() could not be found.
+#0 C:\wamp\www\frontend5.0\lib\Cake\Routing\Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\frontend5.0\lib\Cake\Routing\Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\frontend5.0\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
