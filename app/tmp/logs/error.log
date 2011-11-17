@@ -1892,3 +1892,34 @@
 #4 C:\wamp\www\frontend5.0\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
 >>>>>>> da942e92a29757dba7fd95e5c9cb93a63cde4cfd
+2011-11-17 19:01:13 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'joeappleton@goodapple.co.uk' for key 2
+#0 /home/wwwstage/public_html/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /home/wwwstage/public_html/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('INSERT INTO `us...', Array)
+#2 /home/wwwstage/public_html/lib/Cake/Model/Datasource/DboSource.php(967): DboSource->execute('INSERT INTO `us...')
+#3 /home/wwwstage/public_html/lib/Cake/Model/Model.php(1629): DboSource->create(Object(User), Array, Array)
+#4 /home/wwwstage/public_html/app/Controller/UsersController.php(166): Model->save(Array)
+#5 [internal function]: UsersController->register()
+#6 /home/wwwstage/public_html/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#8 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#9 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2011-11-17 19:01:57 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'joeappleton18@hotmail.com' for key 2
+#0 /home/wwwstage/public_html/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /home/wwwstage/public_html/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('INSERT INTO `us...', Array)
+#2 /home/wwwstage/public_html/lib/Cake/Model/Datasource/DboSource.php(967): DboSource->execute('INSERT INTO `us...')
+#3 /home/wwwstage/public_html/lib/Cake/Model/Model.php(1629): DboSource->create(Object(User), Array, Array)
+#4 /home/wwwstage/public_html/app/Controller/UsersController.php(166): Model->save(Array)
+#5 [internal function]: UsersController->register()
+#6 /home/wwwstage/public_html/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#8 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#9 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2011-11-17 19:34:58 Error: [NotFoundException] Invalid user
+#0 [internal function]: UsersController->view('joeapppleton@go...')
+#1 /home/wwwstage/public_html/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#3 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

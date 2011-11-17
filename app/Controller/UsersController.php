@@ -29,7 +29,7 @@ function beforeFilter() {
  * @return bool true if the email has sent 
  *
  */
- function __sendEmail($templateVars,$emailTemplate,$to){
+ function __sendEmail($templateVars,$emailTemplate){
      
     
     /* set activation code for user */  
@@ -40,12 +40,13 @@ function beforeFilter() {
       
      $email = new CakeEmail();
      $email->config('gmailSmtp');
-     $email->template('sign_up');
-     $email->emailFormat('html'); 
-     $email->to('joeappleton@goodapple.co.uk'); 
+     $email->template($emailTemplate);
+     $email->emailFormat('html');
+     $email->subject('Call Commission - Please activate your account');
+     $email->to($this->data['User']['email']); 
      $email->viewVars($templateVars);
-      
-      return $email->send();
+    
+     return $email->send();
     
  }
  	
@@ -102,12 +103,15 @@ function login() {
 							$this->redirect($this->Auth->redirect());
 	                                        }
 	                                        else
-							$this->Session->setFlash('Your account is not yet active, please activate it by clicking on the link in the email
-										               we sent you','flash_login');
+						   
+						    $this->set('id',$this->Auth->user('id'));
+						    $this->Auth->logout();
+						    $this->Session->setFlash('Your account is not yet active, please activate it by clicking on the link in the email
+										            we sent you','flash_login');
 				
         } else {
             
-	    $this->Session->setFlash('Your username or password was incorrect.');
+	    $this->Session->setFlash('Your email or password was incorrect.');
        
         }
     }
@@ -164,11 +168,11 @@ function logout()
 			if(!empty( $this->request->data['User']['password']))
 		        if ($this->User->save($this->request->data)) {
 			
-			        
+			        $this->__sendEmail(array('name'=>$this->request->data['User']['first_name'],'id'=>$this->User->getLastInsertID()),'sign_up'); 
 				$this->redirect(array('controller'=>'users','action'=>'registrationMessage',$this->request->data['User']['first_name'])); 
 				
 				//$this->Session->setFlash(__('Thanks for that,please check your inbox to active'));
-				//$this->__sendEmail(array('name'=>$this->request->data['User']['full_name'],'id'=>$this->User->getLastInsertID()),'sign_up' ,'joeappleton18@goodapple.co.uk'); 
+				
 				
 				// $this->redirect(array('action' => 'index'));
 			} else {
@@ -179,6 +183,37 @@ function logout()
 		 $groups = $this->User->Group->find('list');
 		 $this->set(compact('groups'));
 	}
+
+
+
+/**
+ * This is called if a user has not recived there activation email
+ *@param int $userID
+ * 
+ */
+
+
+/*
+public  function  resendemail($id=null)
+{
+    $this->User->id = $user_id;
+    if($this->User->exists()){
+	
+	      $email = new CakeEmail();
+              $email->config('gmailSmtp');
+              $email->template($emailTemplate);
+              $email->emailFormat('html');
+              $email->subject('Call Commission - Please activate your account');
+             $email->to($this->data['User']['email']); 
+             $email->viewVars($templateVars);
+    
+     return $email->send();
+     
+    }
+    
+}
+*/
+
 
 /**
  * Registration compleation page
@@ -197,9 +232,6 @@ function logout()
 		//$this->redirect(array('action' => 'index'));
 	      
  }
-
-
-
 
 /**
  * edit method
@@ -248,6 +280,11 @@ function logout()
 		$this->redirect(array('action' => 'index'));
 	}
 	
+
+
+
+
+
 /**
  * Activates a user account from an incoming link
  *

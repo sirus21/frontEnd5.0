@@ -1,8 +1,13 @@
 <p><?php echo $name ?> ,</p>
 
-<p>Thanks for registering with CallCommission! To activate your new account, please click on the following link:</p>
+<p>Thanks for registering with CallCommission, you’re nearly aboard the pay-per-call train.</p>
+
+
+
+<p>Simply click on the link to activate your shiny new account</p>
 
 <p><?php echo $code ?></a></p>
+
 
 <p>After activating, you may login with your password and email</p>
 

@@ -215,7 +215,8 @@ class User extends AppModel {
                 
                 ),
                 
-                       'email' => array(
+                    
+		       'email' => array(
 			'notempty' => array(
 			'rule' => array('notempty'),
 				'message' => 'This is required',
@@ -233,12 +234,14 @@ class User extends AppModel {
                              'rule' => array('email'),
                              'message' => 'Please enter a valid email address'
                         ),
-                        'isUnique' =>  array(
+                    
+		    /* lets remove this to help with testing
+		        'isUnique' =>  array(
                              'rule' => array('isUnique'),
                              'message' => 'This email has already been used'
                         ),
                         
-                       
+		    */     
                        
                     
                     
