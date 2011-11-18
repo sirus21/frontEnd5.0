@@ -8,4 +8,4 @@ echo $this->Form->end('Login');
 
 
  <span> <?php echo $this->Html->link(__('Register'), array('action' => 'register')); ?> </span>
- <span> <?php echo $this->Html->link(__('Forgotton Password'), array('action' => 'register')); ?> </span> 
+ <span> <?php echo $this->Html->link(__('Forgotton Password'), array('action' => 'forgottonPassword')); ?> </span> 

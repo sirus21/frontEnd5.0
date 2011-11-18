@@ -30,6 +30,19 @@ class User extends AppModel {
         return true;
       }
 
+     /**
+      * Pulls up a user based on an user name
+      * @param string $usernName the user that we are searching for
+      * @return array  Array ( [User] => Array ( [id] => 26 [username] =>
+      * joeappleton@goodapple.co.uk [password] =>
+      * a962ef093b6bde22867ac95befa26a7fb28dbfc1 ........
+      */
+      
+       public function   getUser($userName)
+       {
+	 return $this->find('first',array('conditions' => array('User.username'=>array($userName))));
+       }
+
       /**
 	 * creates an activation hash for the current user.
 	 *
@@ -317,7 +330,32 @@ class User extends AppModel {
 			'exclusive' => '',
 			'finderQuery' => '',
 			'counterQuery' => ''
+		),
+		'Forgotton' => array(
+			'className' => 'ForgottonPassword',
+			'foreignKey' => 'user_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
 		)
-	);
+              
+              
+	 
+	 
+	 );
+
+      
+
+
+
 
 }
+
+
+

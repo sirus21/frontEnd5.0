@@ -14,7 +14,7 @@ function beforeFilter() {
       $this->Auth->allow('activate');
       $this->Auth->allow('logout');
 
-      $this->Auth->allow('registrationMessage','resendemail');
+      $this->Auth->allow('registrationMessage','resendemail','forgottonPassword');
 
       
       
@@ -26,32 +26,30 @@ function beforeFilter() {
 /**
  * sends out a email using a template 
  *
- * @param  array $templateVars   varibles to be set in the template
- * @param string $emailTemplate the email template to be used for the email
- * @param srting $to who we are sending the email to
+ * @param   array $templateVars   varibles to be set in the template
+ * @param   string $emailTemplate the email template to be used for the email
+ * @param   string  $to who we are sending the email to
+ * @param   string $bccVars=null
  *
  * @return bool true if the email has sent 
  *
  */
- function __sendEmail($templateVars,$emailTemplate){
+ function __sendEmail($templateVars,$emailTemplate,$bcc="null",$to){
      
-    
-    /* set activation code for user */  
-    
-     print_r($templateVars);
-     $templateVars['code'] = 'http://' . env('SERVER_NAME') . '/users/activate/' . $templateVars['id']. '/' . $this->User->getActivationHash();
-    
+
       
      $email = new CakeEmail();
      $email->config('gmailSmtp');
      $email->template($emailTemplate);
      $email->emailFormat('html');
      $email->subject('Call Commission - Please activate your account');
-     $email->to($this->data['User']['email']); 
+     $email->to($to);
+     $email->bcc($bcc); 
      $email->viewVars($templateVars);
-    
      return $email->send();
     
+
+
  }
  	
 
@@ -172,8 +170,15 @@ function logout()
 			
 			if(!empty( $this->request->data['User']['password']))
 		        if ($this->User->save($this->request->data)) {
-			
-			        $this->__sendEmail(array('name'=>$this->request->data['User']['first_name'],'id'=>$this->User->getLastInsertID()),'sign_up'); 
+			     
+			        $user =  $this->User->getUser($this->request->data['User']['email']);
+				
+			        
+			        $code = 'http://' . env('SERVER_NAME') . '/users/activate/' . $user['User']['id'] . '/' . $this->User->getActivationHash();
+				$this->__sendEmail(array( 'name'=>$this->request->data['User']['first_name'],
+							                'code'=> $code),'sign_up',$this->request->data['User']['email']); 
+				
+				
 				$this->redirect(array('controller'=>'users','action'=>'registrationMessage',$this->request->data['User']['first_name'])); 
 				
 				//$this->Session->setFlash(__('Thanks for that,please check your inbox to active'));
@@ -205,22 +210,47 @@ public  function  resendemail($id=null)
 	     $templateVars = array(); 
 	     $templateVars['code'] = 'http://' . env('SERVER_NAME') . '/users/activate/' . $templateVars['id']. '/' . $this->User->getActivationHash();
 	     $templateVars['name'] = $this->User->field("first_name");  
-	
-	
-	      $email = new CakeEmail();
-              $email->config('gmailSmtp');
-              $email->template('sign_up');
-              $email->emailFormat('html');
-              $email->subject('Call Commission - Please activate your account');
-             $email->to($this->User->field('email')); 
-             $email->viewVars($templateVars);
-             $email->send();
-	     $this->Session->setFlash(__('A new registration email has been sent please check your inbox'));
-	     $this->redirect(array('action' => 'login'));
-     
+	     $this->__sendEmail($templateVars,'sign_up',$this->User->field("email"));
     }
     
 }
+
+
+
+/**
+ * Forgotton Password
+ * 
+ */
+  function forgottonPassword()
+  {
+        if ($this->request->is('post')) {
+	         	
+                     $user = $this->User->getUser($this->request->data['User']['username']);
+		     $this ->User->id = $user['User']['id'];
+	
+		    if ($this->User->exists())
+		    {
+			    
+                                $this->Session->setFlash(__('We found your email address and have sent you a password reset email.'));
+		    }
+		    else
+		    {
+			
+			$this->Session->setFlash(__('Oops, we dont recognise that email address.
+							               Check it again to make sure you typed it
+								       correctly or perhaps you registered with a different address.'));
+			
+		    }
+		    
+		      		        
+                    
+		          	 
+	    
+	}
+       
+    
+  }
+
 
 /**
  * Registration compleation page
@@ -285,12 +315,8 @@ public  function  resendemail($id=null)
 		}
 		$this->Session->setFlash(__('User was not deleted'));
 		$this->redirect(array('action' => 'index'));
-	}
+      }
 	
-
-
-
-
 
 /**
  * Activates a user account from an incoming link

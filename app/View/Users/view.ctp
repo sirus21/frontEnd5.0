@@ -31,6 +31,13 @@
 			<?php echo h($user['User']['modified']); ?>
 			&nbsp;
 		</dd>
+		<dt><?php echo __('Active'); ?></dt>
+		<dd>
+			<?php echo h($user['User']['active']); ?>
+			&nbsp;
+		</dd>
+		
+		
 	</dl>
 </div>
 <div class="actions">
