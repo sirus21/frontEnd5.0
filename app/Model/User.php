@@ -318,6 +318,8 @@ class User extends AppModel {
  * @var array
  */
 	public $hasMany = array(
+		
+		
 		'Post' => array(
 			'className' => 'Post',
 			'foreignKey' => 'user_id',
@@ -331,7 +333,8 @@ class User extends AppModel {
 			'finderQuery' => '',
 			'counterQuery' => ''
 		),
-		'Forgotton' => array(
+		
+		'ForgottonPassword' => array(
 			'className' => 'ForgottonPassword',
 			'foreignKey' => 'user_id',
 			'dependent' => false,

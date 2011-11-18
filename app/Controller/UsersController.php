@@ -208,7 +208,7 @@ public  function  resendemail($id=null)
     if($this->User->exists()){
 
 	     $templateVars = array(); 
-	     $templateVars['code'] = 'http://' . env('SERVER_NAME') . '/users/activate/' . $templateVars['id']. '/' . $this->User->getActivationHash();
+	     $templateVars['code'] = 'http://' . env('SERVER_NAME') . '/users/activate/' . $id. '/' . $this->User->getActivationHash();
 	     $templateVars['name'] = $this->User->field("first_name");  
 	     $this->__sendEmail($templateVars,'sign_up',$this->User->field("email"));
     }
@@ -231,7 +231,15 @@ public  function  resendemail($id=null)
 		    if ($this->User->exists())
 		    {
 			    
-                                $this->Session->setFlash(__('We found your email address and have sent you a password reset email.'));
+                                 $templateVars = array();
+				 $templateVars['code'] = 'http://' . env('SERVER_NAME') . '/users/resetpword/' .$this->User->id. '/' . $this->User->getActivationHash();
+	                         $templateVars['name'] = $this->User->field("first_name");
+				 $this->__sendEmail($templateVars,'forgotton_pword_email',null,$this->User->field("email"));
+		
+	                         $this->User->ForgottonPassword->create();
+				 $this->User->ForgottonPassword->save(array('user_id'=>$this->User->id)); 
+				 $this->Session->setFlash(__('We found your email address and have sent you a password reset email.'));
+			    
 		    }
 		    else
 		    {
