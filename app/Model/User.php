@@ -37,13 +37,32 @@ class User extends AppModel {
 	 *	@return String activation hash.
 	*/
 	
-	function getActivationHash()
+	public function getActivationHash()
 	{
 		if (!isset($this->id)) {
 			return false;
 		}
 		return substr(Security::hash(Configure::read('Security.salt') . $this->field('created') . date('Ymd')), 0, 8);
 	}
+	
+      /**
+       * returns the users email address
+       * @param void
+       * @return string users email address
+       */
+      
+      public function getEmail()
+      {
+	
+	    if(!isset($this->id)){
+	      
+	      return false;
+	    }
+	    return $this->field('email'); 
+	    
+      }
+
+	
       
       function parentNode() {
         if (!$this->id && empty($this->data)) {

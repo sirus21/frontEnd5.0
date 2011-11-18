@@ -13,7 +13,11 @@ function beforeFilter() {
       $this->Auth->allow('register');
       $this->Auth->allow('activate');
       $this->Auth->allow('logout');
-      $this->Auth->allow('registrationMessage');
+
+      $this->Auth->allow('registrationMessage','resendemail');
+
+      
+      
      //print_r($this->  __sendEmail(array('name'=>'test email','id'=>"7"),'sign_up',"joeappleton@goodapple.co.uk"));
       
       
@@ -105,9 +109,10 @@ function login() {
 	                                        else
 						   
 						    $this->set('id',$this->Auth->user('id'));
-						    $this->Auth->logout();
+					            $this->Auth->logout();							
 						    $this->Session->setFlash('Your account is not yet active, please activate it by clicking on the link in the email
 										            we sent you','flash_login');
+						     
 				
         } else {
             
@@ -189,31 +194,33 @@ function logout()
 /**
  * This is called if a user has not recived there activation email
  *@param int $userID
+ *@return bool true if email has sent 
  * 
  */
-
-
-/*
 public  function  resendemail($id=null)
 {
-    $this->User->id = $user_id;
+    $this->User->id = $id;
     if($this->User->exists()){
+
+	     $templateVars = array(); 
+	     $templateVars['code'] = 'http://' . env('SERVER_NAME') . '/users/activate/' . $templateVars['id']. '/' . $this->User->getActivationHash();
+	     $templateVars['name'] = $this->User->field("first_name");  
+	
 	
 	      $email = new CakeEmail();
               $email->config('gmailSmtp');
-              $email->template($emailTemplate);
+              $email->template('sign_up');
               $email->emailFormat('html');
               $email->subject('Call Commission - Please activate your account');
-             $email->to($this->data['User']['email']); 
+             $email->to($this->User->field('email')); 
              $email->viewVars($templateVars);
-    
-     return $email->send();
+             $email->send();
+	     $this->Session->setFlash(__('A new registration email has been sent please check your inbox'));
+	     $this->redirect(array('action' => 'login'));
      
     }
     
 }
-*/
-
 
 /**
  * Registration compleation page
@@ -297,7 +304,6 @@ public function activate($user_id = null, $in_hash = null) {
 	{
 		// Update the active flag in the database
 		$this->User->saveField('active', 1);
- 
 		// Let the user know they can now log in!
 		$this->Session->setFlash('Your account has been activated, please log in below');
 		$this->redirect('login');

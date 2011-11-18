@@ -1923,3 +1923,28 @@
 #3 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
 #4 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2011-11-18 09:49:50 Error: [MissingViewException] View file "/home/wwwstage/public_html/app/View/Users/resendemail.ctp" is missing.
+#0 /home/wwwstage/public_html/lib/Cake/View/View.php(363): View->_getViewFileName(NULL)
+#1 /home/wwwstage/public_html/lib/Cake/Controller/Controller.php(899): View->render(NULL, NULL)
+#2 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(114): Controller->render()
+#3 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-11-18 10:15:11 Error: [ConfigureException] Unknown email configuration "sign_up".
+#0 /home/wwwstage/public_html/lib/Cake/Network/Email/CakeEmail.php(915): CakeEmail->_applyConfig('sign_up')
+#1 /home/wwwstage/public_html/app/Controller/UsersController.php(210): CakeEmail->config('sign_up')
+#2 [internal function]: UsersController->resendemail('26')
+#3 /home/wwwstage/public_html/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#4 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#5 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#6 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2011-11-18 10:16:17 Error: [ConfigureException] Unknown email configuration "sign_up".
+#0 /home/wwwstage/public_html/lib/Cake/Network/Email/CakeEmail.php(915): CakeEmail->_applyConfig('sign_up')
+#1 /home/wwwstage/public_html/app/Controller/UsersController.php(210): CakeEmail->config('sign_up')
+#2 [internal function]: UsersController->resendemail('26')
+#3 /home/wwwstage/public_html/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#4 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#5 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#6 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
