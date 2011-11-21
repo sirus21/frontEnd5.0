@@ -14,7 +14,7 @@ function beforeFilter() {
       $this->Auth->allow('activate');
       $this->Auth->allow('logout');
 
-      $this->Auth->allow('registrationMessage','resendemail','forgottonPassword');
+      $this->Auth->allow('registrationMessage','resendemail','forgottonPassword', "resetpword");
 
       
       
@@ -30,19 +30,20 @@ function beforeFilter() {
  * @param   string $emailTemplate the email template to be used for the email
  * @param   string  $to who we are sending the email to
  * @param   string $bccVars=null
+ * 
  *
  * @return bool true if the email has sent 
  *
  */
  function __sendEmail($templateVars,$emailTemplate,$bcc="null",$to){
      
-
+     
       
      $email = new CakeEmail();
      $email->config('gmailSmtp');
      $email->template($emailTemplate);
      $email->emailFormat('html');
-     $email->subject('Call Commission - Please activate your account');
+     $email->subject($templateVars['subject']);
      $email->to($to);
      $email->bcc($bcc); 
      $email->viewVars($templateVars);
@@ -176,7 +177,7 @@ function logout()
 			        
 			        $code = 'http://' . env('SERVER_NAME') . '/users/activate/' . $user['User']['id'] . '/' . $this->User->getActivationHash();
 				$this->__sendEmail(array( 'name'=>$this->request->data['User']['first_name'],
-							                'code'=> $code),'sign_up',$this->request->data['User']['email']); 
+							                'code'=> $code,'subject'=>"Call Commission - Please activate your account"),'sign_up',$this->request->data['User']['email']); 
 				
 				
 				$this->redirect(array('controller'=>'users','action'=>'registrationMessage',$this->request->data['User']['first_name'])); 
@@ -234,6 +235,7 @@ public  function  resendemail($id=null)
                                  $templateVars = array();
 				 $templateVars['code'] = 'http://' . env('SERVER_NAME') . '/users/resetpword/' .$this->User->id. '/' . $this->User->getActivationHash();
 	                         $templateVars['name'] = $this->User->field("first_name");
+				 $templateVars['subject'] = "Call Commission - Password reset request";
 				 $this->__sendEmail($templateVars,'forgotton_pword_email',null,$this->User->field("email"));
 		
 	                         $this->User->ForgottonPassword->create();
@@ -325,6 +327,61 @@ public  function  resendemail($id=null)
 		$this->redirect(array('action' => 'index'));
       }
 	
+
+/**
+ * resets the user password
+ *
+ *  @param Int $user_id User.id to activate
+ *  @param String $in_hash Incoming Activation Hash from the email
+*/
+public function resetpword($user_id = null, $in_hash = null)
+{
+	 
+	      // http://stage.goodapple.co.uk/users/resetpword/30/982e776a
+	   
+	 $this->User->id = $user_id;
+	 
+	  if(!empty($user_id)  &&  !empty($in_hash))
+	  {
+	
+	        $this->set('urlID','/'.$in_hash);
+	        $this->set('urlCode','/',$in_hash); 
+	    
+	 }
+        
+	if ( $this->request->is('post') &&  $in_hash == $this->User->getActivationHash() && $this->User->exists);
+	{
+             
+
+		$this->set('urlID','/'.$user_id);
+	        $this->set('urlCode','/',$in_hash); 
+		
+		$this->User->set($this->request->data); 
+	       
+	       if($this->User->validates(array('fieldList' => array('password')))){
+		                
+				 	$this->Session->setFlash('Your password has been updated, please login with your new password');
+					$this->redirect('login');
+		        
+		
+	       }
+	       else
+	       {
+		                        $this->Session->setFlash("Please fix the below errors");
+		
+		
+	       }
+	       
+	          
+	 
+	}
+
+       
+
+}
+
+
+
 
 /**
  * Activates a user account from an incoming link

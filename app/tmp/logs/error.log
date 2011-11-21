@@ -1954,3 +1954,27 @@
 2011-11-18 18:45:06 Error: [MissingControllerException] Controller class UserController could not be found.
 #0 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2011-11-21 10:29:13 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'username' cannot be null
+#0 /home/wwwstage/public_html/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /home/wwwstage/public_html/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('INSERT INTO `us...', Array)
+#2 /home/wwwstage/public_html/lib/Cake/Model/Datasource/DboSource.php(967): DboSource->execute('INSERT INTO `us...')
+#3 /home/wwwstage/public_html/lib/Cake/Model/Model.php(1629): DboSource->create(Object(User), Array, Array)
+#4 /home/wwwstage/public_html/app/Controller/UsersController.php(340): Model->save('password', '')
+#5 [internal function]: UsersController->resetpword()
+#6 /home/wwwstage/public_html/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#8 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#9 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2011-11-21 10:31:22 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'username' cannot be null
+#0 /home/wwwstage/public_html/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /home/wwwstage/public_html/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('INSERT INTO `us...', Array)
+#2 /home/wwwstage/public_html/lib/Cake/Model/Datasource/DboSource.php(967): DboSource->execute('INSERT INTO `us...')
+#3 /home/wwwstage/public_html/lib/Cake/Model/Model.php(1629): DboSource->create(Object(User), Array, Array)
+#4 /home/wwwstage/public_html/app/Controller/UsersController.php(340): Model->save('password', '')
+#5 [internal function]: UsersController->resetpword()
+#6 /home/wwwstage/public_html/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#8 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#9 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
