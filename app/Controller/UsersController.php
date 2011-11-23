@@ -13,7 +13,6 @@ function beforeFilter() {
       $this->Auth->allow('register');
       $this->Auth->allow('activate');
       $this->Auth->allow('logout');
-
       $this->Auth->allow('registrationMessage','resendemail','forgottonPassword', "resetpword");
 
       
@@ -210,9 +209,17 @@ public  function  resendemail($id=null)
 
 	     $templateVars = array(); 
 	     $templateVars['code'] = 'http://' . env('SERVER_NAME') . '/users/activate/' . $id. '/' . $this->User->getActivationHash();
-	     $templateVars['name'] = $this->User->field("first_name");  
-	     $this->__sendEmail($templateVars,'sign_up',$this->User->field("email"));
+	     $templateVars['name'] = $this->User->field("first_name");
+	     $templateVars['subject'] = "Call Commission - Activation email resend"; 
+             
+	     
+	     $this->__sendEmail($templateVars,'sign_up',null,$this->User->field("email"));
+	     
+	     //$this->Session->setFlash(__('An email has been sent please activate your account then log in .'));
+             //$this->redirect('login');
     }
+    
+    
     
 }
 
@@ -224,8 +231,11 @@ public  function  resendemail($id=null)
  */
   function forgottonPassword()
   {
+     
+       
+      
         if ($this->request->is('post')) {
-	         	
+	         
                      $user = $this->User->getUser($this->request->data['User']['username']);
 		     $this ->User->id = $user['User']['id'];
 	
@@ -336,32 +346,41 @@ public  function  resendemail($id=null)
 */
 public function resetpword($user_id = null, $in_hash = null)
 {
-	 
-	      // http://stage.goodapple.co.uk/users/resetpword/30/982e776a
-	   
-	 $this->User->id = $user_id;
-	 
-	  if(!empty($user_id)  &&  !empty($in_hash))
+	
+	
+	
+	
+	   // http://stage.goodapple.co.uk/users/resetpword/30/982e776a
+	  $this->User->id = $user_id;  
+	  if(empty($user_id)  &&  empty($in_hash))
 	  {
 	
 	        $this->set('urlID','/'.$in_hash);
 	        $this->set('urlCode','/',$in_hash); 
 	    
 	 }
-        
-	if ( $this->request->is('post') &&  $in_hash == $this->User->getActivationHash() && $this->User->exists);
-	{
-             
-
+         else
+	 {
 		$this->set('urlID','/'.$user_id);
 	        $this->set('urlCode','/',$in_hash); 
+	 }
+	 
+	 
+    
+	
+	if ($this->request->is('post')  &&  $in_hash == $this->User->getActivationHash()) 
+	{
+            
+             
 		
 		$this->User->set($this->request->data); 
-	       
-	       if($this->User->validates(array('fieldList' => array('password')))){
+	        if($this->User->validates(array('fieldList' => array('password')))){
 		                
-				 	$this->Session->setFlash('Your password has been updated, please login with your new password');
-					$this->redirect('login');
+				 	
+					
+					 $this->Session->setFlash('Your password has been updated, please login with your new password');
+					 $this->User->saveField('password',$this->request->data['User']['password']); 
+					//$this->redirect('login');
 		        
 		
 	       }
@@ -375,8 +394,7 @@ public function resetpword($user_id = null, $in_hash = null)
 	          
 	 
 	}
-
-       
+    
 
 }
 
