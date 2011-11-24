@@ -42,7 +42,32 @@ class User extends AppModel {
        {
 	 return $this->find('first',array('conditions' => array('User.username'=>array($userName))));
        }
-
+     
+       
+       /**
+	* Gets the last inserted password reset date for the current user
+	* @param $id user id
+	* @return string the date of the last inser
+	* 
+	*/
+        function getForgottonPasswordDate()
+	{
+	     
+	 $id = $this->id;
+	 $this->ForgottonPassword->order = 'ForgottonPassword.created DESC';
+	 return   $this->ForgottonPassword->find('first' ,array('conditions'=>array('ForgottonPassword.user_id'=>$id,
+										                                    'ForgottonPassword.created >='=> date('Y-m-d', strtotime("-1 day")),
+														    'ForgottonPassword.created <=' => date("NOW()"))
+														 
+					         )			                                         
+						 );  
+	  
+	}
+      
+      
+      
+      
+      
       /**
 	 * creates an activation hash for the current user.
 	 *
@@ -92,8 +117,6 @@ class User extends AppModel {
             return array('Group' => array('id' => $groupId));
         }
     }
-
-
      /**
       * Validates that 2 passwords match
       * @param array $data post data that is being validated
@@ -338,9 +361,9 @@ class User extends AppModel {
 			'className' => 'ForgottonPassword',
 			'foreignKey' => 'user_id',
 			'dependent' => false,
-			'conditions' => '',
+			'conditions' => array('ForgottonPassword.active' => '1'),
 			'fields' => '',
-			'order' => '',
+			'order' => 'ForgottonPassword.created DESC',
 			'limit' => '',
 			'offset' => '',
 			'exclusive' => '',

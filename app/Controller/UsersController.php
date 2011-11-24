@@ -7,6 +7,8 @@ App::uses('CakeEmail', 'Network/Email');
  * @property User $User
  */
 class UsersController extends AppController {
+    
+     
 
 function beforeFilter() {
     parent::beforeFilter();
@@ -374,19 +376,29 @@ public function resetpword($user_id = null, $in_hash = null)
              
 		
 		$this->User->set($this->request->data); 
+	        $x = $this->User->getForgottonPasswordDate();
+		
+		if (empty($x)) {
+		                        $this->Session->setFlash(__('Your password has not been updated as you have not recently requested a change,
+								                    please click the forgotton password link if you still want to reset it'));
+				        $this->redirect('login'); 				    
+		 			
+		}
+	       
 	        if($this->User->validates(array('fieldList' => array('password')))){
 		                
 				 	
-					
+				
+					  
 					 $this->Session->setFlash('Your password has been updated, please login with your new password');
 					 $this->User->saveField('password',$this->request->data['User']['password']); 
-					//$this->redirect('login');
+					 $this->redirect('login');
 		        
 		
 	       }
 	       else
 	       {
-		                        $this->Session->setFlash("Please fix the below errors");
+		                        $this->Session->setFlash(__('Please fix the below errors'));
 		
 		
 	       }
