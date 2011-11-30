@@ -1,13 +1,38 @@
+<?php
+//echo $this->Html->script('jquery'); // Include jQuery library
+?> 
+
 <div class="callSessions index">
-	<h2><?php echo __('Calls');?></h2>
+	
+	
+	<h2><?php echo __('Leads');?></h2>
+	<div>
+	
+	<div   class="grid_4" id="admin-left-menu">
+	<h3><?php echo __('Actions'); ?></h3>
+	<ul class="section menu">
+		<li><?php echo $this->Html->link(__('New Call Session'), array('action' => 'add')); ?></li>
+		<li><?php echo $this->Html->link(__('List Camps'), array('controller' => 'camps', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Camp'), array('controller' => 'camps', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Calls'), array('controller' => 'calls', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Call'), array('controller' => 'calls', 'action' => 'add')); ?> </li>
+	</ul>
+     </div>
+	
+	
+	
 	<table cellpadding="0" cellspacing="0">
+		
 	<tr>
+	
+	
 			<th><?php echo $this->Paginator->sort('id');?></th>
 			<th><?php echo $this->Paginator->sort('created');?></th>
 			<th><?php echo $this->Paginator->sort('caller_number');?></th>
 			<th><?php echo $this->Paginator->sort('number_called');?></th>
 			<th><?php echo $this->Paginator->sort('camp_id');?></th>
 			<th class="actions"><?php echo __('Actions');?></th>
+	
 	</tr>
 	<?php
 	$i = 0;
@@ -18,8 +43,10 @@
 		<td><?php echo h($callSession['CallSession']['caller_number']); ?>&nbsp;</td>
 		<td><?php echo h($callSession['CallSession']['number_called']); ?>&nbsp;</td>
 		<td>
-			<?php echo $this->Html->link($callSession['Camp']['id'], array('controller' => 'camps', 'action' => 'view', $callSession['Camp']['id'])); ?>
+			<?php echo $this->Html->link($callSession['Camp']['id'], array('controller' => 'camps', 'action' => 'view', $callSession['Camp']['id'])); ?>		
 		</td>
+		<td>
+		</td> 		
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $callSession['CallSession']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $callSession['CallSession']['id'])); ?>
@@ -43,13 +70,7 @@
 	?>
 	</div>
 </div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-		<li><?php echo $this->Html->link(__('New Call Session'), array('action' => 'add')); ?></li>
-		<li><?php echo $this->Html->link(__('List Camps'), array('controller' => 'camps', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Camp'), array('controller' => 'camps', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Calls'), array('controller' => 'calls', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Call'), array('controller' => 'calls', 'action' => 'add')); ?> </li>
-	</ul>
-</div>
+
+<?php
+//echo $this->Js->writeBuffer(); // Write cached scripts
+

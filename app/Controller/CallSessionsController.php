@@ -13,6 +13,14 @@ class CallSessionsController extends AppController {
  *
  * @return void
  */
+
+
+var $paginate = array(
+'limit' => 20,
+'update' => '#content',
+'evalScripts' => true
+);
+
 	public function index() {
 		$this->CallSession->recursive = 0;
 		$this->set('callSessions', $this->paginate());
