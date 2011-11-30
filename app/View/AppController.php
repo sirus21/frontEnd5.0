@@ -12,8 +12,11 @@ class AppController extends Controller {
         'RequestHandler'
     );
     
-    public $helpers = array('Html', 'Form', 'Session','Js'=> array('Jquery'));
+    public $helpers = array('Html', 'Form', 'Session');
     function beforeFilter() {
+        //config pagenator
+
+        
         //Configure AuthComponent
         $this->Auth->allow('*');
         $this->Auth->actionPath = 'controllers';

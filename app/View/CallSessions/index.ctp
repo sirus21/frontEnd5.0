@@ -1,15 +1,59 @@
 <?php
-//echo $this->Html->script('jquery'); // Include jQuery library
-?> 
+echo $this->Html->script('jquery'); // Include jQuery library
+?>
+ <?php $this->Paginator->options(array(     'update' => '#content',     'evalScripts' => true )); ?>
+
+<script type="text/javascript">
+		$(document).ready(function(){
+		var loaded_messages = 0;
+			$("#more_button").click(function(){
+				
+				alert("hello"); 
+				
+				
+			
+			        $.get("http://localhost/cakeWorkIn/CalLSessions/loadleads", function(data){
+					$("#leads").append(data);
+ 
+				});
+			
+			
+			
+			/*	loaded_messages += 10;
+				$.get("twitter/get_messages/" + loaded_messages, function(data){
+					$("#main_content").append(data);
+ 
+				});
+ 
+				if(loaded_messages >= num_messages - 10)
+				{
+					$("#more_button").hide();
+					//alert('hide');
+				}
+				
+				
+			*/
+			})
+		})
+</script>
+
+
+
+
+
+
+
+
 
 <div class="callSessions index">
-	
+	 <p id="more_button"> more </p> 
 	
 	<h2><?php echo __('Leads');?></h2>
 	<div>
 	
 	<div   class="grid_4" id="admin-left-menu">
-	<h3><?php echo __('Actions'); ?></h3>
+		
+	
 	<ul class="section menu">
 		<li><?php echo $this->Html->link(__('New Call Session'), array('action' => 'add')); ?></li>
 		<li><?php echo $this->Html->link(__('List Camps'), array('controller' => 'camps', 'action' => 'index')); ?> </li>
@@ -25,15 +69,17 @@
 		
 	<tr>
 	
-	
+	                 
 			<th><?php echo $this->Paginator->sort('id');?></th>
 			<th><?php echo $this->Paginator->sort('created');?></th>
 			<th><?php echo $this->Paginator->sort('caller_number');?></th>
 			<th><?php echo $this->Paginator->sort('number_called');?></th>
 			<th><?php echo $this->Paginator->sort('camp_id');?></th>
-			<th class="actions"><?php echo __('Actions');?></th>
+		
 	
 	</tr>
+	
+	<custom id="leads">
 	<?php
 	$i = 0;
 	foreach ($callSessions as $callSession): ?>
@@ -47,11 +93,7 @@
 		</td>
 		<td>
 		</td> 		
-		<td class="actions">
-			<?php echo $this->Html->link(__('View'), array('action' => 'view', $callSession['CallSession']['id'])); ?>
-			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $callSession['CallSession']['id'])); ?>
-			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $callSession['CallSession']['id']), null, __('Are you sure you want to delete # %s?', $callSession['CallSession']['id'])); ?>
-		</td>
+		
 	</tr>
 <?php endforeach; ?>
 	</table>
@@ -68,6 +110,8 @@
 		echo $this->Paginator->numbers(array('separator' => ''));
 		echo $this->Paginator->next(__('next') . ' >', array(), null, array('class' => 'next disabled'));
 	?>
+	
+	</custom> 
 	</div>
 </div>
 

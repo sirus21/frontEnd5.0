@@ -29,10 +29,12 @@
 		
 			<?php echo $this->Session->flash(); ?>
 
-			<?php echo $content_for_layout; ?>
+			<div id="content">
+			       <?php echo $content_for_layout; ?>
+			</div> 
 		
 		<div class="clear"></div>
 	</div>
-	<?php echo $this->element('sql_dump'); ?>
+	     <?php echo $this->element('sql_dump'); ?>
 </body>
 </html>

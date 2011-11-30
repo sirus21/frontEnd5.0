@@ -17,14 +17,30 @@ class CallSessionsController extends AppController {
 
 var $paginate = array(
 'limit' => 20,
-'update' => '#content',
-'evalScripts' => true
+
 );
+var $components = array('RequestHandler');
+var $helpers = array('Js' => array('Jquery')); 
+
+
+        
 
 	public function index() {
+		
 		$this->CallSession->recursive = 0;
 		$this->set('callSessions', $this->paginate());
 	}
+
+   public function loadleads($type=null,$date_range=null)
+   {
+	
+	        $this->CallSession->recursive = 0;
+		$this->set('callSessions', $this->paginate());
+	
+	
+	
+   }
+
 
 /**
  * view method
@@ -33,6 +49,8 @@ var $paginate = array(
  * @return void
  */
 	public function view($id = null) {
+		
+		
 		$this->CallSession->id = $id;
 		if (!$this->CallSession->exists()) {
 			throw new NotFoundException(__('Invalid call session'));
