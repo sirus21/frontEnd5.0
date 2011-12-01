@@ -5,13 +5,13 @@ echo $this->Html->script('jquery'); // Include jQuery library
 
 <script type="text/javascript">
 		$(document).ready(function(){
-		var loaded_messages = 0;
+		       $("#hor-zebra tr:odd").addClass("odd");
+		       var loaded_messages = 0;
 			$("#more_button").click(function(){
 				
-				alert("hello"); 
 				
 				
-			
+				
 			        $.get("http://localhost/cakeWorkIn/CalLSessions/loadleads", function(data){
 				
 					$('#leads').html(data);
@@ -40,33 +40,11 @@ echo $this->Html->script('jquery'); // Include jQuery library
 </script>
 
 
-
-
-
-
-
-
-
-<div class="callSessions index">
-	 <p id="more_button"> more </p> 
-	
-	<h2><?php echo __('Leads');?></h2>
 	<div>
 	
-	<div   class="grid_4" id="admin-left-menu">
-		
-	
-	<ul class="section menu">
-		<li><?php echo $this->Html->link(__('New Call Session'), array('action' => 'add')); ?></li>
-		<li><?php echo $this->Html->link(__('List Camps'), array('controller' => 'camps', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Camp'), array('controller' => 'camps', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Calls'), array('controller' => 'calls', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Call'), array('controller' => 'calls', 'action' => 'add')); ?> </li>
-	</ul>
-     </div>
 	
 	
-	<div id="leads">
+
 	<table cellpadding="0" cellspacing="0" id="hor-zebra">
 		
 	<tr>
@@ -108,11 +86,9 @@ echo $this->Html->script('jquery'); // Include jQuery library
 		echo $this->Paginator->numbers(array('separator' => ''));
 		echo $this->Paginator->next(__('next') . ' >', array(), null, array('class' => 'next disabled'));
 	?>
-	
-	
 	</div>
-</div>
-
+	
+	
 <?php
 //echo $this->Js->writeBuffer(); // Write cached scripts
 

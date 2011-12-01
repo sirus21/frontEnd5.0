@@ -26,7 +26,7 @@ var $helpers = array('Js' => array('Jquery'),'Time');
         
 
 	public function index() {
-		
+		$this->layout='front_end'; 
 		$this->CallSession->recursive = 0;
 		$this->set('callSessions', $this->paginate());
 	}
