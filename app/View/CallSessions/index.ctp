@@ -13,7 +13,9 @@ echo $this->Html->script('jquery'); // Include jQuery library
 				
 			
 			        $.get("http://localhost/cakeWorkIn/CalLSessions/loadleads", function(data){
-					$("#leads").append(data);
+				
+					$('#leads').html(data);
+					$('#hor-zebra tr:even').addClass('even'); 
  
 				});
 			
@@ -64,32 +66,28 @@ echo $this->Html->script('jquery'); // Include jQuery library
      </div>
 	
 	
-	
-	<table cellpadding="0" cellspacing="0">
+	<div id="leads">
+	<table cellpadding="0" cellspacing="0" id="hor-zebra">
 		
 	<tr>
 	
 	                 
 			<th><?php echo $this->Paginator->sort('id');?></th>
-			<th><?php echo $this->Paginator->sort('created');?></th>
-			<th><?php echo $this->Paginator->sort('caller_number');?></th>
-			<th><?php echo $this->Paginator->sort('number_called');?></th>
-			<th><?php echo $this->Paginator->sort('camp_id');?></th>
+			<th><?php echo $this->Paginator->sort('created','Date');?></th>
+			<th><?php echo $this->Paginator->sort('camp_id','Product');?></th>
 		
 	
 	</tr>
 	
-	<custom id="leads">
+	
 	<?php
 	$i = 0;
 	foreach ($callSessions as $callSession): ?>
 	<tr>
 		<td><?php echo h($callSession['CallSession']['id']); ?>&nbsp;</td>
-		<td><?php echo h($callSession['CallSession']['created']); ?>&nbsp;</td>
-		<td><?php echo h($callSession['CallSession']['caller_number']); ?>&nbsp;</td>
-		<td><?php echo h($callSession['CallSession']['number_called']); ?>&nbsp;</td>
+		<td><?php   echo $this->Time->format('F jS, h:i A',$callSession['CallSession']['created'],-0) ?> </td> 
 		<td>
-			<?php echo $this->Html->link($callSession['Camp']['id'], array('controller' => 'camps', 'action' => 'view', $callSession['Camp']['id'])); ?>		
+			<?php echo $this->Html->link($callSession['Camp']['camp_long_name'], array('controller' => 'camps', 'action' => 'view', $callSession['Camp']['id'])); ?>		
 		</td>
 		<td>
 		</td> 		
@@ -111,7 +109,7 @@ echo $this->Html->script('jquery'); // Include jQuery library
 		echo $this->Paginator->next(__('next') . ' >', array(), null, array('class' => 'next disabled'));
 	?>
 	
-	</custom> 
+	
 	</div>
 </div>
 

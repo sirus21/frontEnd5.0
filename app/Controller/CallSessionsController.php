@@ -20,7 +20,7 @@ var $paginate = array(
 
 );
 var $components = array('RequestHandler');
-var $helpers = array('Js' => array('Jquery')); 
+var $helpers = array('Js' => array('Jquery'),'Time'); 
 
 
         
