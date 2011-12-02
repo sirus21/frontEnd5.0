@@ -43,6 +43,12 @@
 				<a href="/login/login-page.html" title="Login">Login</a>
 
 			</div><!--[end] userBar -->
+			
+			
+			
+			
+			
+			
 
 <!--modx personalised header below-->
 
@@ -202,49 +208,21 @@
 			<div id="footerMenu">
 				<div class="incenter">
 					<div class="col">
-						<ul>
-							<li><a href="login/request-membership.html" title="">Join Us</a></li>
-							<li><a href="/info/faq-for-affiliates.html" title="">FAQ for Affiliates</a></li>
-							<li><a href="/info/faq-for-merchants.html" title="">FAQ for Merchants</a></li>
-                                                        <li><a href="/info/billable-rules.html" title="">Billable Rules</a></li>
-                                                        <li><a href="/info/supply-leads.html" title="">Supply Leads</a></li>
-							<li><a href="/info/buying-leads.html" title="">Buying Leads</a></li>
-                                                        <li><a href="/info/pay-per-call-uk.html" title="">Pay-Per-Call UK</a></li>
-						</ul>
+						
 					</div>
 					<div class="col">
 						<ul>
-							<li><a href="/info/about-us.html" title="">About Us</a></li>														                            
-                                                        <li><a href="/info/contact-us.html" title="">Contact Us</a></li>
 							
-                                                        <li><a href="/info/support.html" title="">Support</a></li>
-
-                                                        <li><a href="/info/feedback.html" title="">Feedback</a></li>
-							<li><a href="/info/faq/" title="">FAQ</a></li>
-                                                        <li><a href="/info/terms-and-conditions.html" title="">Terms and Conditions</a></li>
-                                                        <li><a href="/info/privacy-policy.html" title="">Privacy Policy</a></li>
 						</ul>
 					</div>
 
 
 
 
-					<div class="colLast">
-						<ul>
-							<li class="fb"><a href="http://www.linkedin.com/company/goodapple-media-ltd" target="_blank" title="Checkout GoodApple - CallCommission's parent company">Find us on <b>LinkedIn</b></a></a></li>
-							<li class="twitter"><a href="http://twitter.com/#!/CallCommission" target="_blank" title="Go on, follow us!">Follow us on <b>Twitter</b></a></li>
-					
-                                        </div>   
-                                            		
-                                        <div id="mc_embed_signup">
+				
 						
-<form action="http://goodapple.us2.list-manage1.com/subscribe/post?u=3c4840e8e0e22393f28bd84d9&amp;id=3f523bcbd3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-	<label for="mce-EMAIL">Subscribe to our mailing list</label>
-	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-	<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
 
-</div>
-</form>
+
 
 						</ul>
 					</div>
@@ -262,74 +240,9 @@
 
 	</div><!--[end] footer -->
 
-  <!-- clicky -->  
-     
-<script src="//static.getclicky.com/js" type="text/javascript"></script>
-<script type="text/javascript">try{ clicky.init(66477786); }catch(e){}</script>
-
-
-    <!-- end clicky --> 
 
 
 
-
-
-<!-- hidden fields to hold our vars -->
-         <!-- set up default as today --> 
-<input type="hidden" id="interval" value="today"/>
-         <!-- set up default as all --> 
-<input type="hidden" id="leadTypes" value="all"/>
-<input type="hidden" id="startDate" value=""/>
-<input type="hidden" id="endDate" value=""/>
-
-
-	
-
-<!-- Just a dialog box --> 
-<div id="dialog" title="Select Date Range">
-<div id="message"></div>
-	<form name="dateRange" id="dateRangeForm" action="index.cfm" method="post">
-		
-		<div id="startdate" class="dateHolder"><h3 class="dateH3">Start Date </h3>  </div>
-		
-		<div id="enddate" class="dateHolder"> <h3 class="dateH3">End Date </h3>  </div>
-    </form>
-</div> <!--[end] dialog box --> 
-
-<!-- tool tips --> 
-
-<!-- tooltip element -->
-
-
-
-<div class="tooltip">
-
-	<img src="http://static.flowplayer.org/img/title/eye.png" alt="Flying screens" 
-		style="float:left;margin:0 15px 20px 0" />
-
-	<table style="margin:0">
-		<tr>
-			<td class="label">File</td>
-			<td>flowplayer-3.2.7.zip</td>
-		</tr>
-		<tr>
-			<td class="label">Date</td>
-			<td>2011-03-03</td>
-		</tr>
-		<tr>
-			<td class="label">Size</td>
-			<td>112 kB</td>
-		</tr>
-		<tr>
-			<td class="label">OS</td>
-			<td>all</td>
-		</tr>		
-	</table>
-
-	<a href="/3.2/">What's new in 3.2</a>
-</div>
-
-<!-[end] tool tips --> 
 
 
 

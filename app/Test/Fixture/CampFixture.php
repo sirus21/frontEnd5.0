@@ -1,5 +1,5 @@
 <?php
-/* Camp Fixture generated on: 2011-11-24 17:16:06 : 1322154966 */
+/* Camp Fixture generated on: 2011-12-02 10:32:32 : 1322821952 */
 
 /**
  * CampFixture
@@ -16,6 +16,7 @@ class CampFixture extends CakeTestFixture {
 		'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary', 'collate' => NULL, 'comment' => ''),
 		'merchant_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 11, 'collate' => 'latin1_swedish_ci', 'comment' => '', 'charset' => 'latin1'),
 		'camp_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 5, 'collate' => 'latin1_swedish_ci', 'comment' => '', 'charset' => 'latin1'),
+		'camp_long_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 30, 'collate' => 'latin1_swedish_ci', 'comment' => '', 'charset' => 'latin1'),
 		'camp_description' => array('type' => 'text', 'null' => false, 'default' => NULL, 'collate' => 'latin1_swedish_ci', 'comment' => '', 'charset' => 'latin1'),
 		'payout' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'collate' => NULL, 'comment' => ''),
 		'talk_time' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'collate' => NULL, 'comment' => ''),
@@ -33,15 +34,16 @@ class CampFixture extends CakeTestFixture {
  */
 	public $records = array(
 		array(
-			'id' => 1,
-			'merchant_name' => 'Lorem ips',
-			'camp_name' => 'Lor',
-			'camp_description' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
-			'payout' => 1,
-			'talk_time' => 1,
-			'created' => '17:16:06',
-			'modified' => '17:16:06',
-			'forward_number' => 'Lorem ipsum dolor '
+			'id' => '1',
+			'merchant_name' => 'Net Basic',
+			'camp_name' => 'li',
+			'camp_long_name' => 'Life Insurance Tele',
+			'camp_description' => 'Life insurance camp for us',
+			'payout' => '10',
+			'talk_time' => '3',
+			'created' => '17:40:09',
+			'modified' => '17:40:09',
+			'forward_number' => '07986836915'
 		),
 	);
 }

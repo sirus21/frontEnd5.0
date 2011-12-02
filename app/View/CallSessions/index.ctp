@@ -53,6 +53,7 @@ echo $this->Html->script('jquery'); // Include jQuery library
 			<th><?php echo $this->Paginator->sort('id');?></th>
 			<th><?php echo $this->Paginator->sort('created','Date');?></th>
 			<th><?php echo $this->Paginator->sort('camp_id','Product');?></th>
+			<th><?php echo $this->Paginator->sort('payout','Payout'); ?> 
 		
 	
 	</tr>
@@ -64,10 +65,9 @@ echo $this->Html->script('jquery'); // Include jQuery library
 	<tr>
 		<td><?php echo h($callSession['CallSession']['id']); ?>&nbsp;</td>
 		<td><?php   echo $this->Time->format('F jS, h:i A',$callSession['CallSession']['created'],-0) ?> </td> 
-		<td>
-			<?php echo $this->Html->link($callSession['Camp']['camp_long_name'], array('controller' => 'camps', 'action' => 'view', $callSession['Camp']['id'])); ?>		
-		</td>
-		<td>
+		<td><?php echo $callSession['Camp']['camp_long_name'] ?> </td>
+		<td><?php echo "&pound;".$callSession['Camp']['payout'] ?> </td>
+		
 		</td> 		
 		
 	</tr>
