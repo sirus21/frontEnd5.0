@@ -28,6 +28,8 @@ var $helpers = array('Js' => array('Jquery'),'Time');
 	public function index() {
 		$this->layout='front_end'; 
 		//$this->CallSession->recursive = 0;
+		
+		$this->set('username',$this->Auth->user('username')); 
 		$this->set('callSessions', $this->paginate(array('CallSession.paid'=>'1')));
 	}
 
@@ -37,8 +39,7 @@ var $helpers = array('Js' => array('Jquery'),'Time');
 	        $this->CallSession->recursive = 0;
 		$this->set('callSessions', $this->paginate());
 	
-	
-	
+
 }
 
 

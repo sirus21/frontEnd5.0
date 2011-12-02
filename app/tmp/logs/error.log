@@ -3567,3 +3567,9 @@
 2011-12-02 16:08:41 Error: [MissingControllerException] Controller class UserController could not be found.
 #0 C:\wamp\www\cakeWorkIn\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2011-12-02 16:48:44 Error: [MissingControllerException] Controller class UsersControllerController could not be found.
+#0 C:\wamp\www\cakeWorkIn\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-12-02 18:50:03 Error: [MissingControllerException] Controller class UserController could not be found.
+#0 C:\wamp\www\cakeWorkIn\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

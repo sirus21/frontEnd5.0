@@ -97,7 +97,9 @@ function initDB() {
 
 function login() {
 
-      print_r($this->Auth->redirect()); 
+      
+      
+    //$this->layout='front_end';  
      
      // print_r($this->Auth->user('active'));   
     if ($this->request->is('post')) {
@@ -109,7 +111,9 @@ function login() {
 	                                        if($this->Auth->user('active') ) {
 						           
 							   print_r($this->Auth->redirect());
-							   $this->redirect($this->Auth->redirect());
+							   
+							   $this->redirect(array('controller' => 'CallSessions', 'action' => 'index'));
+							   //$this->redirect($this->Auth->redirect());
 	                                        }
 	                                        else
 						   

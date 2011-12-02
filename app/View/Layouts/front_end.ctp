@@ -54,8 +54,9 @@
 
 <div id="userBar">
 
-<span id="logged_in_status">Signed in: joeg (<a href="http://www.callcommission.com/login/login-page.html?service=logout">Sign out</a>)</span>
-<span id="logged_in_status"><a href="http://www.callcommission.com/login/members-home-page.html">My Account</a></span>
+<span id="logged_in_status"> <?php  if(!empty($username)){
+	                                                                echo $username."   ";  echo $this->Html->link(__('Sign Out'), array('controller' => 'users', 'action' => 'logout'));
+}?>
 </div>
 	
 
