@@ -16,16 +16,14 @@
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 
-App::uses('AppShell', 'Console/Command');
 App::uses('Folder', 'Utility');
-
 /**
  * Template Task can generate templated output Used in other Tasks.
  * Acts like a simplified View class.
  *
  * @package       Cake.Console.Command.Task
  */
-class TemplateTask extends AppShell {
+class TemplateTask extends Shell {
 
 /**
  * variables to add to template scope

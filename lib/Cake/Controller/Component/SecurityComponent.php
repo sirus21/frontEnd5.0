@@ -208,9 +208,6 @@ class SecurityComponent extends Component {
 			}
 		}
 		$this->_generateToken($controller);
-		if ($isPost) {
-			unset($controller->request->data['_Token']);
-		}
 	}
 
 /**

@@ -238,7 +238,7 @@ class Mysql extends DboSource {
  * @return mixed array with results fetched and mapped to column names or false if there is no results left to fetch
  */
 	public function fetchResult() {
-		if ($row = $this->_result->fetch(PDO::FETCH_NUM)) {
+		if ($row = $this->_result->fetch()) {
 			$resultRow = array();
 			foreach ($this->map as $col => $meta) {
 				list($table, $column, $type) = $meta;

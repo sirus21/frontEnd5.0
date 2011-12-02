@@ -353,7 +353,7 @@ class CakeSessionTest extends CakeTestCase {
 		TestCakeSession::destroy();
 
 		$this->assertFalse(TestCakeSession::check('bulletProof'));
-		$this->assertNotEquals($id, TestCakeSession::id());
+		$this->assertNotEqual($id, TestCakeSession::id());
 	}
 
 /**

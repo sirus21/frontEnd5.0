@@ -55,18 +55,8 @@ class Object {
  * or tie plugins into a main application. requestAction can be used to return rendered views
  * or fetch the return value from controller actions.
  *
- * Under the hood this method uses Router::reverse() to convert the $url parmeter into a string
- * URL.  You should use URL formats that are compatible with Router::reverse()
- *
- * #### Passing POST and GET data
- *
- * POST and GET data can be simulated in requestAction.  Use `$extra['url']` for
- * GET data.  The `$extra['data']` parameter allows POST data simulation.
- *
- * @param mixed $url String or array-based url.  Unlike other url arrays in CakePHP, this
- *    url will not automatically handle passed and named arguments in the $url paramenter.
- * @param array $extra if array includes the key "return" it sets the AutoRender to true.  Can
- *    also be used to submit GET/POST data, and named/passed arguments.
+ * @param mixed $url String or array-based url.
+ * @param array $extra if array includes the key "return" it sets the AutoRender to true.
  * @return mixed Boolean true or false on success/failure, or contents
  *    of rendered action if 'return' is set in $extra.
  */
@@ -84,8 +74,6 @@ class Object {
 			$extra['url'] = array();
 		}
 		$extra = array_merge(array('autoRender' => 0, 'return' => 1, 'bare' => 1, 'requested' => 1), $extra);
-		$data = isset($extra['data']) ? $extra['data'] : null;
-		unset($extra['data']);
 
 		if (is_string($url)) {
 			$request = new CakeRequest($url);
@@ -93,9 +81,9 @@ class Object {
 			$params = $url + array('pass' => array(), 'named' => array(), 'base' => false);
 			$params = array_merge($params, $extra);
 			$request = new CakeRequest(Router::reverse($params), false);
-		}
-		if (isset($data)) {
-			$request->data = $data;
+			if (isset($params['data'])) {
+				$request->data = $params['data'];
+			}
 		}
 
 		$dispatcher = new Dispatcher();

@@ -3387,3 +3387,43 @@
 #7 C:\wamp\www\cakeWorkIn\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(114): CakeTestSuiteDispatcher->dispatch()
 #8 C:\wamp\www\cakeWorkIn\app\webroot\test.php(92): CakeTestSuiteDispatcher::run()
 #9 {main}
+2011-12-02 10:50:13 Error: [MissingDatasourceConfigException] The datasource configuration "test" was not found in database.php
+#0 C:\wamp\www\cakeWorkIn\lib\Cake\Model\ConnectionManager.php(91): ConnectionManager::_getConnectionObject('test')
+#1 C:\wamp\www\cakeWorkIn\lib\Cake\TestSuite\Fixture\CakeFixtureManager.php(84): ConnectionManager::getDataSource('test')
+#2 C:\wamp\www\cakeWorkIn\lib\Cake\TestSuite\Fixture\CakeFixtureManager.php(63): CakeFixtureManager->_initDb()
+#3 C:\wamp\www\cakeWorkIn\lib\Cake\TestSuite\CakeTestRunner.php(51): CakeFixtureManager->fixturize(Object(CallSessionTestCase))
+#4 C:\wamp\www\cakeWorkIn\lib\Cake\TestSuite\CakeTestSuiteCommand.php(110): CakeTestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#5 C:\wamp\www\cakeWorkIn\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(249): CakeTestSuiteCommand->run(Array)
+#6 C:\wamp\www\cakeWorkIn\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(97): CakeTestSuiteDispatcher->_runTestCase()
+#7 C:\wamp\www\cakeWorkIn\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(114): CakeTestSuiteDispatcher->dispatch()
+#8 C:\wamp\www\cakeWorkIn\app\webroot\test.php(92): CakeTestSuiteDispatcher::run()
+#9 {main}
+2011-12-02 10:50:15 Error: [MissingDatasourceConfigException] The datasource configuration "test" was not found in database.php
+#0 C:\wamp\www\cakeWorkIn\lib\Cake\Model\ConnectionManager.php(91): ConnectionManager::_getConnectionObject('test')
+#1 C:\wamp\www\cakeWorkIn\lib\Cake\TestSuite\Fixture\CakeFixtureManager.php(84): ConnectionManager::getDataSource('test')
+#2 C:\wamp\www\cakeWorkIn\lib\Cake\TestSuite\Fixture\CakeFixtureManager.php(63): CakeFixtureManager->_initDb()
+#3 C:\wamp\www\cakeWorkIn\lib\Cake\TestSuite\CakeTestRunner.php(51): CakeFixtureManager->fixturize(Object(CallSessionTestCase))
+#4 C:\wamp\www\cakeWorkIn\lib\Cake\TestSuite\CakeTestSuiteCommand.php(110): CakeTestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#5 C:\wamp\www\cakeWorkIn\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(249): CakeTestSuiteCommand->run(Array)
+#6 C:\wamp\www\cakeWorkIn\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(97): CakeTestSuiteDispatcher->_runTestCase()
+#7 C:\wamp\www\cakeWorkIn\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(114): CakeTestSuiteDispatcher->dispatch()
+#8 C:\wamp\www\cakeWorkIn\app\webroot\test.php(92): CakeTestSuiteDispatcher::run()
+#9 {main}
+2011-12-02 10:50:23 Error: [MissingControllerException] Controller class SessionsController could not be found.
+#0 C:\wamp\www\cakeWorkIn\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-12-02 10:50:53 Error: [MissingControllerException] Controller class CallSessionController could not be found.
+#0 C:\wamp\www\cakeWorkIn\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-12-02 10:51:21 Error: [MissingControllerException] Controller class CallSessionController could not be found.
+#0 C:\wamp\www\cakeWorkIn\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-12-02 10:51:22 Error: [MissingControllerException] Controller class CallSessionController could not be found.
+#0 C:\wamp\www\cakeWorkIn\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-12-02 10:51:22 Error: [MissingControllerException] Controller class CallSessionController could not be found.
+#0 C:\wamp\www\cakeWorkIn\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-12-02 10:52:31 Error: [MissingControllerException] Controller class CallSessionController could not be found.
+#0 C:\wamp\www\cakeWorkIn\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

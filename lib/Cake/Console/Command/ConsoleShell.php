@@ -16,14 +16,12 @@
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 
-App::uses('AppShell', 'Console/Command');
-
 /**
  * Provides a very basic 'interactive' console for CakePHP apps.
  *
  * @package       Cake.Console.Command
  */
-class ConsoleShell extends AppShell {
+class ConsoleShell extends Shell {
 
 /**
  * Available binding types

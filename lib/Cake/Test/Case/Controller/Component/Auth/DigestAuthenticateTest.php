@@ -290,7 +290,7 @@ DIGEST;
 			'opaque' => '5ccc069c403ebaf9f0171e9517f40e41'
 		);
 		$result = $this->auth->parseAuthData($digest);
-		$this->assertSame($expected, $result);
+		$this->assertIdentical($expected, $result);
 	}
 
 /**

@@ -16,14 +16,13 @@
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 
-App::uses('AppShell', 'Console/Command');
-
+App::uses('Shell', 'Console');
 /**
  * Base class for Bake Tasks.
  *
  * @package       Cake.Console.Command.Task
  */
-class BakeTask extends AppShell {
+class BakeTask extends Shell {
 
 /**
  * Name of plugin

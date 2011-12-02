@@ -77,9 +77,9 @@ class ErrorHandlerTest extends CakeTestCase {
 		$wrong .= '';
 		$result = ob_get_clean();
 
-		$this->assertRegExp('/<pre class="cake-error">/', $result);
-		$this->assertRegExp('/<b>Notice<\/b>/', $result);
-		$this->assertRegExp('/variable:\s+wrong/', $result);
+		$this->assertPattern('/<pre class="cake-error">/', $result);
+		$this->assertPattern('/<b>Notice<\/b>/', $result);
+		$this->assertPattern('/variable:\s+wrong/', $result);
 	}
 
 /**
@@ -109,7 +109,7 @@ class ErrorHandlerTest extends CakeTestCase {
 		trigger_error('Test error', $error);
 
 		$result = ob_get_clean();
-		$this->assertRegExp('/<b>' . $expected . '<\/b>/', $result);
+		$this->assertPattern('/<b>' . $expected . '<\/b>/', $result);
 	}
 
 /**
@@ -145,8 +145,8 @@ class ErrorHandlerTest extends CakeTestCase {
 		$out .= '';
 
 		$result = file(LOGS . 'debug.log');
-		$this->assertEquals(count($result), 1);
-		$this->assertRegExp(
+		$this->assertEqual(count($result), 1);
+		$this->assertPattern(
 			'/^\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2} (Notice|Debug): Notice \(8\): Undefined variable:\s+out in \[.+ line \d+\]$/',
 			$result[0]
 		);
@@ -171,12 +171,12 @@ class ErrorHandlerTest extends CakeTestCase {
 		$out .= '';
 
 		$result = file(LOGS . 'debug.log');
-		$this->assertRegExp(
+		$this->assertPattern(
 			'/^\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2} (Notice|Debug): Notice \(8\): Undefined variable:\s+out in \[.+ line \d+\]$/',
 			$result[0]
 		);
-		$this->assertRegExp('/^Trace:/', $result[1]);
-		$this->assertRegExp('/^ErrorHandlerTest\:\:testHandleErrorLoggingTrace\(\)/', $result[2]);
+		$this->assertPattern('/^Trace:/', $result[1]);
+		$this->assertPattern('/^ErrorHandlerTest\:\:testHandleErrorLoggingTrace\(\)/', $result[2]);
 		@unlink(LOGS . 'debug.log');
 	}
 
@@ -192,7 +192,7 @@ class ErrorHandlerTest extends CakeTestCase {
 		ob_start();
 		ErrorHandler::handleException($error);
 		$result = ob_get_clean();
-		$this->assertRegExp('/Kaboom!/', $result, 'message missing.');
+		$this->assertPattern('/Kaboom!/', $result, 'message missing.');
 	}
 
 /**
@@ -212,11 +212,11 @@ class ErrorHandlerTest extends CakeTestCase {
 		ob_start();
 		ErrorHandler::handleException($error);
 		$result = ob_get_clean();
-		$this->assertRegExp('/Kaboom!/', $result, 'message missing.');
+		$this->assertPattern('/Kaboom!/', $result, 'message missing.');
 
 		$log = file(LOGS . 'error.log');
-		$this->assertRegExp('/\[NotFoundException\] Kaboom!/', $log[0], 'message missing.');
-		$this->assertRegExp('/\#0.*ErrorHandlerTest->testHandleExceptionLog/', $log[1], 'Stack trace missing.');
+		$this->assertPattern('/\[NotFoundException\] Kaboom!/', $log[0], 'message missing.');
+		$this->assertPattern('/\#0.*ErrorHandlerTest->testHandleExceptionLog/', $log[1], 'Stack trace missing.');
 	}
 
 /**

@@ -539,7 +539,8 @@ class CakeSession {
 				'cookieTimeout' => 240,
 				'ini' => array(
 					'session.use_trans_sid' => 0,
-					'session.cookie_path' => self::$path
+					'session.cookie_path' => self::$path,
+					'session.save_handler' => 'files'
 				)
 			),
 			'cake' => array(

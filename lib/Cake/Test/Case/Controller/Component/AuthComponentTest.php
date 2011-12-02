@@ -671,11 +671,6 @@ class AuthComponentTest extends CakeTestCase {
 		$this->Controller->request->query['url'] = Router::normalize($url);
 
 		$this->assertFalse($this->Controller->Auth->startup($this->Controller));
-
-		$url = '/auth_test/CamelCase';
-		$this->Controller->request->addParams(Router::parse($url));
-		$this->Controller->request->query['url'] = Router::normalize($url);
-		$this->assertFalse($this->Controller->Auth->startup($this->Controller));
 	}
 
 /**
@@ -726,7 +721,7 @@ class AuthComponentTest extends CakeTestCase {
 		$this->Controller->request->query['url'] = Router::normalize($url);
 		$this->Controller->Auth->initialize($this->Controller);
 		$this->Controller->Auth->allow('action_name', 'anotherAction');
-		$this->assertEquals($this->Controller->Auth->allowedActions, array('action_name', 'anotherAction'));
+		$this->assertEqual($this->Controller->Auth->allowedActions, array('action_name', 'anotherAction'));
 	}
 
 /**
@@ -752,7 +747,7 @@ class AuthComponentTest extends CakeTestCase {
 		);
 		$this->Auth->startup($this->Controller);
 		$expected = Router::normalize($this->Auth->loginRedirect);
-		$this->assertEquals($expected, $this->Auth->redirect());
+		$this->assertEqual($expected, $this->Auth->redirect());
 
 		$this->Auth->Session->delete('Auth');
 
@@ -777,7 +772,7 @@ class AuthComponentTest extends CakeTestCase {
 		);
 		$this->Auth->startup($this->Controller);
 		$expected = Router::normalize('/AuthTest/login');
-		$this->assertEquals($expected, $this->Controller->testUrl);
+		$this->assertEqual($expected, $this->Controller->testUrl);
 
 		$this->Auth->Session->delete('Auth');
 		$_SERVER['HTTP_REFERER'] = $_ENV['HTTP_REFERER'] = Router::url('/admin', true);
@@ -791,7 +786,7 @@ class AuthComponentTest extends CakeTestCase {
 		$this->Auth->loginRedirect = false;
 		$this->Auth->startup($this->Controller);
 		$expected = Router::normalize('/admin');
-		$this->assertEquals($expected, $this->Auth->redirect());
+		$this->assertEqual($expected, $this->Auth->redirect());
 
 		//Ticket #4750
 		//named params
@@ -803,7 +798,7 @@ class AuthComponentTest extends CakeTestCase {
 		$this->Auth->loginAction = array('controller' => 'AuthTest', 'action' => 'login');
 		$this->Auth->startup($this->Controller);
 		$expected = Router::normalize('posts/index/year:2008/month:feb');
-		$this->assertEquals($expected, $this->Auth->Session->read('Auth.redirect'));
+		$this->assertEqual($expected, $this->Auth->Session->read('Auth.redirect'));
 
 		//passed args
 		$this->Auth->Session->delete('Auth');
@@ -814,7 +809,7 @@ class AuthComponentTest extends CakeTestCase {
 		$this->Auth->loginAction = array('controller' => 'AuthTest', 'action' => 'login');
 		$this->Auth->startup($this->Controller);
 		$expected = Router::normalize('posts/view/1');
-		$this->assertEquals($expected, $this->Auth->Session->read('Auth.redirect'));
+		$this->assertEqual($expected, $this->Auth->Session->read('Auth.redirect'));
 
         // QueryString parameters
 		$_back = $_GET;
@@ -832,7 +827,7 @@ class AuthComponentTest extends CakeTestCase {
 		$this->Auth->loginAction = array('controller' => 'AuthTest', 'action' => 'login');
 		$this->Auth->startup($this->Controller);
 		$expected = Router::normalize('posts/index/29?print=true&refer=menu');
-		$this->assertEquals($expected, $this->Auth->Session->read('Auth.redirect'));
+		$this->assertEqual($expected, $this->Auth->Session->read('Auth.redirect'));
 
 		$_GET = array(
 			'url' => '/posts/index/29',
@@ -848,7 +843,7 @@ class AuthComponentTest extends CakeTestCase {
 		$this->Auth->loginAction = array('controller' => 'AuthTest', 'action' => 'login');
 		$this->Auth->startup($this->Controller);
 		$expected = Router::normalize('posts/index/29?print=true&refer=menu');
-		$this->assertEquals($expected, $this->Auth->Session->read('Auth.redirect'));
+		$this->assertEqual($expected, $this->Auth->Session->read('Auth.redirect'));
 		$_GET = $_back;
 
 		//external authed action
@@ -865,7 +860,7 @@ class AuthComponentTest extends CakeTestCase {
 		$this->Auth->loginAction = array('controller' => 'AuthTest', 'action' => 'login');
 		$this->Auth->startup($this->Controller);
 		$expected = Router::normalize('/posts/edit/1');
-		$this->assertEquals($expected, $this->Auth->Session->read('Auth.redirect'));
+		$this->assertEqual($expected, $this->Auth->Session->read('Auth.redirect'));
 
 		//external direct login link
 		$_SERVER['HTTP_REFERER'] = 'http://webmail.example.com/view/message';
@@ -878,7 +873,7 @@ class AuthComponentTest extends CakeTestCase {
 		$this->Auth->loginAction = array('controller' => 'AuthTest', 'action' => 'login');
 		$this->Auth->startup($this->Controller);
 		$expected = Router::normalize('/');
-		$this->assertEquals($expected, $this->Auth->Session->read('Auth.redirect'));
+		$this->assertEqual($expected, $this->Auth->Session->read('Auth.redirect'));
 
 		$this->Auth->Session->delete('Auth');
 	}
@@ -942,7 +937,7 @@ class AuthComponentTest extends CakeTestCase {
 		);
 
 		$this->Auth->startup($this->Controller);
-		$this->assertEquals($this->Controller->testUrl, '/admin/auth_test/login');
+		$this->assertEqual($this->Controller->testUrl, '/admin/auth_test/login');
 
 		Configure::write('Routing.prefixes', $pref);
 	}
@@ -965,7 +960,7 @@ class AuthComponentTest extends CakeTestCase {
 		$Dispatcher->dispatch(new CakeRequest('/ajax_auth/add'), new CakeResponse(), array('return' => 1));
 		$result = ob_get_clean();
 
-		$this->assertEquals("Ajax!\nthis is the test element", str_replace("\r\n", "\n", $result));
+		$this->assertEqual("Ajax!\nthis is the test element", str_replace("\r\n", "\n", $result));
 		unset($_SERVER['HTTP_X_REQUESTED_WITH']);
 	}
 
@@ -1065,8 +1060,8 @@ class AuthComponentTest extends CakeTestCase {
 			'loginAction' => array('controller' => 'people', 'action' => 'login'),
 			'logoutRedirect' => array('controller' => 'people', 'action' => 'login'),
 		);
-		$this->assertEquals($expected['loginAction'], $this->Controller->Auth->loginAction);
-		$this->assertEquals($expected['logoutRedirect'], $this->Controller->Auth->logoutRedirect);
+		$this->assertEqual($expected['loginAction'], $this->Controller->Auth->loginAction);
+		$this->assertEqual($expected['logoutRedirect'], $this->Controller->Auth->logoutRedirect);
 	}
 
 /**
@@ -1080,7 +1075,7 @@ class AuthComponentTest extends CakeTestCase {
 		$this->Auth->logoutRedirect = '/';
 		$result = $this->Auth->logout();
 
-		$this->assertEquals($result, '/');
+		$this->assertEqual($result, '/');
 		$this->assertNull($this->Auth->Session->read('Auth.AuthUser'));
 		$this->assertNull($this->Auth->Session->read('Auth.redirect'));
 	}

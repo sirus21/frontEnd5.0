@@ -97,7 +97,7 @@ class ConsoleOutputTest extends CakeTestCase {
 	public function testStylesGet() {
 		$result = $this->output->styles('error');
 		$expected = array('text' => 'red', 'underline' => true);
-		$this->assertEquals($expected, $result);
+		$this->assertEqual($expected, $result);
 
 		$this->assertNull($this->output->styles('made_up_goop'));
 

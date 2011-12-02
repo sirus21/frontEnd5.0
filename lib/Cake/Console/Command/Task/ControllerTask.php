@@ -16,7 +16,6 @@
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 
-App::uses('AppShell', 'Console/Command');
 App::uses('BakeTask', 'Console/Command/Task');
 App::uses('AppModel', 'Model');
 
@@ -220,7 +219,7 @@ class ControllerTask extends BakeTask {
 		$this->out(__d('cake_console', "Controller Name:\n\t%s", $controllerName));
 
 		if (strtolower($useDynamicScaffold) == 'y') {
-			$this->out("public \$scaffold;");
+			$this->out("var \$scaffold;");
 		}
 
 		$properties = array(

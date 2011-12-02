@@ -242,14 +242,13 @@ class DbAclTest extends CakeTestCase {
 			'parent_id' => $parent['AroTwoTest']['id']
 		));
 		$result = $this->Acl->Aro->findByAlias('Subordinate', null, null, -1);
-		$this->assertEquals($result['AroTwoTest']['lft'], 16);
-		$this->assertEquals($result['AroTwoTest']['rght'], 17);
+		$this->assertEqual($result['AroTwoTest']['lft'], 16);
+		$this->assertEqual($result['AroTwoTest']['rght'], 17);
 	}
 
 /**
  * testDbAclAllow method
  *
- * @expectedException PHPUnit_Framework_Error_Warning
  * @return void
  */
 	public function testAllow() {
@@ -280,16 +279,17 @@ class DbAclTest extends CakeTestCase {
 		// Samir should still have his tpsReports/view permissions, but does not
 		$this->assertTrue($this->Acl->check('root/users/Samir', 'ROOT/tpsReports/view', 'update'));
 
+		$this->expectError();
 		$this->assertFalse($this->Acl->allow('Lumbergh', 'ROOT/tpsReports/DoesNotExist', 'create'));
 	}
 
 /**
  * testAllowInvalidNode method
  *
- * @expectedException PHPUnit_Framework_Error_Warning
  * @return void
  */
 	public function testAllowInvalidNode() {
+		$this->expectError();
 		$this->Acl->allow('Homer', 'tpsReports', 'create');
 	}
 
@@ -316,31 +316,31 @@ class DbAclTest extends CakeTestCase {
 /**
  * testCheckInvalidNode method
  *
- * @expectedException PHPUnit_Framework_Error_Warning
  * @return void
  */
 	public function testCheckInvalidNode() {
+		$this->expectError();
 		$this->assertFalse($this->Acl->check('WRONG', 'tpsReports', 'read'));
 	}
 
 /**
  * testCheckInvalidPermission method
  *
- * @expectedException PHPUnit_Framework_Error_Notice
  * @return void
  */
 	public function testCheckInvalidPermission() {
-		$this->Acl->check('Lumbergh', 'smash', 'foobar');
+		$this->expectError();
+		$this->assertFalse($this->Acl->check('Lumbergh', 'smash', 'foobar'));
 	}
 
 /**
  * testCheckMissingPermission method
  *
- * @expectedException PHPUnit_Framework_Error_Warning
  * @return void
  */
 	public function testCheckMissingPermission() {
-		$this->Acl->check('users', 'NonExistant', 'read');
+		$this->expectError();
+		$this->assertFalse($this->Acl->check('users', 'NonExistant', 'read'));
 	}
 
 /**
@@ -363,7 +363,6 @@ class DbAclTest extends CakeTestCase {
 /**
  * testDbAclDeny method
  *
- * @expectedException PHPUnit_Framework_Error_Warning
  * @return void
  */
 	public function testDeny() {
@@ -384,8 +383,9 @@ class DbAclTest extends CakeTestCase {
 
 		$result = $this->Acl->Aro->Permission->find('all', array('conditions' => array('AroTwoTest.alias' => 'Samir')));
 		$expected = '-1';
-		$this->assertEquals($result[0]['PermissionTwoTest']['_delete'], $expected);
+		$this->assertEqual($result[0]['PermissionTwoTest']['_delete'], $expected);
 
+		$this->expectError();
 		$this->assertFalse($this->Acl->deny('Lumbergh', 'ROOT/tpsReports/DoesNotExist', 'create'));
 	}
 
@@ -401,7 +401,7 @@ class DbAclTest extends CakeTestCase {
 			array('AroTwoTest' => array('id' => '4', 'parent_id' => '1', 'model' => 'Group', 'foreign_key' => 3, 'alias' => 'users')),
 			array('AroTwoTest' => array('id' => '1', 'parent_id' => null, 'model' => null, 'foreign_key' => null, 'alias' => 'root'))
 		);
-		$this->assertEquals($expected, $result);
+		$this->assertEqual($expected, $result);
 
 		$result = $this->Acl->Aco->node('ROOT/tpsReports/view/current');
 		$expected = array(
@@ -410,7 +410,7 @@ class DbAclTest extends CakeTestCase {
 			array('AcoTwoTest' => array('id' => '2', 'parent_id' => '1', 'model' => null, 'foreign_key' => null, 'alias' => 'tpsReports')),
 			array('AcoTwoTest' => array('id' => '1', 'parent_id' => null, 'model' => null, 'foreign_key' => null, 'alias' => 'ROOT')),
 		);
-		$this->assertEquals($expected, $result);
+		$this->assertEqual($expected, $result);
 	}
 
 /**
@@ -433,7 +433,6 @@ class DbAclTest extends CakeTestCase {
 /**
  * testDbGrant method
  *
- * @expectedException PHPUnit_Framework_Error_Warning
  * @return void
  */
 	public function testGrant() {
@@ -448,13 +447,13 @@ class DbAclTest extends CakeTestCase {
 		$this->assertTrue($this->Acl->check('Micheal', 'view', 'update'));
 		$this->assertFalse($this->Acl->check('Micheal', 'view', 'delete'));
 
+		$this->expectError();
 		$this->assertFalse($this->Acl->allow('Peter', 'ROOT/tpsReports/DoesNotExist', 'create'));
 	}
 
 /**
  * testDbRevoke method
  *
- * @expectedException PHPUnit_Framework_Error_Warning
  * @return void
  */
 	public function testRevoke() {
@@ -468,7 +467,8 @@ class DbAclTest extends CakeTestCase {
 		$this->assertFalse($this->Acl->check('Samir', 'printers', 'read'));
 		$this->assertFalse($this->Acl->check('Peter', 'printers', 'read'));
 
-		$this->Acl->deny('Bobs', 'ROOT/printers/DoesNotExist', 'create');
+		$this->expectError();
+		$this->assertFalse($this->Acl->deny('Bobs', 'ROOT/printers/DoesNotExist', 'create'));
 	}
 /**
  * debug function - to help editing/creating test cases for the ACL component

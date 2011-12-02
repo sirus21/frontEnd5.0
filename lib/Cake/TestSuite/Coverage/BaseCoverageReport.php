@@ -17,6 +17,9 @@
  * @since         CakePHP(tm) v 2.0
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
+
+PHP_CodeCoverage_Filter::getInstance()->addFileToBlacklist(__FILE__, 'DEFAULT');
+
 abstract class BaseCoverageReport {
 
 /**
@@ -120,12 +123,7 @@ abstract class BaseCoverageReport {
 	}
 
 /**
- * Calculates how many lines are covered and what the total number of executable lines is.
- *
- * Handles both PHPUnit3.5 and 3.6 formats.
- *
- * 3.5 uses -1 for uncovered, and -2 for dead.
- * 3.6 uses array() for uncovered and null for dead.
+ * Calculates how many lines are covered and what the total number of executable lines is
  *
  * @param array $fileLines
  * @param array $coverageData
@@ -142,10 +140,10 @@ abstract class BaseCoverageReport {
 			if (!isset($coverageData[$lineno])) {
 				continue;
 			}
-			if (is_array($coverageData[$lineno]) && !empty($coverageData[$lineno])) {
+			if (is_array($coverageData[$lineno])) {
 				$covered++;
 				$total++;
-			} else if ($coverageData[$lineno] === -1 || $coverageData[$lineno] === array()) {
+			} else if ($coverageData[$lineno] === -1) {
 				$total++;
 			}
 		}

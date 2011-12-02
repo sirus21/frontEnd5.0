@@ -18,8 +18,6 @@
  * @since         CakePHP(tm) v 1.2.0.5550
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
-
-App::uses('AppShell', 'Console/Command');
 App::uses('File', 'Utility');
 App::uses('Folder', 'Utility');
 App::uses('CakeSchema', 'Model');
@@ -30,7 +28,7 @@ App::uses('CakeSchema', 'Model');
  * @package       Cake.Console.Command
  * @link          http://book.cakephp.org/2.0/en/console-and-shells/schema-management-and-migrations.html
  */
-class SchemaShell extends AppShell {
+class SchemaShell extends Shell {
 
 /**
  * Schema class being used.
@@ -66,7 +64,7 @@ class SchemaShell extends AppShell {
 		$name = $path = $connection = $plugin = null;
 		if (!empty($this->params['name'])) {
 			$name = $this->params['name'];
-		} elseif (!empty($this->args[0]) && $this->args[0] !== 'snapshot') {
+		} elseif (!empty($this->args[0])) {
 			$name = $this->params['name'] = $this->args[0];
 		}
 
@@ -160,7 +158,6 @@ class SchemaShell extends AppShell {
 		Configure::write('Cache.disable', $cacheDisable);
 
 		if ($snapshot === true) {
-			$fileName = rtrim($this->params['file'], '.php');
 			$Folder = new Folder($this->Schema->path);
 			$result = $Folder->read();
 
@@ -172,7 +169,7 @@ class SchemaShell extends AppShell {
 			$count = 0;
 			if (!empty($result[1])) {
 				foreach ($result[1] as $file) {
-					if (preg_match('/'.preg_quote($fileName).'(?:[_\d]*)?\.php$/', $file)) {
+					if (preg_match('/schema(?:[_\d]*)?\.php$/', $file)) {
 						$count++;
 					}
 				}
@@ -184,6 +181,7 @@ class SchemaShell extends AppShell {
 				}
 			}
 
+			$fileName = rtrim($this->params['file'], '.php');
 			$content['file'] = $fileName . '_' . $count . '.php';
 		}
 

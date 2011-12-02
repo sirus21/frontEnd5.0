@@ -17,7 +17,6 @@
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 
-App::uses('AppShell', 'Console/Command');
 App::uses('Inflector', 'Utility');
 
 /**
@@ -25,7 +24,7 @@ App::uses('Inflector', 'Utility');
  *
  * @package       Cake.Console.Command
  */
-class CommandListShell extends AppShell {
+class CommandListShell extends Shell {
 
 /**
  * startup
@@ -81,15 +80,11 @@ class CommandListShell extends AppShell {
  */
 	protected function _getShellList() {
 		$shellList = array();
-		$skipFiles = array('AppShell');
 
-		$corePath = App::core('Console/Command');
-		$shells = App::objects('file', $corePath[0]);
-		$shells = array_diff($shells, $skipFiles);
+		$shells = App::objects('file', App::core('Console/Command'));
 		$shellList = $this->_appendShells('CORE', $shells, $shellList);
 
 		$appShells = App::objects('Console/Command', null, false);
-		$appShells = array_diff($appShells, $shells, $skipFiles);
 		$shellList = $this->_appendShells('app', $appShells, $shellList);
 
 		$plugins = CakePlugin::loaded();

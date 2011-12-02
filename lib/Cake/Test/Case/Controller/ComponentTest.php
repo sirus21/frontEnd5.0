@@ -40,6 +40,23 @@ class ParamTestComponent extends Component {
  * @var array
  */
 	public $components = array('Banana' => array('config' => 'value'));
+
+/**
+ * initialize method
+ *
+ * @param mixed $controller
+ * @param mixed $settings
+ * @return void
+ */
+	public function initialize(&$controller, $settings) {
+		foreach ($settings as $key => $value) {
+			if (is_numeric($key)) {
+				$this->{$value} = true;
+			} else {
+				$this->{$key} = $value;
+			}
+		}
+	}
 }
 
 /**
@@ -92,7 +109,7 @@ class AppleComponent extends Component {
  * @param mixed $controller
  * @return void
  */
-	public function startup($controller) {
+	public function startup(&$controller) {
 		$this->testName = $controller->name;
 	}
 }
@@ -117,7 +134,7 @@ class OrangeComponent extends Component {
  * @param mixed $controller
  * @return void
  */
-	public function initialize($controller) {
+	public function initialize(&$controller) {
 		$this->Controller = $controller;
 		$this->Banana->testField = 'OrangeField';
 	}
@@ -128,7 +145,7 @@ class OrangeComponent extends Component {
  * @param Controller $controller
  * @return string
  */
-	public function startup($controller) {
+	public function startup(&$controller) {
 		$controller->foo = 'pass';
 	}
 }
@@ -153,7 +170,7 @@ class BananaComponent extends Component {
  * @param Controller $controller
  * @return string
  */
-	public function startup($controller) {
+	public function startup(&$controller) {
 		$controller->bar = 'fail';
 	}
 }

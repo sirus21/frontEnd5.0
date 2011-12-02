@@ -80,35 +80,35 @@ class CommandListShellTest extends CakeTestCase {
 		$output = $this->Shell->stdout->output;
 
 		$expected = "/example \[.*TestPlugin, TestPluginTwo.*\]/";
-		$this->assertRegExp($expected, $output);
+		$this->assertPattern($expected, $output);
 
 		$expected = "/welcome \[.*TestPluginTwo.*\]/";
-		$this->assertRegExp($expected, $output);
+		$this->assertPattern($expected, $output);
 
 
 		$expected = "/acl \[.*CORE.*\]/";
-		$this->assertRegExp($expected, $output);
+		$this->assertPattern($expected, $output);
 
 		$expected = "/api \[.*CORE.*\]/";
-		$this->assertRegExp($expected, $output);
+		$this->assertPattern($expected, $output);
 
 		$expected = "/bake \[.*CORE.*\]/";
-		$this->assertRegExp($expected, $output);
+		$this->assertPattern($expected, $output);
 
 		$expected = "/console \[.*CORE.*\]/";
-		$this->assertRegExp($expected, $output);
+		$this->assertPattern($expected, $output);
 
 		$expected = "/i18n \[.*CORE.*\]/";
-		$this->assertRegExp($expected, $output);
+		$this->assertPattern($expected, $output);
 
 		$expected = "/schema \[.*CORE.*\]/";
-		$this->assertRegExp($expected, $output);
+		$this->assertPattern($expected, $output);
 
 		$expected = "/testsuite \[.*CORE.*\]/";
-		$this->assertRegExp($expected, $output);
+		$this->assertPattern($expected, $output);
 
 		$expected = "/sample \[.*app.*\]/";
-		$this->assertRegExp($expected, $output);
+		$this->assertPattern($expected, $output);
 	}
 
 /**
@@ -123,16 +123,16 @@ class CommandListShellTest extends CakeTestCase {
 		$output = $this->Shell->stdout->output;
 
 		$expected = "/\[.*App.*\]\\v*[ ]+sample/";
-		$this->assertRegExp($expected, $output);
+		$this->assertPattern($expected, $output);
 
 		$expected = "/\[.*TestPluginTwo.*\]\\v*[ ]+example, welcome/";
-		$this->assertRegExp($expected, $output);
+		$this->assertPattern($expected, $output);
 
 		$expected = "/\[.*TestPlugin.*\]\\v*[ ]+example/";
-		$this->assertRegExp($expected, $output);
+		$this->assertPattern($expected, $output);
 
 		$expected = "/\[.*Core.*\]\\v*[ ]+acl, api, bake, command_list, console, i18n, schema, testsuite/";
-		$this->assertRegExp($expected, $output);
+		$this->assertPattern($expected, $output);
 	}
 
 /**

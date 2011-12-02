@@ -16,7 +16,6 @@
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 
-App::uses('AppShell', 'Console/Command');
 App::uses('Controller', 'Controller');
 App::uses('BakeTask', 'Console/Command/Task');
 
@@ -144,7 +143,7 @@ class ViewTask extends BakeTask {
 		}
 		$adminRoute = $this->Project->getPrefix();
 		foreach ($methods as $i => $method) {
-			if ($adminRoute && !empty($this->params['admin'])) {
+			if ($adminRoute && isset($this->params['admin'])) {
 				if ($scaffoldActions) {
 					$methods[$i] = $adminRoute . $method;
 					continue;
@@ -328,7 +327,7 @@ class ViewTask extends BakeTask {
 		$this->hr();
 		$this->out(__d('cake_console', 'Controller Name: %s', $this->controllerName));
 		$this->out(__d('cake_console', 'Action Name:     %s', $action));
-		$this->out(__d('cake_console', 'Path:            %s', $this->getPath() . $this->controllerName . DS . Inflector::underscore($action) . ".ctp"));
+		$this->out(__d('cake_console', 'Path:            %s', $this->params['app'] . DS . 'View' . DS . $this->controllerName . DS . Inflector::underscore($action) . ".ctp"));
 		$this->hr();
 		$looksGood = $this->in(__d('cake_console', 'Look okay?'), array('y','n'), 'y');
 		if (strtolower($looksGood) == 'y') {
@@ -393,10 +392,6 @@ class ViewTask extends BakeTask {
 		}
 		if (!empty($this->template) && $action != $this->template) {
 			return $this->template;
-		}
-		$themePath = $this->Template->getThemePath();
-		if (file_exists($themePath . 'views' . DS . $action . '.ctp')) {
-			return $action;
 		}
 		$template = $action;
 		$prefixes = Configure::read('Routing.prefixes');

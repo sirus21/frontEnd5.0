@@ -19,6 +19,8 @@
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 
+PHP_CodeCoverage_Filter::getInstance()->addFileToBlacklist(__FILE__, 'DEFAULT');
+
 /**
  * Test class
  *

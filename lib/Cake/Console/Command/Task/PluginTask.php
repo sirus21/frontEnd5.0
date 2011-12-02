@@ -16,7 +16,6 @@
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 
-App::uses('AppShell', 'Console/Command');
 App::uses('File', 'Utility');
 App::uses('Folder', 'Utility');
 
@@ -25,7 +24,7 @@ App::uses('Folder', 'Utility');
  *
  * @package       Cake.Console.Command.Task
  */
-class PluginTask extends AppShell {
+class PluginTask extends Shell {
 
 /**
  * path to plugins directory

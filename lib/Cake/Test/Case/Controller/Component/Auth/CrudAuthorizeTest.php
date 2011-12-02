@@ -56,7 +56,7 @@ class CrudAuthorizeTest extends CakeTestCase {
 /**
  * test authorize() without a mapped action, ensure an error is generated.
  *
- * @expectedException PHPUnit_Framework_Error_Warning
+ * @expectedException Exception
  * @return void
  */
 	public function testAuthorizeNoMappedAction() {

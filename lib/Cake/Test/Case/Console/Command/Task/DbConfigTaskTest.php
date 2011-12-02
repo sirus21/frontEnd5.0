@@ -115,7 +115,7 @@ class DbConfigTaskTest extends CakeTestCase {
 			->with(array(
 				array(
 					'name' => 'default',
-					'datasource' => 'mysql',
+					'driver' => 'mysql',
 					'persistent' => 'false',
 					'host' => 'localhost',
 					'login' => 'root',

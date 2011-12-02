@@ -80,10 +80,10 @@ class ConfigureTest extends CakeTestCase {
 		Configure::write('level1.level2.level3_1', $expected);
 		Configure::write('level1.level2.level3_2', 'something_else');
 		$result = Configure::read('level1.level2.level3_1');
-		$this->assertEquals($expected, $result);
+		$this->assertEqual($expected, $result);
 
 		$result = Configure::read('level1.level2.level3_2');
-		$this->assertEquals($result, 'something_else');
+		$this->assertEqual($result, 'something_else');
 
 		$result = Configure::read('debug');
 		$this->assertTrue($result >= 0);
@@ -106,28 +106,28 @@ class ConfigureTest extends CakeTestCase {
 		$writeResult = Configure::write('SomeName.someKey', 'myvalue');
 		$this->assertTrue($writeResult);
 		$result = Configure::read('SomeName.someKey');
-		$this->assertEquals($result, 'myvalue');
+		$this->assertEqual($result, 'myvalue');
 
 		$writeResult = Configure::write('SomeName.someKey', null);
 		$this->assertTrue($writeResult);
 		$result = Configure::read('SomeName.someKey');
-		$this->assertEquals($result, null);
+		$this->assertEqual($result, null);
 
 		$expected = array('One' => array('Two' => array('Three' => array('Four' => array('Five' => 'cool')))));
 		$writeResult = Configure::write('Key', $expected);
 		$this->assertTrue($writeResult);
 
 		$result = Configure::read('Key');
-		$this->assertEquals($expected, $result);
+		$this->assertEqual($expected, $result);
 
 		$result = Configure::read('Key.One');
-		$this->assertEquals($expected['One'], $result);
+		$this->assertEqual($expected['One'], $result);
 
 		$result = Configure::read('Key.One.Two');
-		$this->assertEquals($expected['One']['Two'], $result);
+		$this->assertEqual($expected['One']['Two'], $result);
 
 		$result = Configure::read('Key.One.Two.Three.Four.Five');
-		$this->assertEquals('cool', $result);
+		$this->assertEqual('cool', $result);
 
 		Configure::write('one.two.three.four', '4');
 		$result = Configure::read('one.two.three.four');
@@ -142,11 +142,11 @@ class ConfigureTest extends CakeTestCase {
 	public function testDebugSettingDisplayErrors() {
 		Configure::write('debug', 0);
 		$result = ini_get('display_errors');
-		$this->assertEquals($result, 0);
+		$this->assertEqual($result, 0);
 
 		Configure::write('debug', 2);
 		$result = ini_get('display_errors');
-		$this->assertEquals($result, 1);
+		$this->assertEqual($result, 1);
 	}
 
 /**
@@ -157,7 +157,7 @@ class ConfigureTest extends CakeTestCase {
 	public function testDelete() {
 		Configure::write('SomeName.someKey', 'myvalue');
 		$result = Configure::read('SomeName.someKey');
-		$this->assertEquals($result, 'myvalue');
+		$this->assertEqual($result, 'myvalue');
 
 		Configure::delete('SomeName.someKey');
 		$result = Configure::read('SomeName.someKey');
@@ -166,10 +166,10 @@ class ConfigureTest extends CakeTestCase {
 		Configure::write('SomeName', array('someKey' => 'myvalue', 'otherKey' => 'otherValue'));
 
 		$result = Configure::read('SomeName.someKey');
-		$this->assertEquals($result, 'myvalue');
+		$this->assertEqual($result, 'myvalue');
 
 		$result = Configure::read('SomeName.otherKey');
-		$this->assertEquals($result, 'otherValue');
+		$this->assertEqual($result, 'otherValue');
 
 		Configure::delete('SomeName');
 
@@ -260,13 +260,13 @@ class ConfigureTest extends CakeTestCase {
 		$this->assertTrue($result);
 		$expected = '/test_app/plugins/test_plugin/config/load.php';
 		$config = Configure::read('plugin_load');
-		$this->assertEquals($config, $expected);
+		$this->assertEqual($config, $expected);
 
 		$result = Configure::load('TestPlugin.more.load', 'test');
 		$this->assertTrue($result);
 		$expected = '/test_app/plugins/test_plugin/config/more.load.php';
 		$config = Configure::read('plugin_more_load');
-		$this->assertEquals($config, $expected);
+		$this->assertEqual($config, $expected);
 		CakePlugin::unload();
 	}
 
@@ -342,7 +342,7 @@ class ConfigureTest extends CakeTestCase {
 /**
  * test reader() throwing exceptions on missing interface.
  *
- * @expectedException PHPUnit_Framework_Error
+ * @expectedException Exception
  * @return void
  */
 	public function testReaderExceptionOnIncorrectClass() {

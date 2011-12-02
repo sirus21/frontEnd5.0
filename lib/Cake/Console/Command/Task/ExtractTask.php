@@ -15,8 +15,6 @@
  * @since         CakePHP(tm) v 1.2.0.5012
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
-
-App::uses('AppShell', 'Console/Command');
 App::uses('File', 'Utility');
 App::uses('Folder', 'Utility');
 
@@ -25,7 +23,7 @@ App::uses('Folder', 'Utility');
  *
  * @package       Cake.Console.Command.Task
  */
-class ExtractTask extends AppShell {
+class ExtractTask extends Shell {
 
 /**
  * Paths to use when looking for strings
@@ -164,7 +162,7 @@ class ExtractTask extends AppShell {
 		} else {
 			$message = __d('cake_console', "What is the path you would like to output?\n[Q]uit", $this->_paths[0] . DS . 'Locale');
 			while (true) {
-				$response = $this->in($message, null, rtrim($this->_paths[0], DS) . DS . 'Locale');
+				$response = $this->in($message, null, $this->_paths[0] . DS . 'Locale');
 				if (strtoupper($response) === 'Q') {
 					$this->out(__d('cake_console', 'Extract Aborted'));
 					$this->_stop();
@@ -189,7 +187,6 @@ class ExtractTask extends AppShell {
 		if (empty($this->_files)) {
 			$this->_searchFiles();
 		}
-		$this->_output = rtrim($this->_output, DS) . DS;
 		$this->_extract();
 	}
 
@@ -356,9 +353,6 @@ class ExtractTask extends AppShell {
 		foreach ($models as $model) {
 			App::uses($model, $plugin . 'Model');
 			$reflection = new ReflectionClass($model);
-			if (!$reflection->isSubClassOf('Model')) {
-				continue;
-			}
 			$properties = $reflection->getDefaultProperties();
 			$validate = $properties['validate'];
 			if (empty($validate)) {
@@ -612,7 +606,7 @@ class ExtractTask extends AppShell {
 		if (!empty($this->_exclude)) {
 			$exclude = array();
 			foreach ($this->_exclude as $e) {
-				if (DS !== '\\' && $e[0] !== DS) {
+				if ($e[0] !== DS) {
 					$e = DS . $e;
 				}
 				$exclude[] = preg_quote($e, '/');

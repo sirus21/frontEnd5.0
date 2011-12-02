@@ -18,7 +18,7 @@
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 
-App::uses('AppShell', 'Console/Command');
+App::uses('Shell', 'Console');
 App::uses('CakeTestSuiteDispatcher', 'TestSuite');
 App::uses('CakeTestSuiteCommand', 'TestSuite');
 App::uses('CakeTestLoader', 'TestSuite');
@@ -29,7 +29,7 @@ App::uses('CakeTestLoader', 'TestSuite');
  *
  * @package       Cake.Console.Command
  */
-class TestsuiteShell extends AppShell {
+class TestsuiteShell extends Shell {
 
 /**
  * Dispatcher object for the run.
@@ -157,7 +157,7 @@ class TestsuiteShell extends AppShell {
 		))->addOption('fixture', array(
 			'help' => __d('cake_console', 'Choose a custom fixture manager.'),
 		))->addOption('debug', array(
-			'help' => __d('cake_console', 'Enable full output of testsuite. (supported in PHPUnit 3.6.0 and greater)'),
+			'help' => __d('cake_console', 'More verbose output.'),
 		));
 
 		return $parser;

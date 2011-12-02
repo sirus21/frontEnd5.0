@@ -21,6 +21,8 @@ App::uses('Model', 'Model');
 App::uses('AppModel', 'Model');
 require_once dirname(__FILE__) . DS . 'models.php';
 
+PHP_CodeCoverage_Filter::getInstance()->addFileToBlacklist(__FILE__, 'DEFAULT');
+
 /**
  * ModelBaseTest
  *

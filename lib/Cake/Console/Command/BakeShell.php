@@ -20,7 +20,6 @@
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 
-App::uses('AppShell', 'Console/Command');
 App::uses('Model', 'Model');
 
 /**
@@ -29,7 +28,7 @@ App::uses('Model', 'Model');
  * @package       Cake.Console.Command
  * @link          http://book.cakephp.org/2.0/en/console-and-shells/code-generation-with-bake.html
  */
-class BakeShell extends AppShell {
+class BakeShell extends Shell {
 
 /**
  * Contains tasks to load and instantiate

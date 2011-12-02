@@ -17,6 +17,8 @@
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 
+PHP_CodeCoverage_Filter::getInstance()->addFileToBlacklist(__FILE__, 'DEFAULT');
+
 App::uses('Dispatcher', 'Routing');
 App::uses('CakeTestCase', 'TestSuite');
 App::uses('Router', 'Routing');
@@ -119,7 +121,7 @@ abstract class ControllerTestCase extends CakeTestCase {
  *
  * @var boolean
  */
-	public $autoMock = true;
+	public $autoMock = false;
 
 /**
  * Use custom routes during tests
@@ -187,14 +189,11 @@ abstract class ControllerTestCase extends CakeTestCase {
 	}
 
 /**
- * Lets you do functional tests of a controller action.
+ * Tests a controller action.
  *
  * ### Options:
  *
- * - `data` Will be used as the request data.  If the `method` is GET,
- *   data will be used a GET params.  If the `method` is POST, it will be used
- *   as POST data. By setting `$options['data']` to a string, you can simulate XML or JSON
- *   payloads to your controllers allowing you to test REST webservices.
+ * - `data` POST or GET data to pass. Depends on the method.
  * - `method` POST or GET. Defaults to POST.
  * - `return` Specify the return type you want.  Choose from:
  *     - `vars` Get the set view variables.
@@ -216,23 +215,14 @@ abstract class ControllerTestCase extends CakeTestCase {
 		), $options);
 
 		$_SERVER['REQUEST_METHOD'] = strtoupper($options['method']);
-		if (is_array($options['data'])) {
-			if (strtoupper($options['method']) == 'GET') {
-				$_GET = $options['data'];
-				$_POST = array();
-			} else {
-				$_POST = $options['data'];
-				$_GET = array();
-			}
+		if (strtoupper($options['method']) == 'GET') {
+			$_GET = $options['data'];
+			$_POST = array();
+		} else {
+			$_POST = $options['data'];
+			$_GET = array();
 		}
-		$request = $this->getMock('CakeRequest', array('_readInput'), array($url));
-
-		if (is_string($options['data'])) {
-			$request->expects($this->any())
-				->method('_readInput')
-				->will($this->returnValue($options['data']));
-		}
-
+		$request = new CakeRequest($url);
 		$Dispatch = new ControllerTestDispatcher();
 		foreach (Router::$routes as $route) {
 			if ($route instanceof RedirectRoute) {

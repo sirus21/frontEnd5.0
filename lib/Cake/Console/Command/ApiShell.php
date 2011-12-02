@@ -17,8 +17,6 @@
  * @since         CakePHP(tm) v 1.2.0.5012
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
-
-App::uses('AppShell', 'Console/Command');
 App::uses('File', 'Utility');
 
 /**
@@ -26,7 +24,7 @@ App::uses('File', 'Utility');
  *
  * @package       Cake.Console.Command
  */
-class ApiShell extends AppShell {
+class ApiShell extends Shell {
 
 /**
  * Map between short name for paths and real paths.

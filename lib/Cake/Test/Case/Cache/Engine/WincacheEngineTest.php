@@ -59,7 +59,7 @@ class WincacheEngineTest extends CakeTestCase {
 
 		$result = Cache::read('test', 'wincache');
 		$expecting = '';
-		$this->assertEquals($result, $expecting);
+		$this->assertEqual($result, $expecting);
 
 		$data = 'this is a test of the emergency broadcasting system';
 		$result = Cache::write('test', $data, 'wincache');
@@ -67,7 +67,7 @@ class WincacheEngineTest extends CakeTestCase {
 
 		$result = Cache::read('test', 'wincache');
 		$expecting = $data;
-		$this->assertEquals($result, $expecting);
+		$this->assertEqual($result, $expecting);
 
 		Cache::delete('test', 'wincache');
 	}
@@ -135,16 +135,16 @@ class WincacheEngineTest extends CakeTestCase {
 		$this->assertTrue($result);
 
 		$result = Cache::decrement('test_decrement', 1, 'wincache');
-		$this->assertEquals(4, $result);
+		$this->assertEqual(4, $result);
 
 		$result = Cache::read('test_decrement', 'wincache');
-		$this->assertEquals(4, $result);
+		$this->assertEqual(4, $result);
 
 		$result = Cache::decrement('test_decrement', 2, 'wincache');
-		$this->assertEquals(2, $result);
+		$this->assertEqual(2, $result);
 
 		$result = Cache::read('test_decrement', 'wincache');
-		$this->assertEquals(2, $result);
+		$this->assertEqual(2, $result);
 
 	}
 
@@ -163,16 +163,16 @@ class WincacheEngineTest extends CakeTestCase {
 		$this->assertTrue($result);
 
 		$result = Cache::increment('test_increment', 1, 'wincache');
-		$this->assertEquals(6, $result);
+		$this->assertEqual(6, $result);
 
 		$result = Cache::read('test_increment', 'wincache');
-		$this->assertEquals(6, $result);
+		$this->assertEqual(6, $result);
 
 		$result = Cache::increment('test_increment', 2, 'wincache');
-		$this->assertEquals(8, $result);
+		$this->assertEqual(8, $result);
 
 		$result = Cache::read('test_increment', 'wincache');
-		$this->assertEquals(8, $result);
+		$this->assertEqual(8, $result);
 	}
 
 /**

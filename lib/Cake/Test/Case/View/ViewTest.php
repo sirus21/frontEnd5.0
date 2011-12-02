@@ -171,13 +171,6 @@ class TestAfterHelper extends Helper {
 class ViewTest extends CakeTestCase {
 
 /**
- * Fixtures used in this test.
- *
- * @var array
- */
-	public $fixtures = array('core.user', 'core.post');
-
-/**
  * setUp method
  *
  * @return void
@@ -197,7 +190,7 @@ class ViewTest extends CakeTestCase {
 				CAKE . 'Test' . DS . 'test_app' . DS . 'View'. DS
 			)
 		), true);
-		CakePlugin::load(array('TestPlugin', 'TestPlugin', 'PluginJs'));
+		CakePlugin::loadAll();
 		Configure::write('debug', 2);
 	}
 
@@ -229,11 +222,11 @@ class ViewTest extends CakeTestCase {
 
 		$expected = CakePlugin::path('TestPlugin') . 'View' . DS .'Tests' . DS .'index.ctp';
 		$result = $View->getViewFileName('index');
-		$this->assertEquals($expected, $result);
+		$this->assertEqual($expected, $result);
 
 		$expected = CakePlugin::path('TestPlugin') . 'View' . DS . 'Layouts' . DS .'default.ctp';
 		$result = $View->getLayoutFileName();
-		$this->assertEquals($expected, $result);
+		$this->assertEqual($expected, $result);
 	}
 
 /**
@@ -250,7 +243,7 @@ class ViewTest extends CakeTestCase {
 		$View = new TestView($this->Controller);
 		$paths = $View->paths();
 		$expected = array_merge(App::path('View'), App::core('View'));
-		$this->assertEquals($paths, $expected);
+		$this->assertEqual($paths, $expected);
 
 		$paths = $View->paths('TestPlugin');
 		$pluginPath = CakePlugin::path('TestPlugin');
@@ -262,7 +255,7 @@ class ViewTest extends CakeTestCase {
 			CAKE . 'Test' . DS . 'test_app' . DS . 'View' . DS,
 			CAKE . 'View' . DS
 		);
-		$this->assertEquals($paths, $expected);
+		$this->assertEqual($paths, $expected);
 	}
 
 /**
@@ -285,11 +278,11 @@ class ViewTest extends CakeTestCase {
 		$pluginPath = CakePlugin::path('TestPlugin');
 		$expected = CAKE . 'Test' . DS . 'test_app' . DS . 'Plugin' . DS .'TestPlugin' . DS . 'View' . DS .'Tests' . DS .'index.ctp';
 		$result = $View->getViewFileName('index');
-		$this->assertEquals($expected, $result);
+		$this->assertEqual($expected, $result);
 
 		$expected = $pluginPath. 'View' . DS . 'Layouts' . DS .'default.ctp';
 		$result = $View->getLayoutFileName();
-		$this->assertEquals($expected, $result);
+		$this->assertEqual($expected, $result);
 	}
 
 /**
@@ -308,30 +301,30 @@ class ViewTest extends CakeTestCase {
 
 		$expected = CAKE . 'Test' . DS . 'test_app' . DS . 'View' . DS .'Pages' . DS .'home.ctp';
 		$result = $View->getViewFileName('home');
-		$this->assertEquals($expected, $result);
+		$this->assertEqual($expected, $result);
 
 		$expected = CAKE . 'Test' . DS . 'test_app' . DS . 'View' . DS .'Posts' . DS .'index.ctp';
 		$result = $View->getViewFileName('/Posts/index');
-		$this->assertEquals($expected, $result);
+		$this->assertEqual($expected, $result);
 
 		$expected = CAKE . 'Test' . DS . 'test_app' . DS . 'View' . DS .'Posts' . DS .'index.ctp';
 		$result = $View->getViewFileName('../Posts/index');
-		$this->assertEquals($expected, $result);
+		$this->assertEqual($expected, $result);
 
 		$expected = CAKE . 'Test' . DS . 'test_app' . DS . 'View' . DS . 'Layouts' . DS .'default.ctp';
 		$result = $View->getLayoutFileName();
-		$this->assertEquals($expected, $result);
+		$this->assertEqual($expected, $result);
 
 		$View->layoutPath = 'rss';
 		$expected = CAKE . 'Test' . DS . 'test_app' . DS . 'View' . DS . 'Layouts' . DS . 'rss' . DS . 'default.ctp';
 		$result = $View->getLayoutFileName();
-		$this->assertEquals($expected, $result);
+		$this->assertEqual($expected, $result);
 
 		$View->layoutPath = 'Emails' . DS . 'html';
 		$expected = CAKE . 'Test' . DS . 'test_app' . DS . 'View' . DS . 'Layouts' . DS . 'Emails' . DS . 'html' . DS . 'default.ctp';
 		$result = $View->getLayoutFileName();
 
-		$this->assertEquals($expected, $result);
+		$this->assertEqual($expected, $result);
 	}
 
 /**
@@ -376,7 +369,7 @@ class ViewTest extends CakeTestCase {
  * @return void
  */
 	public function testViewVars() {
-		$this->assertEquals($this->View->viewVars, array('testData' => 'Some test data', 'test2' => 'more data', 'test3' => 'even more data'));
+		$this->assertEqual($this->View->viewVars, array('testData' => 'Some test data', 'test2' => 'more data', 'test3' => 'even more data'));
 	}
 
 /**
@@ -386,11 +379,11 @@ class ViewTest extends CakeTestCase {
  */
 	public function testUUIDGeneration() {
 		$result = $this->View->uuid('form', array('controller' => 'posts', 'action' => 'index'));
-		$this->assertEquals($result, 'form5988016017');
+		$this->assertEqual($result, 'form5988016017');
 		$result = $this->View->uuid('form', array('controller' => 'posts', 'action' => 'index'));
-		$this->assertEquals($result, 'formc3dc6be854');
+		$this->assertEqual($result, 'formc3dc6be854');
 		$result = $this->View->uuid('form', array('controller' => 'posts', 'action' => 'index'));
-		$this->assertEquals($result, 'form28f92cc87f');
+		$this->assertEqual($result, 'form28f92cc87f');
 	}
 
 /**
@@ -402,10 +395,10 @@ class ViewTest extends CakeTestCase {
 		$View = new TestView($this->Controller);
 		$View->addScript('prototype.js');
 		$View->addScript('prototype.js');
-		$this->assertEquals($View->scripts(), array('prototype.js'));
+		$this->assertEqual($View->scripts(), array('prototype.js'));
 
 		$View->addScript('mainEvent', 'Event.observe(window, "load", function() { doSomething(); }, true);');
-		$this->assertEquals($View->scripts(), array('prototype.js', 'mainEvent' => 'Event.observe(window, "load", function() { doSomething(); }, true);'));
+		$this->assertEqual($View->scripts(), array('prototype.js', 'mainEvent' => 'Event.observe(window, "load", function() { doSomething(); }, true);'));
 	}
 
 /**
@@ -415,21 +408,21 @@ class ViewTest extends CakeTestCase {
  */
 	public function testElement() {
 		$result = $this->View->element('test_element');
-		$this->assertEquals($result, 'this is the test element');
+		$this->assertEqual($result, 'this is the test element');
 
 		$result = $this->View->element('plugin_element', array(), array('plugin' => 'TestPlugin'));
-		$this->assertEquals($result, 'this is the plugin element using params[plugin]');
+		$this->assertEqual($result, 'this is the plugin element using params[plugin]');
 
 		$result = $this->View->element('plugin_element', array(), array('plugin' => 'test_plugin'));
-		$this->assertEquals($result, 'this is the plugin element using params[plugin]');
+		$this->assertEqual($result, 'this is the plugin element using params[plugin]');
 
 		$this->View->plugin = 'TestPlugin';
 		$result = $this->View->element('test_plugin_element');
-		$this->assertEquals($result, 'this is the test set using View::$plugin plugin element');
+		$this->assertEqual($result, 'this is the test set using View::$plugin plugin element');
 
 		$result = $this->View->element('non_existant_element');
-		$this->assertRegExp('/Not Found:/', $result);
-		$this->assertRegExp('/non_existant_element/', $result);
+		$this->assertPattern('/Not Found:/', $result);
+		$this->assertPattern('/non_existant_element/', $result);
 	}
 
 /**
@@ -458,11 +451,11 @@ class ViewTest extends CakeTestCase {
 
 		$View = new View($Controller);
 		$result = $View->element('type_check', array('form' => 'string'), array('callbacks' => true));
-		$this->assertEquals('string', $result);
+		$this->assertEqual('string', $result);
 
 		$View->set('form', 'string');
 		$result = $View->element('type_check', array(), array('callbacks' => true));
-		$this->assertEquals('string', $result);
+		$this->assertEqual('string', $result);
 	}
 
 /**
@@ -475,7 +468,7 @@ class ViewTest extends CakeTestCase {
 		$View = new TestView($Controller);
 		$helpers = $View->loadHelpers();
 		$result = $View->element('test_element', array('ram' => 'val', 'test' => array('foo', 'bar')));
-		$this->assertEquals($result, 'this is the test element');
+		$this->assertEqual($result, 'this is the test element');
 	}
 
 /**
@@ -554,7 +547,7 @@ class ViewTest extends CakeTestCase {
 		$expected = 'this is the test element';
 		$result = $View->element($element);
 
-		$this->assertEquals($expected, $result);
+		$this->assertEqual($expected, $result);
 	}
 
 /**
@@ -583,14 +576,14 @@ class ViewTest extends CakeTestCase {
 		$View->Helpers = $this->getMock('HelperCollection', array('trigger'), array($View));
 
 		$View->Helpers->expects($this->at(0))->method('trigger')
-			->with('beforeRender', $this->anything());
+			->with('beforeRender', new PHPUnit_Framework_Constraint_IsAnything());
 		$View->Helpers->expects($this->at(1))->method('trigger')
-			->with('afterRender', $this->anything());
+			->with('afterRender', new PHPUnit_Framework_Constraint_IsAnything());
 
 		$View->Helpers->expects($this->at(2))->method('trigger')
-			->with('beforeLayout', $this->anything());
+			->with('beforeLayout', new PHPUnit_Framework_Constraint_IsAnything());
 		$View->Helpers->expects($this->at(3))->method('trigger')
-			->with('afterLayout', $this->anything());
+			->with('afterLayout', new PHPUnit_Framework_Constraint_IsAnything());
 
 		$View->render('index');
 	}
@@ -604,7 +597,7 @@ class ViewTest extends CakeTestCase {
 		$this->PostsController->helpers = array('Session', 'TestAfter', 'Html');
 		$View = new View($this->PostsController);
 		$View->render('index');
-		$this->assertEquals($View->Helpers->TestAfter->property, 'Valuation');
+		$this->assertEqual($View->Helpers->TestAfter->property, 'Valuation');
 	}
 
 /**
@@ -621,8 +614,8 @@ class ViewTest extends CakeTestCase {
 
 		$content = 'This is my view output';
 		$result = $View->renderLayout($content, 'default');
-		$this->assertRegExp('/modified in the afterlife/', $result);
-		$this->assertRegExp('/This is my view output/', $result);
+		$this->assertPattern('/modified in the afterlife/', $result);
+		$this->assertPattern('/This is my view output/', $result);
 	}
 
 /**
@@ -635,7 +628,7 @@ class ViewTest extends CakeTestCase {
 		$View = new TestView($this->PostsController);
 
 		$result = $View->render('index', false);
-		$this->assertEquals($result, 'posts index');
+		$this->assertEqual($result, 'posts index');
 
 		$attached = $View->Helpers->attached();
 		$this->assertEquals($attached, array('Session', 'Html', 'Form', 'Number'));
@@ -644,7 +637,7 @@ class ViewTest extends CakeTestCase {
 		$View = new TestView($this->PostsController);
 
 		$result = $View->render('index', false);
-		$this->assertEquals($result, 'posts index');
+		$this->assertEqual($result, 'posts index');
 
 		$attached = $View->Helpers->attached();
 		$expected = array('Html', 'Form', 'Number', 'PluggedHelper');
@@ -660,9 +653,9 @@ class ViewTest extends CakeTestCase {
 		$View = new TestView($this->PostsController);
 		$result = str_replace(array("\t", "\r\n", "\n"), "", $View->render('index'));
 
-		$this->assertRegExp("/<meta http-equiv=\"Content-Type\" content=\"text\/html; charset=utf-8\" \/><title>/", $result);
-		$this->assertRegExp("/<div id=\"content\">posts index<\/div>/", $result);
-		$this->assertRegExp("/<div id=\"content\">posts index<\/div>/", $result);
+		$this->assertPattern("/<meta http-equiv=\"Content-Type\" content=\"text\/html; charset=utf-8\" \/><title>/", $result);
+		$this->assertPattern("/<div id=\"content\">posts index<\/div>/", $result);
+		$this->assertPattern("/<div id=\"content\">posts index<\/div>/", $result);
 
 		$this->assertTrue(isset($View->viewVars['content_for_layout']), 'content_for_layout should be a view var');
 		$this->assertTrue(isset($View->viewVars['scripts_for_layout']), 'scripts_for_layout should be a view var');
@@ -675,8 +668,8 @@ class ViewTest extends CakeTestCase {
 		$View = new TestView($this->PostsController);
 		$result = str_replace(array("\t", "\r\n", "\n"), "", $View->render(false, 'flash'));
 
-		$this->assertRegExp("/<title>yo what up<\/title>/", $result);
-		$this->assertRegExp("/<p><a href=\"flash\">yo what up<\/a><\/p>/", $result);
+		$this->assertPattern("/<title>yo what up<\/title>/", $result);
+		$this->assertPattern("/<p><a href=\"flash\">yo what up<\/a><\/p>/", $result);
 
 		$this->assertTrue($View->render(false, 'flash'));
 
@@ -689,9 +682,9 @@ class ViewTest extends CakeTestCase {
 		$View = new TestView($this->PostsController);
 		$result = str_replace(array("\t", "\r\n", "\n"), "", $View->render('index'));
 
-		$this->assertRegExp("/<meta http-equiv=\"Content-Type\" content=\"text\/html; charset=utf-8\" \/><title>/", $result);
-		$this->assertRegExp("/<div id=\"content\">posts index<\/div>/", $result);
-		$this->assertRegExp("/<div id=\"content\">posts index<\/div>/", $result);
+		$this->assertPattern("/<meta http-equiv=\"Content-Type\" content=\"text\/html; charset=utf-8\" \/><title>/", $result);
+		$this->assertPattern("/<div id=\"content\">posts index<\/div>/", $result);
+		$this->assertPattern("/<div id=\"content\">posts index<\/div>/", $result);
 	}
 
 /**
@@ -721,8 +714,8 @@ class ViewTest extends CakeTestCase {
 		$View = new View($Controller);
 		$result = $View->render('helper_overwrite', false);
 
-		$this->assertRegExp('/I am some test html/', $result);
-		$this->assertRegExp('/Test link/', $result);
+		$this->assertPattern('/I am some test html/', $result);
+		$this->assertPattern('/Test link/', $result);
 	}
 
 /**
@@ -734,20 +727,20 @@ class ViewTest extends CakeTestCase {
 		$View = new TestView($this->PostsController);
 
 		$result = $View->getViewFileName('index');
-		$this->assertRegExp('/Posts(\/|\\\)index.ctp/', $result);
+		$this->assertPattern('/Posts(\/|\\\)index.ctp/', $result);
 
 		$result = $View->getViewFileName('/Pages/home');
-		$this->assertRegExp('/Pages(\/|\\\)home.ctp/', $result);
+		$this->assertPattern('/Pages(\/|\\\)home.ctp/', $result);
 
 		$result = $View->getViewFileName('../Elements/test_element');
-		$this->assertRegExp('/Elements(\/|\\\)test_element.ctp/', $result);
+		$this->assertPattern('/Elements(\/|\\\)test_element.ctp/', $result);
 
 		$result = $View->getViewFileName('../Themed/TestTheme/Posts/index');
-		$this->assertRegExp('/Themed(\/|\\\)TestTheme(\/|\\\)Posts(\/|\\\)index.ctp/', $result);
+		$this->assertPattern('/Themed(\/|\\\)TestTheme(\/|\\\)Posts(\/|\\\)index.ctp/', $result);
 
 		$expected = CAKE . 'Test' . DS . 'test_app' . DS . 'View' . DS .'Posts' . DS .'index.ctp';
 		$result = $View->getViewFileName('../Posts/index');
-		$this->assertEquals($expected, $result);
+		$this->assertEqual($expected, $result);
 
 	}
 
@@ -783,7 +776,7 @@ class ViewTest extends CakeTestCase {
 		$result = ob_get_clean();
 
 		$expected = 'some cacheText';
-		$this->assertRegExp('/^some cacheText/', $result);
+		$this->assertPattern('/^some cacheText/', $result);
 
 		@unlink($path);
 	}
@@ -800,7 +793,7 @@ class ViewTest extends CakeTestCase {
 		$View->helpers = array('Html', 'Form', 'Cache');
 		$View->layout = 'cache_layout';
 		$result = $View->render('index');
-		$this->assertNotRegExp('/cake:nocache/', $result);
+		$this->assertNoPattern('/cake:nocache/', $result);
 	}
 
 /**
@@ -815,7 +808,7 @@ class ViewTest extends CakeTestCase {
 		$View->helpers = array('Html', 'Form');
 		$View->layout = 'cache_layout';
 		$result = $View->render('index');
-		$this->assertNotRegExp('/cake:nocache/', $result);
+		$this->assertNoPattern('/cake:nocache/', $result);
 	}
 
 /**
@@ -845,14 +838,14 @@ class ViewTest extends CakeTestCase {
 		$result = ob_get_clean();
 		@unlink($filename);
 
-		$this->assertRegExp('/php echo \$foo;/', $result);
-		$this->assertRegExp('/php echo \$bar;/', $result);
-		$this->assertRegExp('/php \$barfoo = \'in sub2\';/', $result);
-		$this->assertRegExp('/php echo \$barfoo;/', $result);
-		$this->assertRegExp('/printing: "in sub2"/', $result);
-		$this->assertRegExp('/php \$foobar = \'in sub1\';/', $result);
-		$this->assertRegExp('/php echo \$foobar;/', $result);
-		$this->assertRegExp('/printing: "in sub1"/', $result);
+		$this->assertPattern('/php echo \$foo;/', $result);
+		$this->assertPattern('/php echo \$bar;/', $result);
+		$this->assertPattern('/php \$barfoo = \'in sub2\';/', $result);
+		$this->assertPattern('/php echo \$barfoo;/', $result);
+		$this->assertPattern('/printing: "in sub2"/', $result);
+		$this->assertPattern('/php \$foobar = \'in sub1\';/', $result);
+		$this->assertPattern('/php echo \$foobar;/', $result);
+		$this->assertPattern('/printing: "in sub1"/', $result);
 	}
 */
 
@@ -865,26 +858,26 @@ class ViewTest extends CakeTestCase {
 		$View = new TestView($this->PostsController);
 		$View->viewVars = array();
 		$View->set('somekey', 'someValue');
-		$this->assertSame($View->viewVars, array('somekey' => 'someValue'));
-		$this->assertSame($View->getVars(), array('somekey'));
+		$this->assertIdentical($View->viewVars, array('somekey' => 'someValue'));
+		$this->assertIdentical($View->getVars(), array('somekey'));
 
 		$View->viewVars = array();
 		$keys = array('key1', 'key2');
 		$values = array('value1', 'value2');
 		$View->set($keys, $values);
-		$this->assertSame($View->viewVars, array('key1' => 'value1', 'key2' => 'value2'));
-		$this->assertSame($View->getVars(), array('key1', 'key2'));
-		$this->assertSame($View->getVar('key1'), 'value1');
+		$this->assertIdentical($View->viewVars, array('key1' => 'value1', 'key2' => 'value2'));
+		$this->assertIdentical($View->getVars(), array('key1', 'key2'));
+		$this->assertIdentical($View->getVar('key1'), 'value1');
 		$this->assertNull($View->getVar('key3'));
 
 		$View->set(array('key3' => 'value3'));
-		$this->assertSame($View->getVar('key3'), 'value3');
+		$this->assertIdentical($View->getVar('key3'), 'value3');
 
 		$View->viewVars = array();
 		$View->set(array(3 => 'three', 4 => 'four'));
 		$View->set(array(1 => 'one', 2 => 'two'));
 		$expected = array(3 => 'three', 4 => 'four', 1 => 'one', 2 => 'two');
-		$this->assertEquals($View->viewVars, $expected);
+		$this->assertEqual($View->viewVars, $expected);
 	}
 
 /**
@@ -911,7 +904,7 @@ class ViewTest extends CakeTestCase {
 		$this->PostsController->ext = '.alt';
 		$View = new TestView($this->PostsController);
 		$result = $View->render('alt_ext', false);
-		$this->assertEquals($result, 'alt ext');
+		$this->assertEqual($result, 'alt ext');
 	}
 
 /**
