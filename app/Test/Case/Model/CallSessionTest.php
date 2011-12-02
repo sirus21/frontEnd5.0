@@ -1,7 +1,7 @@
 <?php
 /* CallSession Test cases generated on: 2011-12-02 10:08:01 : 1322820481*/
 App::uses('CallSession', 'Model');
-App::import('Core', 'Controller');
+
 /**
  * CallSession Test Case
  *
@@ -38,7 +38,8 @@ class CallSessionTestCase extends CakeTestCase {
 
 
      function testgetPaidLeads(){
-	 $result = $this->CallSession->getPaidLeads();
+	 $result = $this->CallSession->getPaidLeads(array('CallSession.id'));
+         print_r($result);
 	 $expected = array(
 		   array(
 			'id' => '2',

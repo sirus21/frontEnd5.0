@@ -27,19 +27,19 @@ var $helpers = array('Js' => array('Jquery'),'Time');
 
 	public function index() {
 		$this->layout='front_end'; 
-		$this->CallSession->recursive = 0;
-		$this->set('callSessions', $this->paginate());
+		//$this->CallSession->recursive = 0;
+		$this->set('callSessions', $this->paginate(array('CallSession.paid'=>'1')));
 	}
 
    public function loadleads($type=null,$date_range=null)
-   {
+{
 	
 	        $this->CallSession->recursive = 0;
 		$this->set('callSessions', $this->paginate());
 	
 	
 	
-   }
+}
 
 
 /**

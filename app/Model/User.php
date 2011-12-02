@@ -335,6 +335,28 @@ class User extends AppModel {
 		)
 	);
 
+
+
+
+
+public $hasOne= array(
+		
+		
+		'PaymentDetail' => array(
+			'className' => 'PaymentDetail',
+			'foreignKey' => 'user_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		)
+	); 
+
 /**
  * hasMany associations
  *

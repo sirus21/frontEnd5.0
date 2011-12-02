@@ -11,7 +11,9 @@ class UsersController extends AppController {
      
 
 function beforeFilter() {
-    parent::beforeFilter();
+   
+     //  parent::beforeFilter();
+      //$this->initDB(); 
       $this->Auth->allow('register');
       $this->Auth->allow('activate');
       $this->Auth->allow('logout');
@@ -71,22 +73,21 @@ public function beforeSave() {
 function initDB() {
     $group = $this->User->Group;
     //Allow admins to everything
-    $group->id = 1;
+    $group->id = 4;
     $this->Acl->allow($group, 'controllers');
 
     //allow managers to posts and widgets
-    $group->id = 2;
+    $group->id = 5;
     $this->Acl->deny($group, 'controllers');
     $this->Acl->allow($group, 'controllers/Posts');
     $this->Acl->allow($group, 'controllers/Widgets');
 
     //allow users to only add and edit on posts and widgets
-    $group->id = 3;
+    $group->id = 6;
     $this->Acl->deny($group, 'controllers');
-    $this->Acl->allow($group, 'controllers/Posts/add');
-    $this->Acl->allow($group, 'controllers/Posts/edit');
-    $this->Acl->allow($group, 'controllers/Widgets/add');
-    $this->Acl->allow($group, 'controllers/Widgets/edit');
+    $this->Acl->allow($group,'controllers/CallSessions/index');
+  
+
     //we add an exit to avoid an ugly "missing views" error message
     echo "all done";
     exit;
@@ -96,6 +97,8 @@ function initDB() {
 
 function login() {
 
+      print_r($this->Auth->redirect()); 
+     
      // print_r($this->Auth->user('active'));   
     if ($this->request->is('post')) {
      
@@ -104,7 +107,9 @@ function login() {
 	if ($this->Auth->login()) {
            
 	                                        if($this->Auth->user('active') ) {
-							$this->redirect($this->Auth->redirect());
+						           
+							   print_r($this->Auth->redirect());
+							   $this->redirect($this->Auth->redirect());
 	                                        }
 	                                        else
 						   
@@ -130,6 +135,7 @@ function logout()
     	 
 	 $this->Session->setFlash('Good-Bye');
 	 $this->redirect($this->Auth->logout());
+	 $this->Session->destroy(); 
 }
 
 

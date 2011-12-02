@@ -30,9 +30,11 @@ class CallSession extends AppModel {
  *    Gets the paid leads for diplay
  *    @return array a list of all the paid leads that we have in our database
  */
-  public function  getPaidLeads(){
+  public function  getPaidLeads($fields=null){
                  
-        $this->find('all',  array('conditions'=>array('paid' => '1')));
+     
+      return   $this->find('all',  array('conditions'=>array('paid' => '1')),$fields);
+      
                            
   }
 
