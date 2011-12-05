@@ -16,8 +16,8 @@ html { width: 100%; height: 100%; }
 body { width: 100%; height: 100%; font-family: Helvetica, Arial; color: #5a5b5c; background: #fff; font-size: 12px;   }
 
 h1,h2,h3,h4,h5 { font-family: Helvetica, Arial; font-weight: normal; margin: 0 0 0.8em 0; color: #323b40; }
+h1,h3{font-size:20px;};
 
-h3 { font-size: 36px; }
 h4 { font-size: 15px; }
 
 a { color: #323b40; text-decoration: underline; }
@@ -41,7 +41,7 @@ label { display: block; font-weight: bold; margin: 0 0 5px 0; }
                
 	       /*logo*/
                #logo { width: 334px; display: block; margin-top: 18px; float: left; }
-		#logo a { text-indent: -9999px; background: url('../img/bg_logo.png') no-repeat center top; display: block; width: 334px; height: 50px; }
+		#logo a { text-indent: -9999px; background: url('../img/logo.png') no-repeat center top; display: block; width: 334px; height: 100px; }
 		#logo a:active { margin-top: 0; }
 		
 		#logo span { width: 334px; height: 50px; display: block; margin: 0 0 15px -65px; }
@@ -123,7 +123,7 @@ label { display: block; font-weight: bold; margin: 0 0 5px 0; }
               }
         */        
 
-/* ---------------------------- form -----------------------*/
+/* ----------------------------  -----------------------*/
 
 #greyIcon { margin-left: 5px; }
 
@@ -242,11 +242,22 @@ label { display: block; font-weight: bold; margin: 0 0 5px 0; }
                         
           /* ----Forms----*/
 
-.register { font-family: helvetica, arial; padding: 0px 0px 0px 100px; line-height: 1.4; width: 400px; }
+/*.form-error{border-color:yellow;background-color:red} */
+.error-message{ color:red;      }
 
-form.registerRow { width: 150px }   
+.register { font-family: helvetica, arial; padding: 0px 0px 0px 100px; line-height: 1.4;  float:left;width: 360px; }
+.register input,label{float:left;margin: 15px 0px 0px 0px;width:130px;}
+.register input{width:220px;}
 
-.registerRow label { width:200px }
+.required label:after { color: #EE3322;content: "*";display: inline;}
+
+.register input[type="submit"] { width: 120px; height: 38px; display: block; background: transparent url('../img/btn_grey_home_small.png') no-repeat center top; font-size: 12px; font-weight: bold; text-transform: uppercase; color: #fff; text-decoration: none; line-height: 37px; text-align: center; float: left; margin-top: 30px; margin-bottom: 20px; margin-left: 20px; padding: 0; border: 0;					-moz-text-shadow: 1px 1px 2px #000;					-webkit-text-shadow: 1px 1px 2px #000;
+					text-shadow: 1px 1px 2px #000; cursor:pointer;}
+
+form.registerRow { width: 150px;margin-top:30px;}   
+.registerRow label { width:200px;}
+
+
 
 .formAccounts { font-family: helvetica, arial; padding: 0px 0px 0px 100px; line-height: 1.4; width: 400px; }
 
@@ -277,6 +288,15 @@ label.sub { width: 200px; float: left; text-align: right; margin-right: 5px; dis
 .btnRegister button { width: 120px; height: 38px; display: block; background: transparent url('http://www.callcommission.com/assets/templates/img/btn_grey_home_small.png') no-repeat center top; font-size: 12px; font-weight: bold; text-transform: uppercase; color: #fff; text-decoration: none; line-height: 37px; text-align: center; float: left; margin-top: 15px; margin-bottom: 20px; margin-left: 20px; padding: 0; border: 0;
 			      -moz-text-shadow: 1px 1px 2px #000;-webkit-text-shadow: 1px 1px 2px #000;text-shadow: 1px 1px 2px #000;}
 .btnRegister button:hover { background: url('http://www.callcommission.com/assets/templates/img/btn_grey_home_small_hover.png')}
+/* flash messages */ 
+.innnerContent {margin:0px auto; width: 500px;}
+.flash_good { background: #e5f2be; border:2px solid #bedf5d; padding:10px; font-weight:bold; margin: 0px;text-align:center;}
+.flash_bad { background: #eccecf;border:2px solid #9e0b0f;padding:10px;font-weight:bold;margin: 0px; padding: 0 auto}
+.flash_good img, .flash_bad img {float:right;height:10px;width:10px;margin: 0px 0px 15px 0px}
+
+
+
+
 
 /* ----- extra -----*/
 
@@ -299,6 +319,10 @@ margin:5px;
                         
                         
         /* custom styles  */
+        
+        
+        .boxOntheSide{float: left;margin:60px 0px 0px 120px; }
+        .boxOntheSide ul li{list-style:circle;margin:5px 0px  0px 40px }
         
         .asideLeftInner{
             

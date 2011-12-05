@@ -26,7 +26,7 @@ var $helpers = array('Js' => array('Jquery'),'Time');
         
 
 	public function index() {
-		$this->layout='front_end'; 
+		$this->layout='front_end_not_logged_in'; 
 		//$this->CallSession->recursive = 0;
 		
 		$this->set('username',$this->Auth->user('username')); 

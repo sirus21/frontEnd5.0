@@ -97,7 +97,7 @@ function initDB() {
 
 function login() {
 
-      
+     $this->layout='front_end_not_logged_in';    
       
     //$this->layout='front_end';  
      
@@ -174,14 +174,12 @@ function logout()
  */
 	public function register() {
 		
-		
-		
+		// set the layout to our front end template
+                $this->layout='front_end_not_logged_in';  
 		if ($this->request->is('post')) {
 			     
-			$this->User->create();
-			
-			if(!empty( $this->request->data['User']['password']))
-		        if ($this->User->save($this->request->data)) {
+			$this->User->create();			
+			if ($this->User->save($this->request->data, array('validate'=>'only'))) {
 			     
 			        $user =  $this->User->getUser($this->request->data['User']['email']);
 				
@@ -198,7 +196,7 @@ function logout()
 				
 				// $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The user could not be saved. Please, try again.'));
+				$this->Session->setFlash('Whoops looks like there are a few problems, please correct them and hit submit ','flash_bad');
 			}
 		}
 		 
