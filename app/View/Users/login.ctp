@@ -5,6 +5,7 @@ echo $this->Form->input('User.password');
 echo $this->Form->end('Login');
 
 ?>
+<p> hi there </p> 
 
 
  <span> <?php echo $this->Html->link(__('Register'), array('action' => 'register')); ?> </span>
