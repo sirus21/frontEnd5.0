@@ -119,13 +119,16 @@ function login() {
 						   
 						    $this->set('id',$this->Auth->user('id'));
 					            $this->Auth->logout();							
-						    $this->Session->setFlash('Your account is not yet active, please activate it by clicking on the link in the email
-										            we sent you','flash_login');
+						    
+						    
+						    
+						    $this->Session->setFlash('Your account is not yet active, please activate it by clicking on the link in the email we sent you','flash_login');
 						     
 				
         } else {
             
-	    $this->Session->setFlash('Your email or password was incorrect.');
+	  $this->Session->setFlash('Oh dear we can\'t find that username and password','flash_bad');
+						    
        
         }
     }
@@ -243,7 +246,7 @@ public  function  resendemail($id=null)
   {
      
        
-      
+        $this->layout='front_end_not_logged_in';  
         if ($this->request->is('post')) {
 	         
                      $user = $this->User->getUser($this->request->data['User']['username']);

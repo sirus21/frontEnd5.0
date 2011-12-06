@@ -1,5 +1,11 @@
-<div class="flash flash_success" id="'flashMessage'">
- 
-    <?php echo $message  ?> 
-     <p> To resend the message please click <?php echo $this->Html->link(__('Here'), array('action' => 'resendemail',$id)); ?> 
+
+<div class="flash_bad">
+	<div class="innnerContent"> <?php echo $message ?>
+    
+        <?php echo $this->Html->link(__('Click to resend the message'), array('action' => 'resendemail',$id)); ?> 
+	
+</div>
+
+
+
 </div>

@@ -127,32 +127,6 @@ label { display: block; font-weight: bold; margin: 0 0 5px 0; }
 
 #greyIcon { margin-left: 5px; }
 
-/* ----------------------------- mailchimp --------------------------- */
-	#mc_embed_signup{background:#fff; font:14px Helvetica,Arial,sans-serif; float: left; margin: 0 40px 0 0; line-height: 0.80 }
-	
-	/* MailChimp Form Embed Code - Slim - 08/17/2011 */
-        #mc_embed_signup form {display:block; position:relative; text-align:left; padding:10px 0 10px 3%}
-	#mc_embed_signup h2 {font-weight:bold; padding:0; margin:15px 0; font-size:1.4em;}
-	#mc_embed_signup input {border:1px solid #999; -webkit-appearance:none;}
-	#mc_embed_signup input[type=checkbox]{-webkit-appearance:checkbox;}
-	#mc_embed_signup input[type=radio]{-webkit-appearance:radio;}
-	#mc_embed_signup input:focus {border-color:#333;}
-	#mc_embed_signup .button {clear:both; background-color: #aaa; border: 0 none; border-radius:4px; color: #FFFFFF; cursor: pointer; display: inline-block; font-size:15px; font-weight: bold; height: 32px; line-height: 32px; margin: 0 5px 10px 0; padding:0; text-align: center; text-decoration: none; vertical-align: top; white-space: nowrap; width: auto;}
-        #mc_embed_signup .button:hover {background-color:#777;}
-	#mc_embed_signup .small-meta {font-size: 11px;}
-	#mc_embed_signup .nowrap {white-space:nowrap;}     
-	#mc_embed_signup .clear {clear:none; display:inline;}
-
-        #mc_embed_signup label {display:block; font-size:16px; padding-bottom:10px; font-weight:bold; margin: 0px; width: 220px; }
-	#mc_embed_signup input.email {display:block; padding:8px 0; margin:0 4% 10px 0; text-indent:5px; width:80%; min-width:150px;}
-	#mc_embed_signup input.button {display:block; width:35%; margin:0 0 10px 0; min-width:90px;}
-
-	#mc_embed_signup div#mce-responses {float:left; top:-1.4em; padding:0em .5em 0em .5em; overflow:hidden; width:90%;margin: 0 5%; clear: both;}
-	#mc_embed_signup div.response {margin:1em 0; padding:1em .5em .5em 0; font-weight:bold; float:left; top:-1.5em; z-index:1; width:80%;}
-	#mc_embed_signup #mce-error-response {display:none;}
-	#mc_embed_signup #mce-success-response {color:#529214; display:none;}
-	#mc_embed_signup label.error {display:block; float:none; width:auto; margin-left:1.05em; text-align:left; padding:.5em 0;}
-
 	   
 /* ----------------------------- footer --------------------------- */
 /*quotes*/
@@ -240,59 +214,39 @@ label { display: block; font-weight: bold; margin: 0 0 5px 0; }
 			#txtLeft p:before { content: url('../img/bg_quote_home_open.png'); position: relative; margin-right: 5px; top: -5px;   }
 			#txtLeft p:after { content: url('../img/bg_quote_home_close.png'); position: relative; margin-left: 5px;  bottom: -10px; }
                         
-          /* ----Forms----*/
+
+
+
+
+
+
+/* ----Forms----*/
 
 /*.form-error{border-color:yellow;background-color:red} */
 .error-message{ color:red;      }
 
 .register { font-family: helvetica, arial; padding: 0px 0px 0px 100px; line-height: 1.4;  float:left;width: 360px; }
+.register login{margin-top:200px}
 .register input,label{float:left;margin: 15px 0px 0px 0px;width:130px;}
 .register input{width:220px;}
-
 .required label:after { color: #EE3322;content: "*";display: inline;}
-
 .register input[type="submit"] { width: 120px; height: 38px; display: block; background: transparent url('../img/btn_grey_home_small.png') no-repeat center top; font-size: 12px; font-weight: bold; text-transform: uppercase; color: #fff; text-decoration: none; line-height: 37px; text-align: center; float: left; margin-top: 30px; margin-bottom: 20px; margin-left: 20px; padding: 0; border: 0;					-moz-text-shadow: 1px 1px 2px #000;					-webkit-text-shadow: 1px 1px 2px #000;
-					text-shadow: 1px 1px 2px #000; cursor:pointer;}
-
-form.registerRow { width: 150px;margin-top:30px;}   
-.registerRow label { width:200px;}
+					text-shadow: 1px 1px 2px #000; cursor:pointer;}form.registerRow { width: 150px;margin-top:30px;}   .registerRow label { width:200px;}
+                                        
 
 
+.baseFormLink{float:left;height:20px;margin-top:10px;width:100%;margin-left:85px;}
+.baseFormLink a{margin-left: 15px ;}
 
-.formAccounts { font-family: helvetica, arial; padding: 0px 0px 0px 100px; line-height: 1.4; width: 400px; }
 
-.formAccounts label { width: 150px; text-align: right; float:left; display: block; }
-
-.formAccounts input { width: 200px; margin-left: 10px; margin-top: 2px; margin-bottom: 2px; }
-
-.formAccounts select { width: 200px; margin-top: 2px; margin-bottom: 2px; }
-
-.formAccounts input[type="checkbox"] { margin-left: 157px; margin-top: 20px; width: 20px; }
-
-.formAccounts legend { color: #fff; background: #2BC4FF; border: 1px solid #2BC4FF; padding: 2px 6px; margin-left: 10px; }
-
-fieldset.yellow { border: 1px solid #2BC4FF; width: 400px; }
-
-fieldset.sub { padding-left: 0px; border: 0px solid grey; width: 400px; float: left; }
-
-label.sub { width: 200px; float: left; text-align: right; margin-right: 5px; display: block; }
-
-#country { margin-left: 34px; font-weight: bold; }
-
-.btnGrey {  width: 120px; height: 38px; display: block; background: url('http://www.callcommission.com/assets/templates/img/btn_grey_home_small.png') no-repeat center top; font-size: 12px; font-weight: bold; text-transform: uppercase; color: #fff; text-decoration: none; line-height: 37px; text-align: center; float: left; margin-top: 15px; margin-bottom: 20px; margin-left: 210px;
-	        -moz-text-shadow: 1px 1px 2px #000;
-	        -webkit-text-shadow: 1px 1px 2px #000;
-	         text-shadow: 1px 1px 2px #000; cursor:pointer; }
-
-.btnGrey:hover { background: url('http://www.callcommission.com/assets/templates/img/btn_grey_home_small_hover.png')}
-.btnRegister button { width: 120px; height: 38px; display: block; background: transparent url('http://www.callcommission.com/assets/templates/img/btn_grey_home_small.png') no-repeat center top; font-size: 12px; font-weight: bold; text-transform: uppercase; color: #fff; text-decoration: none; line-height: 37px; text-align: center; float: left; margin-top: 15px; margin-bottom: 20px; margin-left: 20px; padding: 0; border: 0;
-			      -moz-text-shadow: 1px 1px 2px #000;-webkit-text-shadow: 1px 1px 2px #000;text-shadow: 1px 1px 2px #000;}
-.btnRegister button:hover { background: url('http://www.callcommission.com/assets/templates/img/btn_grey_home_small_hover.png')}
 /* flash messages */ 
 .innnerContent {margin:0px auto; width: 500px;}
 .flash_good { background: #e5f2be; border:2px solid #bedf5d; padding:10px; font-weight:bold; margin: 0px;text-align:center;}
 .flash_bad { background: #eccecf;border:2px solid #9e0b0f;padding:10px;font-weight:bold;margin: 0px; padding: 0 auto}
 .flash_good img, .flash_bad img {float:right;height:10px;width:10px;margin: 0px 0px 15px 0px}
+
+
+
 
 
 

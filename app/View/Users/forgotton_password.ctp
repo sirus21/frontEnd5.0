@@ -1,6 +1,6 @@
 <h1> Forgotton Your Password ? </h1>
 
-<p> Don’t worry,we’ll have you up and running in minutes. Just enter your email address below: </p> 
+<p> <?php echo "Don’t worry,we’ll have you up and running in minutes. Just enter your email address below"; ?>  </p> 
 
 
 <?php
