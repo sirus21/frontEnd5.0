@@ -9,7 +9,7 @@
 		  echo $this->Html->css(array('reset','style','chart'));
 		//echo '<!--[if IE 6]>'.$this->Html->css('ie6').'<![endif]-->';
 		//echo '<!--[if IE 7]>'.$this->Html->css('ie').'<![endif]-->';
-		echo $this->Html->script(array('jquery-1.3.2.min.js', 'jquery-ui.js', 'jquery-fluid16.js'));
+		echo $this->Html->script(array('jquery-1.3.2.min.js', 'jquery-ui.js', 'jquery-fluid16.js','main'));
 		echo $scripts_for_layout;
 	?>
 </head>
@@ -126,20 +126,25 @@
        <div class="myMenuHolder">		
         <ul class="myMenu" id="topmenu">
 	
-	<li><a href="#" id="topMenueItem" class="top">Today</a>
+	<li><a href="#" id="topMenuItem" class="top">Today</a>
+	
 	<ul class="subUL">
-		<li><a id="today"        href="#">Today</a></li>
-                <li><a id="yesterday"    href="#">Yesterday</a></li>
-		<li><a id="2DaysAgo"      href="#">2 Days Ago</a></li>
-		<li><a id="last7Days"     href="#">Last 7 Days</a></li>
-		<li><a id="last14Days"   href="#">Last 14 Days</a></li>
-		<li><a id="last30Days"   href="#">Last 30 Days</a></li>
-		<li><a id="last90Days"   href="#">Last 90 Days</a></li>
-	        <li><a id="custom" href="#">      Custom     </a></li>
+		<li><a id="today"   href="#">Today</a></li>
+                <li><a id="yesterday"   href="#">Yesterday</a></li>
+		<li><a id="2DaysAgo"  href="#">2 Days Ago</a></li>
+		<li><a id="last7Days" href="#">Last 7 Days</a></li>
+		<li><a id="last14Days"  href="#">Last 14 Days</a></li>
+		<li><a id="last30Days"  href="#">Last 30 Days</a></li>
+		<li><a id="last90Days"  href="#">Last 90 Days</a></li>
+	         <!-- <li><a id="custom" href="#">      Custom     </a></li> --> 
 	</ul>	
-       </ul>
-	</div> <!--[end] myMenuHolder -->   
-    </div><!--[end] menuBlock-->   
+       
+	</ul>
+	
+       </div> <!--[end] myMenuHolder -->   
+    
+       
+	</div><!--[end] menuBlock-->   
                                         <div class="menuBlock">  	  
 	
         <div class="myMenuHolder" >	

@@ -26,13 +26,39 @@ var $components = array('RequestHandler');
 var $helpers = array('Js' => array('Jquery'),'Time'); 
 
 
-        
-
-	public function index() {
-		$this->layout='front_end'; 
-		$this->set('username',$this->Auth->user('username')); 
-		$this->set('callSessions', $this->paginate(array('CallSession.paid'=>'1','CallSession.user_id'=>$this->Auth->user('id'))));
+        public function before(){
+		
+		
+		
 	}
+
+	public function index($startDate=null,$endDate,$filter=null) {
+		
+		 // set up the session info for our filtering if it is empty		
+                   $this->layout='front_end'; 
+		     	 CakeSession::write('filter.startDate',Date("Y-m-d"));
+		         CakeSession::write('filter.endDate',Date("Y-m-d"));    
+		    if(CakeSession::read('Config.startDate') == null)
+		    
+		    {
+			 CakeSession::write('filter.startDate',Date("Y-m-d"));
+		         CakeSession::write('filter.endDate',Date("Y-m-d"));
+		         CakeSession::write('filter.leads',"");	   
+		    }
+		     	
+		$this->set('username',$this->Auth->user('username')); 
+		$this->set('callSessions', $this->paginate(array('CallSession.paid'=>'1','CallSession.user_id'=>$this->Auth->user('id'),
+												 /* 'CallSession.created BETWEEN ? AND ?' => array(CakeSession::read('filter.startDate'),CakeSession::read('filter.endDate')) */ )));
+		
+	}
+
+
+
+
+
+
+
+
 
    public function loadleads($type=null,$date_range=null)
 {
