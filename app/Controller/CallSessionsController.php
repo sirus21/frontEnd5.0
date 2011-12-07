@@ -32,7 +32,7 @@ var $helpers = array('Js' => array('Jquery'),'Time');
 		
 	}
 
-	public function index($startDate=null,$endDate,$filter=null) {
+	public function index($startDate=null,$endDate=null,$filter=null) {
 		
 		 // set up the session info for our filtering if it is empty		
                    $this->layout='front_end'; 
@@ -47,8 +47,13 @@ var $helpers = array('Js' => array('Jquery'),'Time');
 		    }
 		     	
 		$this->set('username',$this->Auth->user('username')); 
-		$this->set('callSessions', $this->paginate(array('CallSession.paid'=>'1','CallSession.user_id'=>$this->Auth->user('id'),
-												 /* 'CallSession.created BETWEEN ? AND ?' => array(CakeSession::read('filter.startDate'),CakeSession::read('filter.endDate')) */ )));
+		$this->set('callSessions', $this->paginate(array( 'CallSession.paid'=>'1','CallSession.user_id'=>$this->Auth->user('id'),
+								                                   'CallSession.created >='=>CakeSession::read('filter.startDate'),
+												 /*  'CallSession.created <='=>CakeSession::read('filter.endDate')."        23.59.99",*/
+							                                       	)
+							                                )
+			  );								 
+											
 		
 	}
 
