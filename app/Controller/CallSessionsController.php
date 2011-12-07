@@ -17,6 +17,9 @@ class CallSessionsController extends AppController {
 
 var $paginate = array(
 'limit' => 20,
+'order' => array(
+'CallSession.id' => 'desc'
+)
 
 );
 var $components = array('RequestHandler');
@@ -26,11 +29,9 @@ var $helpers = array('Js' => array('Jquery'),'Time');
         
 
 	public function index() {
-		$this->layout='front_end_not_logged_in'; 
-		//$this->CallSession->recursive = 0;
-		
+		$this->layout='front_end'; 
 		$this->set('username',$this->Auth->user('username')); 
-		$this->set('callSessions', $this->paginate(array('CallSession.paid'=>'1')));
+		$this->set('callSessions', $this->paginate(array('CallSession.paid'=>'1','CallSession.user_id'=>$this->Auth->user('id'))));
 	}
 
    public function loadleads($type=null,$date_range=null)
@@ -76,7 +77,8 @@ var $helpers = array('Js' => array('Jquery'),'Time');
 		}
 		$camps = $this->CallSession->Camp->find('list');
 		$this->set(compact('camps'));
-	}
+		
+		}
 
 /**
  * edit method

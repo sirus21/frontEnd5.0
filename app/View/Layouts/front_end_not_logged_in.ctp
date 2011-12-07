@@ -11,7 +11,7 @@
 		  echo $this->Html->css(array('reset','style'));
 		//echo '<!--[if IE 6]>'.$this->Html->css('ie6').'<![endif]-->';
 		//echo '<!--[if IE 7]>'.$this->Html->css('ie').'<![endif]-->';
-		echo $this->Html->script(array('jquery-1.3.2.min.js', 'jquery-ui.js', 'jquery-fluid16.js'));
+		echo $this->Html->script(array('jquery-1.3.2.min.js', 'jquery-ui.js', 'jquery-fluid16.js','main.js'));
 		echo $scripts_for_layout;
 	?>
 </head>

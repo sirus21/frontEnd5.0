@@ -1,5 +1,8 @@
 
-<h1>  Log in and see how much money your business has generated  </h1> 
+<div class="loginForm"> 
+
+<h1>  Log in and see how  much money your business has generated  </h1>
+
 <?php
 
 
@@ -24,5 +27,7 @@ echo $this->Form->end('Login');
 
 </div>
  
+ 
+</div> 
  
  

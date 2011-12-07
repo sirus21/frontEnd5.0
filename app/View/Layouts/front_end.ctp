@@ -30,7 +30,7 @@
 			
 			<div id="logo">
 				<span title="CallCommission"><a href="http://www.callcommission.com/" title="CallCommission">Call Commissions</a></span>
-				<p id="strapline"> The UK's First PayPerCall Affiliate Network </p>
+				<p id="strapline">  </p>
 			</div><!--[end] logo -->
 			
 			<div id="topNav">
@@ -230,12 +230,12 @@
 				</div>
 
 			</div><!--[end] footerMenu -->			
-
+             <?php echo $this->element('sql_dump'); ?>
 	</div><!--[end] footerInner -->	
 
 
 
-
+    
 
 
 

@@ -263,15 +263,13 @@ public  function  resendemail($id=null)
 		
 	                         $this->User->ForgottonPassword->create();
 				 $this->User->ForgottonPassword->save(array('user_id'=>$this->User->id)); 
-				 $this->Session->setFlash(__('We found your email address and have sent you a password reset email.'));
+				 $this->Session->setFlash(__('We found your email address and have sent you a password reset email.'),'flash_good');
 			    
 		    }
 		    else
 		    {
 			
-			$this->Session->setFlash(__('Oops, we dont recognise that email address.
-							               Check it again to make sure you typed it
-								       correctly or perhaps you registered with a different address.'));
+			$this->Session->setFlash(__('We dont  that email on record please try again'),'flash_bad');
 			
 		    }
 		    

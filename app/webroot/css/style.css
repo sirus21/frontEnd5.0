@@ -101,6 +101,10 @@ label { display: block; font-weight: bold; margin: 0 0 5px 0; }
         
 	 #asideLeft { float: left; }
 	
+        
+        
+        .loginForm{margin-top:50px;border-style:solid;border-color:grey}
+        
 	/*
 	        
 	    
@@ -210,9 +214,9 @@ label { display: block; font-weight: bold; margin: 0 0 5px 0; }
 					-webkit-text-shadow: 1px 1px 2px #000;
 					text-shadow: 1px 1px 2px #000;}
 		#txtLeft { width: 246px; height: 140px; border: 1px solid #dddddd; padding: 15px 30px 10px; background: rgb(244,244,244); background: rgba(166, 166, 166, 0.2); float: left; margin-top: 60px; }
-			#txtLeft p { color: #42352d; font-size: 25px; text-align: center; line-height: 1.3em; }
-			#txtLeft p:before { content: url('../img/bg_quote_home_open.png'); position: relative; margin-right: 5px; top: -5px;   }
-			#txtLeft p:after { content: url('../img/bg_quote_home_close.png'); position: relative; margin-left: 5px;  bottom: -10px; }
+		#txtLeft p { color: #42352d; font-size: 25px; text-align: center; line-height: 1.3em; }
+		#txtLeft p:before { content: url('../img/bg_quote_home_open.png'); position: relative; margin-right: 5px; top: -5px;   }
+		#txtLeft p:after { content: url('../img/bg_quote_home_close.png'); position: relative; margin-left: 5px;  bottom: -10px; }
                         
 
 
@@ -240,11 +244,11 @@ label { display: block; font-weight: bold; margin: 0 0 5px 0; }
 
 
 /* flash messages */ 
-.innnerContent {margin:0px auto; width: 500px;}
+.innnerContent {margin:0px auto;width: 600px;}
 .flash_good { background: #e5f2be; border:2px solid #bedf5d; padding:10px; font-weight:bold; margin: 0px;text-align:center;}
 .flash_bad { background: #eccecf;border:2px solid #9e0b0f;padding:10px;font-weight:bold;margin: 0px; padding: 0 auto}
 .flash_good img, .flash_bad img {float:right;height:10px;width:10px;margin: 0px 0px 15px 0px}
-
+div.close{float:right;hight:10px;width:10px;padding-bottom:15px;font-size:15px; cursor:pointer;}
 
 
 
@@ -306,7 +310,7 @@ margin:5px;
 	
 	
 	
-        .top{background: transparent url('http://www.callcommission.com/assets/templates/frontendbeta/img/downArrowBlack.png') no-repeat  5% 50%;}
+        .top{background: transparent url('../img/downArrowBlack.png') no-repeat  5% 50%;}
 
 
 
