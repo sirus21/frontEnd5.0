@@ -12,13 +12,7 @@ echo $this->Html->script('jquery'); // Include jQuery library
 				
 				
 				
-			        $.get("http://localhost/cakeWorkIn/CalLSessions/loadleads", function(data){
-				
-					$('#leads').html(data);
-					$('#hor-zebra tr:even').addClass('even'); 
- 
-				});
-			
+			     
 			
 			
 			/*	loaded_messages += 10;
@@ -43,7 +37,7 @@ echo $this->Html->script('jquery'); // Include jQuery library
 	<div>
 	
 	
-	
+	<?php print_r($dates); ?> 
 
 	<table cellpadding="0" cellspacing="0" id="hor-zebra">
 		

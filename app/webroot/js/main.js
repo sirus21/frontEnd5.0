@@ -37,11 +37,8 @@
                                                       if( $.inArray(attrid,topElements) == not )                  
                                                       {
                                                       
-                                                         alert("hello"); 
-                                                        
-                                                         
-                                                         
-                                                          var atrrhtml = $('#'+attrid).html();
+                                                       
+                                                                        var atrrhtml = $('#'+attrid).html();
                                                          // here is where we set up hidden vars for any future calls  
                                                           
                                                          

@@ -36,8 +36,10 @@ var $helpers = array('Js' => array('Jquery'),'Time');
 		
 		 // set up the session info for our filtering if it is empty		
                    $this->layout='front_end'; 
-		     	 CakeSession::write('filter.startDate',Date("Y-m-d"));
-		         CakeSession::write('filter.endDate',Date("Y-m-d"));    
+		     
+		     
+		     
+		     	
 		    if(CakeSession::read('Config.startDate') == null)
 		    
 		    {
@@ -49,7 +51,7 @@ var $helpers = array('Js' => array('Jquery'),'Time');
 		$this->set('username',$this->Auth->user('username')); 
 		$this->set('callSessions', $this->paginate(array( 'CallSession.paid'=>'1','CallSession.user_id'=>$this->Auth->user('id'),
 								                                   'CallSession.created >='=>CakeSession::read('filter.startDate'),
-												 /*  'CallSession.created <='=>CakeSession::read('filter.endDate')."        23.59.99",*/
+												/*  'CallSession.created <'=>CakeSession::read('filter.endDate')*/
 							                                       	)
 							                                )
 			  );								 
