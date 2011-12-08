@@ -71,7 +71,7 @@
 
 	
 	<div id="content">
-		<div class="contentInner">coff
+		<div class="contentInner">
 			<div class="incenter">
 				
 				<div id="asideLeft">

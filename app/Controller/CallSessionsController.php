@@ -35,16 +35,7 @@ var $helpers = array('Js' => array('Jquery'),'Time');
 	public function index($timePeriod=null) {
 		
 		        // set up the session info for our filtering if it is empty		
-                       $this->layout='front_end'; 
-		       echo     Date("Y-m-d",strtotime("- 1 day"));
-		        
-		
-		        
-			
-			
-			
-		  
-		  
+                       $this->layout='front_end';
 		  
 		  
 		     	
