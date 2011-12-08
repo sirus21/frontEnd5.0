@@ -1,4 +1,9 @@
 
+<script type="text/javascript">
+  
+</script>
+
+
 <table cellpadding="0" cellspacing="0" id="hor-zebra">
 <tr>
 <th><?php echo $this->Paginator->sort('id');?></th>

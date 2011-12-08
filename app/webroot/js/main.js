@@ -31,7 +31,8 @@
         
         $(document).bind('mousedown',
 		      
-					   function(e)
+			
+                        		   function(e)
 					   {
 					   
 					          var clicked = $(e.target);		 
@@ -69,7 +70,14 @@
                                                                   }
                                                                   else
                                                                   {
-                                                                              dateAjaxCall(); 
+                                                                             
+                                                                             $.get("callsessions/ajaxLeadCaller/" + attrid, function(data){
+                                                                                         
+                                                                                           $("#mainContent").html(data);
+                                                                                           $("#hor-zebra tr:odd").addClass("odd");
+                                                                              });
+                                                                            
+                                                                           
                                                                   }
                                                                   
                                                                         exitMenu('.myMenu');   
@@ -84,6 +92,9 @@
 						  }
 						 
 					   }
+       
+       
+       
        ); // mouse down 	
         
       
