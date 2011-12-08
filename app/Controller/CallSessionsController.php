@@ -32,13 +32,21 @@ var $helpers = array('Js' => array('Jquery'),'Time');
 		
 	}
 
-	public function index($startDate=null,$endDate=null,$filter=null) {
+	public function index($timePeriod=null) {
 		
-		 // set up the session info for our filtering if it is empty		
-                   $this->layout='front_end'; 
-		     
-		     
-		     
+		        // set up the session info for our filtering if it is empty		
+                       $this->layout='front_end'; 
+		       echo     Date("Y-m-d",strtotime("- 1 day"));
+		        
+		
+		        
+			
+			
+			
+		  
+		  
+		  
+		  
 		     	
 		    if(CakeSession::read('Config.startDate') == null)
 		    
@@ -60,21 +68,70 @@ var $helpers = array('Js' => array('Jquery'),'Time');
 	}
 
 
-
-
-
-
-
-
-
-   public function loadleads($type=null,$date_range=null)
-{
+     public function ajaxLeadCaller($date=null) {
+	     
+	             
+		        $timePeriod = array(
+			                                        "today" =>         Date("Y-m-d"),
+								"yesterday" =>  Date("Y-m-d",strtotime("- 1 day")),
+								"2daysAgo" => Date("Y-m-d",strtotime("- 2 day")),
+								"7daysAgo" => Date("Y-m-d",strtotime("- 7 day")),
+								"14daysAgo" => Date("Y-m-d",strtotime("- 14 day")),
+								"30daysAgo" => Date("Y-m-d",strtotime("- 30 day")),
+								"90daysAgo" => Date("Y-m-d",strtotime("- 90 day")),
+			); 
 	
-	        $this->CallSession->recursive = 0;
-		$this->set('callSessions', $this->paginate());
+		        $this->layout='blank'; 
+		        
+	                if($date!=null){
+				     
+				     switch($date){
+					     
+					        case  "today":
+							               CakeSession::write('filter.startDate',Date("Y-m-d"));
+		                                                       CakeSession::write('filter.endDate',Date("Y-m-d"));
+								       
+						case   "yesterday":
+							                CakeSession::write('filter.startDate',$timePeriod['yesterday']);
+		                                                        CakeSession::write('filter.endDate',$timePeriod['yesterday']);
+									break;
+						
+						case "2DaysAgo":
+							               CakeSession::write('filter.startDate',$timePeriod['2daysAgo']);
+		                                                       CakeSession::write('filter.endDate',$timePeriod['2daysAgo']);
+									break;
+						
+						case "last7Days":
+						                        CakeSession::write('filter.startDate',$timePeriod['7daysAgo']);
+		                                                        CakeSession::write('filter.endDate',$timePeriod['today']);
+									 break; 
+						case "last14Days":
+							                CakeSession::write('filter.startDate',$timePeriod['14daysAgo']);
+		                                                        CakeSession::write('filter.endDate',$timePeriod['today']);
+									 break; 
+						case "last30Days":
+							                 CakeSession::write('filter.startDate',$timePeriod['30daysAgo']);
+		                                                         CakeSession::write('filter.endDate',$timePeriod['today']);
+									 break; 	    
+					        case "last90Days":
+							                CakeSession::write('filter.startDate',$timePeriod['90daysAgo']);
+		                                                         CakeSession::write('filter.endDate',$timePeriod['today']);
+									 break; 
+							      
+				     }	// switch 	
+		          }  // not null 
+				
+			
+	               $this->set('callSessions', $this->paginate(array( 'CallSession.paid'=>'1','CallSession.user_id'=>$this->Auth->user('id'),
+								                                   'CallSession.created >='=>CakeSession::read('filter.startDate'),
+												/*  'CallSession.created <'=>CakeSession::read('filter.endDate')*/
+							                                       	)
+							                                )
+			  );							
 	
+          }
 
-}
+
 
 
 /**

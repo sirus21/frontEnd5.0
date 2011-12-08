@@ -3653,3 +3653,33 @@
 #11 C:\wamp\www\cakeWorkIn\lib\Cake\Routing\Dispatcher.php(89): Dispatcher->_invoke(Object(CallSessionsController), Object(CakeRequest), Object(CakeResponse))
 #12 C:\wamp\www\cakeWorkIn\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #13 {main}
+2011-12-08 13:38:58 Error: [MissingControllerException] Controller class CallsessionController could not be found.
+#0 C:\wamp\www\cakeWorkIn\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-12-08 13:47:15 Error: [MissingControllerException] Controller class AjaxLeadCallerController could not be found.
+#0 C:\wamp\www\cakeWorkIn\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-12-08 13:47:42 Error: [MissingViewException] View file "C:\wamp\www\cakeWorkIn\app\View\CallSessions\ajax_lead_caller.ctp" is missing.
+#0 C:\wamp\www\cakeWorkIn\lib\Cake\View\View.php(363): View->_getViewFileName(NULL)
+#1 C:\wamp\www\cakeWorkIn\lib\Cake\Controller\Controller.php(900): View->render(NULL, NULL)
+#2 C:\wamp\www\cakeWorkIn\lib\Cake\Routing\Dispatcher.php(114): Controller->render()
+#3 C:\wamp\www\cakeWorkIn\lib\Cake\Routing\Dispatcher.php(89): Dispatcher->_invoke(Object(CallSessionsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\cakeWorkIn\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-12-08 13:48:07 Error: [MissingViewException] View file "C:\wamp\www\cakeWorkIn\app\View\CallSessions\ajax_lead_caller.ctp" is missing.
+#0 C:\wamp\www\cakeWorkIn\lib\Cake\View\View.php(363): View->_getViewFileName(NULL)
+#1 C:\wamp\www\cakeWorkIn\lib\Cake\Controller\Controller.php(900): View->render(NULL, NULL)
+#2 C:\wamp\www\cakeWorkIn\lib\Cake\Routing\Dispatcher.php(114): Controller->render()
+#3 C:\wamp\www\cakeWorkIn\lib\Cake\Routing\Dispatcher.php(89): Dispatcher->_invoke(Object(CallSessionsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\cakeWorkIn\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-12-08 16:24:35 Error: [MissingActionException] Action UsersController::callsessions() could not be found.
+#0 C:\wamp\www\cakeWorkIn\lib\Cake\Routing\Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakeWorkIn\lib\Cake\Routing\Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakeWorkIn\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-08 16:46:13 Error: [MissingActionException] Action CallSessionsController::callsessions() could not be found.
+#0 C:\wamp\www\cakeWorkIn\lib\Cake\Routing\Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakeWorkIn\lib\Cake\Routing\Dispatcher.php(89): Dispatcher->_invoke(Object(CallSessionsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakeWorkIn\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

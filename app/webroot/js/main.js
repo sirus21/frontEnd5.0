@@ -8,6 +8,13 @@
     
     $(document).ready(function(){  
     // fadeout flash messages on click  
+    
+    
+ 
+    
+    //**************************************************************** Navigation ****************************************************/
+    
+    
     $('.close').click(function(){  
         
         $(this).parent().fadeOut();  
@@ -30,15 +37,14 @@
 					          var clicked = $(e.target);		 
 						 
 						  if(clicked.is('.myMenu')   || clicked.parents().is('.myMenu') )   {
+                                                       
                                                        var attrid = clicked.attr("id");
                                              
                                              
                                                        // if its not a top element we now need to take action 
                                                       if( $.inArray(attrid,topElements) == not )                  
                                                       {
-                                                      
-                                                       
-                                                                        var atrrhtml = $('#'+attrid).html();
+                                                         var atrrhtml = $('#'+attrid).html();
                                                          // here is where we set up hidden vars for any future calls  
                                                           
                                                          
@@ -47,18 +53,14 @@
                                                                    $("#interval").val(attrid);
                                                          }
                                                          else{
-                                                                        if(attrid==""){atrrhtml="All Leads";}
-								    $("#topMenuItemLeads").html(atrrhtml);
-                                                                    
-								
-								    $('#leadTypes').val(attrid); 
+                                                                    if(attrid==""){atrrhtml="All Leads";}
+								   
+                                                                   
+                                                                    $("#topMenuItemLeads").html(atrrhtml);
+                                                                    $('#leadTypes').val(attrid); 
                                                          
                                                          }
                                                                          
-                                                         
-                                                           // hidden field trackers 
-                                                          $("#startDate").val("");
-                                                          $("#endDate").val("");
                                                       
                                                          // nested if in order to see what we have to do
                                                                    if(attrid == "custom")
@@ -76,7 +78,7 @@
 						   
                                                   else {
 						           
-							       exitMenu('.myMenu'); 
+							              exitMenu('.myMenu'); 
 					
 							
 						  }
