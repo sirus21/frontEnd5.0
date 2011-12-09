@@ -130,10 +130,10 @@
        <div class="myMenuHolder">		
         <ul class="myMenu" id="topmenu">
 	
-	<li><a href="#" id="topMenuItem" class="top">Today</a>
+	<li><a href="#" id="topMenuItem" class="top"><?php echo CakeSession::read("filter.cleandate"); ?></a>
 	
 	<ul class="subUL">
-		<li><a id="today"   href="#">Today</a></li>
+		<li><a id="today"   href="#"> Today  </a></li>
                 <li><a id="yesterday"   href="#">Yesterday</a></li>
 		<li><a id="2DaysAgo"  href="#">2 Days Ago</a></li>
 		<li><a id="last7Days" href="#">Last 7 Days</a></li>
