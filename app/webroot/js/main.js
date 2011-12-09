@@ -9,7 +9,14 @@
     $(document).ready(function(){  
     // fadeout flash messages on click  
     
-    
+    // make out intial lead call
+     $.get("callsessions/ajaxLeadCaller/", function(data){
+                                                                                         
+                                                                                            $("#mainContent").html(data);
+                                                                                            $("#hor-zebra tr:odd").addClass("odd");
+                                                                                         
+                                                                                     
+                                                                              });
  
     
     //**************************************************************** Navigation ****************************************************/
@@ -58,7 +65,7 @@
 								   
                                                                    
                                                                     $("#topMenuItemLeads").html(atrrhtml);
-                                                                    $('#leadTypes').val(attrid); 
+                                                                    
                                                          
                                                          }
                                                                          
@@ -73,8 +80,10 @@
                                                                              
                                                                              $.get("callsessions/ajaxLeadCaller/" + attrid, function(data){
                                                                                          
-                                                                                           $("#mainContent").html(data);
-                                                                                           $("#hor-zebra tr:odd").addClass("odd");
+                                                                                            $("#mainContent").html(data);
+                                                                                            $("#hor-zebra tr:odd").addClass("odd");
+                                                                                            $('#topMenuItem').html(atrrhtml); 
+                                                                                     
                                                                               });
                                                                             
                                                                            

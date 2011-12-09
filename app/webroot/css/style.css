@@ -64,6 +64,10 @@ label { display: block; font-weight: bold; margin: 0 0 5px 0; }
 #strapline { font-size: 14px; color: #a5a5a5; margin: 0px 0px 0px 0px; line-height: 1.0em }
                 
 /* ----------------------------- Content --------------------------- */
+
+
+
+.pageNator {margin-left:10px;}
 #content { width: 100%; overflow: hidden; display: block; background: #e9e7e8 url('../img/bg_content_bg.jpg') repeat-x center top; }
 	.contentInner { width: 100%; overflow: hidden; display: block; background: url('../img/bg_shadow_top.png') no-repeat center top; min-height: 670px; }
 	
@@ -305,6 +309,7 @@ margin:5px;
          .myMenu li ul li { display:inline; float:none; }
 	
 	/* top stats */
+        .statBlock{margin-left:10px;}
 	.statInnerBlock { margin: 10px 40px 0px 0px;  }
 	.statInnerBlockRight { margin: 0px 0px 0px 0px; }	
 	

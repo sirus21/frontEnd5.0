@@ -37,9 +37,9 @@ var $helpers = array('Js' => array('Jquery'),'Time');
 		        // set up the session info for our filtering if it is empty		
                        $this->layout='front_end';
 		  
-		  
+	
 		     	
-		    if(CakeSession::read('Config.startDate') == null)
+		    if(CakeSession::read('filter.startDate') == null)
 		    
 		    {
 			 CakeSession::write('filter.startDate',Date("Y-m-d"));
