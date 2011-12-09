@@ -5,12 +5,27 @@
 
 
 <div class="statInnnerBlock">
-<span class="mini-counts"> 41 </span>
-unique calls
+<span class="mini-counts">
+
+
+<?php
+echo $this->Paginator->counter(array(
+'format' => __('{:count}')
+));
+?> </span>
+referrals
 </div>
 <div class="statInnerBlock">
-<span class="mini-counts"> 0</span>
-paid calls
+<span class="mini-counts">
+
+
+<?php    echo  $profit;  ?>
+
+
+
+
+</span>
+profit
 </div>
 
 </div>

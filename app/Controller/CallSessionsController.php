@@ -75,6 +75,8 @@ var $helpers = array('Js' => array('Jquery'),'Time');
 		        $this->layout='blank'; 
 		        
 	                if($date!=null){
+				
+				
 				     
 				     switch($date){
 					     
@@ -82,10 +84,12 @@ var $helpers = array('Js' => array('Jquery'),'Time');
 							               CakeSession::write('filter.startDate',Date("Y-m-d"));
 		                                                       CakeSession::write('filter.endDate',Date("Y-m-d"));
 								       
+						
 						case   "yesterday":
 							                CakeSession::write('filter.startDate',$timePeriod['yesterday']);
 		                                                        CakeSession::write('filter.endDate',$timePeriod['yesterday']);
 									break;
+						
 						
 						case "2DaysAgo":
 							               CakeSession::write('filter.startDate',$timePeriod['2daysAgo']);
@@ -96,15 +100,18 @@ var $helpers = array('Js' => array('Jquery'),'Time');
 						                        CakeSession::write('filter.startDate',$timePeriod['7daysAgo']);
 		                                                        CakeSession::write('filter.endDate',$timePeriod['today']);
 									 break; 
+						
 						case "last14Days":
 							                CakeSession::write('filter.startDate',$timePeriod['14daysAgo']);
 		                                                        CakeSession::write('filter.endDate',$timePeriod['today']);
 									 break; 
+						
 						case "last30Days":
 							                 CakeSession::write('filter.startDate',$timePeriod['30daysAgo']);
 		                                                         CakeSession::write('filter.endDate',$timePeriod['today']);
 									 break; 	    
-					        case "last90Days":
+					        
+						case "last90Days":
 							                CakeSession::write('filter.startDate',$timePeriod['90daysAgo']);
 		                                                         CakeSession::write('filter.endDate',$timePeriod['today']);
 									 break; 
@@ -113,13 +120,15 @@ var $helpers = array('Js' => array('Jquery'),'Time');
 		          }  // not null 
 				
 			
-	               $this->set('callSessions', $this->paginate(array( 'CallSession.paid'=>'1','CallSession.user_id'=>$this->Auth->user('id'),
+	                $this->set('callSessions', $this->paginate(array( 'CallSession.paid'=>'1','CallSession.user_id'=>$this->Auth->user('id'),
 								                                   'CallSession.created >='=>CakeSession::read('filter.startDate'),
-												/*  'CallSession.created <'=>CakeSession::read('filter.endDate')*/
+												    'CallSession.created <='=>CakeSession::read('filter.endDate')."  23:59.99"
 							                                       	)
 							                                )
 			  );							
 	
+	
+	               $this->set("profit",$this->CallSession->getPaidLeadCount($this->Auth->user('id'))); 
           }
 
 

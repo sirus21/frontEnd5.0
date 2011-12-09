@@ -40,6 +40,36 @@ class CallSession extends AppModel {
 
 
 /**
+ * Gets the number of paid calls
+ * @param $userID
+ * @return int the number of paid leads
+ * 
+ * */
+ 
+  public function getPaidLeadCount($userID){
+                                            
+
+                                 
+                                 
+                                       
+                             $result =   $this->find('all',array(
+                                'fields' => array('SUM(Camp.payout) as total'),
+                                'conditions' => array( 'CallSession.paid'=>'1','CallSession.user_id'=>$userID,
+								                                   'CallSession.created >='=>CakeSession::read('filter.startDate'),
+				 								   'CallSession.created <'=>CakeSession::read('filter.endDate')
+							                                       	)
+                                ));
+		    
+                   
+                             
+                            $result = (empty($result['0']['0']['total'] ) ? "0" : $result['0']['0']['total']);  
+		     	
+                            return $result; 
+  }
+ 
+
+
+/**
  * hasMany associations
  *
  * @var array
