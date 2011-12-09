@@ -23,7 +23,7 @@ var $paginate = array(
 
 );
 var $components = array('RequestHandler');
-var $helpers = array('Js' => array('Jquery'),'Time'); 
+var $helpers = array('Js' => array('Jquery'),'Time','Menu'); 
 
 
         public function before(){
@@ -83,51 +83,65 @@ var $helpers = array('Js' => array('Jquery'),'Time');
 					        case  "today":
 							               CakeSession::write('filter.startDate',Date("Y-m-d"));
 		                                                       CakeSession::write('filter.endDate',Date("Y-m-d"));
+								   
+								      CakeSession::write('filter.cleandate','Today');
 								       
 						
 						case   "yesterday":
 							                CakeSession::write('filter.startDate',$timePeriod['yesterday']);
 		                                                        CakeSession::write('filter.endDate',$timePeriod['yesterday']);
+									
+									 CakeSession::write('filter.cleandate','Yesterday');
 									break;
 						
 						
 						case "2DaysAgo":
 							               CakeSession::write('filter.startDate',$timePeriod['2daysAgo']);
 		                                                       CakeSession::write('filter.endDate',$timePeriod['2daysAgo']);
+								       
+								        CakeSession::write('filter.cleandate','2 Days Ago');
 									break;
 						
 						case "last7Days":
 						                        CakeSession::write('filter.startDate',$timePeriod['7daysAgo']);
 		                                                        CakeSession::write('filter.endDate',$timePeriod['today']);
+									
+									 CakeSession::write('filter.cleandate','Last 7 Days');
 									 break; 
 						
 						case "last14Days":
 							                CakeSession::write('filter.startDate',$timePeriod['14daysAgo']);
 		                                                        CakeSession::write('filter.endDate',$timePeriod['today']);
+									
+									 CakeSession::write('filter.cleandate','Last 14 Days');
 									 break; 
 						
 						case "last30Days":
 							                 CakeSession::write('filter.startDate',$timePeriod['30daysAgo']);
 		                                                         CakeSession::write('filter.endDate',$timePeriod['today']);
-									 break; 	    
+									 
+									  CakeSession::write('filter.cleandate','Last 30 Days');
+									  break; 	    
 					        
 						case "last90Days":
-							                CakeSession::write('filter.startDate',$timePeriod['90daysAgo']);
-		                                                         CakeSession::write('filter.endDate',$timePeriod['today']);
-									 break; 
+							                   CakeSession::write('filter.startDate',$timePeriod['90daysAgo']);
+		                                                           CakeSession::write('filter.endDate',$timePeriod['today']);
+									 
+									   CakeSession::write('filter.cleandate','Last 90 Days'); 
+									   break; 
 							      
 				     }	// switch 	
 		          }  // not null 
 				
 			
-	                $this->set('callSessions', $this->paginate(array( 'CallSession.paid'=>'1','CallSession.user_id'=>$this->Auth->user('id'),
-								                                   'CallSession.created >='=>CakeSession::read('filter.startDate'),
-												    'CallSession.created <='=>CakeSession::read('filter.endDate')."  23:59.99"
+	                
+			$data = $this->paginate(array( 'CallSession.paid'=>'1','CallSession.user_id'=>$this->Auth->user('id'),
+								                                           'CallSession.created >='=>CakeSession::read('filter.startDate'),
+												           'CallSession.created <='=>CakeSession::read('filter.endDate')."  23:59.99"
 							                                       	)
-							                                )
-			  );							
-	
-	
+							                                );
+			
+			$this->set('callSessions',$data);
 	               $this->set("profit",$this->CallSession->getPaidLeadCount($this->Auth->user('id'))); 
           }
 

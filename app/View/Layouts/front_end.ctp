@@ -28,6 +28,8 @@
 
 		<div class="headerInner incenter">
 			
+				<?php  echo $this->Menu->getMenu(); ?> 	
+			
 			<div id="logo">
 				<span title="CallCommission"><a href="http://www.callcommission.com/" title="CallCommission">Call Commissions</a></span>
 				<p id="strapline">  </p>
@@ -108,7 +110,9 @@
 
 
 
-        <div class="myMenuHolder">	
+        <div class="myMenuHolder">
+		
+
        <ul class="myMenu" id="bottommenu">
 	                            
 	<li><a href="#" id="topMenuItemLeads" class="top">All Leads</a>
@@ -166,7 +170,7 @@
   	<?php echo $content_for_layout; ?>	
    
 
-  
+
    
      
 
