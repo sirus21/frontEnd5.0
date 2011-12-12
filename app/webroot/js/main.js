@@ -10,7 +10,7 @@
     // fadeout flash messages on click  
     
     // make out intial lead call
-     $.get("ajaxLeadCaller/", function(data){
+     $.get("CallSessions/ajaxLeadCaller/", function(data){
                                                                                          
                                                                                             $("#mainContent").html(data);
                                                                                             $("#hor-zebra tr:odd").addClass("odd");
@@ -78,7 +78,7 @@
                                                                   else
                                                                   {
                                                                              
-                                                                             $.get("ajaxLeadCaller/" + attrid, function(data){
+                                                                             $.get("CallSessions/ajaxLeadCaller/" + attrid, function(data){
                                                                                          
                                                                                             $("#mainContent").html(data);
                                                                                             $("#hor-zebra tr:odd").addClass("odd");

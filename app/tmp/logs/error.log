@@ -3842,3 +3842,44 @@
 #1 C:\wamp\www\cakeWorkIn\lib\Cake\Routing\Dispatcher.php(89): Dispatcher->_invoke(Object(CallSessionsController), Object(CakeRequest), Object(CakeResponse))
 #2 C:\wamp\www\cakeWorkIn\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2011-12-12 10:31:26 Error: [MissingActionException] Action UsersController::ajaxLeadCaller() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 10:33:33 Error: [MissingControllerException] Controller class AjaxLeadCallerController could not be found.
+#0 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-12-12 10:33:38 Error: [MissingControllerException] Controller class AjaxLeadCallerController could not be found.
+#0 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-12-12 10:33:42 Error: [MissingControllerException] Controller class AjaxLeadCallerController could not be found.
+#0 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-12-12 10:33:44 Error: [MissingControllerException] Controller class AjaxLeadCallerController could not be found.
+#0 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-12-12 10:33:46 Error: [MissingControllerException] Controller class AjaxLeadCallerController could not be found.
+#0 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-12-12 10:33:50 Error: [MissingControllerException] Controller class AjaxLeadCallerController could not be found.
+#0 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-12-12 10:33:51 Error: [MissingControllerException] Controller class AjaxLeadCallerController could not be found.
+#0 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-12-12 10:33:53 Error: [MissingControllerException] Controller class AjaxLeadCallerController could not be found.
+#0 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-12-12 10:33:57 Error: [MissingControllerException] Controller class AjaxLeadCallerController could not be found.
+#0 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-12-12 10:34:05 Error: [MissingControllerException] Controller class AjaxLeadCallerController could not be found.
+#0 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-12-12 10:36:57 Error: [MissingControllerException] Controller class AjaxLeadCallerController could not be found.
+#0 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-12-12 10:39:01 Error: [MissingControllerException] Controller class AjaxLeadCallerController could not be found.
+#0 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
