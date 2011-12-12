@@ -1,1 +1,6 @@
 [12-Dec-2011 10:39:33] PHP Parse error:  syntax error, unexpected $end in /home/wwwstage/public_html/app/View/CallSessions/ajax_lead_caller.ctp on line 69
+[12-Dec-2011 10:48:05] PHP Fatal error:  Call to a member function destroy() on a non-object in /home/wwwstage/public_html/app/Controller/UsersController.php on line 144
+[12-Dec-2011 10:48:38] PHP Fatal error:  Call to a member function destroy() on a non-object in /home/wwwstage/public_html/app/Controller/UsersController.php on line 144
+[12-Dec-2011 10:48:39] PHP Fatal error:  Call to a member function destroy() on a non-object in /home/wwwstage/public_html/app/Controller/UsersController.php on line 144
+[12-Dec-2011 10:58:29] PHP Parse error:  syntax error, unexpected T_OBJECT_OPERATOR in /home/wwwstage/public_html/app/View/Layouts/front_end.ctp on line 133
+[12-Dec-2011 10:59:08] PHP Parse error:  syntax error, unexpected T_ELSE in /home/wwwstage/public_html/app/View/Layouts/front_end.ctp on line 135

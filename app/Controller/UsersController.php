@@ -141,8 +141,9 @@ function logout()
 {
     	 
 	 $this->Session->setFlash('Good-Bye');
+         CakeSession::destroy(); 
 	 $this->redirect($this->Auth->logout());
-	 $this->Session->destroy(); 
+
 }
 
 
