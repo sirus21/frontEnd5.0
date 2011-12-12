@@ -28,8 +28,6 @@
 
 		<div class="headerInner incenter">
 			
-				<?php  echo $this->Menu->getMenu(); ?> 	
-			
 			<div id="logo">
 				<span title="CallCommission"><a href="http://www.callcommission.com/" title="CallCommission">Call Commissions</a></span>
 				<p id="strapline">  </p>
@@ -126,11 +124,21 @@
        </ul>
 	
        </div> <!--[end] myMenuHolder --> 
+     
+    <?php   if($this->params['controller'] == "CallSessions")
+    
+    {
+		
+    ?> 
       
        <div class="myMenuHolder">		
         <ul class="myMenu" id="topmenu">
 	
 	<li><a href="#" id="topMenuItem" class="top"><?php
+	
+
+	
+	
 	
 	if (CakeSession::valid()) { echo  CakeSession::read("filter.cleandate");} else {echo "Today";}  ?></a>
 	
@@ -160,8 +168,13 @@
        </div> <!--[end] myMenuHolder --> 
       
     </div><!--[end] menuBlock-->   
-                                       <div class="mainInner" id="mainContent">
-						
+    
+    
+    
+    
+    <div class="mainInner" id="mainContent">
+
+    <?php  } ?> 						
 						
 						
 						

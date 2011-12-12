@@ -3,7 +3,7 @@
 	<fieldset>
 		<legend><?php echo __('Add Payment Detail'); ?></legend>
 	<?php
-		echo $this->Form->input('user_id');
+	
 		echo $this->Form->input('bank_name');
 		echo $this->Form->input('account_name');
 		echo $this->Form->input('bank_address1');
@@ -14,13 +14,4 @@
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit'));?>
-</div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-
-		<li><?php echo $this->Html->link(__('List Payment Details'), array('action' => 'index'));?></li>
-		<li><?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add')); ?> </li>
-	</ul>
 </div>

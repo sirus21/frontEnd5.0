@@ -4,3 +4,8 @@
 [12-Dec-2011 10:48:39] PHP Fatal error:  Call to a member function destroy() on a non-object in /home/wwwstage/public_html/app/Controller/UsersController.php on line 144
 [12-Dec-2011 10:58:29] PHP Parse error:  syntax error, unexpected T_OBJECT_OPERATOR in /home/wwwstage/public_html/app/View/Layouts/front_end.ctp on line 133
 [12-Dec-2011 10:59:08] PHP Parse error:  syntax error, unexpected T_ELSE in /home/wwwstage/public_html/app/View/Layouts/front_end.ctp on line 135
+[12-Dec-2011 12:21:48] PHP Parse error:  syntax error, unexpected '}' in /home/wwwstage/public_html/app/Controller/PaymentDetailsController.php on line 72
+[12-Dec-2011 12:21:54] PHP Parse error:  syntax error, unexpected '}' in /home/wwwstage/public_html/app/Controller/PaymentDetailsController.php on line 72
+[12-Dec-2011 12:44:45] PHP Parse error:  syntax error, unexpected '*' in /home/wwwstage/public_html/app/Controller/PaymentDetailsController.php on line 92
+[12-Dec-2011 12:44:46] PHP Parse error:  syntax error, unexpected '*' in /home/wwwstage/public_html/app/Controller/PaymentDetailsController.php on line 92
+[12-Dec-2011 12:45:00] PHP Parse error:  syntax error, unexpected '*' in /home/wwwstage/public_html/app/Controller/PaymentDetailsController.php on line 92

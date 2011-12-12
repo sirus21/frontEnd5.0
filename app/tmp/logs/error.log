@@ -3908,3 +3908,86 @@
 #1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
 #2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2011-12-12 11:39:50 Error: [NotFoundException] Invalid payment detail
+#0 [internal function]: PaymentDetailsController->edit('2')
+#1 /home/wwwstage/public_html/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(PaymentDetailsController), Array)
+#2 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#3 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-12-12 11:43:07 Error: [NotFoundException] Invalid payment detail
+#0 [internal function]: PaymentDetailsController->edit('CallSessions', 'ajaxLeadCaller')
+#1 /home/wwwstage/public_html/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(PaymentDetailsController), Array)
+#2 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#3 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-12-12 11:43:38 Error: [NotFoundException] Invalid payment detail
+#0 [internal function]: PaymentDetailsController->edit('CallSessions', 'ajaxLeadCaller')
+#1 /home/wwwstage/public_html/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(PaymentDetailsController), Array)
+#2 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#3 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-12-12 11:58:45 Error: [NotFoundException] Invalid payment detail
+#0 [internal function]: PaymentDetailsController->edit('1')
+#1 /home/wwwstage/public_html/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(PaymentDetailsController), Array)
+#2 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#3 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-12-12 11:58:54 Error: [NotFoundException] Invalid payment detail
+#0 [internal function]: PaymentDetailsController->edit('1')
+#1 /home/wwwstage/public_html/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(PaymentDetailsController), Array)
+#2 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#3 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-12-12 11:59:06 Error: [NotFoundException] Invalid payment detail
+#0 [internal function]: PaymentDetailsController->edit('1')
+#1 /home/wwwstage/public_html/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(PaymentDetailsController), Array)
+#2 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#3 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-12-12 12:11:51 Error: [NotFoundException] Invalid payment detail
+#0 [internal function]: PaymentDetailsController->edit()
+#1 /home/wwwstage/public_html/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(PaymentDetailsController), Array)
+#2 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#3 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-12-12 12:12:06 Error: [NotFoundException] Invalid payment detail
+#0 [internal function]: PaymentDetailsController->edit('1')
+#1 /home/wwwstage/public_html/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(PaymentDetailsController), Array)
+#2 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#3 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-12-12 12:12:31 Error: [NotFoundException] Invalid payment detail
+#0 [internal function]: PaymentDetailsController->edit('1')
+#1 /home/wwwstage/public_html/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(PaymentDetailsController), Array)
+#2 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#3 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-12-12 12:13:22 Error: [NotFoundException] Invalid payment detail
+#0 [internal function]: PaymentDetailsController->edit('32')
+#1 /home/wwwstage/public_html/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(PaymentDetailsController), Array)
+#2 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#3 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-12-12 12:55:32 Error: [MissingActionException] Action UsersController::add() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 12:55:41 Error: [MissingActionException] Action UsersController::add() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 12:56:06 Error: [MissingControllerException] Controller class EditController could not be found.
+#0 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

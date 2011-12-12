@@ -1,4 +1,4 @@
-<div class="callSessions view">
+h<div class="callSessions view">
 <h2><?php  echo __('Call Session');?></h2>
 	<dl>
 		<dt><?php echo __('Id'); ?></dt>

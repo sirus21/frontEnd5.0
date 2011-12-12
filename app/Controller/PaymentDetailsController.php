@@ -26,6 +26,8 @@ class PaymentDetailsController extends AppController {
  */
 	public function view($id = null) {
 		$this->PaymentDetail->id = $id;
+		
+		
 		if (!$this->PaymentDetail->exists()) {
 			throw new NotFoundException(__('Invalid payment detail'));
 		}
@@ -38,8 +40,13 @@ class PaymentDetailsController extends AppController {
  * @return void
  */
 	public function add() {
+		
+		
 		if ($this->request->is('post')) {
 			$this->PaymentDetail->create();
+		
+			$this->PaymentDetail->set('user_id',$this->Auth->user('id'));    
+			
 			if ($this->PaymentDetail->save($this->request->data)) {
 				$this->Session->setFlash(__('The payment detail has been saved'));
 				$this->redirect(array('action' => 'index'));
@@ -58,10 +65,16 @@ class PaymentDetailsController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
-		$this->PaymentDetail->id = $id;
+			
+		 
+		$x =  $this->PaymentDetail->getUser($this->Auth->user('id')); 	
+		$this->PaymentDetail->id =  $x['0']['PaymentDetail']['id']; 
+		
+		
 		if (!$this->PaymentDetail->exists()) {
-			throw new NotFoundException(__('Invalid payment detail'));
+			  $this->redirect(array('action'=>'add')); 
 		}
+		
 		if ($this->request->is('post') || $this->request->is('put')) {
 			if ($this->PaymentDetail->save($this->request->data)) {
 				$this->Session->setFlash(__('The payment detail has been saved'));
@@ -73,7 +86,11 @@ class PaymentDetailsController extends AppController {
 			$this->request->data = $this->PaymentDetail->read(null, $id);
 		}
 		$users = $this->PaymentDetail->User->find('list');
-		$this->set(compact('users'));
+	 
+	 
+	  	$this->set(compact('users'));
+	  	
+		
 	}
 
 /**
