@@ -10,13 +10,15 @@
     // fadeout flash messages on click  
     
     // make out intial lead call
+    
+    
+    
+    
      $.get("CallSessions/ajaxLeadCaller/", function(data){
                                                                                          
                                                                                             $("#mainContent").html(data);
                                                                                             $("#hor-zebra tr:odd").addClass("odd");
-                                                                                         
-                                                                                     
-                                                                              });
+                                                                                });
  
     
     //**************************************************************** Navigation ****************************************************/
@@ -29,9 +31,9 @@
         });  
       
         // fade out good flash messages after 3 seconds  
-        $('.flash_good').animate({opacity: 1.0}, 3000).fadeOut();
+         $('.flash_good').animate({opacity: 1.0}, 3000).fadeOut();
         
-       // menues
+       // menus
          /**************************************************************************************************/
         /***************************************bind so we can click away from menues****************/
        /**************************************************************************************************/

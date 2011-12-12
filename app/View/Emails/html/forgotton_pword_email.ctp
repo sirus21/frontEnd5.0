@@ -2,7 +2,7 @@ Howdy  <?php echo  $name ?>,
 <p> You are receiving this email because you have forgotten your password. </p>
 <p>Simply click on the link below and you will be able to set a new one:</p>  
 
-<p><?php echo $code ?></a></p>
+<p> <a href="<?php echo $code ?>"> Click Here </a></p>
 
 <p> If you need any further assistance please contact me directly. </p> 
 <p>If for some reason you did not request   a new password then just ignore this email</p>

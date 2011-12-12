@@ -12,6 +12,7 @@ class UsersController extends AppController {
 
 function beforeFilter() {
    
+    
      //  parent::beforeFilter();
       //$this->initDB(); 
       $this->Auth->allow('register');
@@ -192,10 +193,10 @@ function logout()
 				$this->__sendEmail(array( 'name'=>$this->request->data['User']['first_name'],
 							                'code'=> $code,'subject'=>"Call Commission - Please activate your account"),'sign_up',$this->request->data['User']['email']); 
 				
-				
+				$this->Session->setFlash('Thanks for registering,please check your inbox to learn how to log in','flash_good');
 				$this->redirect(array('controller'=>'users','action'=>'registrationMessage',$this->request->data['User']['first_name'])); 
+			
 				
-				//$this->Session->setFlash(__('Thanks for that,please check your inbox to active'));
 				
 				
 				// $this->redirect(array('action' => 'index'));
@@ -229,8 +230,8 @@ public  function  resendemail($id=null)
 	     
 	     $this->__sendEmail($templateVars,'sign_up',null,$this->User->field("email"));
 	     
-	     //$this->Session->setFlash(__('An email has been sent please activate your account then log in .'));
-             //$this->redirect('login');
+	     $this->Session->setFlash('An email has been sent please activate your account then log in .','flash_good');
+             $this->redirect('login');
     }
     
     
@@ -360,22 +361,13 @@ public function resetpword($user_id = null, $in_hash = null)
 {
 	
 	
-	
-	
-	   // http://stage.goodapple.co.uk/users/resetpword/30/982e776a
-	  $this->User->id = $user_id;  
-	  if(empty($user_id)  &&  empty($in_hash))
-	  {
-	
-	        $this->set('urlID','/'.$in_hash);
-	        $this->set('urlCode','/',$in_hash); 
 	    
-	 }
-         else
-	 {
-		$this->set('urlID','/'.$user_id);
-	        $this->set('urlCode','/',$in_hash); 
-	 }
+            $this->layout='front_end_not_logged_in';  
+	    $this->User->id = $user_id;  
+	
+	    
+	    $this->set('urlID','/'.$user_id);
+            $this->set('code','/'.$in_hash);
 	 
 	 
     
@@ -390,7 +382,7 @@ public function resetpword($user_id = null, $in_hash = null)
 		
 		if (empty($x)) {
 		                        $this->Session->setFlash(__('Your password has not been updated as you have not recently requested a change,
-								                    please click the forgotton password link if you still want to reset it'));
+								                    please click the forgotton password link if you still want to reset it'),'flash_bad');
 				        $this->redirect('login'); 				    
 		 			
 		}
@@ -400,7 +392,7 @@ public function resetpword($user_id = null, $in_hash = null)
 				 	
 				
 					  
-					 $this->Session->setFlash('Your password has been updated, please login with your new password');
+					 $this->Session->setFlash('Your password has been updated, please login with your new password','flash_good');
 					 $this->User->saveField('password',$this->request->data['User']['password']); 
 					 $this->redirect('login');
 		        
@@ -416,12 +408,8 @@ public function resetpword($user_id = null, $in_hash = null)
 	          
 	 
 	}
-    
 
 }
-
-
-
 
 /**
  * Activates a user account from an incoming link
@@ -436,7 +424,7 @@ public function activate($user_id = null, $in_hash = null) {
 		// Update the active flag in the database
 		$this->User->saveField('active', 1);
 		// Let the user know they can now log in!
-		$this->Session->setFlash('Your account has been activated, please log in below');
+		$this->Session->setFlash('Your account has been activated, please log in below','flash_good');
 		$this->redirect('login');
 	}
  

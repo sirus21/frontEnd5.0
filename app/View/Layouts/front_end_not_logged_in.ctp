@@ -101,7 +101,7 @@
 				
 				<div id="main_not_logged_in">
 			
-                                       <div class="mainInner" id="mainContent">
+                                       <div class="mainInner" id="mainContentNotLoggedIn">
 		
 						
 						

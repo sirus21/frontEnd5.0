@@ -3991,3 +3991,766 @@
 2011-12-12 12:56:06 Error: [MissingControllerException] Controller class EditController could not be found.
 #0 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2011-12-12 13:04:56 Error: [NotFoundException] Invalid call session
+#0 [internal function]: CallSessionsController->edit()
+#1 /home/wwwstage/public_html/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(CallSessionsController), Array)
+#2 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#3 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(CallSessionsController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-12-12 13:05:32 Error: [NotFoundException] Invalid call session
+#0 [internal function]: CallSessionsController->edit()
+#1 /home/wwwstage/public_html/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(CallSessionsController), Array)
+#2 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#3 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(CallSessionsController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-12-12 13:05:41 Error: [MissingActionException] Action CallSessionsController::PaymentDetails() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(CallSessionsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:06:33 Error: [MissingActionException] Action CallSessionsController::PaymentDetails() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(CallSessionsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:07:47 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:09:02 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:09:04 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:11:31 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:11:33 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:11:48 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:11:50 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:12:36 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:12:39 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:12:55 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:12:56 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:16:39 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:17:20 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:27:53 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:27:56 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:28:01 Error: [MissingActionException] Action PaymentDetailsController::adde() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:28:14 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:29:00 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:29:03 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:29:18 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:29:20 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:30:42 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:30:45 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:31:33 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:31:36 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:31:54 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:31:57 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:33:17 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:34:51 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:34:53 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:34:54 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:34:58 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:35:35 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:35:36 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:35:37 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:35:48 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:36:33 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:36:34 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:36:35 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:36:36 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:39:04 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:39:15 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:39:18 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:39:40 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:39:41 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:39:42 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:39:43 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:39:44 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:39:46 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:40:56 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:40:57 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:41:59 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:42:28 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:42:31 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:43:34 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:46:27 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:46:33 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:47:11 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:47:44 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:47:49 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:51:32 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:51:41 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:51:43 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:53:42 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:53:47 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:55:17 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:55:23 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:55:47 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:56:16 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 13:56:17 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 14:00:51 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 14:02:00 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 14:02:12 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 14:03:54 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 14:06:17 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 14:09:18 Error: [MissingActionException] Action UsersController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 14:09:35 Error: [MissingActionException] Action UsersController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 14:09:45 Error: [MissingActionException] Action UsersController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 14:12:58 Error: [MissingActionException] Action UsersController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 14:18:03 Error: [MissingActionException] Action UsersController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 14:18:21 Error: [MissingActionException] Action UsersController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 14:18:28 Error: [MissingViewException] View file "/home/wwwstage/public_html/app/View/Users/resendemail.ctp" is missing.
+#0 /home/wwwstage/public_html/lib/Cake/View/View.php(363): View->_getViewFileName(NULL)
+#1 /home/wwwstage/public_html/lib/Cake/Controller/Controller.php(900): View->render(NULL, NULL)
+#2 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(114): Controller->render()
+#3 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-12-12 14:28:14 Error: [MissingActionException] Action UsersController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 14:29:17 Error: [MissingActionException] Action UsersController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 14:29:22 Error: [MissingActionException] Action UsersController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 14:29:46 Error: [MissingActionException] Action UsersController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 14:30:45 Error: [MissingActionException] Action UsersController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 14:30:53 Error: [MissingActionException] Action UsersController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 14:31:09 Error: [MissingActionException] Action UsersController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 14:37:22 Error: [MissingActionException] Action UsersController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 14:37:28 Error: [MissingActionException] Action UsersController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 14:39:56 Error: [MissingActionException] Action UsersController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 14:39:59 Error: [MissingActionException] Action UsersController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 14:46:09 Error: [MissingActionException] Action UsersController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 14:46:29 Error: [MissingActionException] Action UsersController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 14:47:15 Error: [MissingActionException] Action UsersController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 14:49:26 Error: [MissingActionException] Action UsersController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 14:49:31 Error: [MissingActionException] Action UsersController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 14:50:24 Error: [MissingActionException] Action UsersController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 14:50:36 Error: [MissingActionException] Action UsersController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 15:01:53 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 15:03:33 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 15:04:25 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 15:08:24 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 15:08:28 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 15:09:04 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 15:13:17 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 15:13:24 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 15:13:50 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 15:14:15 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 15:14:19 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 15:14:43 Error: [MissingActionException] Action UsersController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 15:14:50 Error: [MissingActionException] Action UsersController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 15:15:02 Error: [MissingActionException] Action UsersController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 15:16:25 Error: [MissingActionException] Action UsersController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 15:19:39 Error: [MissingActionException] Action UsersController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 15:31:08 Error: [MissingActionException] Action UsersController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 15:48:14 Error: [MissingActionException] Action UsersController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 15:48:46 Error: [MissingViewException] View file "/home/wwwstage/public_html/app/View/CallSessions/index.ctp" is missing.
+#0 /home/wwwstage/public_html/lib/Cake/View/View.php(363): View->_getViewFileName(NULL)
+#1 /home/wwwstage/public_html/lib/Cake/Controller/Controller.php(900): View->render(NULL, NULL)
+#2 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(114): Controller->render()
+#3 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(CallSessionsController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-12-12 15:58:24 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 16:05:33 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 17:15:36 Error: [MissingActionException] Action UsersController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 17:16:18 Error: [MissingActionException] Action UsersController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 17:26:00 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 17:34:00 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 17:40:28 Error: [MissingActionException] Action UsersController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 17:40:33 Error: [MissingActionException] Action UsersController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 17:42:07 Error: [MissingActionException] Action UsersController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 18:04:59 Error: [MissingActionException] Action UsersController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 18:05:38 Error: [MissingActionException] Action UsersController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 18:06:36 Error: [MissingActionException] Action UsersController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 18:07:27 Error: [MissingActionException] Action UsersController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 18:07:40 Error: [MissingActionException] Action UsersController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 18:08:00 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 18:14:14 Error: [MissingActionException] Action UsersController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 18:14:19 Error: [MissingActionException] Action UsersController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 18:14:37 Error: [MissingActionException] Action UsersController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 18:14:47 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 18:15:36 Error: [MissingActionException] Action UsersController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 18:15:48 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 18:15:51 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 18:15:52 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 18:16:08 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 18:17:22 Error: [MissingActionException] Action PaymentDetailsController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PaymentDetailsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 18:17:26 Error: [MissingActionException] Action UsersController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 18:17:30 Error: [MissingActionException] Action UsersController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-12-12 18:18:54 Error: [MissingActionException] Action UsersController::CallSessions() could not be found.
+#0 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwstage/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwstage/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

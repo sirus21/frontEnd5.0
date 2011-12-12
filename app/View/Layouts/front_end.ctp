@@ -21,7 +21,8 @@
 
 
 <div id="wrapper">
-
+		
+	        <?php echo $this->Session->flash(); ?>	
 	<div id="wrap">	
 
 	<div id="header">
@@ -82,8 +83,8 @@
 
 
        <ul class="sideTabs">
-       <li class="selected" id="menuHome"><a> Home </a></li>
-       <li id="menuEdit"><a> Payment details </a></li> 
+       <li class="selected" id="menuHome" onclick="www.google.co.uk"><?php echo  $this->Html->link(__('Home'), array('controller' => 'CallSessions',  'action' => 'index')); ?></li>
+       <li id="menuEdit"><?php echo  $this->Html->link(__('Payment Details'), array('controller' => 'PaymentDetails',  'action' => 'edit')); ?> </li> 
   </ul>
 
 
@@ -98,7 +99,14 @@
 				</div><!--[end] asideRight -->
 				
 				<div id="main">
-				        <div class="menuBlock">  	  
+	
+	 <?php   if($this->params['controller'] == "CallSessions")
+    
+    {
+		
+    ?> 
+	
+	 <div class="menuBlock">  	  
 	
         <div class="myMenuHolder">	
       
@@ -108,6 +116,7 @@
 
 
 
+      
         <div class="myMenuHolder">
 		
 
@@ -125,11 +134,7 @@
 	
        </div> <!--[end] myMenuHolder --> 
      
-    <?php   if($this->params['controller'] == "CallSessions")
-    
-    {
-		
-    ?> 
+   
       
        <div class="myMenuHolder">		
         <ul class="myMenu" id="topmenu">

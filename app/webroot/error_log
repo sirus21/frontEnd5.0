@@ -9,3 +9,6 @@
 [12-Dec-2011 12:44:45] PHP Parse error:  syntax error, unexpected '*' in /home/wwwstage/public_html/app/Controller/PaymentDetailsController.php on line 92
 [12-Dec-2011 12:44:46] PHP Parse error:  syntax error, unexpected '*' in /home/wwwstage/public_html/app/Controller/PaymentDetailsController.php on line 92
 [12-Dec-2011 12:45:00] PHP Parse error:  syntax error, unexpected '*' in /home/wwwstage/public_html/app/Controller/PaymentDetailsController.php on line 92
+[12-Dec-2011 17:53:21] PHP Parse error:  syntax error, unexpected '*' in /home/wwwstage/public_html/app/Controller/UsersController.php on line 418
+[12-Dec-2011 17:53:22] PHP Parse error:  syntax error, unexpected '*' in /home/wwwstage/public_html/app/Controller/UsersController.php on line 418
+[12-Dec-2011 17:53:29] PHP Parse error:  syntax error, unexpected '*' in /home/wwwstage/public_html/app/Controller/UsersController.php on line 418

@@ -1,7 +1,19 @@
-<div class="paymentDetails form">
-<?php echo $this->Form->create('PaymentDetail');?>
-	<fieldset>
-		<legend><?php echo __('Please Edit  Your Payment Detail'); ?></legend>
+<script type="text/javascript">
+
+      $(document).ready(function(){  
+   
+               $("#menuHome").removeClass("selected");
+	       $("#menuEdit").addClass("selected");
+    
+      })
+
+</script>
+
+
+<?php echo $this->Form->create('PaymentDetail',array('class'=>'register login'));?>
+	
+	
+	<h1> Hit save to edit your payment details </h1> 
 	<?php
 		
 		echo $this->Form->input('bank_name');
@@ -13,5 +25,5 @@
 		echo $this->Form->input('vat_number');
 	?>
 	</fieldset>
-<?php echo $this->Form->end(__('Submit'));?>
+<?php echo $this->Form->end(__('Save'));?>
 

@@ -41,8 +41,18 @@ class PaymentDetailsController extends AppController {
  */
 	public function add() {
 		
+		    $this->layout='front_end';
+	
+		    $x =  $this->PaymentDetail->getUser($this->Auth->user('id')); 	
+				   
+		    $this->PaymentDetail->id =  $x['0']['PaymentDetail']['id']; 
+                    
+		    if ($this->PaymentDetail->exists()) {
+			  $this->redirect(array('action'=>'edit')); 
+	            }
+			
 		
-		if ($this->request->is('post')) {
+		 if ($this->request->is('post')) {
 			$this->PaymentDetail->create();
 		
 			$this->PaymentDetail->set('user_id',$this->Auth->user('id'));    
@@ -66,7 +76,8 @@ class PaymentDetailsController extends AppController {
  */
 	public function edit($id = null) {
 			
-		 
+		 $this->layout='front_end';
+		  
 		$x =  $this->PaymentDetail->getUser($this->Auth->user('id')); 	
 		$this->PaymentDetail->id =  $x['0']['PaymentDetail']['id']; 
 		
@@ -77,10 +88,9 @@ class PaymentDetailsController extends AppController {
 		
 		if ($this->request->is('post') || $this->request->is('put')) {
 			if ($this->PaymentDetail->save($this->request->data)) {
-				$this->Session->setFlash(__('The payment detail has been saved'));
-				$this->redirect(array('action' => 'index'));
+				 $this->Session->setFlash('Great, your details have been updated','flash_good');
 			} else {
-				$this->Session->setFlash(__('The payment detail could not be saved. Please, try again.'));
+				$this->Session->setFlash('The payment detail could not be saved. Please, try again','flash_bad');
 			}
 		} else {
 			$this->request->data = $this->PaymentDetail->read(null, $id);

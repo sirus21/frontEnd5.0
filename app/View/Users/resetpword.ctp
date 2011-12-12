@@ -1,15 +1,13 @@
-<h1> Forgotton Your Password ? </h1>
+<h1>Please choose a new password  </h1>
 
-<p> Please choose a new password </p> 
 
-<fieldset>
-		<legend> Enter you new password below </legend>
 <?php
 
-echo $this->Form->create('User', array('/resetpword'.$urlID.$urlCode));
+
+
+echo $this->Form->create('User', array('action'=>'/resetpword'.$urlID.$code,'class' => 'register login'));
 echo $this->Form->input('password');
 echo $this->Form->input('password2',array('type' => 'password','label'=>'Confirm Password'));
-
 
 
 ?>

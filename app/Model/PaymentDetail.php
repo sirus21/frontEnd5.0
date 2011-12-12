@@ -15,7 +15,7 @@ class PaymentDetail extends AppModel {
  */
 
 public function  getUser($id=null){
-    
+      
        return   $this->find('all',  array('conditions'=>array('user_id' => $id)));
       
 }
