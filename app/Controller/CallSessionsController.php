@@ -83,8 +83,8 @@ var $helpers = array('Js' => array('Jquery'),'Time','Menu');
 					        case  "today":
 							               CakeSession::write('filter.startDate',Date("Y-m-d"));
 		                                                       CakeSession::write('filter.endDate',Date("Y-m-d"));
-								   
 								      CakeSession::write('filter.cleandate','Today');
+								      break; 
 								       
 						
 						case   "yesterday":
@@ -129,11 +129,23 @@ var $helpers = array('Js' => array('Jquery'),'Time','Menu');
 									 
 									   CakeSession::write('filter.cleandate','Last 90 Days'); 
 									   break; 
+						
+						
+					     default :
+					                               CakeSession::write('filter.startDate',Date("Y-m-d"));
+		                                                       CakeSession::write('filter.endDate',Date("Y-m-d"));
+								 
+				   
+								      CakeSession::write('filter.cleandate','Today');
+								      break; 
+								       
 							      
 				     }	// switch 	
 		          }  // not null 
-				
 			
+			 
+			 
+			 
 	                
 			$data = $this->paginate(array( 'CallSession.paid'=>'1','CallSession.user_id'=>$this->Auth->user('id'),
 								                                           'CallSession.created >='=>CakeSession::read('filter.startDate'),

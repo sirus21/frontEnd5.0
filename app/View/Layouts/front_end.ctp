@@ -134,7 +134,7 @@
 	
        </div> <!--[end] myMenuHolder --> 
      
-   
+
       
        <div class="myMenuHolder">		
         <ul class="myMenu" id="topmenu">
@@ -144,8 +144,7 @@
 
 	
 	
-	
-	if (CakeSession::valid()) { echo  CakeSession::read("filter.cleandate");} else {echo "Today";}  ?></a>
+	if (CakeSession::valid()) { echo  CakeSession::read("filter.cleandate");}   ?></a>
 	
 	<ul class="subUL">
 		<li><a id="today"   href="#"> Today  </a></li>

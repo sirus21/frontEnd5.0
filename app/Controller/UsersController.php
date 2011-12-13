@@ -111,6 +111,16 @@ function login() {
            
 	                                        if($this->Auth->user('active') ) {
 						           
+						
+						           // set up dates
+							    CakeSession::write('filter.startDate',Date("Y-m-d"));
+		                                            CakeSession::write('filter.endDate',Date("Y-m-d"));
+							    CakeSession::write('filter.cleandate','Today');
+								  
+								       
+						
+						
+						
 							   print_r($this->Auth->redirect());
 							   
 							   $this->redirect(array('controller' => 'CallSessions', 'action' => 'index'));

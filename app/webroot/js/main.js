@@ -11,9 +11,7 @@
     
     // make out intial lead call
     
-    
-    
-    
+
      $.get("CallSessions/ajaxLeadCaller/", function(data){
                                                                                          
                                                                                             $("#mainContent").html(data);
