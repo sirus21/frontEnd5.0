@@ -15,3 +15,61 @@
 [13-Dec-2011 10:12:08] PHP Parse error:  syntax error, unexpected ';' in /home/wwwstage/public_html/app/View/Layouts/front_end.ctp on line 137
 [13-Dec-2011 10:12:09] PHP Parse error:  syntax error, unexpected ';' in /home/wwwstage/public_html/app/View/Layouts/front_end.ctp on line 137
 [13-Dec-2011 10:12:19] PHP Parse error:  syntax error, unexpected ';' in /home/wwwstage/public_html/app/View/Layouts/front_end.ctp on line 137
+[13-Dec-2011 12:39:04] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in /home/wwwstage/public_html/app/Controller/CallSessionsController.php on line 26
+[13-Dec-2011 12:39:06] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in /home/wwwstage/public_html/app/Controller/CallSessionsController.php on line 26
+[13-Dec-2011 12:39:06] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in /home/wwwstage/public_html/app/Controller/CallSessionsController.php on line 26
+[13-Dec-2011 12:39:07] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in /home/wwwstage/public_html/app/Controller/CallSessionsController.php on line 26
+[13-Dec-2011 12:39:09] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in /home/wwwstage/public_html/app/Controller/CallSessionsController.php on line 26
+[13-Dec-2011 12:39:16] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in /home/wwwstage/public_html/app/Controller/CallSessionsController.php on line 26
+[13-Dec-2011 12:39:17] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in /home/wwwstage/public_html/app/Controller/CallSessionsController.php on line 26
+[13-Dec-2011 12:39:17] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in /home/wwwstage/public_html/app/Controller/CallSessionsController.php on line 26
+[13-Dec-2011 12:39:18] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in /home/wwwstage/public_html/app/Controller/CallSessionsController.php on line 26
+[13-Dec-2011 12:39:18] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in /home/wwwstage/public_html/app/Controller/CallSessionsController.php on line 26
+[13-Dec-2011 12:39:18] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in /home/wwwstage/public_html/app/Controller/CallSessionsController.php on line 26
+[13-Dec-2011 12:39:18] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in /home/wwwstage/public_html/app/Controller/CallSessionsController.php on line 26
+[13-Dec-2011 12:39:18] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in /home/wwwstage/public_html/app/Controller/CallSessionsController.php on line 26
+[13-Dec-2011 12:39:36] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in /home/wwwstage/public_html/app/Controller/CallSessionsController.php on line 26
+[13-Dec-2011 12:39:37] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in /home/wwwstage/public_html/app/Controller/CallSessionsController.php on line 26
+[13-Dec-2011 12:39:38] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in /home/wwwstage/public_html/app/Controller/CallSessionsController.php on line 26
+[13-Dec-2011 12:39:38] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in /home/wwwstage/public_html/app/Controller/CallSessionsController.php on line 26
+[13-Dec-2011 12:39:39] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in /home/wwwstage/public_html/app/Controller/CallSessionsController.php on line 26
+[13-Dec-2011 12:39:44] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in /home/wwwstage/public_html/app/Controller/CallSessionsController.php on line 26
+[13-Dec-2011 12:40:19] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in /home/wwwstage/public_html/app/Controller/CallSessionsController.php on line 26
+[13-Dec-2011 12:40:20] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in /home/wwwstage/public_html/app/Controller/CallSessionsController.php on line 26
+[13-Dec-2011 12:40:21] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in /home/wwwstage/public_html/app/Controller/CallSessionsController.php on line 26
+[13-Dec-2011 12:40:21] PHP Fatal error:  Call to a member function writeBuffer() on a non-object in /home/wwwstage/public_html/app/View/Layouts/front_end.ctp on line 281
+[13-Dec-2011 12:40:21] PHP Fatal error:  Call to a member function options() on a non-object in /home/wwwstage/public_html/app/Controller/CallSessionsController.php on line 151
+[13-Dec-2011 12:40:32] PHP Fatal error:  Call to a member function writeBuffer() on a non-object in /home/wwwstage/public_html/app/View/Layouts/front_end.ctp on line 281
+[13-Dec-2011 12:40:32] PHP Fatal error:  Call to a member function options() on a non-object in /home/wwwstage/public_html/app/Controller/CallSessionsController.php on line 151
+[13-Dec-2011 12:40:33] PHP Fatal error:  Call to a member function writeBuffer() on a non-object in /home/wwwstage/public_html/app/View/Layouts/front_end.ctp on line 281
+[13-Dec-2011 12:40:33] PHP Fatal error:  Call to a member function options() on a non-object in /home/wwwstage/public_html/app/Controller/CallSessionsController.php on line 151
+[13-Dec-2011 12:40:34] PHP Fatal error:  Call to a member function writeBuffer() on a non-object in /home/wwwstage/public_html/app/View/Layouts/front_end.ctp on line 281
+[13-Dec-2011 12:40:34] PHP Fatal error:  Call to a member function options() on a non-object in /home/wwwstage/public_html/app/Controller/CallSessionsController.php on line 151
+[13-Dec-2011 12:40:35] PHP Fatal error:  Call to a member function writeBuffer() on a non-object in /home/wwwstage/public_html/app/View/Layouts/front_end.ctp on line 281
+[13-Dec-2011 12:40:39] PHP Fatal error:  Call to a member function writeBuffer() on a non-object in /home/wwwstage/public_html/app/View/Layouts/front_end.ctp on line 281
+[13-Dec-2011 12:41:57] PHP Fatal error:  Call to a member function writeBuffer() on a non-object in /home/wwwstage/public_html/app/View/Layouts/front_end.ctp on line 281
+[13-Dec-2011 12:41:58] PHP Fatal error:  Call to a member function options() on a non-object in /home/wwwstage/public_html/app/View/CallSessions/ajax_lead_caller.ctp on line 3
+[13-Dec-2011 12:41:59] PHP Fatal error:  Call to a member function writeBuffer() on a non-object in /home/wwwstage/public_html/app/View/Layouts/front_end.ctp on line 281
+[13-Dec-2011 12:41:59] PHP Fatal error:  Call to a member function options() on a non-object in /home/wwwstage/public_html/app/View/CallSessions/ajax_lead_caller.ctp on line 3
+[13-Dec-2011 12:41:59] PHP Fatal error:  Call to a member function writeBuffer() on a non-object in /home/wwwstage/public_html/app/View/Layouts/front_end.ctp on line 281
+[13-Dec-2011 12:42:00] PHP Fatal error:  Call to a member function options() on a non-object in /home/wwwstage/public_html/app/View/CallSessions/ajax_lead_caller.ctp on line 3
+[13-Dec-2011 12:42:19] PHP Fatal error:  Call to a member function writeBuffer() on a non-object in /home/wwwstage/public_html/app/View/Layouts/front_end.ctp on line 281
+[13-Dec-2011 12:42:20] PHP Fatal error:  Call to a member function options() on a non-object in /home/wwwstage/public_html/app/View/CallSessions/ajax_lead_caller.ctp on line 3
+[13-Dec-2011 12:42:20] PHP Fatal error:  Call to a member function writeBuffer() on a non-object in /home/wwwstage/public_html/app/View/Layouts/front_end.ctp on line 281
+[13-Dec-2011 12:45:00] PHP Fatal error:  Call to a member function writeBuffer() on a non-object in /home/wwwstage/public_html/app/View/Layouts/front_end.ctp on line 281
+[13-Dec-2011 12:45:22] PHP Fatal error:  Call to a member function writeBuffer() on a non-object in /home/wwwstage/public_html/app/View/Layouts/front_end.ctp on line 281
+[13-Dec-2011 12:45:24] PHP Fatal error:  Call to a member function writeBuffer() on a non-object in /home/wwwstage/public_html/app/View/Layouts/front_end.ctp on line 281
+[13-Dec-2011 13:51:02] PHP Fatal error:  Call to a member function writeBuffer() on a non-object in /home/wwwstage/public_html/app/View/Layouts/front_end.ctp on line 281
+[13-Dec-2011 13:51:03] PHP Fatal error:  Call to a member function writeBuffer() on a non-object in /home/wwwstage/public_html/app/View/Layouts/front_end.ctp on line 281
+[13-Dec-2011 13:51:04] PHP Fatal error:  Call to a member function writeBuffer() on a non-object in /home/wwwstage/public_html/app/View/Layouts/front_end.ctp on line 281
+[13-Dec-2011 14:19:19] PHP Fatal error:  Call to a member function writeBuffer() on a non-object in /home/wwwstage/public_html/app/View/Layouts/front_end.ctp on line 281
+[13-Dec-2011 14:19:27] PHP Fatal error:  Call to a member function writeBuffer() on a non-object in /home/wwwstage/public_html/app/View/Layouts/front_end.ctp on line 281
+[13-Dec-2011 14:19:28] PHP Fatal error:  Call to a member function writeBuffer() on a non-object in /home/wwwstage/public_html/app/View/Layouts/front_end.ctp on line 281
+[13-Dec-2011 14:31:33] PHP Fatal error:  Call to a member function writeBuffer() on a non-object in /home/wwwstage/public_html/app/View/Layouts/front_end.ctp on line 281
+[13-Dec-2011 14:31:46] PHP Fatal error:  Call to a member function writeBuffer() on a non-object in /home/wwwstage/public_html/app/View/Layouts/front_end.ctp on line 281
+[13-Dec-2011 14:31:47] PHP Fatal error:  Call to a member function writeBuffer() on a non-object in /home/wwwstage/public_html/app/View/Layouts/front_end.ctp on line 281
+[13-Dec-2011 16:39:16] PHP Fatal error:  Call to a member function writeBuffer() on a non-object in /home/wwwstage/public_html/app/View/Layouts/front_end.ctp on line 281
+[15-Dec-2011 10:57:14] PHP Fatal error:  Call to a member function writeBuffer() on a non-object in /home/wwwstage/public_html/app/View/Layouts/front_end.ctp on line 281
+[15-Dec-2011 10:57:16] PHP Fatal error:  Call to a member function writeBuffer() on a non-object in /home/wwwstage/public_html/app/View/Layouts/front_end.ctp on line 281
+[15-Dec-2011 10:57:17] PHP Fatal error:  Call to a member function writeBuffer() on a non-object in /home/wwwstage/public_html/app/View/Layouts/front_end.ctp on line 281
+[15-Dec-2011 10:57:21] PHP Fatal error:  Call to a member function writeBuffer() on a non-object in /home/wwwstage/public_html/app/View/Layouts/front_end.ctp on line 281

@@ -1,5 +1,12 @@
 
 
+<?php $this->Paginator->options(array(
+    'update' => '#mainContent',
+    'evalScripts' => true
+));
+?>
+
+
 <div class="statBlock">
 
 

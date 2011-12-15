@@ -16,12 +16,15 @@ class CallSessionsController extends AppController {
 
 
 var $paginate = array(
-'limit' => 20,
+'limit' => 3,
 'order' => array(
 'CallSession.id' => 'desc'
 )
 
 );
+
+
+
 var $components = array('RequestHandler');
 var $helpers = array('Js' => array('Jquery'),'Time','Menu'); 
 
@@ -144,8 +147,7 @@ var $helpers = array('Js' => array('Jquery'),'Time','Menu');
 		          }  // not null 
 			
 			 
-			 
-			 
+
 	                
 			$data = $this->paginate(array( 'CallSession.paid'=>'1','CallSession.user_id'=>$this->Auth->user('id'),
 								                                           'CallSession.created >='=>CakeSession::read('filter.startDate'),
