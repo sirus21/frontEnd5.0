@@ -9,7 +9,14 @@
 	
 	<meta charset="utf-8" />
 	
-	<link rel="stylesheet" type="text/css" media="screen, projection" href="css/style.css" />
+	<?php  echo $this->Html->css(array('main')); ?> 
+	
+	<!-- <link rel="stylesheet" type="text/css" media="screen, projection" href="css/style.css" /> -->
+	
+	
+	
+	
+	
 	<!--[if IE]>
 		<link rel="stylesheet" type="text/css" media="screen, projection" href="css/ie.css" />
 	<![endif]-->
@@ -24,13 +31,17 @@
 </head>
 
 <body>
+	
+	
+	
+	
 
 <div id="wrapper">
 
 <div id="wrap">	
 	<div id="header">
 		<div class="incenter">
-			<div id="logo"><a href="/" title=""><img src="images/logo.png" width="160" alt="" /></a></div>
+			<div id="logo"><a href="/" title=""><img src="img/logo.png" width="160" alt="" /></a></div>
 			
 			<!--
 			
@@ -91,7 +102,7 @@
 
 				-->
 				
-				<img src="images/post_it_note_425.jpg" width="401" alt="" />
+				<img src="img/post_it_note_425.jpg" width="401" alt="" />
 			</div><!--[end] col 1/2 left -->
 		
 			<div class="colOneTwo right">
