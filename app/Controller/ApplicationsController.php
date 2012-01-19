@@ -39,6 +39,7 @@ class ApplicationsController extends AppController {
  */
 	public function add($partner= null) {
 		
+		
 		if ($this->request->is('post')) {
 			$this->Application->create();
 			if ($this->Application->save($this->request->data)) {
@@ -49,6 +50,8 @@ class ApplicationsController extends AppController {
 			}
 		}
 		$products = $this->Application->Product->find('list');
+			
+		$this->set('imgpath',$partner); 
 		$this->set(compact('products'));
 	}
 

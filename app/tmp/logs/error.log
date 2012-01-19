@@ -8387,3 +8387,34 @@ n}
 2012-01-19 17:34:39 Error: [MissingControllerException] Controller class ImagesController could not be found.
 #0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2012-01-19 17:50:39 Error: [MissingActionException] Action ApplicationsController::js() could not be found.
+#0 C:\wamp\www\qptestsite\lib\Cake\Routing\Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\qptestsite\lib\Cake\Routing\Dispatcher.php(89): Dispatcher->_invoke(Object(ApplicationsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-01-19 17:50:39 Error: [MissingActionException] Action ApplicationsController::js() could not be found.
+#0 C:\wamp\www\qptestsite\lib\Cake\Routing\Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\qptestsite\lib\Cake\Routing\Dispatcher.php(89): Dispatcher->_invoke(Object(ApplicationsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-01-19 17:50:40 Error: [MissingActionException] Action ApplicationsController::js() could not be found.
+#0 C:\wamp\www\qptestsite\lib\Cake\Routing\Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\qptestsite\lib\Cake\Routing\Dispatcher.php(89): Dispatcher->_invoke(Object(ApplicationsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-01-19 17:50:41 Error: [MissingActionException] Action ApplicationsController::images() could not be found.
+#0 C:\wamp\www\qptestsite\lib\Cake\Routing\Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\qptestsite\lib\Cake\Routing\Dispatcher.php(89): Dispatcher->_invoke(Object(ApplicationsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-01-19 17:50:41 Error: [MissingActionException] Action ApplicationsController::img() could not be found.
+#0 C:\wamp\www\qptestsite\lib\Cake\Routing\Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\qptestsite\lib\Cake\Routing\Dispatcher.php(89): Dispatcher->_invoke(Object(ApplicationsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-01-19 17:50:50 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-19 17:55:50 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

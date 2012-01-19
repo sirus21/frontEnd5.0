@@ -3,28 +3,38 @@
 
 <div class="colOne">
 				
-				<div id="pageTitle">
-					<h2>Life insurance Quote</h2>
-				</div>
-					
 				<div class="aside left">
 					
 					<div class="block greyBlock">
 						
-						<form id="referalForm">
-							<fieldset>
-								<label for="ref_code">Please enter your referal code</label>
-								<input type="text" value="" placeholder="XXX" name="ref_code" id="ref_code" class="text" />
-								<input type="hidden" name="form_submitted" value="submitted" />
-								<input type="image" name="go" src="images/btn_go.png" class="go" id="go_btn" />
-							</fieldset>
-						</form>
+					  <div class="innerblock"> 	
+						<img width="160" alt="" src="img/<?php   echo $imgpath.'.jpg';?>"/>
+					  </div> 	
+								
 					</div>
+					  
+					 <div class="block greyBlock">
+						<h4>Quality Partner</h4>
+						<p>QualityPartner is the next evolution of
+							affinity partnerships.</p>
+						
+						<ul>
+							<li>Make significant extra profits</li>
+							<li>Offer complimentary services</li>
+							<li>Fully transparent and trackable</li>
+							<li>Leverage your existing customers</li>
+						</ul>
+						
+						
+				
+					</div> 
+					  
+					
 					
 					<div class="block">
 						<p class="referal_pop">Thank you, you have been refered by Mr. Lettings of Worthing</p>
 					</div>
-				</div><!--[end] aside -->
+				       </div><!--[end] aside -->
 				
 				<div class="mainContent right">
 					
