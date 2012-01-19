@@ -8,17 +8,13 @@
         <meta name="description" content="Referral service that allows companies, such as estate agents and letting agents, to earn money by referring customers to vetted high quality companies and services." />
 	
 	<meta charset="utf-8" />
-	 <?php echo $this->Html->script(array('jquery-1.3.2.min.js', 'jquery-ui.js', 'jquery-fluid16.js','cufon-yui.js','Minion_Pro.font.js')); ?> 
+       
+       
+       
+        <?php echo $this->Html->script(array('jquery-1.3.2.min.js', 'jquery-ui.js', 'jquery-fluid16.js','cufon-yui.js','Minion_Pro.font.js')); ?> 
 	<?php  echo $this->Html->css(array('main')); ?> 
 	
-	
-	
 	<!-- <link rel="stylesheet" type="text/css" media="screen, projection" href="css/style.css" /> -->
-	
-	
-	
-	
-	
 	<!--[if IE]>
 		<link rel="stylesheet" type="text/css" media="screen, projection" href="css/ie.css" />
 	<![endif]-->

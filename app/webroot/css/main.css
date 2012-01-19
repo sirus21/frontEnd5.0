@@ -685,6 +685,13 @@ textarea {
 .aside .partners img { border: none; }
 
 
+
+
+
+
+
+
+
 /* -------------------------- Search Results Page ------------------------- */
 .mainContent .greyBlock .whiteBlock {	
 	background: #fff;
@@ -718,10 +725,27 @@ textarea {
 		width: 460px !important; 
 		}	
 		
-/* ----------------------------- Contact Us ----------------------------- */
-#contactForm { width: 100%; }
-	#contactForm .formRow { width: 100%; display: block; padding: 5px 0 25px 0; overflow: hidden; }
 
+/* -----------------------------Product application ----------------------------- */
+
+        #ApplicationAddForm  input[type="text"]  {width: 315px; border: 1px solid #cccccc; padding: 3px; background: url('../img/bg_form_inputs.jpg') no-repeat left top; resize:none;}
+        #ApplictionAddForm div{ border:none;} 
+	
+	/*#ApplicationAddForm .text,
+	#ApplicationAddForm textarea { background: url('../img/bg_form_inputs.jpg') no-repeat left top; resize:none; } */ 
+
+
+/* ----------------------------- Contact Us ----------------------------- */
+        
+	
+	
+	
+	
+	
+	#contactForm { width: 100%; }
+	#contactForm .formRow { width: 100%; display: block; padding: 5px 0 25px 0; overflow: hidden; } 
+	#contactForm input[type="text"] { width: 100%; display: block; padding: 5px 0 25px 0; overflow: hidden;} 
+	 
 	#contactForm .text { width: 315px; border: 1px solid #cccccc; padding: 3px; } 
 	#contactForm textarea { width: 430px; border: 1px solid #cccccc; padding: 3px; height: 90px; } 
 	
@@ -737,7 +761,7 @@ textarea {
 		font-weight: normal;
 		}
 		
-
+	
 
 
 /* ----------------------------- Content Page ----------------------------- */

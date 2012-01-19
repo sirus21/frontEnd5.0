@@ -13,7 +13,7 @@
 			<div class="colOneTwo right">
 				<div class="greyBox">
 					<div class="boxInner">
-						<h3 class="cufon-minion">Estate agent owner?we</h3>
+						<h3 class="cufon-minion">Estate agent owner?</h3>
 						<ul>
 							<li>Make extra money</li>
 
