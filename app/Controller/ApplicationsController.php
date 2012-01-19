@@ -37,7 +37,8 @@ class ApplicationsController extends AppController {
  *
  * @return void
  */
-	public function add() {
+	public function add($partner= null) {
+		
 		if ($this->request->is('post')) {
 			$this->Application->create();
 			if ($this->Application->save($this->request->data)) {

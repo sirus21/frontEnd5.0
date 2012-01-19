@@ -10,12 +10,7 @@
 				<div class="aside left">
 					
 					<div class="block greyBlock">
-					
-					    
-					
-				
-					
-					
+						
 						<form id="referalForm">
 							<fieldset>
 								<label for="ref_code">Please enter your referal code</label>
@@ -36,9 +31,7 @@
 					<div class="greyBlock">
 						<h3>Quickly find the best possible quote for the service you are looking for</h3>
 						     
-						  
 						     <?php  echo $this->Form->create('Application',array('inputDefaults'=> array('div'=>false)));?>
-
 						    
 						     <?php	echo $this->Form->input('product_id'); ?> 
 						     

@@ -728,6 +728,10 @@ textarea {
 
 /* -----------------------------Product application ----------------------------- */
 
+        #ApplicationAddForm input[type="text"],
+	#ApplicationAddForm select{ margin-bottom: 15px}
+	
+	#ApplicationAddForm select,
         #ApplicationAddForm  input[type="text"]  {width: 315px; border: 1px solid #cccccc; padding: 3px; background: url('../img/bg_form_inputs.jpg') no-repeat left top; resize:none;}
         #ApplictionAddForm div{ border:none;} 
 	
