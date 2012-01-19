@@ -2,14 +2,16 @@
 <html lang="en-US">
 <head>
 	<title>Quality Partner - Make money referring services to your customers</title>
-
+         <?php $this->Html->meta('icon');  ?>  
         <meta name="keywords" content="refer, referral, referral marketing, commission, commissions, affinity, affinity partnership, brighton, brighton and hove, vetted, monitored, trustworthy, check, quality, partners, estate agent, estate agents, letting agent, letting agents" />
 
         <meta name="description" content="Referral service that allows companies, such as estate agents and letting agents, to earn money by referring customers to vetted high quality companies and services." />
 	
 	<meta charset="utf-8" />
-	
+	 <?php echo $this->Html->script(array('jquery-1.3.2.min.js', 'jquery-ui.js', 'jquery-fluid16.js','cufon-yui.js','Minion_Pro.font.js')); ?> 
 	<?php  echo $this->Html->css(array('main')); ?> 
+	
+	
 	
 	<!-- <link rel="stylesheet" type="text/css" media="screen, projection" href="css/style.css" /> -->
 	
@@ -32,62 +34,15 @@
 
 <body>
 	
-	
-	
+
 	
 
 <div id="wrapper">
 
 <div id="wrap">	
-	<div id="header">
-		<div class="incenter">
-			<div id="logo"><a href="/" title=""><img src="img/logo.png" width="160" alt="" /></a></div>
-			
-			<!--
-			
-			<a href="#" title="" id="topSignin">Sign In</a>
-			
-			-->
-			
-			
-			
-			<div id="topNav">
-				<ul>
-					<li class="current"><a href="/contact.php" title="">Join us</a></li>
-					<li><a href="/how_it_works.html" title="">How it works</a></li>
+  
 
-					<li><a href="/why_it_works.html" title="">Why it works</a></li>
-				</ul>
-			</div>
-		
-			
-		
-			<h2 id="slogan" class="cufon-minion">"Find a trustworthy business near you"</h2>
-		
-		<!--
-		
-			<div id="searchForm">
-				<form>
-					<fieldset>	
-						<div class="formRow">
-							<label for="find">Find:</label>
-							<input type="text" value="" placeholder="what" class="text" name="find" />
-						</div>
-						<div class="formRow">
-							<label for="near">Near:</label>
-							<input type="text" value="" placeholder="place" class="text" name="near" />
-						</div>
-						<div class="formRow submitRow">
-							<input type="image" value="Search" src="images/btn_search_top.png"  />
-						</div>
-					</fieldset>
-				</form>
-			</div><!--[end] search -->
-		
-		
-			
-		</div>
-	</div><!--[end] header -->
+     <?php echo $this->element('header'); ?> 
 	
 	
 	<div id="content">
@@ -137,67 +92,15 @@
 				</div>
 
 			</div>
-		
 		</div>
 	</div><!--[end] content -->
 </div>
 </div><!--[end] wrapper -->
 
-<div id="footer">
-	<div class="incenter">
-		
-		<div class="col">
-			<h4>QualityPartner Services</h4>
 
-			<ul>
-				<li><a href="/contact.php" title="">Life insurance</a></li>
-				<li><a href="/contact.php" title="">Health insurance</a></li>
-				<li><a href="/contact.php" title="">Home insurance</a></li>
-				<li><a href="/contact.php" title="">Directory of services</a></li>
-			</ul>
-		</div>
+<?php echo $this->element('footer'); ?> 
 
-		
-		<div class="col">
-			<h4>Locations</h4>
-			<ul>
-				<li><a href="/contact.php" title="">Brighton</a></li>
-				<li><a href="/contact.php" title="">Exeter</a></li>
-				<li><a href="/contact.php" title="">Hull</a></li>
-				<li><a href="/contact.php" title="">Scunthorpe</a></li>
 
-			</ul>
-		</div>
-		
-		<div class="col">
-			<h4>Find out more</h4>
-			<ul>
-				<li><a href="/how_it_works.html" title="">How it works</a></li>
-				<li><a href="/why_it_works.html" title="">Why it works</a></li>
-
-				<li><a href="/contact.php" title="">Terms and conditions</a></li>
-				<li><a href="/contact.php" title="">Privacy policy</a></li>
-			</ul>
-		</div>
-		
-		<div class="col">
-			<h4>About QualityPartner</h4>
-			<ul>
-
-				<li><a href="/contact.php" title="">QualityPartner Standard</a></li>
-				<li><a href="/contact.php" title="">Meet the team</a></li>
-				<li><a href="/contact.php" title="">Contact us</a></li>
-				<li>
-					<a href="#" title="" class="btnTwitter">Twitter</a>
-					<!--
-					<a href="#" title="" class="btnFacebook">Facebook</a>
-					-->
-					<a href="http://www.linkedin.com/company/goodapple-media-ltd" title="LinkedIn" target="_blank" class="btnIn">LinkedIn</a>
-
-				</li>
-			</ul>
-		</div>
-	</div>
 	
 	<div id="copy">&copy; GoodApple Media Ltd 2011</div>
 	
