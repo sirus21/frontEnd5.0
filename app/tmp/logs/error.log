@@ -8418,3 +8418,13 @@ n}
 2012-01-19 17:55:50 Error: [MissingControllerException] Controller class ImagesController could not be found.
 #0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2012-01-20 11:25:17 Error: [MissingActionException] Action UsersController::CallSessions() could not be found.
+#0 C:\wamp\www\qptestsite\lib\Cake\Routing\Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\qptestsite\lib\Cake\Routing\Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-01-20 11:25:42 Error: [MissingActionException] Action UsersController::CallSessions() could not be found.
+#0 C:\wamp\www\qptestsite\lib\Cake\Routing\Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\qptestsite\lib\Cake\Routing\Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

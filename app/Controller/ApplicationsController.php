@@ -51,7 +51,7 @@ class ApplicationsController extends AppController {
 		}
 		$products = $this->Application->Product->find('list');
 			
-		$this->set('imgpath',$partner); 
+		$this->set('partner',$partner); 
 		$this->set(compact('products'));
 	}
 
