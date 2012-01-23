@@ -1,27 +1,32 @@
 	<div id="header">
+		<div class="topStrip">
+			
+			
+		</div><!--[end] top stip -->	
+		
+		
+		
+		
+		
 		<div class="incenter">
-			<div id="logo"><a href="/" title=""><img src="img/logo.png" width="160" alt="" /></a></div>
+			<div id="logo"><a href="/" title=""><img src="img/logo.png" width="90" height="90px" alt="" /></a></div>
 			
 			<!--
-			
-			<a href="#" title="" id="topSignin">Sign In</a>
-			
-			-->
+			    <a href="#" title="" id="topSignin">Sign In</a>
+	        	-->
 			
 			
 			
 			<div id="topNav">
 				<ul>
-					<li class="current"><a href="/contact.php" title="">Join us</a></li>
-					<li><a href="/how_it_works.html" title="">How it works</a></li>
-
-					<li><a href="/why_it_works.html" title="">Why it works</a></li>
+					<li class="current"><a href="/contact.php" title=""><span>Join us</span></a></li>
+					<li><a href="/how_it_works.html" title=""><span>How it works</span></a></li>
+					<li><a href="/why_it_works.html" title=""><span>Why it works</a></li>
 				</ul>
 			</div>
 		
 			
 		
-			<h2 id="slogan" class="cufon-minion">"Find a trustworthy business near you"</h2>
 		
 		<!--
 		

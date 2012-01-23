@@ -88,20 +88,30 @@ form label { font-size: 15px;  font-weight: normal; }
 #header {
 	position: relative;
 	display: block;
-	height: 160px;
-	background: url('../img/bg_header.gif') repeat-x center top;
+	height: 120px;
+	
 	}
+	
+ .topStrip{background: url('../img/bg_header.gif') repeat-x center top;
+               height: 9px; 
+ }  
+	
+	
+	
 	
 	#header .incenter {
 		height: 225px;
-		background: url('../img/header_bg.jpg') no-repeat center top;
+		color:black;
+		 /* background: url('../img/header_bg.jpg') no-repeat center top; */ 
 		}
 		
 	/*logo*/
 	#logo {
-		position: absolute;
-		top: 0px;
-		left: -25px;
+		
+		margin-top: 10px;
+		margin-left:0px;
+		width:510px;
+		float:left;
 		}
 	
 	/*signin*/
@@ -118,26 +128,59 @@ form label { font-size: 15px;  font-weight: normal; }
 
 	/*top navigation*/
 	#topNav {
-		float: right;
+		float: left;
 		padding-top: 0px;
-		padding-right: 60px;
-		margin-top: -3px;
+		padding-right: 0px;
+		margin-top: 9.5px;
+		color: black;
+		margin-left:40px;
 		}
 	#topNav ul li {	
 		display: inline;
 		float: left;
 		font: normal 12px 'Arial';
-		color: #f2f2f2;
+		color: black;
 		text-transform: uppercase;
 		padding: 23px 15px 0px 15px;
 		}	
 	#topNav ul li.current {	
-		background: url('../img/curr_arrow.png') no-repeat center top;
+		/*background: url('../img/curr_arrow.png') no-repeat center top;*/
 		}
 	#topNav ul li a {
+		background: url('../img/top-nav-button-right.png')no-repeat scroll top right;
+		background-color:#E8E8E8;
+		display:block;
 		text-decoration: none;
-		color: #f2f2f2;
-		}
+		color: black;
+		height:22px;
+		margin:0px;
+		cursor:pointer;}
+	#topNav ul li span {
+			 background-attachment: scroll;
+			background-clip: border-box;
+			background-color: transparent;
+			background-image: url("../img/top-nav-button-left.png");
+			background-origin: padding-box;
+			background-position: left top;
+			background-repeat: no-repeat;
+			display: block;
+			 line-height: 12px;
+			padding-bottom: 5px;
+			padding-left: 3px;
+			padding-right: 3px;
+			padding-top: 5px;
+		      
+      }
+      
+      #topNav ul li a:hover {
+             background-position: bottom right;
+	     background-color:#808080;
+      
+      }
+      #topNav ul span:hover{
+	  background-position: bottom left;
+      }
+      
 		
 	/*slogan*/
 	#slogan {
@@ -200,7 +243,7 @@ form label { font-size: 15px;  font-weight: normal; }
 #content { 
 	display: block;
 	width: 100%;
-	padding: 20px 0 30px;
+	padding: 0px 0 30px;
 	overflow: visible;
 	}
 	
@@ -210,25 +253,26 @@ form label { font-size: 15px;  font-weight: normal; }
 		}
 		
 /* -------------------------- Footer ------------------------- */
-#footer {	
+#footer {
+	
 	position: relative;
 	height: 265px;
 	padding-top: 30px;
-	background: #aeaeae url('../img/bg_footer.jpg') repeat-x center top;
-	color: #fff;
+	background: #E8E8E8;
+	color:black;
 	font: normal 11px 'Arial';
 	overflow: hidden;
 	margin-top: -295px;
 	}
 	
 	#footer h4 {
-		font: bold 15px 'Arial';
-		color: #fff;
+		font:  15px 'Arial';
+		color:black;
 		}
 	
 	#footer a { 
 		text-decoration: none;
-		color: #fff;
+		color:black;
 		}
 		#footer a:hover { text-decoration: underline; }
 
@@ -241,10 +285,10 @@ form label { font-size: 15px;  font-weight: normal; }
 		margin: 0 0 15px 0;
 		}
 	#copy {
-		background: #2b2b2b;
-		border-top: 1px solid #000;
+		background: #808080;
+		/*border-top: 1px solid #000;*/
 		font: normal 12px 'Arial';
-		color: #999999;
+		color: black;
 		height: 20px;
 		line-height: 20px;
 		display: block;
@@ -305,8 +349,15 @@ textarea {
 .colOneTwo.left {
 	padding-right: 20px;
 	width: 425px;
-	}
+	 margin-top: 36px;
+	
 
+	}
+	
+.colOneTwo.left p {float: left;font-size: 18px;font-weight: bold; margin-left: 15px; margin-top: 10px; text-align: justify; width: 370px;}
+.colOneTwo.left img.openspeech{float:left;margin-left:5px}
+.colOneTwo.left img.closespeech { float: right;margin-left: 15px; margin-top: -20px;}
+.colOneTwo.left img.lowerImage{margin-top:50px;}
 /*full size col*/
 .colOne {
 	width: 890px;
@@ -324,10 +375,11 @@ textarea {
 	text-decoration: none !important;
 	display:block;
 	float:left;
+	
 	}
 .ylButton span {
 	height: 65px;
-	padding: 0 27px 0 10px;
+	padding: 0 140px 0  100px;
 	text-align: center;
 	background: url('../img/ylButton_right.png') no-repeat right top;
 	font: bold 28px "Minion Pro", "Times New Roman", serif; 
@@ -492,7 +544,7 @@ textarea {
 
 	.greyBox h3 { 
 		letter-spacing: 2px;
-		margin-left: 40px;
+		
 		}
 		
 	.greyBox ul {
@@ -505,7 +557,7 @@ textarea {
 		}
 		
 	.greyBox .ylButton {
-		margin-left: 45px;
+		margin-left: 18px;
 		}
 
 .blockQuote { 
@@ -744,7 +796,7 @@ textarea {
 	
 	
 	
-	.textblock{font-size:12px}
+	.textblock{font-size:12px;text-align:center;}
 	
 	
 	/*#ApplicationAddForm    input[type="submit"] { width: 120px; height: 38px; display: block; background: transparent url('../img/btn_grey_home_small.png') no-repeat center top; font-size: 12px; font-weight: bold; text-transform: uppercase; color: #fff; text-decoration: none; line-height: 37px; text-align: center; float: left; margin-top: 30px; margin-bottom: 20px; margin-left: 20px; padding: 0; border: 0;					-moz-text-shadow: 1px 1px 2px #000;					-webkit-text-shadow: 1px 1px 2px #000;

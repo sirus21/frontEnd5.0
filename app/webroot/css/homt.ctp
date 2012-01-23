@@ -1,13 +1,9 @@
 <div class="colOneTwo left">
 				
-				<!--
-				<div class="blockQuote">
-					<p>Make money referring your customers to brilliant companies.</p>
-				</div>
-
-				-->
+			<p>
+				QualityPartner is the next evolution of affinity partnerships. Businesses make money by recommending other high quality companies to their customers.
+			</p> 
 				
-				<img src="img/post_it_note_425.jpg" width="401" alt="" />
 			</div><!--[end] col 1/2 left -->
 		
 			<div class="colOneTwo right">

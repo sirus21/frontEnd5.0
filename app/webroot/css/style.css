@@ -37,7 +37,8 @@ label { display: block; font-weight: bold; margin: 0 0 5px 0; }
 
 
 /* ----------------------------- Header --------------------------- */
-#header { position: relative; border-bottom: 1px solid #eaeaea; height: 120px; }
+               #header { position: relative; border-bottom: 1px solid #eaeaea; height: 120px; }
+	      
                
 	       /*logo*/
                #logo { width: 334px; display: block; margin-top: 18px; float: left; }

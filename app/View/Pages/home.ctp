@@ -1,19 +1,16 @@
-<div class="colOneTwo left">
+            <div class="colOneTwo left">
 				
-				<!--
-				<div class="blockQuote">
-					<p>Make money referring your customers to brilliant companies.</p>
-				</div>
-
-				-->
-				
-				<img src="img/post_it_note_425.jpg" width="401" alt="" />
-			</div><!--[end] col 1/2 left -->
+			<img src="img/speech-mark-left.png"  class="openspeech"/> 
+			<p>Quality Partner allows businesses to make money by recommending high quality companies to their customers.</p>
+			<img src="img/speech-mark-right.png" class="closespeech" />
+			<img src="img/img_home_earth.jpg" class="lowerImage"/>
+			
+		</div><!--[end] col 1/2 left -->
 		
 			<div class="colOneTwo right">
 				<div class="greyBox">
 					<div class="boxInner">
-						<h3 class="cufon-minion">Estate agent owner?</h3>
+						<h3 class="cufon-minion">Are you a business owner?</h3>
 						<ul>
 							<li>Make extra money</li>
 
@@ -22,9 +19,9 @@
 							<li>100% free to use</li>
 						</ul>
 						
-						<a href="/contact.php" title="Register" class="ylButton clearfix"><span>Register Interest</span></a>
-					</div>
-				</div>
+						<a href="/contact.php" title="Register" class="ylButton clearfix"><span>Register </span></a>
+					</div> <!--[end] box inner --> 
+ 				</div><!--[end] greyBox -->
 				
 
 			</div><!--[end] col 1/2 right -->
