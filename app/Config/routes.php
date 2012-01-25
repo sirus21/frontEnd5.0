@@ -38,7 +38,7 @@
      
      
      
-     
+     ggffgfgfgfgfgfgf
         
       /*static pages */  
         Router::connect('/howitworks', array('controller' => 'pages', 'action' => 'display','howitworks'));
