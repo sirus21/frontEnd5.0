@@ -84,23 +84,23 @@
 						</div>
 					</div>
 				
-				</div><!--[end] mainContent -->
+	`			</div><!--[end] mainContent -->
 			
 				<div class="aside right">
 					<div class="block greyBlock">
-						<h4>Quality Partner</h4>
-						<p>QualityPartner is the next evolution of
-							affinity partnerships.</p>
+						<h4>Our Service</h4>
+						<p>Quality Partner helps you find a great quote on services we think you might need.</p>
 						
 						<ul>
-							<li>Make significant extra profits</li>
-							<li>Offer complimentary services</li>
-							<li>Fully transparent and trackable</li>
-							<li>Leverage your existing customers</li>
+							<li>Free  no-obligation quote</li>
+							<li>Local services</li>
+							<li>Vetted companies</li>
+							<li>Save time and money</li>
 						</ul>
 						
-						<p>QualityPartner is the next evolution of affinity partnerships. Businesses  make money by recommending other high quality companies to their customers. QualityPartner is the next evolution of affinity partnerships. Businesses make money by recommending other high quality companies to their customers.</p>
-				
+						<p>Quality Partner was set-up to help you find great companies that you can trust. We try to work with local companies but sometimes this can't be done so we put you in contact with high quality national companies who serve your area.
+</p>
+				 
 					</div>
 				
 				<div class="block">
@@ -109,7 +109,7 @@
 money from recommending complimentary
 businesses to your own.</p>
 					
-					<img src="img/btn_join_us_grey.png" />                                 
+					<a href="#" class="buttoneffect"> Join Today </a>                                  
                                        </div><!--[end] block -->
 				
 				</div><!--[end] aside -->			
