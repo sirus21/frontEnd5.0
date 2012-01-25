@@ -31,11 +31,11 @@
  */
 	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
         Router::connect('/example', array('controller' => 'applications', 'action' => 'add','example'));
+        Router::connect('/examplepartner', array('controller' => 'pages', 'action' => 'display','examplepartner')); 
+       
 
 
-
-
-
+   
 
 
 

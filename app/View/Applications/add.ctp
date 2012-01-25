@@ -39,7 +39,7 @@
 						<h3>Quickly find the best possible quote for the service you are looking for</h3>
 						     
 						     <?php  echo $this->Form->create('Application',array('inputDefaults'=> array('div'=>true)));?>
-						     <?php	echo $this->Form->input('product_id'); ?> 
+						     <?php//	echo// $this->Form->input('product_id'); ?> 
 						     <?php 	echo $this->Form->input('first_name'); ?> 
 						     <?php	echo $this->Form->input('last_name'); ?> 
 						     <?php echo $this->Form->input('address_line_one'); ?>
@@ -48,7 +48,8 @@
 				                     <?php	echo $this->Form->input('email'); ?>
 						     
 						     
-						     <?php echo $this->Form->input('partner',array('type'=>'hidden','value'=>$partner)); ?>  
+						     <?php echo $this->Form->input('partner',array('type'=>'hidden','value'=>$partner)); ?>
+						     <?php echo $this->Form->input('product_id',array('type'=>'hidden','value'=>$productid)); ?>  
 						 <fieldset>
 						 </fieldset>		
 					         

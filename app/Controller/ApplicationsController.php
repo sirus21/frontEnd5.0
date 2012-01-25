@@ -37,7 +37,7 @@ class ApplicationsController extends AppController {
  *
  * @return void
  */
-	public function add($partner= null) {
+	public function add($partner= null,$productid=null) {
 		
 		
 		if ($this->request->is('post')) {
@@ -52,6 +52,7 @@ class ApplicationsController extends AppController {
 		$products = $this->Application->Product->find('list');
 			
 		$this->set('partner',$partner); 
+		$this->set('productid',$productid);
 		$this->set(compact('products'));
 	}
 
