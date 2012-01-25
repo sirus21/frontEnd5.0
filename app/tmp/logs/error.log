@@ -9085,3 +9085,192 @@ n}
 2012-01-24 19:31:29 Error: [MissingControllerException] Controller class ImagesController could not be found.
 #0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2012-01-25 10:07:05 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 10:07:39 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 10:12:09 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 10:12:11 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 10:13:00 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 10:13:02 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 10:19:31 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 10:19:32 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 10:20:16 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 10:20:17 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 10:22:33 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 10:22:34 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 10:28:18 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 10:28:19 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 10:39:26 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 10:39:27 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 10:43:04 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 10:43:05 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 10:52:08 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 10:52:09 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 10:52:24 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 10:52:25 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 10:52:59 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 10:53:01 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 10:53:05 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 10:53:06 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 10:53:36 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 10:53:37 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 10:57:30 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 10:58:20 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 10:58:21 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 11:14:04 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 11:14:06 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 11:14:28 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 11:14:29 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 11:21:44 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 11:21:46 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 11:22:47 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 11:22:50 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 11:22:56 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 11:22:57 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 11:22:59 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 11:23:01 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 11:23:47 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 11:29:55 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 11:29:56 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 11:32:53 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 11:32:53 Error: [MissingControllerException] Controller class BtnJoinUsGrey.pngController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 11:32:54 Error: [MissingControllerException] Controller class BtnJoinUsGrey.pngController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 11:32:54 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 11:33:11 Error: [MissingControllerException] Controller class BtnJoinUsGrey.pngController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 11:33:29 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 11:33:30 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 12:01:46 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 12:01:48 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 12:06:03 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 12:06:05 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 12:06:34 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 12:06:35 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 12:07:01 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 12:07:02 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 12:07:47 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 12:07:48 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

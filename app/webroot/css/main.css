@@ -367,7 +367,7 @@ textarea {
 	}
 
 /*yellow button*/
-.ylButton {
+/*.ylButton {
 	height: 65px;
 	padding: 0 0 0 17px;
 	background: url('../img/ylButton_left.png') no-repeat left top;
@@ -375,13 +375,15 @@ textarea {
 	text-decoration: none !important;
 	display:block;
 	float:left;
-	
+*/
+
 	}
+
 .ylButton span {
 	height: 65px;
 	padding: 0 140px 0  100px;
 	text-align: center;
-	background: url('../img/ylButton_right.png') no-repeat right top;
+	background: url('../img/btn_join_us_grey.png') no-repeat right top;
 	font: bold 28px "Minion Pro", "Times New Roman", serif; 
 	display:block;
 	float:left;
@@ -425,7 +427,7 @@ textarea {
 	padding-left: 30px;
 	min-height: 27px;
 	font-family: 'Times New Roman' !important;
-	font-size: 24px !important;
+	font-size: 15px !important;
 	}
 	
 /*main content*/
@@ -487,28 +489,43 @@ textarea {
 	display: block;
 	overflow: hidden;
 	margin-bottom: 20px;
-	font-size: 16px;
+	font-size: 15px;
 	overflow: hidden;
 	}
 	
+	
+	
+	
+	.aside .greyBlock, .aside .block{
+		width:250px;
+		float:left;
+		text-align:justify;
+	
+	       
+		
+	}
+	
 	.aside .block {
-		margin: 0 0 25px;
+		margin: 0 0 20px;
 		overflow: hidden;
 		display: block;
 		position: relative;
-		width: 320px;
-		float: right;
+	
 		}
 		
 	.aside .greyBlock {	
-		background: #e8e8e8;
-		padding: 10px;
+
+		background:#F2F2F2;
+		border: 1px solid #B3B3B3;
+		padding: 20px;
 		border-radius: 10px;
-		width: 300px;
+		width: 250px;
+		
+		
 		}
 		
 	.aside .block h3 {
-		font: bold 18px 'Arial', Helvetica;
+		font: bold 15px 'Arial', Helvetica;
 		margin-bottom: 10px;
 		}
 	
@@ -518,7 +535,7 @@ textarea {
 		}
 		
 	.aside img {
-		border: 1px solid #000;
+		/*border: 1px solid #000; */ 
 		margin-bottom: 15px;
 		}
 	

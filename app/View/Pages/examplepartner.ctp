@@ -8,7 +8,7 @@
 				</div>
 					
 				<div id="pageTitle">
-					<h2>Clever Ink Recommended Services</h2>
+					<h2>Brand Vaughan Recommended Services</h2>
 				</div>
 					
 				<div class="mainContent left">
@@ -112,11 +112,9 @@
 money from recommending complimentary
 businesses to your own.</p>
 					
-					</div><!--[end] block -->
-					
-					<div class="block center">
-						<a href="#" title="" class="ylButton"><span>Join QualityPartner</span></a>
-					</div>
+					<img src="img/btn_join_us_grey.png" />                                 
+                                       </div><!--[end] block -->
+				
 				</div><!--[end] aside -->			
 			
 			</div><!--[end] colOne -->
