@@ -13,7 +13,7 @@
        
        
         <?php echo $this->Html->script(array('jquery-1.3.2.min.js', 'jquery-ui.js', 'jquery-fluid16.js','cufon-yui.js','Minion_Pro.font.js')); ?> 
-	<?php  echo $this->Html->css(array('main')); ?> 
+	<?php  echo $this->Html->css(array('main','partnerheader')); ?> 
 	
 	<!-- <link rel="stylesheet" type="text/css" media="screen, projection" href="css/style.css" /> -->
 	<!--[if IE]>

@@ -3,10 +3,7 @@
 			
 			<div class="colOne">
 				
-				<div class="cleverInk">
-					<img src="images/clever_ink.jpg" width="140" alt="" />
-				</div>
-					
+								
 				<div id="pageTitle">
 					<h2>Brand Vaughan Recommended Services</h2>
 				</div>
