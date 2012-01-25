@@ -31,8 +31,16 @@
  */
 	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
         Router::connect('/example', array('controller' => 'applications', 'action' => 'add','example'));
+        /*partners */
         Router::connect('/examplepartner', array('controller' => 'pages', 'action' => 'display','examplepartner')); 
-       
+        
+        
+      /*static pages */  
+        Router::connect('/howitworks', array('controller' => 'pages', 'action' => 'display','howitworks'));
+        Router::connect('/whyitworks', array('controller' => 'pages', 'action' => 'display','whyitworks'));
+        Router::connect('/vetting', array('controller' => 'pages', 'action' => 'display','vetting'));
+        Router::connect('/terms', array('controller' => 'pages', 'action' => 'display','terms'));
+        Router::connect('/privacy', array('controller' => 'pages', 'action' => 'display','privacy'));
 
 
    

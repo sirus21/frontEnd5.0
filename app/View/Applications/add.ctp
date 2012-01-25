@@ -14,16 +14,19 @@
 					</div>
 					  
 					 <div class="block greyBlock">
-						<h4>Quality Partner</h4>
-						<p>QualityPartner is the next evolution of
-							affinity partnerships.</p>
+						<h4>Our Service</h4>
+						<p>Quality Partner helps you find a great quote on services we think you might need.</p>
 						
 						<ul>
-							<li>Make significant extra profits</li>
-							<li>Offer complimentary services</li>
-							<li>Fully transparent and trackable</li>
-							<li>Leverage your existing customers</li>
+							<li>Free  no-obligation quote</li>
+							<li>Local services</li>
+							<li>Vetted companies</li>
+							<li>Save time and money</li>
 						</ul>
+						
+						<p>Quality Partner was set-up to help you find great companies that you can trust. We try to work with local companies but sometimes this can't be done so we put you in contact with high quality national companies who serve your area.
+</p>
+				 
 				
 				
 					</div> 

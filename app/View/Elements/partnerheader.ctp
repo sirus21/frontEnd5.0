@@ -11,11 +11,12 @@
 		<div class="partnerincenter">
 			
 		
+				
 			<div id="topNav">
 				<ul>
 					<li class="current"><a href="/contact.php" title=""><span>Join us</span></a></li>
-					<li><a href="/how_it_works.html" title=""><span>How it works</span></a></li>
-					<li><a href="/why_it_works.html" title=""><span>Why it works</a></li>
+					<li><a href="/howitworks" title=""><span>How it works</span></a></li>
+					<li><a href="/whyitworks" title=""><span>Why it works</a></li>
 				</ul>
 			</div>
 			

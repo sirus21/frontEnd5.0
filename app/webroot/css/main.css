@@ -387,7 +387,7 @@ textarea {
 	}
 
 /*yellow button*/
-/*.ylButton {
+.ylButton {
 	height: 65px;
 	padding: 0 0 0 17px;
 	background: url('../img/ylButton_left.png') no-repeat left top;
@@ -395,7 +395,7 @@ textarea {
 	text-decoration: none !important;
 	display:block;
 	float:left;
-*/
+
 
 	}
 
@@ -403,7 +403,7 @@ textarea {
 	height: 65px;
 	padding: 0 140px 0  100px;
 	text-align: center;
-	background: url('../img/btn_join_us_grey.png') no-repeat right top;
+	background: url('../img/ylButton_right.png') no-repeat right top;
 	font: bold 28px "Minion Pro", "Times New Roman", serif; 
 	display:block;
 	float:left;

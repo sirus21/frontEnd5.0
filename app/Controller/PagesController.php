@@ -79,7 +79,8 @@ class PagesController extends AppController {
 			$title_for_layout = Inflector::humanize($path[$count - 1]);
 		}
 		$this->set(compact('page', 'subpage', 'title_for_layout'));
-		 if($page !="home") $this->layout = "partnerpagedefault";
+		 if($page !="home" && $page!="howitworks" && $page!="whyitworks" && $page!="vetting"
+		    && $page!="terms"  && $page!="privacy") $this->layout = "partnerpagedefault";
 		$this->render(implode('/', $path));
 		
 	}
