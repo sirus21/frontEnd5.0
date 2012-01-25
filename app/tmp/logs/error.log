@@ -10158,3 +10158,267 @@ n}
 #6 C:\wamp\www\qptestsite\lib\Cake\Routing\Dispatcher.php(89): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
 #7 C:\wamp\www\qptestsite\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #8 {main}
+2012-01-25 18:08:48 Error: [MissingControllerException] Controller class Contact.phpController could not be found.
+#0 /home/wwwqp/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 18:09:25 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 /home/wwwqp/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 18:10:11 Error: [MissingControllerException] Controller class Contact.phpController could not be found.
+#0 /home/wwwqp/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 18:10:41 Error: [MissingControllerException] Controller class Contact.phpController could not be found.
+#0 /home/wwwqp/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 18:10:50 Error: [MissingControllerException] Controller class Contact.phpController could not be found.
+#0 /home/wwwqp/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 18:11:53 Error: [MissingControllerException] Controller class Contact.phpController could not be found.
+#0 /home/wwwqp/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 18:29:04 Error: [MissingViewException] View file "/home/wwwqp/public_html/app/View/Pages/js/Minion_Pro.font.js.ctp" is missing.
+#0 /home/wwwqp/public_html/lib/Cake/View/View.php(363): View->_getViewFileName('js/Minion_Pro.f...')
+#1 /home/wwwqp/public_html/lib/Cake/Controller/Controller.php(900): View->render('js/Minion_Pro.f...', NULL)
+#2 /home/wwwqp/public_html/app/Controller/PagesController.php(84): Controller->render('js/Minion_Pro.f...')
+#3 [internal function]: PagesController->display('js', 'Minion_Pro.font...')
+#4 /home/wwwqp/public_html/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#6 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 /home/wwwqp/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-01-25 18:29:04 Error: [MissingViewException] View file "/home/wwwqp/public_html/app/View/Pages/js/Adobe_Caslon_Pro.font.js.ctp" is missing.
+#0 /home/wwwqp/public_html/lib/Cake/View/View.php(363): View->_getViewFileName('js/Adobe_Caslon...')
+#1 /home/wwwqp/public_html/lib/Cake/Controller/Controller.php(900): View->render('js/Adobe_Caslon...', NULL)
+#2 /home/wwwqp/public_html/app/Controller/PagesController.php(84): Controller->render('js/Adobe_Caslon...')
+#3 [internal function]: PagesController->display('js', 'Adobe_Caslon_Pr...')
+#4 /home/wwwqp/public_html/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#6 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 /home/wwwqp/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-01-25 18:29:04 Error: [MissingViewException] View file "/home/wwwqp/public_html/app/View/Pages/js/cufon-yui.js.ctp" is missing.
+#0 /home/wwwqp/public_html/lib/Cake/View/View.php(363): View->_getViewFileName('js/cufon-yui.js')
+#1 /home/wwwqp/public_html/lib/Cake/Controller/Controller.php(900): View->render('js/cufon-yui.js', NULL)
+#2 /home/wwwqp/public_html/app/Controller/PagesController.php(84): Controller->render('js/cufon-yui.js')
+#3 [internal function]: PagesController->display('js', 'cufon-yui.js')
+#4 /home/wwwqp/public_html/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#6 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 /home/wwwqp/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-01-25 18:29:04 Error: [MissingViewException] View file "/home/wwwqp/public_html/app/View/Pages/img/powered-by-quality-partner.png.ctp" is missing.
+#0 /home/wwwqp/public_html/lib/Cake/View/View.php(363): View->_getViewFileName('img/powered-by-...')
+#1 /home/wwwqp/public_html/lib/Cake/Controller/Controller.php(900): View->render('img/powered-by-...', NULL)
+#2 /home/wwwqp/public_html/app/Controller/PagesController.php(84): Controller->render('img/powered-by-...')
+#3 [internal function]: PagesController->display('img', 'powered-by-qual...')
+#4 /home/wwwqp/public_html/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#6 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 /home/wwwqp/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-01-25 18:29:04 Error: [MissingViewException] View file "/home/wwwqp/public_html/app/View/Pages/img/examplepartnerlogo.png.ctp" is missing.
+#0 /home/wwwqp/public_html/lib/Cake/View/View.php(363): View->_getViewFileName('img/examplepart...')
+#1 /home/wwwqp/public_html/lib/Cake/Controller/Controller.php(900): View->render('img/examplepart...', NULL)
+#2 /home/wwwqp/public_html/app/Controller/PagesController.php(84): Controller->render('img/examplepart...')
+#3 [internal function]: PagesController->display('img', 'examplepartnerl...')
+#4 /home/wwwqp/public_html/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#6 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 /home/wwwqp/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-01-25 18:29:35 Error: [MissingControllerException] Controller class TestController could not be found.
+#0 /home/wwwqp/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 18:30:13 Error: [MissingViewException] View file "/home/wwwqp/public_html/app/View/Pages/img/examplepartnerlogo.png.ctp" is missing.
+#0 /home/wwwqp/public_html/lib/Cake/View/View.php(363): View->_getViewFileName('img/examplepart...')
+#1 /home/wwwqp/public_html/lib/Cake/Controller/Controller.php(900): View->render('img/examplepart...', NULL)
+#2 /home/wwwqp/public_html/app/Controller/PagesController.php(84): Controller->render('img/examplepart...')
+#3 [internal function]: PagesController->display('img', 'examplepartnerl...')
+#4 /home/wwwqp/public_html/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#6 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 /home/wwwqp/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-01-25 18:30:13 Error: [MissingViewException] View file "/home/wwwqp/public_html/app/View/Pages/img/powered-by-quality-partner.png.ctp" is missing.
+#0 /home/wwwqp/public_html/lib/Cake/View/View.php(363): View->_getViewFileName('img/powered-by-...')
+#1 /home/wwwqp/public_html/lib/Cake/Controller/Controller.php(900): View->render('img/powered-by-...', NULL)
+#2 /home/wwwqp/public_html/app/Controller/PagesController.php(84): Controller->render('img/powered-by-...')
+#3 [internal function]: PagesController->display('img', 'powered-by-qual...')
+#4 /home/wwwqp/public_html/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#6 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 /home/wwwqp/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-01-25 18:30:56 Error: [MissingViewException] View file "/home/wwwqp/public_html/app/View/Pages/js/cufon-yui.js.ctp" is missing.
+#0 /home/wwwqp/public_html/lib/Cake/View/View.php(363): View->_getViewFileName('js/cufon-yui.js')
+#1 /home/wwwqp/public_html/lib/Cake/Controller/Controller.php(900): View->render('js/cufon-yui.js', NULL)
+#2 /home/wwwqp/public_html/app/Controller/PagesController.php(84): Controller->render('js/cufon-yui.js')
+#3 [internal function]: PagesController->display('js', 'cufon-yui.js')
+#4 /home/wwwqp/public_html/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#6 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 /home/wwwqp/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-01-25 18:30:56 Error: [MissingViewException] View file "/home/wwwqp/public_html/app/View/Pages/js/Minion_Pro.font.js.ctp" is missing.
+#0 /home/wwwqp/public_html/lib/Cake/View/View.php(363): View->_getViewFileName('js/Minion_Pro.f...')
+#1 /home/wwwqp/public_html/lib/Cake/Controller/Controller.php(900): View->render('js/Minion_Pro.f...', NULL)
+#2 /home/wwwqp/public_html/app/Controller/PagesController.php(84): Controller->render('js/Minion_Pro.f...')
+#3 [internal function]: PagesController->display('js', 'Minion_Pro.font...')
+#4 /home/wwwqp/public_html/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#6 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 /home/wwwqp/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-01-25 18:30:56 Error: [MissingViewException] View file "/home/wwwqp/public_html/app/View/Pages/js/Adobe_Caslon_Pro.font.js.ctp" is missing.
+#0 /home/wwwqp/public_html/lib/Cake/View/View.php(363): View->_getViewFileName('js/Adobe_Caslon...')
+#1 /home/wwwqp/public_html/lib/Cake/Controller/Controller.php(900): View->render('js/Adobe_Caslon...', NULL)
+#2 /home/wwwqp/public_html/app/Controller/PagesController.php(84): Controller->render('js/Adobe_Caslon...')
+#3 [internal function]: PagesController->display('js', 'Adobe_Caslon_Pr...')
+#4 /home/wwwqp/public_html/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#6 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 /home/wwwqp/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-01-25 18:30:57 Error: [MissingViewException] View file "/home/wwwqp/public_html/app/View/Pages/img/examplepartnerlogo.png.ctp" is missing.
+#0 /home/wwwqp/public_html/lib/Cake/View/View.php(363): View->_getViewFileName('img/examplepart...')
+#1 /home/wwwqp/public_html/lib/Cake/Controller/Controller.php(900): View->render('img/examplepart...', NULL)
+#2 /home/wwwqp/public_html/app/Controller/PagesController.php(84): Controller->render('img/examplepart...')
+#3 [internal function]: PagesController->display('img', 'examplepartnerl...')
+#4 /home/wwwqp/public_html/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#6 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 /home/wwwqp/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-01-25 18:30:57 Error: [MissingViewException] View file "/home/wwwqp/public_html/app/View/Pages/img/powered-by-quality-partner.png.ctp" is missing.
+#0 /home/wwwqp/public_html/lib/Cake/View/View.php(363): View->_getViewFileName('img/powered-by-...')
+#1 /home/wwwqp/public_html/lib/Cake/Controller/Controller.php(900): View->render('img/powered-by-...', NULL)
+#2 /home/wwwqp/public_html/app/Controller/PagesController.php(84): Controller->render('img/powered-by-...')
+#3 [internal function]: PagesController->display('img', 'powered-by-qual...')
+#4 /home/wwwqp/public_html/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#6 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 /home/wwwqp/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-01-25 18:31:47 Error: [MissingViewException] View file "/home/wwwqp/public_html/app/View/Pages/img/powered-by-quality-partner.png.ctp" is missing.
+#0 /home/wwwqp/public_html/lib/Cake/View/View.php(363): View->_getViewFileName('img/powered-by-...')
+#1 /home/wwwqp/public_html/lib/Cake/Controller/Controller.php(900): View->render('img/powered-by-...', NULL)
+#2 /home/wwwqp/public_html/app/Controller/PagesController.php(84): Controller->render('img/powered-by-...')
+#3 [internal function]: PagesController->display('img', 'powered-by-qual...')
+#4 /home/wwwqp/public_html/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#6 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 /home/wwwqp/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-01-25 18:31:47 Error: [MissingViewException] View file "/home/wwwqp/public_html/app/View/Pages/img/examplepartnerlogo.png.ctp" is missing.
+#0 /home/wwwqp/public_html/lib/Cake/View/View.php(363): View->_getViewFileName('img/examplepart...')
+#1 /home/wwwqp/public_html/lib/Cake/Controller/Controller.php(900): View->render('img/examplepart...', NULL)
+#2 /home/wwwqp/public_html/app/Controller/PagesController.php(84): Controller->render('img/examplepart...')
+#3 [internal function]: PagesController->display('img', 'examplepartnerl...')
+#4 /home/wwwqp/public_html/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#6 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 /home/wwwqp/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-01-25 18:34:43 Error: [MissingControllerException] Controller class Examplepartner2Controller could not be found.
+#0 /home/wwwqp/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-25 18:35:03 Error: [MissingViewException] View file "/home/wwwqp/public_html/app/View/Pages/examplepartner2.php.ctp" is missing.
+#0 /home/wwwqp/public_html/lib/Cake/View/View.php(363): View->_getViewFileName('examplepartner2...')
+#1 /home/wwwqp/public_html/lib/Cake/Controller/Controller.php(900): View->render('examplepartner2...', NULL)
+#2 /home/wwwqp/public_html/app/Controller/PagesController.php(84): Controller->render('examplepartner2...')
+#3 [internal function]: PagesController->display('examplepartner2...')
+#4 /home/wwwqp/public_html/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#6 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 /home/wwwqp/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-01-25 18:35:03 Error: [MissingViewException] View file "/home/wwwqp/public_html/app/View/Pages/js/Minion_Pro.font.js.ctp" is missing.
+#0 /home/wwwqp/public_html/lib/Cake/View/View.php(363): View->_getViewFileName('js/Minion_Pro.f...')
+#1 /home/wwwqp/public_html/lib/Cake/Controller/Controller.php(900): View->render('js/Minion_Pro.f...', NULL)
+#2 /home/wwwqp/public_html/app/Controller/PagesController.php(84): Controller->render('js/Minion_Pro.f...')
+#3 [internal function]: PagesController->display('js', 'Minion_Pro.font...')
+#4 /home/wwwqp/public_html/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#6 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 /home/wwwqp/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-01-25 18:35:03 Error: [MissingViewException] View file "/home/wwwqp/public_html/app/View/Pages/js/Adobe_Caslon_Pro.font.js.ctp" is missing.
+#0 /home/wwwqp/public_html/lib/Cake/View/View.php(363): View->_getViewFileName('js/Adobe_Caslon...')
+#1 /home/wwwqp/public_html/lib/Cake/Controller/Controller.php(900): View->render('js/Adobe_Caslon...', NULL)
+#2 /home/wwwqp/public_html/app/Controller/PagesController.php(84): Controller->render('js/Adobe_Caslon...')
+#3 [internal function]: PagesController->display('js', 'Adobe_Caslon_Pr...')
+#4 /home/wwwqp/public_html/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#6 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 /home/wwwqp/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-01-25 18:35:03 Error: [MissingViewException] View file "/home/wwwqp/public_html/app/View/Pages/js/cufon-yui.js.ctp" is missing.
+#0 /home/wwwqp/public_html/lib/Cake/View/View.php(363): View->_getViewFileName('js/cufon-yui.js')
+#1 /home/wwwqp/public_html/lib/Cake/Controller/Controller.php(900): View->render('js/cufon-yui.js', NULL)
+#2 /home/wwwqp/public_html/app/Controller/PagesController.php(84): Controller->render('js/cufon-yui.js')
+#3 [internal function]: PagesController->display('js', 'cufon-yui.js')
+#4 /home/wwwqp/public_html/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#6 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 /home/wwwqp/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-01-25 18:35:03 Error: [MissingViewException] View file "/home/wwwqp/public_html/app/View/Pages/img/logo.png.ctp" is missing.
+#0 /home/wwwqp/public_html/lib/Cake/View/View.php(363): View->_getViewFileName('img/logo.png')
+#1 /home/wwwqp/public_html/lib/Cake/Controller/Controller.php(900): View->render('img/logo.png', NULL)
+#2 /home/wwwqp/public_html/app/Controller/PagesController.php(84): Controller->render('img/logo.png')
+#3 [internal function]: PagesController->display('img', 'logo.png')
+#4 /home/wwwqp/public_html/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#6 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 /home/wwwqp/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-01-25 18:35:10 Error: [MissingViewException] View file "/home/wwwqp/public_html/app/View/Pages/js/cufon-yui.js.ctp" is missing.
+#0 /home/wwwqp/public_html/lib/Cake/View/View.php(363): View->_getViewFileName('js/cufon-yui.js')
+#1 /home/wwwqp/public_html/lib/Cake/Controller/Controller.php(900): View->render('js/cufon-yui.js', NULL)
+#2 /home/wwwqp/public_html/app/Controller/PagesController.php(84): Controller->render('js/cufon-yui.js')
+#3 [internal function]: PagesController->display('js', 'cufon-yui.js')
+#4 /home/wwwqp/public_html/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#6 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 /home/wwwqp/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-01-25 18:35:10 Error: [MissingViewException] View file "/home/wwwqp/public_html/app/View/Pages/js/Adobe_Caslon_Pro.font.js.ctp" is missing.
+#0 /home/wwwqp/public_html/lib/Cake/View/View.php(363): View->_getViewFileName('js/Adobe_Caslon...')
+#1 /home/wwwqp/public_html/lib/Cake/Controller/Controller.php(900): View->render('js/Adobe_Caslon...', NULL)
+#2 /home/wwwqp/public_html/app/Controller/PagesController.php(84): Controller->render('js/Adobe_Caslon...')
+#3 [internal function]: PagesController->display('js', 'Adobe_Caslon_Pr...')
+#4 /home/wwwqp/public_html/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#6 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 /home/wwwqp/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-01-25 18:35:10 Error: [MissingViewException] View file "/home/wwwqp/public_html/app/View/Pages/js/Minion_Pro.font.js.ctp" is missing.
+#0 /home/wwwqp/public_html/lib/Cake/View/View.php(363): View->_getViewFileName('js/Minion_Pro.f...')
+#1 /home/wwwqp/public_html/lib/Cake/Controller/Controller.php(900): View->render('js/Minion_Pro.f...', NULL)
+#2 /home/wwwqp/public_html/app/Controller/PagesController.php(84): Controller->render('js/Minion_Pro.f...')
+#3 [internal function]: PagesController->display('js', 'Minion_Pro.font...')
+#4 /home/wwwqp/public_html/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#6 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 /home/wwwqp/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-01-25 18:35:10 Error: [MissingViewException] View file "/home/wwwqp/public_html/app/View/Pages/img/powered-by-quality-partner.png.ctp" is missing.
+#0 /home/wwwqp/public_html/lib/Cake/View/View.php(363): View->_getViewFileName('img/powered-by-...')
+#1 /home/wwwqp/public_html/lib/Cake/Controller/Controller.php(900): View->render('img/powered-by-...', NULL)
+#2 /home/wwwqp/public_html/app/Controller/PagesController.php(84): Controller->render('img/powered-by-...')
+#3 [internal function]: PagesController->display('img', 'powered-by-qual...')
+#4 /home/wwwqp/public_html/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#6 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 /home/wwwqp/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-01-25 18:35:10 Error: [MissingViewException] View file "/home/wwwqp/public_html/app/View/Pages/img/examplepartnerlogo.png.ctp" is missing.
+#0 /home/wwwqp/public_html/lib/Cake/View/View.php(363): View->_getViewFileName('img/examplepart...')
+#1 /home/wwwqp/public_html/lib/Cake/Controller/Controller.php(900): View->render('img/examplepart...', NULL)
+#2 /home/wwwqp/public_html/app/Controller/PagesController.php(84): Controller->render('img/examplepart...')
+#3 [internal function]: PagesController->display('img', 'examplepartnerl...')
+#4 /home/wwwqp/public_html/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#6 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 /home/wwwqp/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
