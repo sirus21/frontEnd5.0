@@ -14,9 +14,8 @@ class AppController extends Controller {
     
     public $helpers = array('Html', 'Form', 'Session');
     function beforeFilter() {
-        //config pagenator
-
-        
+    
+        //config pagenator      
         //Configure AuthComponent
         $this->Auth->allow('*');
         $this->Auth->actionPath = 'controllers';

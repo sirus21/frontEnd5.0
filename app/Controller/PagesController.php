@@ -58,11 +58,20 @@ class PagesController extends AppController {
  * @param mixed What page to display
  * @return void
  */
-	public function display() {
+	public function display($partner=null) {
 		
 		
 		$path = func_get_args();
-
+                $url =  Router::url($this->here, true);
+	        if(preg_match('/page/',$url)){
+		  
+		  $path[0] = ($path[0] == "home"?"":$path[0] );
+		  
+		  $this->redirect("http://www.qualitypartner.co.uk/".$path[0],404);
+		  
+	       }
+	       
+	       
 		$count = count($path);
 		if (!$count) {
 			$this->redirect('/');
@@ -80,7 +89,7 @@ class PagesController extends AppController {
 		}
 		$this->set(compact('page', 'subpage', 'title_for_layout'));
 		 if($page !="home" && $page!="howitworks" && $page!="whyitworks" && $page!="vetting"
-		    && $page!="terms"  && $page!="privacy") $this->layout = "partnerpagedefault";
+		    && $page!="terms"  && $page!="aboutus" && $page!="services" && $page!="disclaimer" && $page!="privacy") $this->layout = "partnerpagedefault";
 		$this->render(implode('/', $path));
 		
 	}

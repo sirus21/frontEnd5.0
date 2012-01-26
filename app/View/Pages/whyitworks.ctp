@@ -25,7 +25,7 @@
 			
 				
 			<div class="colOne">
-				<a href="/contact.php" title="" class="ylButton right"><span>Join QualityPartner</span></a>
+				<a href="/contact" title="" class="ylButton right"><span>Join QualityPartner</span></a>
 			</div>
 			
 		</div>

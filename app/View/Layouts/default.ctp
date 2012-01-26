@@ -10,7 +10,7 @@
 	
 	<meta charset="utf-8" />
        
-       
+       	<?php echo $this->Html->script(array('jquery-1.3.2.min.js', 'jquery-ui.js', 'jquery-fluid16.js','main')); ?> 
        
         <?php echo $this->Html->script(array('jquery-1.3.2.min.js', 'jquery-ui.js', 'jquery-fluid16.js','cufon-yui.js','Minion_Pro.font.js')); ?> 
 	<?php  echo $this->Html->css(array('main')); ?> 
@@ -57,7 +57,7 @@
 
 
 	
-	<div id="copy">&copy; GoodApple Media Ltd 2011</div>
+	<div id="copy">&copy; GoodApple Media Ltd 2012</div>
 	
 <script src="//static.getclicky.com/js" type="text/javascript"></script>
 <script type="text/javascript">try{ clicky.init(66512142); }catch(e){}</script>

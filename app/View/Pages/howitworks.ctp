@@ -9,7 +9,7 @@
 				<span class="countBlue">1</span>
 				<h4 class="cufon-minion">Join Quality Partner </h4>
 				
-				<a href="/contact.php" title="Register" class="joinBtn"><img src="images/btn_join_us.png" width="216" alt="Join Us" /></a>
+				<a href="/contact" title="Register" class="joinBtn"><img src="img/btn_join_us.png" width="216" alt="Join Us" /></a>
 			</div>
 			
 			<div class="greyBlockNums">

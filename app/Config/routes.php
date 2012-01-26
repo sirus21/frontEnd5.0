@@ -26,6 +26,7 @@
  * to use (in this case, /app/View/Pages/home.ctp)...
  */
 	Router::connect('/', array('controller' => 'pages', 'action' => 'display', 'home'));
+        
 /**
  * ...and connect the rest of 'Pages' controller's urls.
  */
@@ -36,7 +37,9 @@
         /*partners */
          Router::connect('/examplepartner', array('controller' => 'pages', 'action' => 'display','examplepartner'));
          Router::connect('/examplepartner2', array('controller' => 'pages', 'action' => 'display','examplepartner2')); 
-        
+         Router::connect('/psandb', array('controller' => 'pages', 'action' => 'display','psandb'));
+         Router::connect('/stjames', array('controller' => 'pages', 'action' => 'display','stjames'));
+         Router::connect('/bv', array('controller' => 'pages', 'action' => 'display','bv')); 
         
       /*static pages */  
         Router::connect('/howitworks', array('controller' => 'pages', 'action' => 'display','howitworks'));
@@ -44,7 +47,9 @@
         Router::connect('/vetting', array('controller' => 'pages', 'action' => 'display','vetting'));
         Router::connect('/terms', array('controller' => 'pages', 'action' => 'display','terms'));
         Router::connect('/privacy', array('controller' => 'pages', 'action' => 'display','privacy'));
-
+        Router::connect('/disclaimer', array('controller' => 'pages', 'action' => 'display','disclaimer'));
+        Router::connect('/services', array('controller' => 'pages', 'action' => 'display','services'));
+        Router::connect('/aboutus', array('controller' => 'pages', 'action' => 'display','aboutus'));
 
    
 
@@ -60,4 +65,4 @@
  * Load the CakePHP default routes. Remove this if you do not want to use
  * the built-in default routes.
  */
-	require CAKE . 'Config' . DS . 'routes.php';
+	//require CAKE . 'Config' . DS . 'routes.php';

@@ -3,7 +3,7 @@
 			
 			
 		</div><!--[end] top stip -->	
-		
+		 <?php echo $this->Session->flash(); ?>	
 		
 		
 		
@@ -20,7 +20,7 @@
 				</ul>
 			</div>
 			
-			<img src="img/examplepartnerlogo.png"  id="partnerlogo" /> 
+			<img src="img/<?php echo $page?>.jpg"  id="partnerlogo" /> 
 			<div id="logopartner"><a href="/" title=""><img src="img/powered-by-quality-partner.png" width="172px" height="72px" alt="" /></a></div>
 			
 			<!--

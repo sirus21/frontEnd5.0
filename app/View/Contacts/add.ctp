@@ -37,7 +37,7 @@
                                                      <?php	echo $this->Form->input('contact_number'); ?>
                                                      <?php	echo $this->Form->input('email'); ?>
                                                      <?php
-                                                             $options = array('type' => 'textarea', 'escape' => false);
+                                                            $options = array('type' => 'textarea', 'escape' => false);
                                                              echo $this->Form->input('message',$options); ?> 
 					
 					
@@ -50,8 +50,8 @@
 						 <?php
 						      $options  =  array(
 							
-							'label' => 'Go',
-							'name' => 'Go' ,
+							'label' => 'Submit',
+							'name' => 'Submit' ,
 							'div' => array(
 								'class' => 'submit-button' 
 							)

@@ -1,10 +1,15 @@
 	<div id="header">
+		
+		
+		
 		<div class="topStrip">
 			
 			
 		</div><!--[end] top stip -->	
 		
-		
+		  
+		   
+		   <?php echo $this->Session->flash(); ?>	
 		
 		
 		

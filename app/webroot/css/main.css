@@ -58,7 +58,7 @@ label {
 .incenter { 
 	width: 890px; 
 	margin: 0 auto; 
-	position: relative; 
+	clear: both;
 	}
 
 	
@@ -85,7 +85,16 @@ form .formRow { width: 100%; display: block; padding: 5px 0 25px 0; overflow: hi
 form input[type="text"] { width: 315px; border: 1px solid #cccccc; padding: 3px; } 
 form textarea { width: 430px; border: 1px solid #cccccc; padding: 3px; height: 90px; } 
 form label { font-size: 15px;  font-weight: normal; }
- 
+
+
+
+/* error messages */ 
+ /* flash messages */ 
+.innnerContent {margin:0px auto;width: 600px;}
+.flash_good { background: #e5f2be; border:2px solid #bedf5d; padding:10px; font-weight:bold; margin: 0px;text-align:center;}
+.flash_bad { background: #eccecf;border:2px solid #9e0b0f;padding:10px;font-weight:bold;margin: 0px; padding: 0 auto}
+.flash_good img, .flash_bad img {float:right;height:10px;width:10px;margin: 0px 0px 15px 0px}
+div.close{float:right;hight:10px;width:10px;padding-bottom:15px;font-size:15px; cursor:pointer;}
 /* -------------------------- Header ------------------------- */
 #header {
 	position: relative;

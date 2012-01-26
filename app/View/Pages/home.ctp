@@ -19,7 +19,7 @@
 							<li>100% free to use</li>
 						</ul>
 						
-						<a href="/contact.php" title="Register" class="ylButton clearfix"><span>Register </span></a>
+						<a href="/contact" title="Register" class="ylButton clearfix"><span>Register </span></a>
 					</div> <!--[end] box inner --> 
  				</div><!--[end] greyBox -->
 				

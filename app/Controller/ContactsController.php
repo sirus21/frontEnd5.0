@@ -40,7 +40,7 @@ class ContactsController extends AppController {
                              $email->viewVars($templateVars);
                              if ($email->send())
                             {
-                                $this->Session->setFlash('Thanks for registering,please check your inbox to learn how to log in','flash_good');
+                                $this->Session->setFlash('Thanks for your enquiry we will be in touch soon  ','flash_good');
 				$this->redirect(array('controller'=>'pages','action'=>'home')); 
                             }
                             else

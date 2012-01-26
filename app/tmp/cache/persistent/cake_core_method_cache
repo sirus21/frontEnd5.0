@@ -1,2 +1,2 @@
-1327576070
-a:1:{s:4:"name";a:2:{i:-1008794574;s:11:"`front_end`";i:1894254019;s:14:"`applications`";}}
+1327596799
+a:2:{s:4:"name";a:6:{i:-1008794574;s:11:"`front_end`";i:2035606012;s:14:"`Product`.`id`";i:1524772894;s:19:"`Product`.`product`";i:-1059457843;s:10:"`products`";i:289026993;s:9:"`Product`";i:1894254019;s:14:"`applications`";}s:6:"fields";a:1:{s:32:"e0935fc7bb129f18287c21012124a16c";a:2:{i:0;s:14:"`Product`.`id`";i:1;s:19:"`Product`.`product`";}}}

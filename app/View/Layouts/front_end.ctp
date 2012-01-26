@@ -22,8 +22,17 @@
 
 <div id="wrapper">
 		
-	        <?php echo $this->Session->flash(); ?>	
-	<div id="wrap">	
+	      
+	<div id="wrap">
+		
+          <div class="flash_good">
+	 
+	<div class="innnerContent"> Thanks for registering,please check your inbox to learn how to log in </div> 
+	
+       </div>
+	  
+	  
+	  
 
 	<div id="header">
 

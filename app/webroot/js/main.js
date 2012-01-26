@@ -29,7 +29,7 @@
         });  
       
         // fade out good flash messages after 3 seconds  
-         $('.flash_good').animate({opacity: 1.0}, 3000).fadeOut();
+         $('.flash_good').animate({opacity: 1.0}, 3000).fadeOut(1600, "linear");
         
        // menus
          /**************************************************************************************************/
