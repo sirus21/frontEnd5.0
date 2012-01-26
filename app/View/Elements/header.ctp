@@ -14,7 +14,7 @@
 		
 		
 		<div class="incenter">
-			<div id="logo"><a href="/" title=""><img src="img/logo.png" width="90" height="90px" alt="" /></a></div>
+			<div id="logo"><a href="/" title=""><img src="http://www.qualitypartner.co.uk/img/logo.png" width="90" height="90px" alt="" /></a></div>
 			
 			<!--
 			    <a href="#" title="" id="topSignin">Sign In</a>

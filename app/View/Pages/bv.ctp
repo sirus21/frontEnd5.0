@@ -12,8 +12,8 @@
 				
 				<div class="greyBlock serviceBlock">						
 						<div class="left">
-							<h3>Tenants Insurance</h3>
-							<p>Do you want to quickly find cheap tenants insurance? We can quickly compare quotes so that you save time and money.</p>
+							<h3>Home and Contents Insurance</h3>
+							<p>Quickly find the cheapest home and contents insurance. We can quickly compare quotes so that you save time and money.</p>
 						</div>
 						
 						<div class="right">
@@ -158,7 +158,7 @@
 money from recommending great complementary
 businesses to your own.</p>
 					
-					<a href="/contact" class="buttoneffect"> Join Today </a>                                  
+					<a href="#" class="buttoneffect"> Join Today </a>                                  
                                        </div><!--[end] block -->
 				
 				</div><!--[end] aside -->			
@@ -166,4 +166,4 @@ businesses to your own.</p>
 			</div><!--[end] colOne -->
 			
 		</div>
-	</div><!--[end] cont
+	</div><!--[end] content -->

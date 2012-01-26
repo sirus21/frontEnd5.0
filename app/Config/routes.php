@@ -39,7 +39,8 @@
          Router::connect('/examplepartner2', array('controller' => 'pages', 'action' => 'display','examplepartner2')); 
          Router::connect('/psandb', array('controller' => 'pages', 'action' => 'display','psandb'));
          Router::connect('/stjames', array('controller' => 'pages', 'action' => 'display','stjames'));
-         Router::connect('/bv', array('controller' => 'pages', 'action' => 'display','bv')); 
+         Router::connect('/bv', array('controller' => 'pages', 'action' => 'display','bv'));
+         Router::connect('/company', array('controller' => 'pages', 'action' => 'display','company')); 
         
       /*static pages */  
         Router::connect('/howitworks', array('controller' => 'pages', 'action' => 'display','howitworks'));
@@ -65,4 +66,4 @@
  * Load the CakePHP default routes. Remove this if you do not want to use
  * the built-in default routes.
  */
-	//require CAKE . 'Config' . DS . 'routes.php';
+	require CAKE . 'Config' . DS . 'routes.php';

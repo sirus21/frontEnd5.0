@@ -192,3 +192,8 @@
 [26-Jan-2012 16:48:20] PHP Warning:  unlink(/home/wwwqp/public_html/app/tmp/cache/persistent/cake_core_cake_en-us) [<a href='function.unlink'>function.unlink</a>]: Operation not permitted in /home/wwwqp/public_html/lib/Cake/Cache/Engine/FileEngine.php on line 243
 [26-Jan-2012 16:48:20] PHP Warning:  unlink(/home/wwwqp/public_html/app/tmp/cache/models/cake_model_default_front_end_list) [<a href='function.unlink'>function.unlink</a>]: Operation not permitted in /home/wwwqp/public_html/lib/Cake/Cache/Engine/FileEngine.php on line 243
 [26-Jan-2012 16:48:20] PHP Warning:  unlink(/home/wwwqp/public_html/app/tmp/cache/models/cake_model_default_applications) [<a href='function.unlink'>function.unlink</a>]: Operation not permitted in /home/wwwqp/public_html/lib/Cake/Cache/Engine/FileEngine.php on line 243
+[26-Jan-2012 18:18:22] PHP Fatal error:  Call to a member function validates() on a non-object in /home/wwwqp/public_html/app/Controller/ApplicationsController.php on line 45
+[26-Jan-2012 18:27:17] PHP Fatal error:  Call to undefined function __getPartnerName() in /home/wwwqp/public_html/app/Controller/ApplicationsController.php on line 62
+[26-Jan-2012 18:27:32] PHP Fatal error:  Call to undefined function getPartnerName() in /home/wwwqp/public_html/app/Controller/ApplicationsController.php on line 62
+[26-Jan-2012 18:28:34] PHP Fatal error:  Call to undefined function getPartnerName() in /home/wwwqp/public_html/app/Controller/ApplicationsController.php on line 62
+[26-Jan-2012 18:28:59] PHP Fatal error:  Call to undefined function __getPartnerName() in /home/wwwqp/public_html/app/Controller/ApplicationsController.php on line 62

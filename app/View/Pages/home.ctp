@@ -34,9 +34,9 @@
 			
 			<div class="colOne">
 				<div class="post">
-					<h2>January 2012 Beta Test </h2>
-					<p>We will be running a trial with Brighton based estate agents and letting agents in January 2012. If you would like to take part please click on &quot;Register Interest&quot;, and we will get in touch.</p>
-					<p> For the test we will provide an A4 sheet that estate agents and letting agents should include in their moving pack which is given to home buyers and renters. If a customer calls up a complimentary service then each estate agent will be paid a commission.</p>		
+					<h2>February 2012 Pilot </h2>
+					<p>We will be running a trial with Brighton based estate agents and letting agents in February 2012. If you would like to take part please click on &quot;Register&quot;, and we will get in touch.</p>
+					<p> For the test we will provide an A4 sheet that estate agents and letting agents include in their moving pack which is given to home buyers and renters. If a customer calls up a complementary service then each estate agent will be paid a commission.</p>		
 				</div>
 
 			</div>

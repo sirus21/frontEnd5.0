@@ -31,26 +31,51 @@ class ApplicationsController extends AppController {
 		}
 		$this->set('application', $this->Application->read(null, $id));
 	}
+/**
+ * Returns the partner name given a string
+ * @id string the partners id
+ * @return string the partners name 
+ */
+  function  __getPartnerName($id){
+	
+	switch($id){
+		
+	case  '1':
+		    return "stjames";
+			     
+		
+	}
+	
+}
 
 /**
  * add method
  *
  * @return void
  */
-	public function add($partner= null,$productid=null) {
+	public function add($partnerID= null,$productid=null) {
 		
+		
+		
+		$partner =  $this->__getPartnerName($partnerID);
 		
 		if ($this->request->is('post')) {
 			$this->Application->create();
-			if ($this->Application->save($this->request->data)) {
-				$this->Session->setFlash(__('The application has been saved'));
-				$this->redirect(array('action' => 'index'));
+			if ($this->Application->validates()) {
+			
+				$this->Session->setFlash('Thanks we have your information and will be in touch','flash_bad');
+			        $this->redirect(array('controller' => 'pages' , 'action' => 'display',$partner));
 			} else {
-				$this->Session->setFlash(__('The application could not be saved. Please, try again.'));
-			}
+				$this->Session->setFlash('There were errors in your form please correct them and resubmit','flash_bad');
+							 
+							 }
 		}
 		$products = $this->Application->Product->find('list');
 			
+		
+		
+		
+		
 		$this->set('partner',$partner); 
 		$this->set('productid',$productid);
 		$this->set(compact('products'));

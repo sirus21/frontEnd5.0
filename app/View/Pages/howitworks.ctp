@@ -17,22 +17,30 @@
 				<h4 class="cufon-minion">Tell us about yourself</h4>
 				<div class="bubble">
 					If you own letting agency based in Brighton targeting young professionals...
-					<div class="icon"><img src="images/ico_bubble_man.png" width="52" /></div>
+					<div class="icon"><img src="img/ico_bubble_man.png" width="52" /></div>
 				</div>
 			</div>
 			
 			<div class="greyBlockNums">
 				<span class="countBlue">3</span>
-				<h4 class="cufon-minion">We find complimentary quality partners</h4>
+				<h4 class="cufon-minion">We find complementary quality partners</h4>
 				<div class="bubble">
 					How about offering your customers tentants insurance from this well respected broker based in Worthing and a highly regarded Brighton based removals company?
-					<div class="icon"><img src="images/ico_bubble_man.png" width="52" /></div>
+					<div class="icon"><img src="img/ico_bubble_man.png" width="52" /></div>
 				</div>
 			</div>
 			
 			<div class="greyBlockNums">
 				<span class="countBlue">4</span>
-				<h4 class="cufon-minion">We provide Free Marketing Material Which Make it Easy to Refer Customers</h4>
+				<h4 class="cufon-minion">Free marketing material makes it easy to refer customers</h4>
+				
+				<ul>
+						<li>
+						<img src="img/referral-sheet.jpg" width="177" alt="" />
+						<span>Referrals for Renters</span>
+						</li>
+				
+				</ul>
 				
 				<!--
 				<ul>
@@ -61,7 +69,7 @@
 
 					Your customers have the option to call the unique phone number or apply online using your a link to your personal page on the QualityPartner.co.uk website.<br /><br />
 					We provide a web page that you can link to from your email signature, this is especially good when you're sending updates to your property hunters.
-					<div class="icon"><img src="images/ico_bubble_man.png" width="52" /></div>
+					<div class="icon"><img src="img/ico_bubble_man.png" width="52" /></div>
 				</div>
 			</div>
 			
@@ -72,7 +80,7 @@
 				<p>We make it easy for you to track how many referrals you&#39;ve made and how much you&#39;ve earned.</p>
 				<div class="bubble">
 					We know if your customer has called the unique telephone number or used our website to apply. You can view how many leads you have referred and see at a glance see how much money you have made. 
-					<div class="icon"><img src="images/ico_bubble_man.png" width="52" /></div>
+					<div class="icon"><img src="img/ico_bubble_man.png" width="52" /></div>
 				</div>
 			</div>
 			
