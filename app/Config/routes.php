@@ -35,10 +35,6 @@
         Router::connect('/examplepartner', array('controller' => 'pages', 'action' => 'display','examplepartner'));
          Router::connect('/examplepartner2', array('controller' => 'pages', 'action' => 'display','examplepartner2')); 
         
-     
-     
-     
-     ggffgfgfgfgfgfgf
         
       /*static pages */  
         Router::connect('/howitworks', array('controller' => 'pages', 'action' => 'display','howitworks'));

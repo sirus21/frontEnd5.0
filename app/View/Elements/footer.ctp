@@ -44,11 +44,11 @@
 				<li><a href="/contact.php" title="">Meet the team</a></li>
 				<li><a href="/contact.php" title="">Contact us</a></li>
 				<li>
-					<a href="#" title="" class="btnTwitter">Twitter</a>
+					<a href="https://twitter.com/qualitypartner_" title="Some tweets. That is all." target="_blank" class="btnTwitter">Twitter</a>
 				
 				 <!-- <a href="#" title="" class="btnFacebook">Facebook</a> --> 
 				
-					<a href="http://www.linkedin.com/company/goodapple-media-ltd" title="LinkedIn" target="_blank" class="btnIn">LinkedIn</a>
+					<a href="http://www.linkedin.com/company/goodapple-media-ltd" title="Our company's LinkedIn page" target="_blank" class="btnIn">LinkedIn</a>
 
 				</li>
 			</ul>

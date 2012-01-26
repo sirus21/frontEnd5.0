@@ -3,7 +3,7 @@
 			<img src="img/speech-mark-left.png"  class="openspeech"/> 
 			<p>Quality Partner allows businesses to make money by recommending high quality companies to their customers.</p>
 			<img src="img/speech-mark-right.png" class="closespeech" />
-			<img src="img/img_home_earth.jpg" class="lowerImage"/>
+			<img src="img/home_page_tile3.jpg" class="lowerImage"/>
 			
 		</div><!--[end] col 1/2 left -->
 		

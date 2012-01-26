@@ -78,3 +78,7 @@
 [17-Jan-2012 13:03:09] PHP Fatal error:  Call to a member function writeBuffer() on a non-object in /home/wwwstage/public_html/app/View/Layouts/front_end.ctp on line 281
 [17-Jan-2012 13:03:12] PHP Fatal error:  Call to a member function writeBuffer() on a non-object in /home/wwwstage/public_html/app/View/Layouts/front_end.ctp on line 281
 [17-Jan-2012 13:03:15] PHP Fatal error:  Call to a member function writeBuffer() on a non-object in /home/wwwstage/public_html/app/View/Layouts/front_end.ctp on line 281
+[25-Jan-2012 18:45:45] PHP Parse error:  syntax error, unexpected T_STRING in /home/wwwqp/public_html/app/Config/routes.php on line 43
+[25-Jan-2012 18:45:47] PHP Parse error:  syntax error, unexpected T_STRING in /home/wwwqp/public_html/app/Config/routes.php on line 43
+[25-Jan-2012 18:45:54] PHP Parse error:  syntax error, unexpected T_STRING in /home/wwwqp/public_html/app/Config/routes.php on line 43
+[25-Jan-2012 18:45:58] PHP Parse error:  syntax error, unexpected T_STRING in /home/wwwqp/public_html/app/Config/routes.php on line 43

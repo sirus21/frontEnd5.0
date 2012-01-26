@@ -374,9 +374,9 @@ textarea {
 
 	}
 	
-.colOneTwo.left p {float: left;font-size: 18px;font-weight: bold; margin-left: 15px; margin-top: 10px; text-align: justify; width: 370px;}
+.colOneTwo.left p {float: left;font-size: 18px;font-weight: bold; margin-left: 5px; margin-top: 10px; text-align: justify; width: 330px;}
 .colOneTwo.left img.openspeech{float:left;margin-left:5px}
-.colOneTwo.left img.closespeech { float: right;margin-left: 15px; margin-top: -20px;}
+.colOneTwo.left img.closespeech { float:left;margin-left: 5px; margin-top: 80px;}
 .colOneTwo.left img.lowerImage{margin-top:50px;}
 /*full size col*/
 .colOne {
