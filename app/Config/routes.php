@@ -31,8 +31,10 @@
  */
 	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
         Router::connect('/example', array('controller' => 'applications', 'action' => 'add','example'));
+        Router::connect('/contact', array('controller' => 'contacts', 'action' => 'add'));
+       
         /*partners */
-        Router::connect('/examplepartner', array('controller' => 'pages', 'action' => 'display','examplepartner'));
+         Router::connect('/examplepartner', array('controller' => 'pages', 'action' => 'display','examplepartner'));
          Router::connect('/examplepartner2', array('controller' => 'pages', 'action' => 'display','examplepartner2')); 
         
         

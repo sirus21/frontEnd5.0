@@ -19,7 +19,7 @@
 			
 			<div id="topNav">
 				<ul>
-					<li class="current"><a href="/contact.php" title=""><span>Join us</span></a></li>
+					<li class="current"><a href="/contact" title=""><span>Join us</span></a></li>
 					<li><a href="/howitworks" title=""><span>How it works</span></a></li>
 					<li><a href="/whyitworks" title=""><span>Why it works</a></li>
 				</ul>
