@@ -16488,3 +16488,52 @@ n}
 2012-01-30 08:22:57 Error: [MissingControllerException] Controller class Googlehostedservice.htmlController could not be found.
 #0 /home/wwwqp/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2012-01-30 16:03:54 Error: [MissingControllerException] Controller class StjamesesController could not be found.
+#0 /home/wwwqp/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-30 16:15:36 Error: [MissingActionException] Action ApplicationsController::js() could not be found.
+#0 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(ApplicationsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwqp/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-01-30 16:15:36 Error: [MissingActionException] Action ApplicationsController::js() could not be found.
+#0 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(ApplicationsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwqp/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-01-30 16:15:36 Error: [MissingActionException] Action ApplicationsController::js() could not be found.
+#0 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(ApplicationsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwqp/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-01-30 16:15:36 Error: [MissingActionException] Action ApplicationsController::CallSessions() could not be found.
+#0 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(ApplicationsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwqp/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-01-30 16:18:38 Error: [MissingControllerException] Controller class Googlehostedservice.htmlController could not be found.
+#0 /home/wwwqp/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-30 16:18:38 Error: [MissingControllerException] Controller class Googlehostedservice.htmlController could not be found.
+#0 /home/wwwqp/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-30 16:18:42 Error: [MissingActionException] Action ApplicationsController::js() could not be found.
+#0 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(ApplicationsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwqp/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-01-30 16:18:42 Error: [MissingActionException] Action ApplicationsController::js() could not be found.
+#0 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(ApplicationsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwqp/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-01-30 16:18:42 Error: [MissingActionException] Action ApplicationsController::js() could not be found.
+#0 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(ApplicationsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwqp/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-01-30 16:18:42 Error: [MissingActionException] Action ApplicationsController::CallSessions() could not be found.
+#0 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#1 /home/wwwqp/public_html/lib/Cake/Routing/Dispatcher.php(89): Dispatcher->_invoke(Object(ApplicationsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/wwwqp/public_html/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

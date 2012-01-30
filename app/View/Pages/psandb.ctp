@@ -72,6 +72,8 @@
 						</div>
 					</div>
 					
+					<!--
+					
 					<div class="greyBlock serviceBlock">						
 						<div class="left">
 							<h3>Cleaning Services</h3>
@@ -83,6 +85,8 @@
 							<span class="phoneBlue">01273 395 1003</span>
 						</div>
 					</div>
+				
+				        -->
 					
 					<!-- <h3>Other Recommended Services</h3>
 					

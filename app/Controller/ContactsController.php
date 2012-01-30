@@ -27,9 +27,10 @@ class ContactsController extends AppController {
 	                 $templateVars['message'] = $this->request->data['Contact']['message'];
                          $templateVars['email']= $this->request->data['Contact']['email'];
                          $templateVars['number']= $this->request->data['Contact']['contact_number'];
+			 
                          
                          
-                             $email = new CakeEmail();
+                            $email = new CakeEmail();
                             $email->config('gmailSmtp');
                             $email->template('qp_contact');
                             $email->emailFormat('html');

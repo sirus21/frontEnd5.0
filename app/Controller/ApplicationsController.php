@@ -1,5 +1,6 @@
 <?php
 App::uses('AppController', 'Controller');
+App::uses('CakeEmail', 'Network/Email');
 /**
  * Applications Controller
  *
@@ -29,6 +30,7 @@ class ApplicationsController extends AppController {
 		if (!$this->Application->exists()) {
 			throw new NotFoundException(__('Invalid application'));
 		}
+		
 		$this->set('application', $this->Application->read(null, $id));
 	}
 /**
@@ -42,6 +44,8 @@ class ApplicationsController extends AppController {
 		
 	case  '1':
 		    return "stjames";
+		
+		
 			     
 		
 	}
@@ -53,32 +57,49 @@ class ApplicationsController extends AppController {
  *
  * @return void
  */
-	public function add($partnerID= null,$productid=null) {
+	public function add($partnerID= null,$productID=null) {
 		
+		$partnerID = $this->__getPartnerName($partnerID); 
 		
+		$this->set('partner',$partnerID);
+		$this->set('productid',$productID);
+	
 		
-		$partner =  $this->__getPartnerName($partnerID);
-		
-		if ($this->request->is('post')) {
+		if ($this->request->is('post') && $this->Application->save($this->request->data)) {
 			$this->Application->create();
 			if ($this->Application->validates()) {
 			
-				$this->Session->setFlash('Thanks we have your information and will be in touch','flash_bad');
-			        $this->redirect(array('controller' => 'pages' , 'action' => 'display',$partner));
+                          
+			    
+			     $templateVars['name'] =      $this->request->data['Application']['first_name'] . " ".         $this->request->data['Application']['last_name'];
+	                     $templateVars['address'] =  $this->request->data['Application']['address_line_one']." ".$this->request->data['Application']['post_code'];
+			     $templateVars['phone'] =     $this->request->data['Application']['phonenumber'];
+			     $templateVars['email'] =     $this->request->data['Application']['email'];
+			     $templateVars['product']  = $productID;
+			     $templateVars['partner'] =  $partnerID;
+			     
+			    
+			    
+			    $email = new CakeEmail();
+                            $email->config('gmailSmtp');
+                            $email->template('qp_application');
+                            $email->emailFormat('html');
+                 
+                             $email->subject('QP - New Product Application');
+                             $email->to('joeappleton@goodapple.co.uk');
+                             $email->bcc(/*$bcc*/); 
+                             $email->viewVars($templateVars);
+                              $email->send();
+			     $this->Session->setFlash('Thanks we have your information and will be in touch','flash_good');
+			     $this->redirect(array('controller' => 'pages' , 'action' => 'display',$partnerID));
 			} else {
 				$this->Session->setFlash('There were errors in your form please correct them and resubmit','flash_bad');
 							 
 							 }
 		}
-		$products = $this->Application->Product->find('list');
+		
+		
 			
-		
-		
-		
-		
-		$this->set('partner',$partner); 
-		$this->set('productid',$productid);
-		$this->set(compact('products'));
 	}
 
 /**
