@@ -16,7 +16,7 @@
 				<span class="countBlue">2</span>
 				<h4 class="cufon-minion">Tell us about yourself</h4>
 				<div class="bubble">
-					If you own letting agency based in Brighton targeting young professionals...
+					If you own a letting agency based in Brighton targeting young professionals...
 					<div class="icon"><img src="img/ico_bubble_man.png" width="52" /></div>
 				</div>
 			</div>
@@ -79,7 +79,7 @@
 
 				<p>We make it easy for you to track how many referrals you&#39;ve made and how much you&#39;ve earned.</p>
 				<div class="bubble">
-					We know if your customer has called the unique telephone number or used our website to apply. You can view how many leads you have referred and see at a glance see how much money you have made. 
+					We pay for each telephone call or web lead you generate, so you don&#39;t have to wait months for a sale. <br /> <br /> We know if your customer has called the unique telephone number or used our website to apply. You can view how many leads you have referred and see at a glance see how much money you have made. 
 					<div class="icon"><img src="img/ico_bubble_man.png" width="52" /></div>
 				</div>
 			</div>

@@ -14,7 +14,7 @@
 						<ul>
 							<li>Make extra money</li>
 
-							<li>Help customers find great complimentary services</li>
+							<li>Help customers find great complementary services</li>
 							<li>Fully transparent and trackable</li>
 							<li>100% free to use</li>
 						</ul>
@@ -26,10 +26,10 @@
 
 			</div><!--[end] col 1/2 right -->
 			
-			<div class="twitterLast">
+			<!-- <div class="twitterLast">
 				<h3><strong>Quality_Partner</strong> QualityPartner.co.uk</h3>
 				<p class="cufon-caslon">Calling Estate Agent owners in Brighton.... Do you want to make more money? <a href="#" title="">bit.ly/nhutYH</a> - 6 Dec</p>
-			</div>
+			</div> -->
 
 			
 			<div class="colOne">

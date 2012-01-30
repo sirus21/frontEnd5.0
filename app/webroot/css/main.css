@@ -75,7 +75,10 @@ label {
 	padding-bottom: 295px; 
 	overflow: auto; 
 	}
-	
+
+
+.right{float:right;}
+#pageTitle{padding-right:85px;}
 
 /*form styles*/
 

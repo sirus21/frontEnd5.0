@@ -5,20 +5,19 @@
 				
 								
 				<div id="pageTitle">
-					<h2>Recommended Services  <span class="right">Reference: 1019 </span></h2>
-					 
+					<h2>Recommended Services <span class="right">ref:1019 </span></h2>
 				</div>
 					
 				<div class="mainContent left">
 				
-		                        <div class="greyBlock serviceBlock">						
+				<div class="greyBlock serviceBlock">						
 						<div class="left">
 							<h3>Tenants Insurance</h3>
 							<p>Do you want to quickly find cheap tenants insurance? We can quickly compare quotes so that you save time and money.</p>
 						</div>
 						
 						<div class="right">
-							<a href="http://www.qualitypartner.co.uk/applications/add/1/2" title="Fast Free Quote" class="btn_applyOnline">Apply Online</a>
+							<a href="http://www.qualitypartner.co.uk/applications/add/1/2" title="" class="btn_applyOnline">Apply Online</a>
 							<span class="phoneBlue">01273 395 1007</span>
 						</div>
 					</div>
@@ -30,7 +29,7 @@
 						</div>
 						
 						<div class="right">
-							<a href="http://www.qualitypartner.co.uk/applications/add/1/3" title="Fast Free Quote" class="btn_applyOnline">Apply Online</a>
+				                        <a href="http://www.qualitypartner.co.uk/applications/add/1/3" title="" class="btn_applyOnline">Apply Online</a>
 							<span class="phoneBlue">01273 395 1013</span>
 						</div>
 					</div>
@@ -42,7 +41,7 @@
 						</div>
 						
 						<div class="right">
-							<a href="http://www.qualitypartner.co.uk/applications/add/1/4" title="Fast Free Quote" class="btn_applyOnline">Apply Online</a>
+								<a href="http://www.qualitypartner.co.uk/applications/add/1/4" title="" class="btn_applyOnline">Apply Online</a>
 							<span class="phoneBlue">01273 395 1019</span>
 						</div>
 					</div>
@@ -55,7 +54,7 @@
 						</div>
 						
 						<div class="right">
-							<a href="http://www.qualitypartner.co.uk/applications/add/1/5" title="Fast Free Quote" class="btn_applyOnline">Apply Online</a>
+							<a href="http://www.qualitypartner.co.uk/applications/add/1/5" title="" class="btn_applyOnline">Apply Online</a>
 							<span class="phoneBlue">01273 395 1047</span>
 						</div>
 					</div>
@@ -67,7 +66,7 @@
 						</div>
 						
 						<div class="right">
-							<a href="http://www.qualitypartner.co.uk/applications/add/1/6" title="Fast Free Quote" class="btn_applyOnline">Apply Online</a>
+							<a href="http://www.qualitypartner.co.uk/applications/add/1/6" title="" class="btn_applyOnline">Apply Online</a>
 							<span class="phoneBlue">01273 395 1049</span>
 						</div>
 					</div>
@@ -79,7 +78,7 @@
 						</div>
 						
 						<div class="right">
-							<a href="http://www.qualitypartner.co.uk/applications/add/1/7" title="Fast Free Quote" class="btn_applyOnline">Apply Online</a>
+							<a href="http://www.qualitypartner.co.uk/applications/add/1/7" title="" class="btn_applyOnline">Apply Online</a>
 							<span class="phoneBlue">01273 395 1057</span>
 						</div>
 					</div>
@@ -91,7 +90,7 @@
 						</div>
 						
 						<div class="right">
-							<a href="http://www.qualitypartner.co.uk/applications/add/1/8" title="Fast Free Quote" class="btn_applyOnline">Apply Online</a>
+							<a href="http://www.qualitypartner.co.uk/applications/add/1/8" title="" class="btn_applyOnline">Apply Online</a>
 							<span class="phoneBlue">01273 395 1003</span>
 						</div>
 					</div>
@@ -159,7 +158,7 @@
 money from recommending great complementary
 businesses to your own.</p>
 					
-					<a href="#" class="buttoneffect"> Join Today </a>                                  
+					<a href="/contact" class="buttoneffect"> Join Today </a>                                  
                                        </div><!--[end] block -->
 				
 				</div><!--[end] aside -->			
@@ -167,4 +166,4 @@ businesses to your own.</p>
 			</div><!--[end] colOne -->
 			
 		</div>
-	</div><!--[end] content -->
+	</div><!--[end] cont

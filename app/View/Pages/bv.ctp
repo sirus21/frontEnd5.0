@@ -5,19 +5,19 @@
 				
 								
 				<div id="pageTitle">
-					<h2>Recommended Services</h2>
+					<h2>Recommended Services<span class="right">Reference: 1002 </span></h2>
 				</div>
 					
 				<div class="mainContent left">
 				
 				<div class="greyBlock serviceBlock">						
 						<div class="left">
-							<h3>Home and Contents Insurance</h3>
+							<h3>Home &amp; Contents Insurance</h3>
 							<p>Quickly find the cheapest home and contents insurance. We can quickly compare quotes so that you save time and money.</p>
 						</div>
 						
 						<div class="right">
-							<a href="http://www.qualitypartner.co.uk/applications/add/1/2" title="" class="btn_applyOnline">Apply Online</a>
+							<a href="http://www.qualitypartner.co.uk/applications/add/1/2" title="Fast Free Quote" class="btn_applyOnline">Apply Online</a>
 							<span class="phoneBlue">01273 677656</span>
 						</div>
 					</div>
@@ -29,7 +29,7 @@
 						</div>
 						
 						<div class="right">
-				                        <a href="http://www.qualitypartner.co.uk/applications/add/1/3" title="" class="btn_applyOnline">Apply Online</a>
+				                        <a href="http://www.qualitypartner.co.uk/applications/add/1/3" title="Fast Free Quote" class="btn_applyOnline">Apply Online</a>
 							<span class="phoneBlue">01273 677656</span>
 						</div>
 					</div>
@@ -41,7 +41,7 @@
 						</div>
 						
 						<div class="right">
-								<a href="http://www.qualitypartner.co.uk/applications/add/1/4" title="" class="btn_applyOnline">Apply Online</a>
+								<a href="http://www.qualitypartner.co.uk/applications/add/1/4" title="Fast Free Quote" class="btn_applyOnline">Apply Online</a>
 							<span class="phoneBlue">01273 677656</span>
 						</div>
 					</div>
@@ -54,7 +54,7 @@
 						</div>
 						
 						<div class="right">
-							<a href="http://www.qualitypartner.co.uk/applications/add/1/5" title="" class="btn_applyOnline">Apply Online</a>Apply Online</a>
+							<a href="http://www.qualitypartner.co.uk/applications/add/1/5" title="Fast Free Quote" class="btn_applyOnline">Apply Online</a>
 							<span class="phoneBlue">01273 677656</span>
 						</div>
 					</div>
@@ -66,7 +66,7 @@
 						</div>
 						
 						<div class="right">
-							<a href="http://www.qualitypartner.co.uk/applications/add/1/6" title="" class="btn_applyOnline">Apply Online</a>
+							<a href="http://www.qualitypartner.co.uk/applications/add/1/6" title="Fast Free Quote" class="btn_applyOnline">Apply Online</a>
 							<span class="phoneBlue">01273 677656</span>
 						</div>
 					</div>
@@ -78,7 +78,7 @@
 						</div>
 						
 						<div class="right">
-							<a href="http://www.qualitypartner.co.uk/applications/add/1/7" title="" class="btn_applyOnline">Apply Online</a>
+							<a href="http://www.qualitypartner.co.uk/applications/add/1/7" title="Fast Free Quote" class="btn_applyOnline">Apply Online</a>
 							<span class="phoneBlue">01273 677656</span>
 						</div>
 					</div>
@@ -90,7 +90,7 @@
 						</div>
 						
 						<div class="right">
-							<a href="http://www.qualitypartner.co.uk/applications/add/1/8" title="" class="btn_applyOnline">Apply Online</a>
+							<a href="http://www.qualitypartner.co.uk/applications/add/1/8" title="Fast Free Quote" class="btn_applyOnline">Apply Online</a>
 							<span class="phoneBlue">01273 677656</span>
 						</div>
 					</div>

@@ -68,8 +68,8 @@
 				</div><!--[end] mainContent -->
 				
 			</div><!--[end] colOne -->
-			<div  class="textblock"><p>   This sevice is provided for free by QualityPartner.co.uk.We have searched high and low to find high quality companies that combine excellent
-			 customer service and great prices. For more information about the service please visit </p> </div>
+			<div  class="textblock"><p>   This sevice is provided for free by QualityPartner.co.uk. We have searched high and low to find high quality companies that combine excellent
+			 customer service and great prices. For more information about the service please visit read about the Quality Partner standard or get in touch.</p> </div>
 		</div>
 
 
