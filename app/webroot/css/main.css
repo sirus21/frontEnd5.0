@@ -90,6 +90,39 @@ form textarea { width: 430px; border: 1px solid #cccccc; padding: 3px; height: 9
 form label { font-size: 15px;  font-weight: normal; }
 
 
+/* twitter */
+
+#Twitter {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: #90D3E9;
+    background-image: url("img/twitter.gif");
+    background-origin: padding-box;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    height: 60px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    padding-bottom: 10px;
+    padding-left: 105px;
+    padding-right: 10px;
+    padding-top: 15px;
+    
+}
+
+.cornerRadius6 {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+
+
+
 
 /* error messages */ 
  /* flash messages */ 

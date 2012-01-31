@@ -38,6 +38,10 @@
 					<p>We will be running a trial with Brighton based estate agents and letting agents in February 2012. If you would like to take part please click on &quot;Register&quot;, and we will get in touch.</p>
 					<p> For the test we will provide an A4 sheet that estate agents and letting agents include in their moving pack which is given to home buyers and renters. If a customer calls up a complementary service then each estate agent will be paid a commission.</p>		
 				</div>
-
+                            <div id="Twitter" class="cornerRadius6">
+                        <div class="cornerRadius4 twitterCont">
+                            			
+			
+                                </div>
 			</div>
 		</div>

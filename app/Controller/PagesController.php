@@ -20,6 +20,10 @@
  */
 
 App::uses('AppController', 'Controller');
+App::uses('Twitter', 'Model');
+
+
+
 
 /**
  * Static content controller
@@ -73,6 +77,11 @@ public function beforeFilter(){
  */
 	public function display($partner=null) {
 		
+		$this->loadModel('Twitter'); 
+                 $x = $this->Twitter->find();
+		 
+	         
+		 //print_r($x); 
 		
 		$path = func_get_args();
                 $url =  Router::url($this->here, true);
