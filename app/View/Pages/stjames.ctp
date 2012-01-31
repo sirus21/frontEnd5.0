@@ -19,7 +19,7 @@
 						
 						<div class="right">
 							<a href="http://www.qualitypartner.co.uk/applications/add/1/2" title="Fast Free Quote" class="btn_applyOnline">Apply Online</a>
-							<span class="phoneBlue">01273 395 1007</span>
+							<span class="phoneBlue">01273 951 007</span>
 						</div>
 					</div>
 				
@@ -31,7 +31,7 @@
 						
 						<div class="right">
 							<a href="http://www.qualitypartner.co.uk/applications/add/1/3" title="Fast Free Quote" class="btn_applyOnline">Apply Online</a>
-							<span class="phoneBlue">01273 395 1013</span>
+							<span class="phoneBlue">01273 951 013</span>
 						</div>
 					</div>
 					
@@ -43,7 +43,7 @@
 						
 						<div class="right">
 							<a href="http://www.qualitypartner.co.uk/applications/add/1/4" title="Fast Free Quote" class="btn_applyOnline">Apply Online</a>
-							<span class="phoneBlue">01273 395 1019</span>
+							<span class="phoneBlue">01273 951 019</span>
 						</div>
 					</div>
 					
@@ -56,7 +56,7 @@
 						
 						<div class="right">
 							<a href="http://www.qualitypartner.co.uk/applications/add/1/5" title="Fast Free Quote" class="btn_applyOnline">Apply Online</a>
-							<span class="phoneBlue">01273 395 1047</span>
+							<span class="phoneBlue">01273 951 047</span>
 						</div>
 					</div>
 					
@@ -68,7 +68,7 @@
 						
 						<div class="right">
 							<a href="http://www.qualitypartner.co.uk/applications/add/1/6" title="Fast Free Quote" class="btn_applyOnline">Apply Online</a>
-							<span class="phoneBlue">01273 395 1049</span>
+							<span class="phoneBlue">01273 951 049</span>
 						</div>
 					</div>
 					
@@ -80,7 +80,7 @@
 						
 						<div class="right">
 							<a href="http://www.qualitypartner.co.uk/applications/add/1/7" title="Fast Free Quote" class="btn_applyOnline">Apply Online</a>
-							<span class="phoneBlue">01273 395 1057</span>
+							<span class="phoneBlue">01273 951 057</span>
 						</div>
 					</div>
 					
@@ -92,7 +92,7 @@
 						
 						<div class="right">
 							<a href="http://www.qualitypartner.co.uk/applications/add/1/8" title="Fast Free Quote" class="btn_applyOnline">Apply Online</a>
-							<span class="phoneBlue">01273 395 1003</span>
+							<span class="phoneBlue">01273 951 003</span>
 						</div>
 					</div>
 					
@@ -159,7 +159,7 @@
 money from recommending great complementary
 businesses to your own.</p>
 					
-					<a href="#" class="buttoneffect"> Join Today </a>                                  
+					<a href="http://www.qualitypartner.co.uk/contact" class="buttoneffect"> Join Today </a>                                  
                                        </div><!--[end] block -->
 				
 				</div><!--[end] aside -->			

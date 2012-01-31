@@ -5,7 +5,7 @@
 				
 								
 				<div id="pageTitle">
-					<h2>Recommended Services  <span class="right">Reference: 1016 </span></h2>
+					<h2>Services<span class="right">Reference: 1016 </span></h2>
 					 
 				</div>
 					
@@ -19,7 +19,7 @@
 						
 						<div class="right">
 							<a href="http://www.qualitypartner.co.uk/applications/add/2/3" title="Fast Free Quote" class="btn_applyOnline">Apply Online</a>
-							<span class="phoneBlue">01273 395 1013</span>
+							<span class="phoneBlue">01273 951 013</span>
 						</div>
 					</div>
 					
@@ -31,7 +31,7 @@
 						
 						<div class="right">
 							<a href="http://www.qualitypartner.co.uk/applications/add/2/4" title="Fast Free Quote" class="btn_applyOnline">Apply Online</a>
-							<span class="phoneBlue">01273 395 1019</span>
+							<span class="phoneBlue">01273 951 019</span>
 						</div>
 					</div>
 					
@@ -44,7 +44,7 @@
 						
 						<div class="right">
 							<a href="http://www.qualitypartner.co.uk/applications/add/2/5" title="Fast Free Quote" class="btn_applyOnline">Apply Online</a>
-							<span class="phoneBlue">01273 395 1047</span>
+							<span class="phoneBlue">01273 951 047</span>
 						</div>
 					</div>
 					
@@ -56,7 +56,7 @@
 						
 						<div class="right">
 							<a href="http://www.qualitypartner.co.uk/applications/add/2/6" title="Fast Free Quote" class="btn_applyOnline">Apply Online</a>
-							<span class="phoneBlue">01273 395 1049</span>
+							<span class="phoneBlue">01273 951 049</span>
 						</div>
 					</div>
 					
@@ -68,25 +68,25 @@
 						
 						<div class="right">
 							<a href="http://www.qualitypartner.co.uk/applications/add/2/7" title="Fast Free Quote" class="btn_applyOnline">Apply Online</a>
-							<span class="phoneBlue">01273 395 1057</span>
+							<span class="phoneBlue">01273 951 057</span>
 						</div>
 					</div>
 					
-					<!--
+					
 					
 					<div class="greyBlock serviceBlock">						
 						<div class="left">
-							<h3>Cleaning Services</h3>
-							<p>Contact a rated local cleaner to help you keep your new home clean. We offer free quotes for regular or one-off cleaning.</p>
+							<h3>General Cleaning Services</h3>
+							<p>Weekly or monthly cleaning services. Please note: does not include end of tenancy cleaner. </p>
 						</div>
 						
 						<div class="right">
 							<a href="http://www.qualitypartner.co.uk/applications/add/2/8" title="Fast Free Quote" class="btn_applyOnline">Apply Online</a>
-							<span class="phoneBlue">01273 395 1003</span>
+							<span class="phoneBlue">01273 951 003</span>
 						</div>
 					</div>
 				
-				        -->
+				        
 					
 					<!-- <h3>Other Recommended Services</h3>
 					
@@ -151,7 +151,7 @@
 money from recommending great complementary
 businesses to your own.</p>
 					
-					<a href="#" class="buttoneffect"> Join Today </a>                                  
+					<a href="http://www.qualitypartner.co.uk/contact" class="buttoneffect"> Join Today </a>                                  
                                        </div><!--[end] block -->
 				
 				</div><!--[end] aside -->			

@@ -25,7 +25,7 @@
 				<span class="countBlue">3</span>
 				<h4 class="cufon-minion">We find complementary quality partners</h4>
 				<div class="bubble">
-					How about offering your customers tentants insurance from this well respected broker based in Worthing and a highly regarded Brighton based removals company?
+					How about offering your customers tenants insurance from this well respected broker based in Worthing and a highly regarded Brighton based removals company?
 					<div class="icon"><img src="img/ico_bubble_man.png" width="52" /></div>
 				</div>
 			</div>

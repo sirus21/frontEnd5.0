@@ -11,9 +11,18 @@ App::uses('CakeEmail', 'Network/Email');
 class ContactsController extends AppController {
     
     
+    public function beforeFilter(){
+         
+	 parent::beforeFilter();
+         $this->Auth->allow('add');
+	 
+    }
+    
     /**
      * Sends a contact message email to us
      */
+    
+    
     
     
     function add(){

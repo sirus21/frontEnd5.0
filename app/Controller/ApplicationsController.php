@@ -9,12 +9,23 @@ App::uses('CakeEmail', 'Network/Email');
 class ApplicationsController extends AppController {
 
 
+
+public function beforeFilter(){
+	
+	      parent::beforeFilter();
+	      $this->Auth->allow('add');
+	
+}
+
+
+
 /**
  * index method
  *
  * @return void
  */
 	public function index() {
+		$this->redirect(array('controller' => 'pages' , 'action' => 'display',"home"));
 		$this->Application->recursive = 0;
 		$this->set('applications', $this->paginate());
 	}
@@ -44,6 +55,9 @@ class ApplicationsController extends AppController {
 		
 	case  '1':
 		    return "stjames";
+	case '2':
+		    return "ps and b";
+	
 		
 		
 			     
@@ -86,8 +100,8 @@ class ApplicationsController extends AppController {
                             $email->emailFormat('html');
                  
                              $email->subject('QP - New Product Application');
-                             $email->to('joeappleton@goodapple.co.uk');
-                             $email->bcc(/*$bcc*/); 
+                             $email->to('joeappleton@goodapple.co.uk','joegoodson@goodapple.co.uk');
+                             $email->bcc('joegoodson@goodapple.co.uk'); 
                              $email->viewVars($templateVars);
                               $email->send();
 			     $this->Session->setFlash('Thanks we have your information and will be in touch','flash_good');
