@@ -96,12 +96,12 @@ form label { font-size: 15px;  font-weight: normal; }
     background-attachment: scroll;
     background-clip: border-box;
     background-color: #90D3E9;
-    background-image: url("img/twitter.gif");
+    background-image: url("../img/twitter.gif");
     background-origin: padding-box;
     background-position: left center;
     background-repeat: no-repeat;
     background-size: auto auto;
-    height: 60px;
+    height: 150px;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
@@ -121,7 +121,11 @@ form label { font-size: 15px;  font-weight: normal; }
 }
 
 
-
+.inner{
+	background: #DCF1FA ;
+	height:150px;
+	
+}
 
 
 /* error messages */ 

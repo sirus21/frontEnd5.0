@@ -16784,3 +16784,15 @@ n}
 2012-01-31 18:33:37 Error: [MissingControllerException] Controller class CssController could not be found.
 #0 C:\wamp\www\qptwitter\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2012-01-31 18:34:18 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\wamp\www\qptwitter\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-31 18:34:25 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\wamp\www\qptwitter\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-31 18:35:57 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\wamp\www\qptwitter\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-01-31 18:36:08 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\wamp\www\qptwitter\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

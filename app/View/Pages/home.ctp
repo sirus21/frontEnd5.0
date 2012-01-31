@@ -40,7 +40,13 @@
 				</div>
                             <div id="Twitter" class="cornerRadius6">
                         <div class="cornerRadius4 twitterCont">
-                            			
+                            		 
+					 <div class="cornerRadius6 inner">
+					 <div class="tweet">
+					  <p> dfhdfhjdfhjdfhjdfhjdfhjdfhjdfhjdfhjdf</p>
+					 </div> 
+					 
+					 </div> 	
 			
                                 </div>
 			</div>
