@@ -51,8 +51,9 @@
 					
 					
 					   <?php
-		
-				    
+		                   // get 2 latest twits
+				   
+			          $twits = array_slice($twits, 0,2); 
 				  foreach($twits as $key){
 			               	    	            
 				            echo  '<div class="tweet">';
@@ -62,12 +63,20 @@
 				             $key['title']  = preg_replace('/QualityPartner_:/','',$key['title']);
 				            // format urls
 					     $key['title'] = preg_replace("/(http:\/\/)(.*?)\/([\w\.\/\&\=\?\-\,\:\;\#\_\~\%\+]*)/", "<a href=\"\\0\">\\0</a>", $key['title'] ); 
-					     $time = $this->Time->niceShort($key['pubDate'],1); 
+				    	 
+				              
+					     $time = $this->Time->niceShort($key['pubDate'],1);
+					     
+					     // strip month to make it nice 
+					       $time =  preg_replace('/,[ \t]*[0-9]{2}:[0-9]{2}/',"",$time);
+					   
+					         
 					    
 					    
 					    
 					    
-                                              echo   "<p class=\"cufon-caslon\">$key[title] -  $time</p>";			       
+					    
+                                              echo   "<p class=\"cufon-caslon\"> $key[title] - <span> $time </span></p>";			       
 				              echo  " </div>  <!-[end] tweet -->";   
 				  }
 			
