@@ -113,6 +113,36 @@ form label { font-size: 15px;  font-weight: normal; }
     
 }
 
+#Twitter h3{
+	
+    
+    -moz-font-feature-settings: normal;
+    -moz-font-language-override: normal;
+    -x-system-font: none;
+    color: #3FA9F5;
+    font-family: Arial;
+    font-size: 17px;
+    font-size-adjust: none;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight:bold;
+    line-height: normal;
+    margin-bottom: 2px;
+}
+
+#Twitter a{
+	color: #3FA9F5;
+	text-decoration: none;
+}
+
+#Twitter p{
+	
+	font-size: 15px; 
+}
+
+
+
 .cornerRadius6 {
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
@@ -124,8 +154,11 @@ form label { font-size: 15px;  font-weight: normal; }
 .inner{
 	background: #DCF1FA ;
 	height:150px;
+	padding-left:15px; 
 	
 }
+
+
 
 
 /* error messages */ 

@@ -60,7 +60,7 @@ public function beforeFilter(){
  *
  * @var array
  */
-	public $helpers = array('Html', 'Session');
+	public $helpers = array('Html', 'Session','Time');
 
 /**
  * This controller does not use a model
@@ -78,8 +78,10 @@ public function beforeFilter(){
 	public function display($partner=null) {
 		
 		$this->loadModel('Twitter'); 
-                 $x = $this->Twitter->find();
-		 
+                $x = $this->Twitter->find();
+		
+		$this->set('twits',$x);
+		
 	         
 		 //print_r($x); 
 		
