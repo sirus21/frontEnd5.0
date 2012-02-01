@@ -40,7 +40,10 @@
          Router::connect('/psandb', array('controller' => 'pages', 'action' => 'display','psandb'));
          Router::connect('/stjames', array('controller' => 'pages', 'action' => 'display','stjames'));
          Router::connect('/bv', array('controller' => 'pages', 'action' => 'display','bv'));
-         Router::connect('/company', array('controller' => 'pages', 'action' => 'display','company')); 
+         Router::connect('/company', array('controller' => 'pages', 'action' => 'display','company'));
+         Router::connect('/estateagent', array('controller' => 'pages', 'action' => 'display','estateagent'));
+         Router::connect('/lettingagent', array('controller' => 'pages', 'action' => 'display','lettingagent'));
+
         
       /*static pages */  
         Router::connect('/howitworks', array('controller' => 'pages', 'action' => 'display','howitworks'));

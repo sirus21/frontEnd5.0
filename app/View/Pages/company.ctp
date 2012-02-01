@@ -5,7 +5,7 @@
 				
 								
 				<div id="pageTitle">
-					<h2>Recommended Services</h2>
+					<h2>Services</h2>
 				</div>
 					
 				<div class="mainContent left">
@@ -18,7 +18,7 @@
 						
 						<div class="right">
 							<a href="#" title="" class="btn_applyOnline">Apply Online</a>
-							<span class="phoneBlue">01273 677656</span>
+							<span class="phoneBlue">01273 677 656</span>
 						</div>
 					</div>
 				
@@ -30,7 +30,7 @@
 						
 						<div class="right">
 							<a href="#" title="" class="btn_applyOnline">Apply Online</a>
-							<span class="phoneBlue">01273 677656</span>
+							<span class="phoneBlue">01273 677 656</span>
 						</div>
 					</div>
 					
@@ -42,7 +42,7 @@
 						
 						<div class="right">
 							<a href="#" title="" class="btn_applyOnline">Apply Online</a>
-							<span class="phoneBlue">01273 677656</span>
+							<span class="phoneBlue">01273 677 656</span>
 						</div>
 					</div>
 					
@@ -55,7 +55,7 @@
 						
 						<div class="right">
 							<a href="#" title="" class="btn_applyOnline">Apply Online</a>
-							<span class="phoneBlue">01273 677656</span>
+							<span class="phoneBlue">01273 677 656</span>
 						</div>
 					</div>
 					
@@ -67,7 +67,7 @@
 						
 						<div class="right">
 							<a href="#" title="" class="btn_applyOnline">Apply Online</a>
-							<span class="phoneBlue">01273 677656</span>
+							<span class="phoneBlue">01273 677 656</span>
 						</div>
 					</div>
 					
@@ -79,7 +79,7 @@
 						
 						<div class="right">
 							<a href="#" title="" class="btn_applyOnline">Apply Online</a>
-							<span class="phoneBlue">01273 677656</span>
+							<span class="phoneBlue">01273 677 656</span>
 						</div>
 					</div>
 					
@@ -91,7 +91,7 @@
 						
 						<div class="right">
 							<a href="#" title="" class="btn_applyOnline">Apply Online</a>
-							<span class="phoneBlue">01273 677656</span>
+							<span class="phoneBlue">01273 677 656</span>
 						</div>
 					</div>
 					
