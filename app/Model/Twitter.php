@@ -17,7 +17,7 @@
          * @var integer
          * @access public
          */
-        public $twitterId = 14210082;
+        public $twitterId = 430800572;
         
         /**
          * Remove your name from posts
@@ -26,7 +26,7 @@
          * @var mixed
          * @access public
          */
-        public $twitterName = 'zeeneo';
+        public $twitterName = 'QualityPartner_ ';
         
         /**
          * Show replies to people

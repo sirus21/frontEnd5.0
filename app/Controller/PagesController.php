@@ -20,6 +20,10 @@
  */
 
 App::uses('AppController', 'Controller');
+App::uses('Twitter', 'Model');
+
+
+
 
 /**
  * Static content controller
@@ -56,7 +60,7 @@ public function beforeFilter(){
  *
  * @var array
  */
-	public $helpers = array('Html', 'Session');
+	public $helpers = array('Html', 'Session','Time');
 
 /**
  * This controller does not use a model
@@ -73,6 +77,13 @@ public function beforeFilter(){
  */
 	public function display($partner=null) {
 		
+		$this->loadModel('Twitter'); 
+                $x = $this->Twitter->find();
+		
+		$this->set('twits',$x);
+		
+	         
+		 //print_r($x); 
 		
 		$path = func_get_args();
                 $url =  Router::url($this->here, true);
