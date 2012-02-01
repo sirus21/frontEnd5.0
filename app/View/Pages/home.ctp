@@ -68,8 +68,8 @@
 					     $time = $this->Time->niceShort($key['pubDate'],1);
 					     
 					     // strip month to make it nice 
-					       $time =  preg_replace('/,[ \t]*[0-9]{2}:[0-9]{2}/',"",$time);
-					   
+				            $time =  preg_replace('/[0-8]*,[ \t]*[0-9]{2}:[0-9]{2}/',"",$time);
+				
 					         
 					    
 					    
