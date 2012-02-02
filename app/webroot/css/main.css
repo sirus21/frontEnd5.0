@@ -498,6 +498,12 @@ textarea {
 	}
 	
 /*post styles*/
+
+.post{
+	    margin-bottom: 40px;
+	
+       }
+
 .post h2 {
 	font: normal bold 18px 'Arial', Helvetica;
 	}
