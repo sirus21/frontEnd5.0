@@ -2,11 +2,14 @@
 <html lang="en-US">
 <head>
 	
+	
+	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
 	<title>Quality Partner - Make money referring services to your customers</title>
          <?php $this->Html->meta('icon');  ?>  
       
         <meta name="keywords" content="refer, referral, referral marketing, commission, commissions, affinity, affinity partnership, brighton, brighton and hove, vetted, monitored, trustworthy, check, quality, partners, estate agent, estate agents, letting agent, letting agents" />
         <meta name="description" content="Referral service that allows companies, such as estate agents and letting agents, to earn money by referring customers to vetted high quality companies and services." />
+	
 	
 	<meta charset="utf-8" />
        

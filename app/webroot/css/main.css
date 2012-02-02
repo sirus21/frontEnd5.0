@@ -88,7 +88,10 @@ form .formRow { width: 100%; display: block; padding: 5px 0 25px 0; overflow: hi
 form input[type="text"] { width: 315px; border: 1px solid #cccccc; padding: 3px; } 
 form textarea { width: 430px; border: 1px solid #cccccc; padding: 3px; height: 90px; } 
 form label { font-size: 15px;  font-weight: normal; }
+/* phone number display */
 
+.phone_number{font-size:22px;margin-left:50px;}
+ 
 
 /* twitter */
 

@@ -22,6 +22,7 @@
 						</ul>
 						
 						<a href="/contact" title="Register" class="ylButton clearfix"><span>Register </span></a>
+					      <h3 class="phone_number"> Or Call Us: 01273  677656 </h3>  
 					</div> <!--[end] box inner --> 
  				</div><!--[end] greyBox -->
 				
@@ -70,10 +71,6 @@
 					     // strip month to make it nice 
 				            $time =  preg_replace('/[0-8]*,[ \t]*[0-9]{2}:[0-9]{2}/',"",$time);
 				
-					         
-					    
-					    
-					    
 					    
 					    
                                               echo   "<p class=\"cufon-caslon\"> $key[title] - <span> $time </span></p>";			       
